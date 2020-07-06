@@ -1,0 +1,19 @@
+version: "~> 1.0"
+language: node_js
+node_js:
+- 8.16.2
+install:
+- npm install -g codecov
+before_script:
+- npm install
+script:
+- npm run build
+- npm run coverage
+- codecov --disable=gcov
+notifications:
+  slack:
+    on_failure: always
+    on_pull_requests: true
+    on_success: always
+    rooms:
+      secure: hAiXlNySd3Ajw1u05hDnRAJxy4Ze66s/mc097227jGtjOBUubdgBBkb+X24Ff2b9G5BUGTHi+wt6r8bqMFXkRuSTW1MKngK7coGvhjZQ6UcbXJb7Vk33FVbbb716/EpalWzrzylH+bxHuXgdMZE5RG6cmUIX5P5O7PnBP75de0QFHHEhcpUTj6s7JpiHNvU9fhNXrj6qYFLLLqcfczNnFlxVnB3dSKYxqqsfyMbknLRBok4WTuQ4eXXhSH4OBLxswgxk+rCbJAzZ7xSqS2iFXbdsYdbicbbRxQaaG08NEwDrWHNimqhEk8ZCLHxnP+jwBs0NwDtk34BFPL3ed+DadswaveXa4K6qyN4p+GBgVwGI3gkXcpkt+E+0CpZBMn5E2MSDH0bqfXtuNVU59v2nOVCIFa7kztXAuLe05h+j06vk9TzC84IgQf9aCLVHKkVZcvh9/cs5+wZBxIgsQ9UPrxB/taHTOlOaMQqAaQlm+U/vVs6e42vVEcTeNLdrL55WR3SrJgl/nicJ+TjaZDwSTkjoVBhHeOSDzLCGCn/h1EVGO0L0HeLqjEEp6ngopi78ryTzo0MmcemXJH89JQlsABb10KClIK2sz1t8EvDnk0ieHwsLgWqobOCrBHsCQGJs9Icw4ZnhS8c0JNfCEtkhC4XrDuze9s2ITmy/o9JzptM=
