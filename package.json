@@ -25,6 +25,7 @@
     "devDependencies": {
         "@babel/core": "^7.10.4",
         "@storybook/react": "^5.3.19",
+        "@storybook/storybook-deployer": "^2.8.6",
         "@testing-library/jest-dom": "5.5.0",
         "@testing-library/react": "10.0.4",
         "@types/faker": "4.1.12",
@@ -77,9 +78,11 @@
         "url": "git+https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components.git"
     },
     "scripts": {
-        "build": "tsc --pretty && build-storybook -o storybook",
+        "build": "tsc --pretty",
+        "build-storybook": "build-storybook -o storybook",
         "clean": "rimraf dist && rimraf coverage",
         "coverage": "jest ./src --coverage --passWithNoTests",
+        "deploy-storybook": "storybook-to-ghpages",
         "docs": "typedoc --mode file --excludeExternals --plugin typedoc-plugin-markdown --readme none",
         "format": "prettier --write \"src/**/*.ts\" --trailing-comma es5",
         "postbuild": "npm run docs",
