@@ -11,6 +11,8 @@ module.exports = ({ config }) => {
             },
             {
                 loader: require.resolve("react-docgen-typescript-loader"),
+                // Set shouldExtractLiteralValuesFromEnum = true to view enum values in storybook.
+                options: { shouldExtractLiteralValuesFromEnum: true },
             },
         ],
     });
