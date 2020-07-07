@@ -28,7 +28,10 @@ import { Card } from "andculturecode-javascript-react-components";
 ### Active development
 
 ```shell
-$: npm run storybook
+npm install
+npm run storybook # visually test components
+npm run watch:test # automatically re-run test suite on change
+npm run watch:coverage # automatically re-run test suite, along with code coverage, on change
 ```
 
 ###
