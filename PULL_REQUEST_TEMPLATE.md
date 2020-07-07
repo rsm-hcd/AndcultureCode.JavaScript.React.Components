@@ -7,3 +7,4 @@
 - [ ] No _decreases_ in automated test coverage
 - [ ] Documentation updated (readme, docs, comments, etc.)
 - [ ] Localization: No hard-coded error messages in code files (_minimally_ in string constants)
+- [ ] New component and/ or properties? Make sure to update storybook
