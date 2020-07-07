@@ -2,6 +2,7 @@ import { configure, addParameters, addDecorator } from "@storybook/react";
 import { setDefaults } from "@storybook/addon-info";
 import { withInfo } from "@storybook/addon-info";
 import { withKnobs } from "@storybook/addon-knobs";
+import "./storybook.css";
 
 // -----------------------------------------------------------------------------------------
 // #region Constants
