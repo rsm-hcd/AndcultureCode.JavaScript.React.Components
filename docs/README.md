@@ -70,7 +70,7 @@
     }
 )
 
-*Defined in [atoms/anchors/anchor.tsx:30](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/729d2ec/src/atoms/anchors/anchor.tsx#L30)*
+*Defined in [atoms/anchors/anchor.tsx:30](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/07f8acd/src/atoms/anchors/anchor.tsx#L30)*
 
 ___
 
@@ -78,7 +78,7 @@ ___
 
 • **FactoryType**: *object*
 
-*Defined in [tests/factories/factory-type.ts:1](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/729d2ec/src/tests/factories/factory-type.ts#L1)*
+*Defined in [tests/factories/factory-type.ts:1](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/07f8acd/src/tests/factories/factory-type.ts#L1)*
 
 #### Type declaration:
 
@@ -88,6 +88,6 @@ ___
 
 ▸ **anchorDefault**(): *Element‹›*
 
-*Defined in [atoms/anchors/anchor.stories.tsx:14](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/729d2ec/src/atoms/anchors/anchor.stories.tsx#L14)*
+*Defined in [atoms/anchors/anchor.stories.tsx:14](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/07f8acd/src/atoms/anchors/anchor.stories.tsx#L14)*
 
 **Returns:** *Element‹›*
