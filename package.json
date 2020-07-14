@@ -105,7 +105,8 @@
         "url": "git+https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components.git"
     },
     "scripts": {
-        "build": "tsc --pretty --project tsconfig.dist.json",
+        "build": "npm run build-typescript",
+        "build-typescript": "tsc --pretty --project tsconfig.dist.json",
         "build-storybook": "build-storybook -o storybook",
         "clean": "rimraf dist && rimraf coverage",
         "coverage": "react-scripts test --coverage --watchAll=false",
