@@ -45,6 +45,7 @@
         "@storybook/addon-options": "5.3.19",
         "@storybook/addons": "5.3.19",
         "@storybook/react": "5.3.19",
+        "@storybook/storybook-deployer": "2.8.6",
         "@testing-library/jest-dom": "4.2.3",
         "@testing-library/react": "9.3.2",
         "@types/faker": "4.1.7",
