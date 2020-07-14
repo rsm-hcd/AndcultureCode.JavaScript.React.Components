@@ -8,10 +8,12 @@
         "esModuleInterop": true,
         "experimentalDecorators": true,
         "forceConsistentCasingInFileNames": false,
+        "inlineSourceMap": true,
+        "inlineSources": true,
         "isolatedModules": true,
         "jsx": "react",
         "lib": ["dom", "dom.iterable", "esnext"],
-        "module": "esnext",
+        "module": "commonjs",
         "moduleResolution": "node",
         "noImplicitAny": false,
         "outDir": "./dist",
@@ -19,8 +21,7 @@
         "resolveJsonModule": true,
         "skipLibCheck": true,
         "strict": true,
-        "target": "es5",
-        "noEmit": true
+        "target": "es5"
     },
     "exclude": [
         "**/*.stories.*",
@@ -28,5 +29,5 @@
         "node_modules",
         "src/setupTests.ts"
     ],
-    "include": ["src", "!src/index.ts"]
+    "include": ["src"]
 }

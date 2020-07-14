@@ -1,5 +1,5 @@
 import React from "react";
-import { act, render, waitFor, fireEvent } from "@testing-library/react";
+import { act, render, wait, fireEvent } from "@testing-library/react";
 import { Anchor } from "./anchor";
 import faker from "faker";
 import { MemoryRouter } from "react-router-dom";
@@ -17,7 +17,7 @@ describe("anchor", () => {
         );
 
         // Assert
-        await waitFor(() => {
+        await wait(() => {
             expect(
                 container.querySelector(`[href="${expected}"]`)
             ).not.toBeNull();
@@ -37,7 +37,7 @@ describe("anchor", () => {
         );
 
         // Assert
-        await waitFor(() => {
+        await wait(() => {
             expect(
                 container.querySelector(`[class="${expected}"]`)
             ).not.toBeNull();
@@ -56,7 +56,7 @@ describe("anchor", () => {
         );
 
         // Assert
-        await waitFor(() => {
+        await wait(() => {
             expect(
                 container.querySelector(`[href="${expected}"]`)
             ).not.toBeNull();
@@ -82,7 +82,7 @@ describe("anchor", () => {
         fireEvent.click(getByText(buttonText));
 
         // Assert
-        await waitFor(() => {
+        await wait(() => {
             expect(calledTimes).toEqual(1);
         });
     });
@@ -99,7 +99,7 @@ describe("anchor", () => {
         );
 
         // Assert
-        await waitFor(() => {
+        await wait(() => {
             expect(
                 container.querySelector(`[rel="noopener noreferrer"]`)
             ).not.toBeNull();

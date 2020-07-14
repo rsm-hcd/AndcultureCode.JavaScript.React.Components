@@ -1,30 +1,8 @@
 import { configure, addParameters, addDecorator } from "@storybook/react";
 import { setDefaults } from "@storybook/addon-info";
-import { withInfo } from "@storybook/addon-info";
 import { withKnobs } from "@storybook/addon-knobs";
+import { withInfo } from "@storybook/addon-info";
 import "./storybook.css";
-
-// -----------------------------------------------------------------------------------------
-// #region Constants
-// -----------------------------------------------------------------------------------------
-
-const req = require.context("../src", true, /\.stories\.tsx$/);
-
-// #endregion Constants
-
-// -----------------------------------------------------------------------------------------
-// #region Functions
-// -----------------------------------------------------------------------------------------
-
-function loadStories() {
-    req.keys().forEach(req);
-}
-
-// #endregion Functions
-
-// -----------------------------------------------------------------------------------------
-// #region Configuration
-// -----------------------------------------------------------------------------------------
 
 setDefaults({
     header: true,
@@ -41,6 +19,5 @@ addParameters({
 addDecorator(withInfo);
 addDecorator(withKnobs({ escapeHTML: false }));
 
-configure(loadStories, module);
-
-// #endregion Configuration
+// automatically import all files ending in *.stories.js
+configure(require.context("../src", true, /\.stories\.tsx$/), module);
