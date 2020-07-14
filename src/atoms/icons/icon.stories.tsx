@@ -4,28 +4,39 @@ import { Icons } from "../constants/icons";
 import React from "react";
 import { select } from "@storybook/addon-knobs";
 import { IconUtils } from "../../utilities/icon-utils";
-import { SvgIcon } from "../interfaces/svg-icon";
-import { BaseCheckmarkIcon } from "./defaults/base/base-checkmark-icon";
-import { LargeCheckmarkIcon } from "./defaults/large/large-checkmark-icon";
+import { SvgIcons } from "../constants/svg-icons";
 
 export default {
-    title: "Atoms | Icons / Icon",
     component: Icon,
+    title: "Atoms | Icons / Icon",
 };
 
 export const icon = () => {
-    const icon: SvgIcon = {
-        base: BaseCheckmarkIcon,
-        large: LargeCheckmarkIcon,
-        type: Icons.Checkmark,
-    };
-
-    IconUtils.registerSvgIcon(icon);
+    IconUtils.register(SvgIcons);
 
     return (
         <Icon
             type={select("type", Icons, Icons.Checkmark)}
             size={select("icon size", IconSizes, IconSizes.Large)}
         />
+    );
+};
+
+export const IconsAll = () => {
+    IconUtils.register(SvgIcons);
+
+    return (
+        <React.Fragment>
+            {SvgIcons.map((i) => (
+                <div>
+                    <h3>{i.type}</h3>
+                    <h4>Base</h4>
+                    <Icon type={i.type} size={IconSizes.Base} />
+                    <h4>Large</h4>
+                    <Icon type={i.type} size={IconSizes.Large} />
+                    <hr />
+                </div>
+            ))}
+        </React.Fragment>
     );
 };

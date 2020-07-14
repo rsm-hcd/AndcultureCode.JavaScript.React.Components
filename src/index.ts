@@ -6,11 +6,7 @@ export { Anchor } from "./atoms/anchors/anchor";
 export { Button } from "./atoms/buttons/button";
 
 // Icons
-export { BaseCheckmarkIcon } from "./atoms/icons/defaults/base/base-checkmark-icon";
-export { BaseCloseIcon } from "./atoms/icons/defaults/base/base-close-icon";
 export { Icon } from "./atoms/icons/icon";
-export { LargeCheckmarkIcon } from "./atoms/icons/defaults/large/large-checkmark-icon";
-export { LargeCloseIcon } from "./atoms/icons/defaults/large/large-close-icon";
 
 // #endregion Atoms
 

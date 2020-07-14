@@ -1,6 +1,7 @@
 import { SvgIcon } from "../atoms/interfaces/svg-icon";
 import { IconSizes } from "../atoms/constants/icon-sizes";
 import { Svg } from "../types/svg";
+import { CollectionUtils } from "andculturecode-javascript-core";
 
 // -----------------------------------------------------------------------------------------
 // #region Variables
@@ -37,8 +38,13 @@ const _getRegistry = () => Object.assign({}, _globalIcons);
  * Register custom project versions of icons, merging with any existing
  * @param icons
  */
-const _register = (icons: any) => {
-    _globalIcons = Object.assign({}, _globalIcons, icons);
+const _register = (icons: SvgIcon[]) => {
+    if (CollectionUtils.isEmpty(icons)) {
+        return _getRegistry();
+    }
+
+    icons.forEach((i) => _registerSvgIcon(i));
+
     return _getRegistry();
 };
 
@@ -61,11 +67,6 @@ const _registerSvgIcon = (icon: SvgIcon, throwIfDuplicate: boolean = false) => {
     return _getRegistry();
 };
 
-/**
- * Register all default icons provided from this components package
- */
-const _registerDefaults = () => {};
-
 // #endregion Functions
 
 // -----------------------------------------------------------------------------------------
@@ -78,7 +79,6 @@ const IconUtils = {
     getRegistry: _getRegistry,
     register: _register,
     registerSvgIcon: _registerSvgIcon,
-    registerDefaults: _registerDefaults,
 };
 
 export { IconUtils };
