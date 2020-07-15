@@ -84,6 +84,11 @@
         "dist"
     ],
     "jest": {
+        "collectCoverageFrom": [
+            "src/**/*.ts*",
+            "!src/**/*.stories.ts*",
+            "!src/tests/**/*"
+        ],
         "moduleNameMapper": {
             "react-spring": "<rootDir>/node_modules/react-spring/web.cjs",
             "react-spring/renderprops": "<rootDir>/node_modules/react-spring/renderprops.cjs"

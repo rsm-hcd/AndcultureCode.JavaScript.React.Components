@@ -25,6 +25,10 @@ import { ReactComponent as Share } from "../../assets/icons/16px/Share.svg";
 import { ReactComponent as Trashcan } from "../../assets/icons/16px/Trashcan.svg";
 import { ReactComponent as WarningLarge } from "../../assets/icons/24px/Warning.svg";
 
+// -----------------------------------------------------------------------------------------
+// #region Constants
+// -----------------------------------------------------------------------------------------
+
 const SvgIcons: SvgIcon[] = [
     { type: Icons.Checkmark, base: Checkmark, large: CheckmarkLarge },
     { type: Icons.ChevronDown, base: ChevronDown, large: ChevronDownLarge },
@@ -44,4 +48,20 @@ const SvgIcons: SvgIcon[] = [
     { type: Icons.Warning, base: WarningLarge, large: WarningLarge },
 ];
 
-export { SvgIcons };
+// #endregion Constants
+
+// -----------------------------------------------------------------------------------------
+// #region Functions
+// -----------------------------------------------------------------------------------------
+
+const getSvgIconByType = (type: Icons) => SvgIcons.find((i) => i.type === type);
+
+// #endregion Functions
+
+// -----------------------------------------------------------------------------------------
+// #region Exports
+// -----------------------------------------------------------------------------------------
+
+export { getSvgIconByType, SvgIcons };
+
+// #endregion Exports
