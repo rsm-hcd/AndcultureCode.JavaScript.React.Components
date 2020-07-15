@@ -14,9 +14,7 @@ describe("Button", () => {
         const { getByText } = render(<Button>{expected}</Button>);
 
         // Assert
-        await wait(() => {
-            expect(getByText(expected)).not.toBeNull();
-        });
+        expect(getByText(expected)).not.toBeNull();
     });
 
     it("when accessibleText provided, renders child accessible span", () => {

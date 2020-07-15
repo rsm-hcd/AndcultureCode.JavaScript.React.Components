@@ -24,11 +24,42 @@ describe("IconUtils", () => {
             IconUtils.clearRegistry();
 
             // Assert
-            expect(Object.keys(IconUtils.getRegistry)).toHaveLength(0);
+            expect(IconUtils.getRegistry()).toEqual({});
         });
     });
 
     // #endregion clearRegistry
+
+    // -----------------------------------------------------------------------------------------
+    // #region getRegistry
+    // -----------------------------------------------------------------------------------------
+
+    describe("getRegistry", () => {
+        test("given no icons registered, returns empty object", () => {
+            // Arrange & Act
+            const result = IconUtils.getRegistry();
+
+            // Assert
+            expect(result).toEqual({});
+        });
+
+        test("given icons registered, returns new instance of registry", () => {
+            // Arrange
+            const ChevronDown = getSvgIconByType(Icons.ChevronDown);
+            IconUtils.registerSvgIcon(ChevronDown);
+
+            // Act
+            const firstResult = IconUtils.getRegistry();
+            const secondResult = IconUtils.getRegistry();
+
+            // Assert
+            expect(firstResult[ChevronDown.type]).not.toBeUndefined();
+            expect(secondResult[ChevronDown.type]).not.toBeUndefined();
+            expect(firstResult).not.toBe(secondResult);
+        });
+    });
+
+    // #endregion getRegistry
 
     // -----------------------------------------------------------------------------------------
     // #region getSvg
@@ -112,37 +143,6 @@ describe("IconUtils", () => {
     });
 
     // #endregion getSvgIcon
-
-    // -----------------------------------------------------------------------------------------
-    // #region getRegistry
-    // -----------------------------------------------------------------------------------------
-
-    describe("getRegistry", () => {
-        test("given no icons registered, returns empty object", () => {
-            // Arrange & Act
-            const result = IconUtils.getRegistry();
-
-            // Assert
-            expect(Object.keys(result)).toHaveLength(0);
-        });
-
-        test("given icons registered, returns new instance of registry", () => {
-            // Arrange
-            const ChevronDown = getSvgIconByType(Icons.ChevronDown);
-            IconUtils.registerSvgIcon(ChevronDown);
-
-            // Act
-            const firstResult = IconUtils.getRegistry();
-            const secondResult = IconUtils.getRegistry();
-
-            // Assert
-            expect(firstResult[ChevronDown.type]).not.toBeUndefined();
-            expect(secondResult[ChevronDown.type]).not.toBeUndefined();
-            expect(firstResult).not.toBe(secondResult);
-        });
-    });
-
-    // #endregion getRegistry
 
     // -----------------------------------------------------------------------------------------
     // #region register
