@@ -19,6 +19,19 @@ describe("Button", () => {
         });
     });
 
+    it("when accessibleText provided, renders child accessible span", () => {
+        // Arrange
+        const expected = faker.random.word();
+
+        // Act
+        const { getByText } = render(
+            <Button accessibleText={expected}></Button>
+        );
+
+        // Assert
+        expect(getByText(expected)).not.toBeUndefined();
+    });
+
     it("when cssClassName provided, adds provided className to button", () => {
         // Arrange
         const expected = faker.random.word();
