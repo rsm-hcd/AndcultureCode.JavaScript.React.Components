@@ -1,12 +1,11 @@
 import React from "react";
-import { act, render, wait, fireEvent } from "@testing-library/react";
+import { render, wait } from "@testing-library/react";
 import { Button } from "./button";
 import faker from "faker";
-import { MemoryRouter } from "react-router-dom";
 import { ButtonSizes } from "../constants/button-sizes";
 import { ButtonStyles } from "../constants/button-styles";
 
-describe("button", () => {
+describe("Button", () => {
     it("when default props, renders button children", async () => {
         // Arrange
         const expected = faker.random.words();

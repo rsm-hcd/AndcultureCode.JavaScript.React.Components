@@ -4,7 +4,7 @@ import { Anchor } from "./anchor";
 import faker from "faker";
 import { MemoryRouter } from "react-router-dom";
 
-describe("anchor", () => {
+describe("Anchor", () => {
     it("when default props, renders link with correct url", async () => {
         // Arrange
         const expected = `/some/random/path/${faker.random.word()}`;
