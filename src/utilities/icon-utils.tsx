@@ -16,18 +16,23 @@ let _globalIcons: any = {};
 // -----------------------------------------------------------------------------------------
 
 /**
- * Retrieve an SVG Icon by type
- * @param type Type of SVG Icon
+ * Empties the global icon registry
  */
-const _getSvgIcon = (type: string): SvgIcon => _getRegistry()?.[type];
+const _clearRegistry = () => (_globalIcons = {});
 
 /**
  * Retrieve a specific SVG Icon size
  * @param type Type of SVG Icon
  * @param size Size being requested
  */
-const _getSvg = (type: string, size: IconSizes): Svg =>
+const _getSvg = (type: string, size: IconSizes = IconSizes.Base): Svg =>
     _getSvgIcon(type)?.[size] as Svg;
+
+/**
+ * Retrieve an SVG Icon by type
+ * @param type Type of SVG Icon
+ */
+const _getSvgIcon = (type: string): SvgIcon => _getRegistry()?.[type];
 
 /**
  * Retrieve a full (immutable) copy of the icon registry
@@ -54,6 +59,10 @@ const _register = (icons: SvgIcon[]) => {
  * @param throwIfDuplicate Throw an error if a duplicate for this icon type exists
  */
 const _registerSvgIcon = (icon: SvgIcon, throwIfDuplicate: boolean = false) => {
+    if (icon?.type == null) {
+        return {};
+    }
+
     const type = icon.type;
 
     if (throwIfDuplicate && _globalIcons.hasOwnProperty(type)) {
@@ -74,6 +83,7 @@ const _registerSvgIcon = (icon: SvgIcon, throwIfDuplicate: boolean = false) => {
 // -----------------------------------------------------------------------------------------
 
 const IconUtils = {
+    clearRegistry: _clearRegistry,
     getSvg: _getSvg,
     getSvgIcon: _getSvgIcon,
     getRegistry: _getRegistry,
