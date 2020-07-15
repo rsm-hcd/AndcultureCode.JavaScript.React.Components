@@ -2,6 +2,7 @@ import { ButtonSizes } from "../constants/button-sizes";
 import { ButtonStyles } from "../constants/button-styles";
 import { ButtonTypes } from "../constants/button-types";
 import React, { forwardRef } from "react";
+import { StringUtils } from "andculturecode-javascript-core";
 
 // -----------------------------------------------------------------------------------------
 // #region Interfaces
@@ -54,22 +55,18 @@ const Button: React.RefForwardingComponent<
         value,
     } = props;
 
-    const classNames = ["c-button"];
-
-    if (style === ButtonStyles.None) {
-        classNames[0] = "";
-    }
+    let classNames = style === ButtonStyles.None ? [] : ["c-button"];
 
     if (size != null) {
-        classNames.push(size);
+        classNames.push(`-${size}`);
     }
 
     if (style != null) {
-        classNames.push(style);
+        classNames.push(`-${style}`);
     }
 
-    if (cssClassName != null && cssClassName.length > 0) {
-        classNames.push(cssClassName);
+    if (StringUtils.hasValue(cssClassName)) {
+        classNames.push(cssClassName!);
     }
 
     return (
