@@ -19,6 +19,11 @@ export { TextArea } from "./atoms/forms/text-area";
 export { TextInput } from "./atoms/forms/text-input";
 export { TextInputIcon } from "./atoms/forms/text-input-icon";
 
+// Typography
+export { Heading } from "./atoms/typography/heading";
+export { HeadingIcon } from "./atoms/typography/heading-icon";
+export { Paragraph } from "./atoms/typography/paragraph";
+
 // #endregion Atoms
 
 // -----------------------------------------------------------------------------------------
