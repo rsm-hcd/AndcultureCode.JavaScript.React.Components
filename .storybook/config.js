@@ -3,6 +3,7 @@ import { setDefaults } from "@storybook/addon-info";
 import { withKnobs } from "@storybook/addon-knobs";
 import { withInfo } from "@storybook/addon-info";
 import "./storybook.css";
+import "assets/scss/app.scss";
 
 setDefaults({
     header: true,

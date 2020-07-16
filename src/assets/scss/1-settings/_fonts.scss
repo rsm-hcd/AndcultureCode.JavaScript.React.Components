@@ -1,0 +1,29 @@
+/*------------------------------------*\
+  SETTINGS - FONTS
+\*------------------------------------*/
+
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i&display=swap");
+
+$font-sizes: (
+    "base": 16px,
+    "large": 18px,
+    "small": 14px,
+    "xlarge": 24px,
+    "xsmall": 12px,
+);
+
+$line-heights: (
+    "base": 1.2em,
+    "large": 1.5em,
+    "small": 1.5em,
+    "xlarge": 1.4em,
+    "xsmall": 1.5em,
+);
+
+$font-weights: (
+    "base": 400,
+    "bold": 700,
+);
+
+$font-primary: "Roboto", serif !default;
+$font-icon: "icomoon" !default;
