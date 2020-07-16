@@ -18,8 +18,10 @@ export { Icon } from "./atoms/icons/icon";
 export { ButtonSizes } from "./atoms/constants/button-sizes";
 export { ButtonStyles } from "./atoms/constants/button-styles";
 export { ButtonTypes } from "./atoms/constants/button-types";
+export { HeadingPriority } from "./atoms/constants/heading-priority";
 export { IconSizes } from "./atoms/constants/icon-sizes";
 export { Icons } from "./atoms/constants/icons";
+export { InputTypes } from "./atoms/constants/input-types";
 export { SvgIcons } from "./atoms/constants/svg-icons";
 
 // #endregion Constants
