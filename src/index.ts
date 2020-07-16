@@ -6,6 +6,7 @@ export { Anchor } from "./atoms/anchors/anchor";
 export { AnchorWithIcon } from "./atoms/anchors/anchor-with-icon";
 export { Button } from "./atoms/buttons/button";
 export { CheckboxButton } from "./atoms/forms/checkbox-button";
+export { CheckboxInput } from "./atoms/forms/checkbox-input";
 
 // Icons
 export { Icon } from "./atoms/icons/icon";
