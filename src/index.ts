@@ -10,6 +10,7 @@ export { Button } from "./atoms/buttons/button";
 export { CheckboxButton } from "./atoms/forms/checkbox-button";
 export { CheckboxInput } from "./atoms/forms/checkbox-input";
 export { PasswordInput } from "./atoms/forms/password-input";
+export { SubmitButton } from "./atoms/forms/submit-button";
 
 // Icons
 export { Icon } from "./atoms/icons/icon";
