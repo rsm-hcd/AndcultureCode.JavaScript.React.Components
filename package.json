@@ -114,8 +114,8 @@
     },
     "scripts": {
         "build": "npm run build-typescript",
-        "build-typescript": "tsc --pretty --project tsconfig.dist.json",
         "build-storybook": "build-storybook -o storybook",
+        "build-typescript": "tsc --pretty --project tsconfig.dist.json",
         "clean": "rimraf dist && rimraf coverage",
         "coverage": "react-scripts test --coverage --watchAll=false",
         "deploy-storybook": "storybook-to-ghpages",

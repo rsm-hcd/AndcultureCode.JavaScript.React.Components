@@ -3,7 +3,7 @@ import { setDefaults } from "@storybook/addon-info";
 import { withKnobs } from "@storybook/addon-knobs";
 import { withInfo } from "@storybook/addon-info";
 import "./storybook.css";
-import "assets/scss/app.scss";
+import "assets/scss/andculturecode-javascript-react-components.scss";
 
 setDefaults({
     header: true,
