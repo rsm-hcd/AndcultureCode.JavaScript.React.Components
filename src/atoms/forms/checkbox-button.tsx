@@ -8,8 +8,8 @@ import { Icons } from "../constants/icons";
 // -----------------------------------------------------------------------------------------
 
 export interface CheckboxButtonProperties {
-    cssClassName?: string;
     checked: boolean;
+    cssClassName?: string;
     disabled?: boolean;
     /**
      * id applied to the HTML element

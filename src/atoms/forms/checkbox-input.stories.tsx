@@ -3,8 +3,8 @@ import React from "react";
 import { boolean, text } from "@storybook/addon-knobs";
 
 export default {
-    title: "Atoms | Forms / Checkbox Input",
     component: CheckboxInput,
+    title: "Atoms | Forms / Checkbox Input",
 };
 
 export const checkboxInputKnobs = () => (

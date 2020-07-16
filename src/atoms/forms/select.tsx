@@ -10,8 +10,8 @@ import { Icon } from "../icons/icon";
 export interface SelectProps<T = any> {
     cssClassName?: string;
     id: string;
-    onChange: (selectedOption?: SelectOption<T>) => void;
     name?: string;
+    onChange: (selectedOption?: SelectOption<T>) => void;
     options: SelectOption<T>[];
     value?: string;
 }

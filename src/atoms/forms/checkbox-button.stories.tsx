@@ -3,8 +3,8 @@ import { boolean, text } from "@storybook/addon-knobs";
 import { CheckboxButton } from "./checkbox-button";
 
 export default {
-    title: "Atoms | Forms / Checkbox Button",
     component: CheckboxButton,
+    title: "Atoms | Forms / Checkbox Button",
 };
 
 export const checkboxButtonKnobs = () => (

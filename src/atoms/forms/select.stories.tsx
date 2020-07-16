@@ -10,7 +10,6 @@ export default {
 
 export const selectKnobs = () => (
     <Select
-        // disabled={boolean("Disabled", false)}
         id={Faker.random.uuid()}
         onChange={() => {}}
         options={[
