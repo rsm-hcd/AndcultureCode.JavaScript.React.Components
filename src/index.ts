@@ -3,6 +3,7 @@
 // -----------------------------------------------------------------------------------------
 
 export { Anchor } from "./atoms/anchors/anchor";
+export { AnchorWithIcon } from "./atoms/anchors/anchor-with-icon";
 export { Button } from "./atoms/buttons/button";
 
 // Icons
