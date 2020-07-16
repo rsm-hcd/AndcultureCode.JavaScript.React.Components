@@ -29,7 +29,7 @@ export const buttonIcon = () => (
         style={select("style", ButtonStyles, ButtonStyles.Primary)}
         accessibleText={text("Accessible Text", "Text for screen reader")}>
         <Icon
-            type={select("type", Icons, Icons.Close)}
+            type={select("type", Icons, Icons.Checkmark)}
             size={select("icon size", IconSizes, IconSizes.Large)}
         />
     </Button>
