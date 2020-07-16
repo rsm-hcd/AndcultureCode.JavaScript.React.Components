@@ -5,19 +5,19 @@
 export { Anchor } from "./atoms/anchors/anchor";
 export { AnchorWithIcon } from "./atoms/anchors/anchor-with-icon";
 export { Button } from "./atoms/buttons/button";
+export { Icon } from "./atoms/icons/icon";
+export { ProgressBar } from "./atoms/progress-bar/progress-bar";
 
 // Forms
 export { CheckboxButton } from "./atoms/forms/checkbox-button";
 export { CheckboxInput } from "./atoms/forms/checkbox-input";
+export { InputCharacterCount } from "./atoms/forms/input-character-count";
 export { PasswordInput } from "./atoms/forms/password-input";
 export { Select } from "./atoms/forms/select";
 export { SubmitButton } from "./atoms/forms/submit-button";
 export { TextArea } from "./atoms/forms/text-area";
 export { TextInput } from "./atoms/forms/text-input";
 export { TextInputIcon } from "./atoms/forms/text-input-icon";
-
-// Icons
-export { Icon } from "./atoms/icons/icon";
 
 // #endregion Atoms
 
