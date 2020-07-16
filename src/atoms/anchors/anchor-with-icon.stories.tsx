@@ -7,8 +7,7 @@ import { select, text } from "@storybook/addon-knobs";
 import { ButtonSizes } from "../constants/button-sizes";
 import { ButtonStyles } from "../constants/button-styles";
 import { Icons } from "../constants/icons";
-import { IconUtils } from "../../utilities/icon-utils";
-import { SvgIcons } from "../constants/svg-icons";
+import { MemoryRouter } from "react-router-dom";
 
 addDecorator(StoryRouter());
 
@@ -17,10 +16,8 @@ export default {
     title: "Atoms | Anchors / AnchorWithIcon",
 };
 
-export const anchorIconWithChevronDownIcon = () => {
-    IconUtils.register(SvgIcons);
-
-    return (
+export const anchorIconWithChevronDownIcon = () => (
+    <MemoryRouter>
         <AnchorWithIcon
             accessibleText="Text for screen reader"
             size={ButtonSizes.Medium}
@@ -29,13 +26,11 @@ export const anchorIconWithChevronDownIcon = () => {
             to="/test">
             {Faker.lorem.words(5)}
         </AnchorWithIcon>
-    );
-};
+    </MemoryRouter>
+);
 
-export const anchorIconKnobs = () => {
-    IconUtils.register(SvgIcons);
-
-    return (
+export const anchorIconKnobs = () => (
+    <MemoryRouter>
         <AnchorWithIcon
             accessibleText={text("accessibleText", "Text for screen reader")}
             size={select("size", ButtonSizes, ButtonSizes.Medium)}
@@ -44,5 +39,5 @@ export const anchorIconKnobs = () => {
             to="/test">
             {text("text", "Anchor text")}
         </AnchorWithIcon>
-    );
-};
+    </MemoryRouter>
+);
