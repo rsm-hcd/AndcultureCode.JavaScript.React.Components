@@ -9,6 +9,7 @@ before_script:
 script:
 - npm run clean
 - npm run build-typescript
+- npm run build-storybook
 - npm run coverage
 - codecov --disable=gcov
 notifications:
