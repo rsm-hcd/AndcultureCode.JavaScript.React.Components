@@ -1,7 +1,8 @@
 import React from "react";
-import { Paragraph, ParagraphSizes } from "./paragraph";
+import { Paragraph } from "./paragraph";
 import Faker from "faker";
 import { select } from "@storybook/addon-knobs";
+import { ParagraphSizes } from "../constants/paragraph-sizes";
 
 export default {
     component: Paragraph,

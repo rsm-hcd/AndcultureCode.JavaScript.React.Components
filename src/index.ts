@@ -1,3 +1,4 @@
+import { ParagraphSizes } from "atoms/constants/paragraph-sizes";
 // -----------------------------------------------------------------------------------------
 // #region Atoms
 // -----------------------------------------------------------------------------------------
@@ -37,6 +38,7 @@ export { HeadingPriority } from "./atoms/constants/heading-priority";
 export { IconSizes } from "./atoms/constants/icon-sizes";
 export { Icons } from "./atoms/constants/icons";
 export { InputTypes } from "./atoms/constants/input-types";
+export { ParagraphSizes } from "./atoms/constants/paragraph-sizes";
 export { SvgIcons } from "./atoms/constants/svg-icons";
 
 // #endregion Constants

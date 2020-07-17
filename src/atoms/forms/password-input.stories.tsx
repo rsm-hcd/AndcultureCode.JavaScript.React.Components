@@ -11,11 +11,11 @@ export default {
 export const passwordInputKnobs = () => (
     <PasswordInput
         disabled={boolean("Disabled", false)}
-        onChange={() => {}}
         id={Faker.random.uuid()}
+        isValid={boolean("Is Valid", true)}
         isVisible={boolean("Is Visible", false)}
+        onChange={() => {}}
         placeholder={text("Placeholder", "Please enter password.")}
         value={text("Value", "Password")}
-        isValid={boolean("Is Valid", true)}
     />
 );

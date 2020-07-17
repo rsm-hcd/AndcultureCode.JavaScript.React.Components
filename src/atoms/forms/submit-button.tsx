@@ -29,7 +29,7 @@ const SubmitButton: React.FC<SubmitButtonProps> = (
             className={props.cssClassName || "c-button"}
             form={props.formId}
             type="submit"
-            value={props.buttonText || "Submit"}
+            value={props.buttonText ?? "Submit"}
         />
     );
 };
