@@ -55,6 +55,15 @@ export * from "./atoms/interfaces/svg-icon";
 // #endregion Interfaces
 
 // -----------------------------------------------------------------------------------------
+// #region Molecules
+// -----------------------------------------------------------------------------------------
+
+export { AccessibleList } from "./molecules/accessible-list/accessible-list";
+export { Card } from "./molecules/cards/card";
+
+// #endregion Molecules
+
+// -----------------------------------------------------------------------------------------
 // #region Types
 // -----------------------------------------------------------------------------------------
 
