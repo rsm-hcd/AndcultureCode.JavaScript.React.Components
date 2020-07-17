@@ -68,6 +68,8 @@ export { ErrorBanner } from "./molecules/errors/error-banner";
 export { CheckboxFormField } from "./molecules/form-fields/checkbox-form-field";
 export { InputFormField } from "./molecules/form-fields/input-form-field";
 export { PasswordFormField } from "./molecules/form-fields/password-form-field";
+export { SelectFormField } from "./molecules/form-fields/select-form-field";
+export { TextAreaFormField } from "./molecules/form-fields/text-area-form-field";
 
 // #endregion Molecules
 
