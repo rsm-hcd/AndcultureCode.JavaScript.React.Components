@@ -1,4 +1,3 @@
-import { ParagraphSizes } from "atoms/constants/paragraph-sizes";
 // -----------------------------------------------------------------------------------------
 // #region Atoms
 // -----------------------------------------------------------------------------------------
@@ -7,6 +6,7 @@ export { Anchor } from "./atoms/anchors/anchor";
 export { AnchorWithIcon } from "./atoms/anchors/anchor-with-icon";
 export { Button } from "./atoms/buttons/button";
 export { Icon } from "./atoms/icons/icon";
+export { Image } from "./atoms/images/image";
 export { ProgressBar } from "./atoms/progress-bar/progress-bar";
 
 // Forms
