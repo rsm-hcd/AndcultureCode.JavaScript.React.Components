@@ -60,6 +60,8 @@ export * from "./atoms/interfaces/svg-icon";
 
 export { AccessibleList } from "./molecules/accessible-list/accessible-list";
 export { Card } from "./molecules/cards/card";
+export { DropdownButton } from "./molecules/dropdown-button/dropdown-button";
+export { ErrorBanner } from "./molecules/errors/error-banner";
 
 // #endregion Molecules
 
