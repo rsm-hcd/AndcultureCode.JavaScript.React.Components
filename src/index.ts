@@ -63,6 +63,10 @@ export { Card } from "./molecules/cards/card";
 export { DropdownButton } from "./molecules/dropdown-button/dropdown-button";
 export { ErrorBanner } from "./molecules/errors/error-banner";
 
+// Form Fields
+
+export { CheckboxFormField } from "./molecules/form-fields/checkbox-form-field";
+
 // #endregion Molecules
 
 // -----------------------------------------------------------------------------------------
