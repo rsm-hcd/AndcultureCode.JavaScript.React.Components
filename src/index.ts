@@ -38,6 +38,7 @@ export { HeadingPriority } from "./atoms/constants/heading-priority";
 export { IconSizes } from "./atoms/constants/icon-sizes";
 export { Icons } from "./atoms/constants/icons";
 export { InputTypes } from "./atoms/constants/input-types";
+export { KeyboardKeys } from "./constants/keyboard-keys";
 export { ParagraphSizes } from "./atoms/constants/paragraph-sizes";
 export { SvgIcons } from "./atoms/constants/svg-icons";
 
