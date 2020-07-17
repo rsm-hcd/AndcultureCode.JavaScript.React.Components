@@ -1,4 +1,4 @@
-import React from "react";
+import React, { PropsWithChildren } from "react";
 import { HeadingPriority } from "../constants/heading-priority";
 
 // -----------------------------------------------------------------------------------------
@@ -6,7 +6,6 @@ import { HeadingPriority } from "../constants/heading-priority";
 // -----------------------------------------------------------------------------------------
 
 export interface HeadingProps {
-    children?: any;
     cssClassName?: string;
     id?: string;
     priority?: HeadingPriority;
@@ -18,7 +17,9 @@ export interface HeadingProps {
 // #region Component
 // -----------------------------------------------------------------------------------------
 
-const Heading: React.FC<HeadingProps> = (props: HeadingProps) => {
+const Heading: React.FC<HeadingProps> = (
+    props: PropsWithChildren<HeadingProps>
+) => {
     let cssClassNames: Array<any> = [];
 
     if (props.cssClassName) {
@@ -30,7 +31,7 @@ const Heading: React.FC<HeadingProps> = (props: HeadingProps) => {
     };
 
     return React.createElement(
-        `h${props.priority || HeadingPriority.Two}`,
+        `h${props.priority ?? HeadingPriority.Two}`,
         componentProps,
         props.children
     );

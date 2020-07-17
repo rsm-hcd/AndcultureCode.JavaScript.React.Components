@@ -24,7 +24,7 @@ const TextInputIcon: React.FC<TextInputIconProps> = (
 ) => {
     return (
         <div className="c-text-input-icon">
-            <Icon type={props.icon} size={props.iconSize || IconSizes.Large} />
+            <Icon type={props.icon} size={props.iconSize ?? IconSizes.Large} />
             <TextInput {...props} />
         </div>
     );

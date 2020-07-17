@@ -12,7 +12,7 @@ export default {
 };
 
 export const headingIconDefault = () => (
-    <HeadingIcon type={Icons.Plus} priority={2} iconSize={IconSizes.Base}>
+    <HeadingIcon iconSize={IconSizes.Base} priority={2} type={Icons.Plus}>
         Voluptas Expedita Magnam
     </HeadingIcon>
 );
@@ -22,7 +22,7 @@ export const headingIconKnobs = () => {
 
     return (
         <HeadingIcon
-            type={select("type", Icons, Icons.Plus)}
+            iconSize={select("icon size", IconSizes, IconSizes.Large)}
             priority={
                 select(
                     "priority",
@@ -30,7 +30,7 @@ export const headingIconKnobs = () => {
                     HeadingPriority.One
                 ) as HeadingPriority
             }
-            iconSize={select("icon size", IconSizes, IconSizes.Large)}>
+            type={select("type", Icons, Icons.Plus)}>
             Voluptas Expedita Magnam
         </HeadingIcon>
     );

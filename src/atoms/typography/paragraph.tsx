@@ -1,18 +1,6 @@
 import React, { forwardRef } from "react";
-
-// -------------------------------------------------------------------------------------------------
-// #region Enums
-// -------------------------------------------------------------------------------------------------
-
-export enum ParagraphSizes {
-    XLarge = "-xlarge",
-    Large = "-large",
-    Base = "-base",
-    Small = "-small",
-    XSmall = "-xsmall",
-}
-
-// #endregion Enums
+import { ParagraphSizes } from "../constants/paragraph-sizes";
+import { StringUtils } from "andculturecode-javascript-core";
 
 // -------------------------------------------------------------------------------------------------
 // #region Interfaces
@@ -40,12 +28,12 @@ const Paragraph: React.RefForwardingComponent<
     (props: ParagraphProps, ref: React.Ref<HTMLParagraphElement>) => {
         let cssClassNames: Array<any> = [];
 
-        if (props.cssClassName) {
-            cssClassNames.push(props.cssClassName);
+        if (StringUtils.hasValue(props.cssClassName)) {
+            cssClassNames.push(props.cssClassName!);
         }
 
-        if (props.size) {
-            cssClassNames.push(props.size);
+        if (props.size != null) {
+            cssClassNames.push(`-${props.size}`);
         }
 
         return (

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { PropsWithChildren } from "react";
 import { HeadingPriority } from "../constants/heading-priority";
 import { Heading } from "./heading";
 import { Icons } from "../constants/icons";
@@ -10,7 +10,6 @@ import { Icon } from "../icons/icon";
 // -------------------------------------------------------------------------------------------------
 
 export interface HeadingIconProps {
-    children?: any;
     iconSize?: IconSizes;
     priority?: HeadingPriority;
     type: keyof typeof Icons;
@@ -22,10 +21,12 @@ export interface HeadingIconProps {
 // #region Component
 // -------------------------------------------------------------------------------------------------
 
-const HeadingIcon: React.FC<HeadingIconProps> = (props: HeadingIconProps) => {
+const HeadingIcon: React.FC<HeadingIconProps> = (
+    props: PropsWithChildren<HeadingIconProps>
+) => {
     return (
         <div className="c-heading-icon">
-            <Icon type={props.type} size={props.iconSize} />
+            <Icon size={props.iconSize} type={props.type} />
             <Heading priority={props.priority}>{props.children}</Heading>
         </div>
     );

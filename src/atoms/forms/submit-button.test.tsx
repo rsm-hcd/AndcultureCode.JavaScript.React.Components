@@ -5,7 +5,7 @@ import faker from "faker";
 import { ButtonStyles } from "../constants/button-styles";
 
 describe("SubmitButton", () => {
-    test("when default props, renders default buttonText", async () => {
+    test("when default props, renders default buttonText", () => {
         // Arrange
         const expected = "Submit";
 
@@ -15,7 +15,8 @@ describe("SubmitButton", () => {
         // Assert
         expect(getByText(expected)).not.toBeNull();
     });
-    test("when buttonText provided, renders supplied buttonText", async () => {
+
+    test("when buttonText provided, renders supplied buttonText", () => {
         // Arrange
         const expected = faker.random.words();
 
@@ -26,7 +27,7 @@ describe("SubmitButton", () => {
         expect(getByText(expected)).not.toBeNull();
     });
 
-    test("when cssClassName provided, renders with className set", async () => {
+    test("when cssClassName provided, renders with className set", () => {
         // Arrange
         const expected = ButtonStyles.Anchor;
 
