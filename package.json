@@ -83,7 +83,8 @@
         "extends": "react-app"
     },
     "files": [
-        "dist"
+        "dist",
+        "src"
     ],
     "jest": {
         "collectCoverageFrom": [
@@ -132,5 +133,5 @@
         "test:debug": "react-scripts --inspect-brk test --runInBand --no-cache"
     },
     "types": "dist/index",
-    "version": "0.1.0"
+    "version": "0.1.1"
 }
