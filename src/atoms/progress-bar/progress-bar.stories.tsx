@@ -9,11 +9,6 @@ export default {
 
 export const progressBarKnobs = () => (
     <ProgressBar
-        value={number("Progress Percent", 50, {
-            step: 1,
-            min: 0,
-            max: 100,
-        })}
         isErrored={boolean("Is Errored", false)}
         style={optionsKnob(
             "Style",
@@ -24,5 +19,10 @@ export const progressBarKnobs = () => (
             ProgressBarStyles.Thick,
             { display: "radio" }
         )}
+        value={number("Progress Percent", 50, {
+            step: 1,
+            min: 0,
+            max: 100,
+        })}
     />
 );

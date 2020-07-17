@@ -1,14 +1,14 @@
 .c-select {
+    @include icon-fill(get-color-neutral("30"));
     position: relative;
     display: inline-block;
-    @include icon-fill(get-color-neutral("30"));
 
     &:hover {
+        @include icon-fill(get-color-neutral("50"));
+
         select {
             border: 1px solid get-color-neutral("50");
         }
-
-        @include icon-fill(get-color-neutral("50"));
     }
 
     select {

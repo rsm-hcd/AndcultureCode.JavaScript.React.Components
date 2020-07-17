@@ -14,23 +14,23 @@ export default {
 
 export const buttonDefault = () => (
     <Button
+        accessibleText={text("Accessible Text", "Text for screen reader")}
         onClick={() => {}}
         size={select("size", ButtonSizes, ButtonSizes.Medium)}
-        style={select("style", ButtonStyles, ButtonStyles.Primary)}
-        accessibleText={text("Accessible Text", "Text for screen reader")}>
+        style={select("style", ButtonStyles, ButtonStyles.Primary)}>
         {text("Button Text", "Click Here!")}
     </Button>
 );
 
 export const buttonIcon = () => (
     <Button
+        accessibleText={text("Accessible Text", "Text for screen reader")}
         onClick={() => {}}
         size={select("size", ButtonSizes, ButtonSizes.Medium)}
-        style={select("style", ButtonStyles, ButtonStyles.Primary)}
-        accessibleText={text("Accessible Text", "Text for screen reader")}>
+        style={select("style", ButtonStyles, ButtonStyles.Primary)}>
         <Icon
-            type={select("type", Icons, Icons.Checkmark)}
             size={select("icon size", IconSizes, IconSizes.Large)}
+            type={select("type", Icons, Icons.Checkmark)}
         />
     </Button>
 );

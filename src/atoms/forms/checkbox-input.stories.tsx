@@ -10,8 +10,8 @@ export default {
 export const checkboxInputKnobs = () => (
     <CheckboxInput
         checked={boolean("Checked", false)}
-        label={text("Label", "Remember Me")}
         disabled={boolean("Disabled", false)}
+        label={text("Label", "Remember Me")}
         onChange={() => {}}
     />
 );
