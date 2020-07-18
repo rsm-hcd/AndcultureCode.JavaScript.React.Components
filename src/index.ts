@@ -62,6 +62,7 @@ export { AccessibleList } from "./molecules/accessible-list/accessible-list";
 export { Card } from "./molecules/cards/card";
 export { DropdownButton } from "./molecules/dropdown-button/dropdown-button";
 export { ErrorBanner } from "./molecules/errors/error-banner";
+export { Form } from "./molecules/forms/form";
 
 // Form Fields
 
