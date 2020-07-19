@@ -3,10 +3,10 @@
     box-shadow: 0px 3px 10px rgba(0, 26, 57, 0.2);
 
     &__content {
+        @include padding(16px);
         background-color: #425163;
         height: 147px;
         border-radius: 5px 5px 0 0;
-        @include padding(16px);
         position: relative;
 
         p {

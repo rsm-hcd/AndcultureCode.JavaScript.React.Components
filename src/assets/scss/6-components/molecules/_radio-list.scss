@@ -44,17 +44,8 @@
                     border-radius: $border-radius-large;
                     border: 1px solid get-color-neutral("30");
 
-                    // Styles for native implmentation of :focus-within.
-                    &:focus-within {
-                        @include c-radio-focus-hover;
-                    }
-
-                    // Styles for polyfill implementation to support IE. When grouping selectors
-                    // together, IE doesn't display desired styles.
-                    &.focus-within {
-                        @include c-radio-focus-hover;
-                    }
-
+                    &:focus-within, // Styles for native implmentation of :focus-within.
+                    &.focus-within, // Styles for polyfill implementation to support IE. When grouping selectors together, IE doesn't display desired styles.
                     &:hover {
                         @include c-radio-focus-hover;
                     }

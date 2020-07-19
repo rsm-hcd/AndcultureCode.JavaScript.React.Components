@@ -5,6 +5,15 @@ import { ButtonSizes } from "../../atoms/constants/button-sizes";
 import { ButtonStyles } from "../../atoms/constants/button-styles";
 
 // -------------------------------------------------------------------------------------------------
+// #region Constants
+// -------------------------------------------------------------------------------------------------
+
+const COMPONENT_CLASS = "c-dropdown-button";
+const COMPONENT_LIST_CLASS = `${COMPONENT_CLASS}__list`;
+
+// #endregion Constants
+
+// -------------------------------------------------------------------------------------------------
 // #region Interfaces
 // -------------------------------------------------------------------------------------------------
 
@@ -32,7 +41,7 @@ const DropdownButton: React.FC<DropdownButtonProps> = (
 ) => {
     const { buttonClassName, menuItems, buttonContents, size, style } = props;
 
-    const classNames = ["c-button", "c-dropdown-button"];
+    const classNames = ["c-button", COMPONENT_CLASS];
 
     if (buttonClassName != null) {
         classNames.push(buttonClassName);
@@ -51,12 +60,12 @@ const DropdownButton: React.FC<DropdownButtonProps> = (
             <MenuButton className={classNames.join(" ")}>
                 {buttonContents}
             </MenuButton>
-            <MenuList className="c-dropdown-button__list">
+            <MenuList className={COMPONENT_LIST_CLASS}>
                 {menuItems.map((item: DropdownItem) => (
                     <MenuItem
                         key={uuid.v4()}
                         onSelect={item.onSelect}
-                        className={"c-dropdown-button__list__item"}>
+                        className={`${COMPONENT_LIST_CLASS}__item`}>
                         {item.component}
                     </MenuItem>
                 ))}
