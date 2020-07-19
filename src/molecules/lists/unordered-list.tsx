@@ -34,9 +34,9 @@ const UnorderedList: React.FC<UnorderedListProps> = (
 
     return (
         <ul className={cssClassNames.join(" ")} id={props.id}>
-            {props.listItems?.map((listItem, index) => {
-                return <li key={index}>{listItem}</li>;
-            })}
+            {props.listItems?.map((listItem, index) => (
+                <li key={index}>{listItem}</li>
+            ))}
         </ul>
     );
 };

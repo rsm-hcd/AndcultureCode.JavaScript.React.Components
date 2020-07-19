@@ -66,12 +66,15 @@ const Tooltip: React.FC<TooltipProps> = (props: TooltipProps) => {
         return props.children;
     }
 
+    const followCursorType =
+        props.showOnCursor === false ? undefined : "initial";
+
     return (
         <Tippy
             className={classNames.join(" ")}
             content={getContent()}
             delay={props.delay ?? 500}
-            followCursor={props.showOnCursor === false ? undefined : "initial"}
+            followCursor={followCursorType}
             hideOnClick={false}
             plugins={[followCursor]}
             visible={props.visible}>
