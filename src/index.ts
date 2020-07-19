@@ -65,6 +65,7 @@ export { DropdownButton } from "./molecules/dropdown-button/dropdown-button";
 export { ErrorBanner } from "./molecules/errors/error-banner";
 export { Form } from "./molecules/forms/form";
 export { RadioList } from "./molecules/lists/radio-list";
+export { Tooltip } from "./molecules/tooltips/tooltip";
 export { UnorderedList } from "./molecules/lists/unordered-list";
 
 // Form Fields
