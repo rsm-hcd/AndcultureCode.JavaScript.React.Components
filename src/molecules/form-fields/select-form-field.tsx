@@ -1,6 +1,15 @@
 import React from "react";
 import uuid from "uuid";
 import { Select, SelectOption } from "../../atoms/forms/select";
+import { StringUtils, CollectionUtils } from "andculturecode-javascript-core";
+
+// -----------------------------------------------------------------------------------------
+// #region Component
+// -----------------------------------------------------------------------------------------
+
+const COMPONENT_CLASS = "c-form-field";
+
+// #endregion Component
 
 // -----------------------------------------------------------------------------------------
 // #region Interfaces
@@ -40,23 +49,25 @@ const SelectFormField: React.FC<SelectFormFieldProps> = (
         values,
     } = props;
 
+    const cssIsValid = isValid ? "" : "-invalid";
     const fieldId = props.fieldId ?? uuid.v4();
+    const hasErrorMessage = StringUtils.hasValue(errorMessage);
+    const hasErrors = CollectionUtils.hasValues(errorMessages);
 
     return (
-        <div className={`c-form-field ${isValid ? "" : "-invalid"}`}>
+        <div className={`${COMPONENT_CLASS} ${cssIsValid}`}>
             <label htmlFor={fieldId}>
                 {label}
-                {required ? "*" : ""}
+                {// if
+                required && "*"}
             </label>
             <Select options={values} id={id} onChange={onChange} name={name} />
-            <div className="c-form-field__errors">
+            <div className={`${COMPONENT_CLASS}__errors`}>
                 {// if
-                errorMessage != null && errorMessage.length > 0 && (
-                    <label>{errorMessage}</label>
-                )}
+                hasErrorMessage && <label>{errorMessage}</label>}
                 {// if
-                errorMessages != null &&
-                    errorMessages.map((s: string) => (
+                hasErrors &&
+                    errorMessages?.map((s: string) => (
                         <label key={s}>{s}</label>
                     ))}
             </div>
