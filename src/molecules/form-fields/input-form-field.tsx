@@ -64,10 +64,11 @@ const InputFormField: React.RefForwardingComponent<
         value,
     } = props;
 
+    const cssIsValid = isValid ? "" : "-invalid";
     const fieldId = props.fieldId ?? uuid.v4();
 
     return (
-        <div className={`${COMPONENT_CLASS} ${isValid ? "" : "-invalid"}`}>
+        <div className={`${COMPONENT_CLASS} ${cssIsValid}`}>
             <label htmlFor={fieldId}>
                 {showLabelForScreenReadersOnly ? (
                     <span className="sr-only">{label}</span>

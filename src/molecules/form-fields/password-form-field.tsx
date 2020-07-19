@@ -4,6 +4,14 @@ import { InputProperties } from "../../atoms/interfaces/input-properties";
 import { PasswordInput } from "../../atoms/forms/password-input";
 
 // -----------------------------------------------------------------------------------------
+// #region Constants
+// -----------------------------------------------------------------------------------------
+
+const COMPONENT_CLASS = "c-form-field";
+
+// #endregion Constants
+
+// -----------------------------------------------------------------------------------------
 // #region Interfaces
 // -----------------------------------------------------------------------------------------
 
@@ -40,9 +48,10 @@ const PasswordFormField: React.FC<PasswordFormFields> = (
         value,
     } = props;
 
-    const fieldId = uuid.v4();
     const [isVisible, setIsVisible] = useState<boolean>(false);
+    const cssIsValid = isValid ? "" : "-invalid";
     const disableShowHide = value == null || value === "" || disabled;
+    const fieldId = uuid.v4();
     const passwordShowHideLabel = isVisible ? "Hide" : "Show";
 
     const onChangeIsVisible = (
@@ -58,11 +67,13 @@ const PasswordFormField: React.FC<PasswordFormFields> = (
     }
 
     return (
-        <div className={`c-form-field -password ${isValid ? "" : "-invalid"}`}>
+        <div className={`${COMPONENT_CLASS} -password ${cssIsValid}`}>
             <label htmlFor={fieldId}>
                 {label}
                 {required && (
-                    <span className="c-form-field__required">{" *"}</span>
+                    <span className={`${COMPONENT_CLASS}__required`}>
+                        {" *"}
+                    </span>
                 )}
             </label>
             {// if
@@ -84,8 +95,8 @@ const PasswordFormField: React.FC<PasswordFormFields> = (
                 testId={inputTestId}
                 value={value}
             />
-            <div className="c-form-field__bottom">
-                <div className="c-form-field__bottom__errors">
+            <div className={`${COMPONENT_CLASS}__bottom`}>
+                <div className={`${COMPONENT_CLASS}__bottom__errors`}>
                     <label>{errorMessage}</label>
                 </div>
             </div>
