@@ -3,7 +3,7 @@ import { forwardRef } from "react";
 
 const COMPONENT_CLASS = "c-radio";
 
-interface RadioButtonProps {
+export interface RadioButtonProps {
     autofocus?: boolean;
     checked: boolean;
     children?: React.ReactNode;
