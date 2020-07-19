@@ -69,8 +69,7 @@ const TextAreaFormField: React.FC<TextAreaFormFieldProps> = (
         <div className={`${COMPONENT_CLASS} ${cssIsValid}`}>
             <label htmlFor={fieldId}>
                 {label}
-                {// if
-                required ?? "*"}
+                {required ? "*" : ""}
             </label>
             <TextArea
                 disabled={disabled}

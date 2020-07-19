@@ -58,8 +58,7 @@ const SelectFormField: React.FC<SelectFormFieldProps> = (
         <div className={`${COMPONENT_CLASS} ${cssIsValid}`}>
             <label htmlFor={fieldId}>
                 {label}
-                {// if
-                required && "*"}
+                {required ? "*" : ""}
             </label>
             <Select options={values} id={id} onChange={onChange} name={name} />
             <div className={`${COMPONENT_CLASS}__errors`}>
