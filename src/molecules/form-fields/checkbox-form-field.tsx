@@ -1,11 +1,15 @@
-import { InputTypes } from "../constants/input-types";
+import {
+    CheckboxInput,
+    CheckboxInputProperties,
+} from "../../atoms/forms/checkbox-input";
 import React from "react";
+import { StringUtils } from "andculturecode-javascript-core";
 
 // -----------------------------------------------------------------------------------------
 // #region Constants
 // -----------------------------------------------------------------------------------------
 
-const ELEMENT_CLASS = "e-checkbox";
+const COMPONENT_CLASS = "c-form-field";
 
 // #endregion Constants
 
@@ -13,11 +17,14 @@ const ELEMENT_CLASS = "e-checkbox";
 // #region Interfaces
 // -----------------------------------------------------------------------------------------
 
-export interface CheckboxInputProperties {
-    checked: boolean;
-    disabled?: boolean;
-    label: string;
-    onChange: (e: React.ChangeEvent<HTMLInputElement>) => void;
+export interface CheckboxFormFieldProperties extends CheckboxInputProperties {
+    /**
+     * An error message to display under the current checkbox with more information.
+     *
+     * @type {string}
+     * @memberof CheckboxFormFieldProperties
+     */
+    errorMessage?: string;
 }
 
 // #endregion Interfaces
@@ -26,37 +33,34 @@ export interface CheckboxInputProperties {
 // #region Component
 // -----------------------------------------------------------------------------------------
 
-const CheckboxInput: React.FC<CheckboxInputProperties> = (
-    props: CheckboxInputProperties
-) => {
-    const { checked, disabled, label, onChange } = props;
+const CheckboxFormField: React.FC<CheckboxFormFieldProperties> = (props) => {
+    const { checked, disabled, errorMessage, label, onChange } = props;
 
-    let className = ELEMENT_CLASS;
-    if (disabled) {
-        className += " -disabled";
-    }
+    const hasError = StringUtils.hasValue(errorMessage);
 
     return (
-        <label className={className}>
-            {label}
-            <input
+        <div className={COMPONENT_CLASS}>
+            <CheckboxInput
                 checked={checked}
                 disabled={disabled}
+                label={label}
                 onChange={onChange}
-                type={InputTypes.Checkbox}
-                value={checked.toString()}
             />
-            <span className={`${ELEMENT_CLASS}__checkmark`}></span>
-        </label>
+            {hasError && (
+                <div className={`${COMPONENT_CLASS}__errors`}>
+                    <label>{errorMessage}</label>
+                </div>
+            )}
+        </div>
     );
 };
 
 // #endregion Component
 
 // -----------------------------------------------------------------------------------------
-// #region Export
+// #region Exports
 // -----------------------------------------------------------------------------------------
 
-export { CheckboxInput };
+export { CheckboxFormField };
 
-// #endregion Export
+// #endregion Exports
