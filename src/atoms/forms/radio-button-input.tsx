@@ -6,7 +6,6 @@ const COMPONENT_CLASS = "c-radio";
 export interface RadioButtonProps {
     autofocus?: boolean;
     checked: boolean;
-    children?: React.ReactNode;
     cssClassName?: string;
     id: string;
     label: string;
@@ -20,45 +19,50 @@ export interface RadioButtonProps {
 const RadioButton: React.RefForwardingComponent<
     HTMLInputElement,
     RadioButtonProps
-> = forwardRef((props: RadioButtonProps, ref: React.Ref<HTMLInputElement>) => {
-    const {
-        autofocus,
-        checked,
-        children,
-        cssClassName,
-        id,
-        label,
-        name,
-        onCheck,
-        onClick,
-        value,
-    } = props;
+> = forwardRef(
+    (
+        props: React.PropsWithChildren<RadioButtonProps>,
+        ref: React.Ref<HTMLInputElement>
+    ) => {
+        const {
+            autofocus,
+            checked,
+            children,
+            cssClassName,
+            id,
+            label,
+            name,
+            onCheck,
+            onClick,
+            value,
+        } = props;
 
-    const handleChecked = (e: React.ChangeEvent<HTMLInputElement>): void =>
-        onCheck?.(e);
-    const handleClick = (): void => onClick?.();
+        const handleChecked = (e: React.ChangeEvent<HTMLInputElement>): void =>
+            onCheck?.(e);
+        const handleClick = (): void => onClick?.();
 
-    const cssChecked = checked ? "-selected" : "";
+        const cssChecked = checked ? "-selected" : "";
 
-    return (
-        <div className={`${COMPONENT_CLASS} ${cssChecked} ${cssClassName}`}>
-            <input
-                autoFocus={autofocus}
-                checked={checked}
-                id={id}
-                name={name}
-                onChange={handleChecked}
-                onClick={handleClick}
-                ref={ref}
-                type="radio"
-                value={value}
-            />
-            <label htmlFor={id}>
-                {label}
-                {children}
-            </label>
-        </div>
-    );
-});
+        return (
+            <div className={`${COMPONENT_CLASS} ${cssChecked} ${cssClassName}`}>
+                <input
+                    autoFocus={autofocus}
+                    checked={checked}
+                    id={id}
+                    name={name}
+                    onChange={handleChecked}
+                    onClick={handleClick}
+                    ref={ref}
+                    type="radio"
+                    value={value}
+                />
+                <label htmlFor={id}>
+                    {label}
+                    {children}
+                </label>
+            </div>
+        );
+    }
+);
 
 export { RadioButton };

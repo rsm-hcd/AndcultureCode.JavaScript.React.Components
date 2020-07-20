@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import uuid from "uuid";
 import { InputProperties } from "../../atoms/interfaces/input-properties";
 import { PasswordInput } from "../../atoms/forms/password-input";
+import { StringUtils } from "andculturecode-javascript-core";
 
 // -----------------------------------------------------------------------------------------
 // #region Constants
@@ -50,7 +51,7 @@ const PasswordFormField: React.FC<PasswordFormFields> = (
 
     const [isVisible, setIsVisible] = useState<boolean>(false);
     const cssIsValid = isValid ? "" : "-invalid";
-    const disableShowHide = value == null || value === "" || disabled;
+    const disableShowHide = StringUtils.isEmpty(value) || disabled;
     const fieldId = uuid.v4();
     const passwordShowHideLabel = isVisible ? "Hide" : "Show";
 

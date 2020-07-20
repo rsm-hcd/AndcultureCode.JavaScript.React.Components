@@ -1,5 +1,6 @@
 import React from "react";
 import { Icons } from "../../atoms/constants/icons";
+import { StringUtils } from "andculturecode-javascript-core";
 
 // -----------------------------------------------------------------------------------------
 // #region Interfaces
@@ -8,8 +9,8 @@ import { Icons } from "../../atoms/constants/icons";
 export interface UnorderedListProps {
     cssClassName?: string;
     id?: string;
+    listIcon?: Icons;
     listItems: Array<any>;
-    listIcon?: keyof typeof Icons;
 }
 
 // #endregion Interfaces
@@ -21,15 +22,15 @@ export interface UnorderedListProps {
 const UnorderedList: React.FC<UnorderedListProps> = (
     props: UnorderedListProps
 ) => {
-    let cssClassNames: Array<any> = [];
+    let cssClassNames: string[] = [];
 
-    if (props.cssClassName) {
-        cssClassNames.push(props.cssClassName);
+    if (StringUtils.hasValue(props.cssClassName)) {
+        cssClassNames.push(props.cssClassName!);
     }
 
-    if (props.listIcon) {
+    if (props.listIcon != null) {
         cssClassNames.push("-has-icon");
-        cssClassNames.push(`${props.listIcon}`);
+        cssClassNames.push(props.listIcon);
     }
 
     return (

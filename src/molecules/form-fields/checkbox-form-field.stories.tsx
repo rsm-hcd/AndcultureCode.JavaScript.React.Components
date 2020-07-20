@@ -10,8 +10,8 @@ export default {
 export const checkboxFormFieldKnobs = () => (
     <CheckboxFormField
         checked={boolean("Checked", false)}
-        label={text("Label", "Remember Me")}
         disabled={boolean("Disabled", false)}
+        label={text("Label", "Remember Me")}
         onChange={() => {}}
     />
 );

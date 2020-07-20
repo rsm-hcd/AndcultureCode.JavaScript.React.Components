@@ -31,7 +31,7 @@
             @include font-style(
                 $font-primary,
                 "small",
-                get-color("neutral", "dark-text")
+                get-color-neutral("dark-text")
             );
             @include padding(0, 16px);
             @include margin(0);

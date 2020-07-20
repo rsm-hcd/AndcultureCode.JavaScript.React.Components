@@ -8,8 +8,10 @@ import { ButtonStyles } from "../../atoms/constants/button-styles";
 // #region Constants
 // -------------------------------------------------------------------------------------------------
 
+const BUTTON_CLASS = "c-button";
 const COMPONENT_CLASS = "c-dropdown-button";
 const COMPONENT_LIST_CLASS = `${COMPONENT_CLASS}__list`;
+const COMPONENT_LIST_ITEM_CLASS = `${COMPONENT_LIST_CLASS}__item`;
 
 // #endregion Constants
 
@@ -24,10 +26,10 @@ export interface DropdownItem {
 
 export interface DropdownButtonProps {
     buttonClassName?: string;
+    buttonContents: string | React.ReactNode | React.ReactNodeArray;
     menuItems: Array<DropdownItem>;
     size?: ButtonSizes;
     style?: ButtonStyles;
-    buttonContents: string | React.ReactNode | React.ReactNodeArray;
 }
 
 // #endregion Interfaces
@@ -41,7 +43,7 @@ const DropdownButton: React.FC<DropdownButtonProps> = (
 ) => {
     const { buttonClassName, menuItems, buttonContents, size, style } = props;
 
-    const classNames = ["c-button", COMPONENT_CLASS];
+    const classNames = [BUTTON_CLASS, COMPONENT_CLASS];
 
     if (buttonClassName != null) {
         classNames.push(buttonClassName);
@@ -63,9 +65,9 @@ const DropdownButton: React.FC<DropdownButtonProps> = (
             <MenuList className={COMPONENT_LIST_CLASS}>
                 {menuItems.map((item: DropdownItem) => (
                     <MenuItem
+                        className={COMPONENT_LIST_ITEM_CLASS}
                         key={uuid.v4()}
-                        onSelect={item.onSelect}
-                        className={`${COMPONENT_LIST_CLASS}__item`}>
+                        onSelect={item.onSelect}>
                         {item.component}
                     </MenuItem>
                 ))}
