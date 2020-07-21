@@ -40,6 +40,7 @@ export { HeadingPriority } from "./atoms/constants/heading-priority";
 export { IconSizes } from "./atoms/constants/icon-sizes";
 export { Icons } from "./atoms/constants/icons";
 export { InputTypes } from "./atoms/constants/input-types";
+export { LinkCardTypes } from "./molecules/constants/link-card-types";
 export { KeyboardKeys } from "./constants/keyboard-keys";
 export { ParagraphSizes } from "./atoms/constants/paragraph-sizes";
 export { SvgIcons } from "./atoms/constants/svg-icons";
@@ -65,7 +66,9 @@ export { Card } from "./molecules/cards/card";
 export { DropdownButton } from "./molecules/dropdown-button/dropdown-button";
 export { ErrorBanner } from "./molecules/errors/error-banner";
 export { Form } from "./molecules/forms/form";
+export { LinkCard } from "./molecules/link-card/link-card";
 export { RadioList } from "./molecules/lists/radio-list";
+export { RootPortal } from "./molecules/portals/root-portal";
 export { Tooltip } from "./molecules/tooltips/tooltip";
 export { UnorderedList } from "./molecules/lists/unordered-list";
 
