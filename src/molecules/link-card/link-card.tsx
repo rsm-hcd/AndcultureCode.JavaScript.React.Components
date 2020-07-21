@@ -22,11 +22,12 @@ const COMPONENT_CLASS = "c-link-card";
 
 export interface LinkCardProps {
     children: any;
+    iconType?: Icons;
     includeIcon?: boolean;
     label: string;
+    onClick?: () => void;
     to?: any;
     type?: LinkCardTypes;
-    onClick?: () => void;
 }
 
 // #endregion Interfaces
@@ -40,14 +41,15 @@ const LinkCard: React.FC<LinkCardProps> = (props: LinkCardProps) => {
     if (props.includeIcon) {
         cssClassNames.push("-with-icon");
     }
-    const cssClassNamesFlat = cssClassNames.join(" ");
 
+    const cssClassNamesFlat = cssClassNames.join(" ");
+    const iconType = props.iconType ?? Icons.Lightbulb;
     const type = props.type ?? LinkCardTypes.Link;
 
     const renderChildren = () => (
         <React.Fragment>
             {// if
-            props.includeIcon && <Icon type={Icons.Lightbulb} />}
+            props.includeIcon && <Icon type={iconType} />}
             <div className={`${COMPONENT_CLASS}__content`}>
                 <Paragraph size={ParagraphSizes.Small}>
                     {props.children}
