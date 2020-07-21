@@ -26,8 +26,8 @@
         "@types/react": "16.9.11",
         "@types/react-dom": "16.9.3",
         "@types/react-router-dom": "5.1.5",
-        "andculturecode-javascript-core": "0.1.0",
-        "andculturecode-javascript-react": "0.0.9",
+        "andculturecode-javascript-core": "0.1.4",
+        "andculturecode-javascript-react": "0.1.0",
         "andculturecode-scss-grid": "2.0.4",
         "axios": "0.19.2",
         "bourbon": "6.0.0",
@@ -37,7 +37,8 @@
         "react-dom": "16.13.1",
         "react-i18next": "11.6.0",
         "react-router-dom": "5.1.2",
-        "react-scripts": "3.4.1"
+        "react-scripts": "3.4.1",
+        "react-toastify": "5.5.0"
     },
     "description": "Commonly used components for react applications",
     "devDependencies": {

@@ -20,6 +20,7 @@ export { SubmitButton } from "./atoms/forms/submit-button";
 export { TextArea } from "./atoms/forms/text-area";
 export { TextInput } from "./atoms/forms/text-input";
 export { TextInputIcon } from "./atoms/forms/text-input-icon";
+export { ToastTemplates } from "./atoms/toasts/toast-templates";
 
 // Typography
 export { Heading } from "./atoms/typography/heading";
@@ -92,5 +93,6 @@ export * from "./types/svg";
 // -----------------------------------------------------------------------------------------
 
 export { IconUtils } from "./utilities/icon-utils";
+export { ToastManager } from "./utilities/toast-manager";
 
 // #endregion Utilities
