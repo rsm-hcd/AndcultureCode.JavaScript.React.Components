@@ -1,10 +1,4 @@
 .c-drag-and-drop-list-box {
-    &.-dragging-container {
-        .c-button {
-            display: none !important;
-        }
-    }
-
     .c-list-box__item {
         &.-dragging {
             @include box-shadow(0px, 7px, 20px, get-color-neutral("30"));

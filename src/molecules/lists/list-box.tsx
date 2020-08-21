@@ -1,5 +1,5 @@
 import React, { ReactElement } from "react";
-import { CollectionUtils } from "andculturecode-javascript-core";
+import { CollectionUtils, StringUtils } from "andculturecode-javascript-core";
 import { Button } from "../../atoms/buttons/button";
 import { ButtonTypes } from "../../atoms/constants/button-types";
 import { ButtonSizes } from "../../atoms/constants/button-sizes";
@@ -19,14 +19,14 @@ export const ListBoxItemClassName = `${ListBoxBaseClassName}__item`;
 // #region Interfaces
 // -------------------------------------------------------------------------------------------------
 
-export interface ListBoxItem<T extends any> {
+export interface ListBoxItem<T extends string | number = string> {
     customAction?: React.ReactNode | React.ReactNodeArray;
     id: T;
     label?: string;
     text: string | React.ReactNode | React.ReactNodeArray;
 }
 
-export interface ListBoxProps<T extends any> {
+export interface ListBoxProps<T extends string | number = string> {
     actionText?: string;
     children?: React.ReactNode | React.ReactNodeArray;
     hideWhenNoItems?: boolean;
@@ -40,7 +40,7 @@ export interface ListBoxProps<T extends any> {
 // #region Component
 // -------------------------------------------------------------------------------------------------
 
-const ListBox = <T extends any>(
+export const ListBox = <T extends string | number = string>(
     props: ListBoxProps<T>
 ): ReactElement<ListBoxProps<T>> | null => {
     if (props.items != null && CollectionUtils.isEmpty(props.items)) {
@@ -61,7 +61,7 @@ const ListBox = <T extends any>(
                 props.items!.map((item: ListBoxItem<T>) => (
                     <div className={ListBoxItemClassName} key={`${item.id}`}>
                         {// if
-                        item.label != null && (
+                        StringUtils.hasValue(item.label) && (
                             <div className={`${ListBoxItemClassName}__label`}>
                                 {item.label}
                             </div>
@@ -72,11 +72,11 @@ const ListBox = <T extends any>(
                         {// if
                         props.onActionClick != null && (
                             <Button
-                                type={ButtonTypes.Button}
                                 cssClassName={`${ListBoxItemClassName}__action`}
                                 onClick={() => props.onActionClick!(item.id)}
                                 size={ButtonSizes.Small}
-                                style={ButtonStyles.TertiaryAlt}>
+                                style={ButtonStyles.TertiaryAlt}
+                                type={ButtonTypes.Button}>
                                 {props.actionText ?? "Action"}
                             </Button>
                         )}
@@ -89,11 +89,3 @@ const ListBox = <T extends any>(
 };
 
 // #endregion Component
-
-// -------------------------------------------------------------------------------------------------
-// #region Exports
-// -------------------------------------------------------------------------------------------------
-
-export default ListBox;
-
-// #endregion Exports

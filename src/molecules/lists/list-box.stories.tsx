@@ -1,7 +1,8 @@
 import { boolean, object, text } from "@storybook/addon-knobs";
 import React from "react";
 import { ToastContainer, ToastPosition, Zoom } from "react-toastify";
-import ListBox, { ListBoxItem } from "./list-box";
+import { ListBox, ListBoxItem } from "./list-box";
+import { ToastManager } from "../../utilities/toast-manager";
 
 export default {
     title: "Molecules | Lists / ListBox",
@@ -33,15 +34,15 @@ export const listBoxDefault = () => {
     const actionText = text("Action Button Text", "Click Me!");
 
     const handleActionClick = (id: number) =>
-        window.alert(`Clicked item ${id}!`);
+        ToastManager.success(`Clicked item ${id}!`);
 
     return (
         <React.Fragment>
             <ListBox
-                items={itemsKnob}
-                hideWhenNoItems={hideWhenNoItems}
-                onActionClick={hasAction ? handleActionClick : undefined}
                 actionText={actionText}
+                hideWhenNoItems={hideWhenNoItems}
+                items={itemsKnob}
+                onActionClick={hasAction ? handleActionClick : undefined}
             />
             <ToastContainer
                 draggable={false}

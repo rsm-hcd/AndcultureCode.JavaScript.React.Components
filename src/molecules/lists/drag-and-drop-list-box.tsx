@@ -9,7 +9,7 @@ import {
     DroppableProvided,
     DroppableStateSnapshot,
 } from "react-beautiful-dnd";
-import { CollectionUtils } from "andculturecode-javascript-core";
+import { CollectionUtils, StringUtils } from "andculturecode-javascript-core";
 import uuid from "uuid";
 import {
     ListBoxProps,
@@ -38,7 +38,7 @@ const COMPONENT_CLASS = `${ListBoxBaseClassName} c-drag-and-drop-list-box`;
 // #region Interfaces
 // -------------------------------------------------------------------------------------------------
 
-export interface DragAndDropListBoxProps<T extends any>
+export interface DragAndDropListBoxProps<T extends string | number = string>
     extends Omit<ListBoxProps<T>, "children" | "items"> {
     droppableId: string;
     items: Array<ListBoxItem<T>>;
@@ -51,14 +51,14 @@ export interface DragAndDropListBoxProps<T extends any>
 // #region Component
 // -------------------------------------------------------------------------------------------------
 
-const DragAndDropListBox = <T extends any>(
+export const DragAndDropListBox = <T extends string | number = string>(
     props: DragAndDropListBoxProps<T>
 ): ReactElement<ListBoxProps<T>> | null => {
     const items = props.items;
     const hasItems = CollectionUtils.hasValues(items);
 
     // Short-circuit if no items in collection
-    if (items != null && !hasItems) {
+    if (!hasItems) {
         if (props.hideWhenNoItems) {
             return null;
         }
@@ -118,7 +118,7 @@ const DragAndDropListBox = <T extends any>(
             <React.Fragment>
                 {itemProps.items.map((item: ListBoxItem<T>, index: number) => (
                     <Draggable
-                        draggableId={`${item.id}`}
+                        draggableId={item.id.toString()}
                         index={index}
                         key={uuid.v4()}>
                         {(
@@ -128,19 +128,19 @@ const DragAndDropListBox = <T extends any>(
                             <div
                                 {...provided.draggableProps}
                                 {...provided.dragHandleProps}
-                                ref={provided.innerRef}
                                 className={`${ListBoxItemClassName} ${cssIsDragging(
                                     snapshot
                                 )}`}
+                                ref={provided.innerRef}
                                 style={provided.draggableProps.style}>
                                 <div className="-drag-handle">
                                     <Icon
-                                        type={Icons.DragAndDrop}
                                         size={IconSizes.Large}
+                                        type={Icons.DragAndDrop}
                                     />
                                 </div>
                                 {// if
-                                item.label != null && (
+                                StringUtils.hasValue(item.label) && (
                                     <div
                                         className={`${ListBoxItemClassName}__label`}>
                                         {item.label}
@@ -153,7 +153,6 @@ const DragAndDropListBox = <T extends any>(
                                 {// if
                                 props.onActionClick != null && (
                                     <Button
-                                        type={ButtonTypes.Button}
                                         cssClassName={`${ListBoxItemClassName}__action`}
                                         onClick={() =>
                                             props.onActionClick!(
@@ -162,7 +161,8 @@ const DragAndDropListBox = <T extends any>(
                                             )
                                         }
                                         size={ButtonSizes.Small}
-                                        style={ButtonStyles.TertiaryAlt}>
+                                        style={ButtonStyles.TertiaryAlt}
+                                        type={ButtonTypes.Button}>
                                         {props.actionText ?? "Action"}
                                     </Button>
                                 )}
@@ -187,10 +187,10 @@ const DragAndDropListBox = <T extends any>(
                 ) => (
                     <div
                         {...provided.droppableProps}
-                        ref={provided.innerRef}
                         className={`${COMPONENT_CLASS} ${cssIsDragging(
                             snapshot
-                        )}`}>
+                        )}`}
+                        ref={provided.innerRef}>
                         {// if
                         hasItems && <DraggableItemList items={items} />}
                         {provided.placeholder}
@@ -202,11 +202,3 @@ const DragAndDropListBox = <T extends any>(
 };
 
 // #endregion Component
-
-// -------------------------------------------------------------------------------------------------
-// #region Exports
-// -------------------------------------------------------------------------------------------------
-
-export default DragAndDropListBox;
-
-// #endregion Exports

@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import DragAndDropListBox from "./drag-and-drop-list-box";
+import { DragAndDropListBox } from "./drag-and-drop-list-box";
 import { ListBoxItem } from "./list-box";
 import { Paragraph } from "../../atoms/typography/paragraph";
 
