@@ -1,0 +1,52 @@
+.c-list-box {
+    background-color: get-color-neutral("05");
+    border-radius: $border-radius-small;
+    border: 1px solid get-color-neutral("30");
+
+    &.-empty {
+        background-color: get-color-neutral("white");
+
+        p {
+            @include padding(16px);
+            text-align: center;
+        }
+    }
+
+    &__item {
+        @include padding(20px, 15px, 15px, 20px);
+        display: flex;
+        border-bottom: 1px solid get-color-neutral("30");
+
+        &:last-child {
+            border-bottom: none;
+        }
+
+        &__label {
+            @include margin-top(4px);
+            min-width: 12%;
+            width: 12%;
+            white-space: nowrap;
+
+            @include respond-to("tablet") {
+                @include margin-right(8px);
+            }
+        }
+
+        &__text {
+            flex-grow: 1;
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+
+            a {
+                @include margin-bottom(8px);
+                text-decoration: none;
+            }
+        }
+
+        &__action {
+            margin-top: auto;
+            margin-bottom: auto;
+        }
+    }
+}

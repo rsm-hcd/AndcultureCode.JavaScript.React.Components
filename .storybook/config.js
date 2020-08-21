@@ -3,9 +3,9 @@ import { setDefaults } from "@storybook/addon-info";
 import { withKnobs } from "@storybook/addon-knobs";
 import { withInfo } from "@storybook/addon-info";
 import "./storybook.css";
-import "assets/scss/andculturecode-javascript-react-components.scss";
-import { IconUtils } from "utilities/icon-utils";
-import { SvgIcons } from "atoms/constants/svg-icons";
+import "../src/assets/scss/andculturecode-javascript-react-components.scss";
+import { IconUtils } from "../src/utilities/icon-utils";
+import { SvgIcons } from "../src/atoms/constants/svg-icons";
 
 IconUtils.register(SvgIcons);
 
