@@ -256,27 +256,21 @@ class PencilCanvasDrawTool extends BaseCanvasDrawTool implements CanvasDrawTool 
     // ---------------------------------------------------------------------------------------------
 
     private _onMouseDownCanvas(e: MouseEvent): void {
-        console.log(`_onMouseDownCanvas: start`);
         const mousePosition = PositionUtils.getMousePosition(e);
         if (mousePosition != null) {
             this._startStroke(mousePosition);
         }
-        console.log(`_onMouseDownCanvas: finish`);
     }
 
     private _onMouseMoveCanvas(e: MouseEvent): void {
-        console.log(`_onMouseMoveCanvas: start`);
         const mousePosition = PositionUtils.getMousePosition(e);
         if (mousePosition != null) {
             this._move(mousePosition);
         }
-        console.log(`_onMouseMoveCanvas: finish`);
     }
 
     private _onMouseUpWindow(): void {
-        console.log(`_onMouseUpWindow: start`);
         this._finishStroke();
-        console.log(`_onMouseUpWindow: finish`);
     }
 
     private _onTouchEndWindow(e: TouchEvent): void {

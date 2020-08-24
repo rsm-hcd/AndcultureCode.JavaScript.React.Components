@@ -5,8 +5,8 @@ import { PencilCanvasDrawTool } from "./tools/pencil-canvas-draw-tool";
 import { PanCanvasTool } from "./tools/pan-canvas-tool";
 import { DrawToolUiSettings, DrawToolConfig, CanvasDrawToolSettings, CanvasDrawTool } from "./tools/base-canvas-draw-tool";
 import { CanvasToolType } from "./enums/canvas-tool-type";
-import { CoreUtils } from "andculturecode-javascript-core";
 import { CanvasObjectType } from "./enums/canvas-object-type";
+import { CoreUtils } from "../../../utilities/core-utils";
 
 // -------------------------------------------------------------------------------------------------
 // #region Interfaces
