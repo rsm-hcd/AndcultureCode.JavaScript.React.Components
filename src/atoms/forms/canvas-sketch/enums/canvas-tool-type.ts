@@ -1,6 +1,6 @@
 export enum CanvasToolType {
-    image  = "ImageDrawTool",
-    line   = "LineCanvasDrawTool",
-    pan    = "PanCanvasObject",
-    pencil = "PencilCanvasDrawTool",
+    image = "Image-Draw-Tool",
+    line = "Line-Canvas-Draw-Tool",
+    pan = "Pan-Canvas-Object",
+    pencil = "Pencil-Canvas-Draw-Tool",
 };

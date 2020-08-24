@@ -7,7 +7,8 @@ import { PointerPosition } from "../interfaces/pointer-position";
  */
 const getMousePosition = (e: MouseEvent): PointerPosition | null => {
     if (!e) {
-        e = event as MouseEvent;
+        // is this necessary?
+        // e = event as MouseEvent;
     }
 
     if (e.offsetX) {
@@ -31,9 +32,10 @@ const getMousePosition = (e: MouseEvent): PointerPosition | null => {
  *
  * @param e The touch event
  */
-const getTouchPosition = (e: TouchEvent, canvas: HTMLCanvasElement): PointerPosition => {
+const getTouchPosition = (e: TouchEvent, canvas: HTMLCanvasElement): PointerPosition | null => {
     if (!e) {
-        e = event as TouchEvent;
+        // is this necessary?
+        // e = event as TouchEvent;
     }
 
     if (e.touches) {

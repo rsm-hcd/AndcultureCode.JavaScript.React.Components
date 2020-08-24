@@ -297,9 +297,6 @@ class CanvasSketch {
 
             if (this._config.currentObjectIndex != null && lastObjectIndex !== this._config.currentObjectIndex) {
                 // caller wants the index to be something different... overwrite with caller's demand
-                this._config.currentObjectIndex = this._config.currentObjectIndex;
-            }
-            else {
                 this._config.currentObjectIndex = lastObjectIndex;
             }
 

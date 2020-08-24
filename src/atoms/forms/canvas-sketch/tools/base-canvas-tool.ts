@@ -1,6 +1,6 @@
 import { CanvasToolType } from "../enums/canvas-tool-type";
 import { CanvasObjectType } from "../enums/canvas-object-type";
-import { CoreUtils } from "andculturecode-javascript-core";
+import { CoreUtils } from "../../../../utilities/core-utils";
 
 // -------------------------------------------------------------------------------------------------
 // #region Interfaces

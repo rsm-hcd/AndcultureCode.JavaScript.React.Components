@@ -5,7 +5,7 @@ import {
 import * as React from "react";
 import { CanvasToolType } from "./enums/canvas-tool-type";
 import { CanvasDrawToolSettings } from "./tools/base-canvas-draw-tool";
-import { useEffect } from "@storybook/addons";
+import { useEffect } from "react";
 
 // -------------------------------------------------------------------------------------------------
 // #region Interfaces
@@ -38,8 +38,8 @@ export interface ReactCanvasSketchProps {
 // #region Component
 // -------------------------------------------------------------------------------------------------
 
-const ReactCanvasSketch: React.FC<ReactCanvasSketchProps> = (
-    props: ReactCanvasSketchProps
+const ReactCanvasSketch: React.FunctionComponent<ReactCanvasSketchProps> = (
+    props: React.PropsWithChildren<ReactCanvasSketchProps>
 ) => {
 
     // track the ref of the canvas elements
@@ -60,6 +60,7 @@ const ReactCanvasSketch: React.FC<ReactCanvasSketchProps> = (
 
     // set up effects
     useEffect(() => {
+        console.log('start effect');
         if (!isInitialized) {
             // set up the default options for the background image
             const canvasSketchConfig: CanvasSketchConfig = {
@@ -88,63 +89,103 @@ const ReactCanvasSketch: React.FC<ReactCanvasSketchProps> = (
         }
         return () => {
             // clean up
-            canvasSketch.dispose();
+            console.log('cleanup effect');
+            if (canvasSketch != null) {
+                canvasSketch.dispose();
+            }
         }
-    });
+    }, [
+        canvasSketch,
+        htmlCanvasBackgroundImage,
+        htmlCanvasSketch,
+        isInitialized,
+        props.backgroundImageUrl,
+        props.canvasToolType,
+        props.onAddedStroke,
+        props.toolColor,
+        props.toolWidth,
+        props.value.currentObjectIndex,
+        props.value.objects,
+    ]);
 
     useEffect(() => {
+        if (canvasSketch == null) {
+            return;
+        }
         if (prevValueObjects === props.value.objects) {
             canvasSketch.redrawSketchAt(props.value.objects, props.value.currentObjectIndex);
         }
-    }, [props.value.currentObjectIndex, props.value.objects]); // https://stackoverflow.com/questions/55724642/react-useeffect-hook-when-only-one-of-the-effects-deps-changes-but-not-the-oth
+    }, [props.value.currentObjectIndex, props.value.objects, canvasSketch, prevValueObjects]); // https://stackoverflow.com/questions/55724642/react-useeffect-hook-when-only-one-of-the-effects-deps-changes-but-not-the-oth
 
     useEffect(() => {
+        if (canvasSketch == null) {
+            return;
+        }
         canvasSketch.redrawSketchAt(props.value.objects, props.value.currentObjectIndex);
-    }, [props.redrawIncrement]);
+    }, [props.redrawIncrement, canvasSketch, props.value.objects, props.value.currentObjectIndex]);
 
     useEffect(() => {
+        if (canvasSketch == null) {
+            return;
+        }
         canvasSketch.redrawBackgroundImageUsing(props.backgroundImageUrl);
-    }, [props.backgroundImageUrl]);
+    }, [props.backgroundImageUrl, canvasSketch]);
 
     useEffect(() => {
+        if (canvasSketch == null) {
+            return;
+        }
         canvasSketch.setToolColor(props.toolColor);
-    }, [props.toolColor]);
+    }, [props.toolColor, canvasSketch]);
 
     useEffect(() => {
+        if (canvasSketch == null) {
+            return;
+        }
         canvasSketch.setToolWidth(props.toolWidth);
-    }, [props.toolWidth]);
+    }, [props.toolWidth, canvasSketch]);
 
     useEffect(() => {
+        console.log(`useEffect: start`);
+        if (canvasSketch == null) {
+            return;
+        }
         canvasSketch.setSelectedTool(props.canvasToolType);
-    }, [props.canvasToolType]);
+        console.log(`useEffect: ${props.canvasToolType}`);
+        console.log(`useEffect: finish`);
+    }, [props.canvasToolType, canvasSketch]);
 
 
     // configure styles for elemtns
-    const canvasStyles = {
+    const canvasContainerStyles: React.CSSProperties = {
         height: props.canvasHeight,
+        position: "relative",
         width: props.canvasWidth,
     };
-    const containerStyles = {
+    const sketchStyles: React.CSSProperties = {
         height: props.containerHeight,
         width: props.containerWidth,
+    };
+    const canvasStyles: React.CSSProperties = {
+        position: "absolute",
     };
 
     return (
         <div
             className={`c-react-canvas-sketch ${props.className}`}
-            style={containerStyles}>
-            <div className="c-react-canvas-sketch__canvas-container" style={canvasStyles}>
+            style={sketchStyles}>
+            <div className="c-react-canvas-sketch__canvas-container" style={canvasContainerStyles}>
                 <canvas
                     className="c-react-canvas-sketch__background-image"
                     height={props.canvasHeight}
                     ref={htmlCanvasBackgroundImage}
-                    style={{ zIndex: 0 }}
+                    style={{ ...canvasStyles, zIndex: 0 }}
                     width={props.canvasWidth} />
                 <canvas
                     className="c-react-canvas-sketch__field"
                     height={props.canvasHeight}
                     ref={htmlCanvasSketch}
-                    style={{ zIndex: 1 }}
+                    style={{ ...canvasStyles, zIndex: 1 }}
                     width={props.canvasWidth}>
                     Sorry, Canvas HTML5 element is not supported by your browser :(
                     </canvas>

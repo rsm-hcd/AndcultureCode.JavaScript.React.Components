@@ -1,7 +1,7 @@
 import { CanvasToolSettings, ToolConfig } from "./base-canvas-tool";
 import { CanvasToolType } from "../enums/canvas-tool-type";
 import { PointerPosition } from "../interfaces/pointer-position";
-import { CoreUtils } from "andculturecode-javascript-core";
+import { CoreUtils } from "../../../../utilities/core-utils";
 
 // -------------------------------------------------------------------------------------------------
 // #region Interfaces

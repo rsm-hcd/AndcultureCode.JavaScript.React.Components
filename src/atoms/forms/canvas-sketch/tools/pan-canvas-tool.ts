@@ -1,5 +1,5 @@
 import { PointerPosition } from "../interfaces/pointer-position";
-import { CoreUtils } from "andculturecode-javascript-core";
+import { CoreUtils } from "../../../../utilities/core-utils";
 import { CanvasToolType } from "../enums/canvas-tool-type";
 import { PositionUtils } from "../utils/position-utils";
 
@@ -128,11 +128,17 @@ class PanCanvasTool {
     // ---------------------------------------------------------------------------------------------
 
     private _onMouseDownCanvas(e: MouseEvent): void {
-        this._startPan(PositionUtils.getMousePosition(e));
+        const mousePosition = PositionUtils.getMousePosition(e);
+        if (mousePosition != null) {
+            this._startPan(mousePosition);
+        }
     }
 
     private _onMouseMoveCanvas(e: MouseEvent): void {
-        this._pan(PositionUtils.getMousePosition(e));
+        const mousePosition = PositionUtils.getMousePosition(e);
+        if (mousePosition != null) {
+            this._pan(mousePosition);
+        }
     }
 
     private _onMouseUpWindow(): void {
@@ -147,14 +153,20 @@ class PanCanvasTool {
     }
 
     private _onTouchMoveCanvas(e: TouchEvent): void {
-        this._pan(PositionUtils.getTouchPosition(e, this._config.canvas));
+        const touchPosition = PositionUtils.getTouchPosition(e, this._config.canvas);
+        if (touchPosition != null) {
+            this._pan(touchPosition);
+        }
 
         // Don't allow touch events to be called
         e.preventDefault();
     }
 
     private _onTouchStartCanvas(e: TouchEvent): void {
-        this._startPan(PositionUtils.getTouchPosition(e, this._config.canvas));
+        const touchPosition = PositionUtils.getTouchPosition(e, this._config.canvas);
+        if (touchPosition != null) {
+            this._startPan(touchPosition);
+        }
 
         // Don't allow touch events to be called
         e.preventDefault();

@@ -1,7 +1,7 @@
 import { CanvasDrawToolSettings, BaseCanvasDrawTool, CanvasDrawTool, DrawToolConfig } from "./base-canvas-draw-tool";
 import { CanvasToolType } from "../enums/canvas-tool-type";
 import { PointerPosition } from "../interfaces/pointer-position";
-import { CoreUtils } from "andculturecode-javascript-core";
+import { CoreUtils } from "../../../../utilities/core-utils";
 import { PositionUtils } from "../utils/position-utils";
 import { CanvasObjectType } from "../enums/canvas-object-type";
 
@@ -256,15 +256,27 @@ class PencilCanvasDrawTool extends BaseCanvasDrawTool implements CanvasDrawTool 
     // ---------------------------------------------------------------------------------------------
 
     private _onMouseDownCanvas(e: MouseEvent): void {
-        this._startStroke(PositionUtils.getMousePosition(e));
+        console.log(`_onMouseDownCanvas: start`);
+        const mousePosition = PositionUtils.getMousePosition(e);
+        if (mousePosition != null) {
+            this._startStroke(mousePosition);
+        }
+        console.log(`_onMouseDownCanvas: finish`);
     }
 
     private _onMouseMoveCanvas(e: MouseEvent): void {
-        this._move(PositionUtils.getMousePosition(e));
+        console.log(`_onMouseMoveCanvas: start`);
+        const mousePosition = PositionUtils.getMousePosition(e);
+        if (mousePosition != null) {
+            this._move(mousePosition);
+        }
+        console.log(`_onMouseMoveCanvas: finish`);
     }
 
     private _onMouseUpWindow(): void {
+        console.log(`_onMouseUpWindow: start`);
         this._finishStroke();
+        console.log(`_onMouseUpWindow: finish`);
     }
 
     private _onTouchEndWindow(e: TouchEvent): void {
@@ -275,14 +287,20 @@ class PencilCanvasDrawTool extends BaseCanvasDrawTool implements CanvasDrawTool 
     }
 
     private _onTouchMoveCanvas(e: TouchEvent): void {
-        this._move(PositionUtils.getTouchPosition(e, this._config.canvas));
+        const touchPosition = PositionUtils.getTouchPosition(e, this._config.canvas);
+        if (touchPosition != null) {
+            this._move(touchPosition);
+        }
 
         // Don't allow touch events to be called
         e.preventDefault();
     }
 
     private _onTouchStartCanvas(e: TouchEvent): void {
-        this._startStroke(PositionUtils.getTouchPosition(e, this._config.canvas));
+        const touchPosition = PositionUtils.getTouchPosition(e, this._config.canvas);
+        if (touchPosition != null) {
+            this._startStroke(touchPosition);
+        }
 
         // Don't allow touch events to be called
         e.preventDefault();
