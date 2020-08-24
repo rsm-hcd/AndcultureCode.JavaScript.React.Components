@@ -26,6 +26,7 @@ export interface ReactCanvasSketchProps {
     onAddedStroke: (strokeSettings: CanvasDrawToolSettings) => void;
     redrawIncrement: number;
     canvasToolType: CanvasToolType;
+    showCanvasBorder: boolean;
     toolWidth: number;
     toolColor: string;
     value: ReactCanvasSketchValue;
@@ -187,6 +188,9 @@ const ReactCanvasSketch: React.FunctionComponent<ReactCanvasSketchProps> = (
     const canvasStyles: React.CSSProperties = {
         position: "absolute",
     };
+    if (props.showCanvasBorder) {
+        canvasStyles.border = "1px dashed black";
+    }
 
     return (
         <div
