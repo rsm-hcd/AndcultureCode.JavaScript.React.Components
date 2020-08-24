@@ -18,17 +18,17 @@ const canvasToolTypes = [
 export const reactCanvasSketch = () => (
     <ReactCanvasSketch
         backgroundImageUrl={text("Background Image URL", "https://rlv.zcache.com/yellow_emoji_birthday_party_happy_face_symbol_classic_round_sticker-r821c9ad7d35943228f0f0e973050e063_0ugmm_8byvr_704.jpg")}
-        canvasHeight={number("Canvas Height", 500)}
+        canvasHeight={number("Canvas Height", 720)}
         canvasWidth={number("Canvas Width", 1000)}
         className={text("Class Name", "")}
-        containerHeight={number("Container Height", 300)}
-        containerWidth={number("Container Width", 600)}
+        containerHeight={number("Container Height", 700)}
+        containerWidth={number("Container Width", 700)}
         onAddedStroke={(strokeSettings: CanvasDrawToolSettings) => { console.log(`onAddedStroke: ${JSON.stringify(strokeSettings)}`) }}
         redrawIncrement={number("Redraw Trigger Increment", 1)}
         canvasToolType={select("Tool Type", canvasToolTypes, CanvasToolType.pencil)}
         showCanvasBorder={boolean("Show Border", true)}
         toolWidth={number("Tool Width", 1)}
-        toolColor={text("Tool Color", "FFFFFF")}
+        toolColor={text("Tool Color", "#000000")}
         value={{ currentObjectIndex: -1, objects: [] }}
     />
 );

@@ -10,10 +10,10 @@ import { PositionUtils } from "../utils/position-utils";
 // -------------------------------------------------------------------------------------------------
 
 export interface LineStrokeSettings extends CanvasDrawToolSettings {
-    left: number;
-    top: number;
-    x2: number;
-    y2: number;
+    endX: number;
+    endY: number;
+    startX: number;
+    startY: number;
 }
 
 // #endregion Interfaces
@@ -39,10 +39,10 @@ class LineCanvasDrawTool extends BaseCanvasDrawTool implements CanvasDrawTool {
 
     public drawStrokes(strokes: CanvasDrawToolSettings[]): void {
         (strokes as LineStrokeSettings[]).forEach((stroke: LineStrokeSettings) => {
-            const startX: number = stroke.left;
-            const endX: number = stroke.left + (stroke.x2 * 2);
-            const startY: number = stroke.top;
-            const endY: number = stroke.top + (stroke.y2 * 2);
+            const startX: number = stroke.startX;
+            const endX: number = stroke.endX
+            const startY: number = stroke.startY;
+            const endY: number = stroke.endY;
 
             const color = stroke.stroke;
             const width = stroke.strokeWidth;
@@ -143,13 +143,13 @@ class LineCanvasDrawTool extends BaseCanvasDrawTool implements CanvasDrawTool {
     private _getStrokeSettings(): LineStrokeSettings {
         // Put together tool stroke here
         return {
-            left: this._previousPosition.x,
+            endX: this._currentPosition.x,
+            endY: this._currentPosition.y,
+            startX: this._previousPosition.x,
+            startY: this._previousPosition.y,
             stroke: this._uiSettings.color,
             strokeWidth: this._uiSettings.width,
-            top: this._previousPosition.y,
             type: CanvasObjectType.line,
-            x2: (this._currentPosition.x - this._previousPosition.x) / 2,
-            y2: (this._currentPosition.y - this._previousPosition.y) / 2,
         };
     }
 
