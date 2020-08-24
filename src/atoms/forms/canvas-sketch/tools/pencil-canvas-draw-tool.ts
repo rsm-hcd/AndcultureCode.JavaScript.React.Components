@@ -9,14 +9,21 @@ import { CanvasObjectType } from "../enums/canvas-object-type";
 // #region Interfaces
 // -------------------------------------------------------------------------------------------------
 
+enum PathType {
+    Finishing = "F",
+    Moving = "M",
+    Starting = "S",
+}
+
 interface PencilStrokeSettings extends CanvasDrawToolSettings {
-    path: any[];
+    path: [PathType, number, number][];
 }
 
 // #endregion Interfaces
 
 class PencilCanvasDrawTool extends BaseCanvasDrawTool implements CanvasDrawTool {
     public toolType: CanvasToolType;
+
 
     protected _path: PointerPosition[];
 
@@ -43,23 +50,23 @@ class PencilCanvasDrawTool extends BaseCanvasDrawTool implements CanvasDrawTool 
         (strokes as PencilStrokeSettings[]).forEach((stroke: PencilStrokeSettings, strokeI: number) => {
             let lastX: number = 0;
             let lastY: number = 0;
-            stroke.path.forEach((path: any, pathI: number) => {
+            stroke.path.forEach((path: [PathType, number, number], pathI: number) => {
                 const type = path[0];
                 const color = stroke.stroke;
                 const width = stroke.strokeWidth;
-                if (type === "M") {
+                if (type === PathType.Starting) {
                     // started stroke
                     this._drawStroke(path[1], path[2], path[1], path[2], color, width);
                     lastX = path[1];
                     lastY = path[2];
                 }
-                if (type === "Q") {
+                if (type === PathType.Moving) {
                     // moving
-                    this._drawStroke(lastX, lastY, path[3], path[4], color, width);
+                    this._drawStroke(lastX, lastY, path[1], path[2], color, width);
                     lastX = path[1];
                     lastY = path[2];
                 }
-                if (type === "L") {
+                if (type === PathType.Finishing) {
                     // ended stroke
                     this._drawStroke(lastX, lastY, path[1], path[2], color, width);
                     lastX = path[1];
@@ -162,20 +169,20 @@ class PencilCanvasDrawTool extends BaseCanvasDrawTool implements CanvasDrawTool 
     /**
      * Returns the path of the entire stroke that can then be persisted for later use
      */
-    private _getPath(): any[][] {
-        const reformattedPath: any[] = [];
+    private _getPath(): [PathType, number, number][] {
+        const reformattedPath: [PathType, number, number][] = [];
         this._path.forEach((value: PointerPosition, index: number) => {
             if (index === 0) {
                 // starting point
-                reformattedPath.push(["M", value.x, value.y]);
+                reformattedPath.push([PathType.Starting, value.x, value.y]);
             }
             else if (index + 1 === this._path.length) {
                 // ending point
-                reformattedPath.push(["L", value.x, value.y]);
+                reformattedPath.push([PathType.Finishing, value.x, value.y]);
             }
             else {
                 // moving point
-                reformattedPath.push(["L", value.x, value.y]);
+                reformattedPath.push([PathType.Moving, value.x, value.y]);
             }
         });
 
