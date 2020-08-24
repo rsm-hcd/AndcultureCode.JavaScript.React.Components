@@ -60,7 +60,7 @@ const ReactCanvasSketch: React.FunctionComponent<ReactCanvasSketchProps> = (
 
     // set up effects
     useEffect(() => {
-        console.log('start effect');
+        console.log("useEffect: initializing");
         if (!isInitialized) {
             // set up the default options for the background image
             const canvasSketchConfig: CanvasSketchConfig = {
@@ -87,13 +87,6 @@ const ReactCanvasSketch: React.FunctionComponent<ReactCanvasSketchProps> = (
             setCanvasSketch(newCanvasSketch);
             setIsInitialized(true);
         }
-        return () => {
-            // clean up
-            console.log('cleanup effect');
-            if (canvasSketch != null) {
-                canvasSketch.dispose();
-            }
-        }
     }, [
         canvasSketch,
         htmlCanvasBackgroundImage,
@@ -109,13 +102,41 @@ const ReactCanvasSketch: React.FunctionComponent<ReactCanvasSketchProps> = (
     ]);
 
     useEffect(() => {
+        console.log("useEffect: canvasSketch");
+        return () => {
+            // cleanup on unmount
+            if (canvasSketch != null) {
+                canvasSketch.dispose();
+            }
+        }
+    }, [canvasSketch]);
+
+    useEffect(() => {
         if (canvasSketch == null) {
             return;
         }
+        canvasSketch.redrawCurrentState();
+
+    }, [
+        canvasSketch,
+        props.canvasHeight,
+        props.canvasWidth,
+        props.containerHeight,
+        props.containerWidth,
+    ]);
+
+    useEffect(() => {
+        if (canvasSketch == null) {
+            return;
+        }
+        // Only redraw if currentObjectIndex changes but not the objects list itself.  Being done to
+        // prevent rerenders after every single stroke of the same tool.  See following URL for more
+        // inforamtion on tracking previous state/props using hooks
+        //      https://stackoverflow.com/questions/55724642/react-useeffect-hook-when-only-one-of-the-effects-deps-changes-but-not-the-oth
         if (prevValueObjects === props.value.objects) {
             canvasSketch.redrawSketchAt(props.value.objects, props.value.currentObjectIndex);
         }
-    }, [props.value.currentObjectIndex, props.value.objects, canvasSketch, prevValueObjects]); // https://stackoverflow.com/questions/55724642/react-useeffect-hook-when-only-one-of-the-effects-deps-changes-but-not-the-oth
+    }, [props.value.currentObjectIndex, props.value.objects, canvasSketch, prevValueObjects]);
 
     useEffect(() => {
         if (canvasSketch == null) {
@@ -146,13 +167,10 @@ const ReactCanvasSketch: React.FunctionComponent<ReactCanvasSketchProps> = (
     }, [props.toolWidth, canvasSketch]);
 
     useEffect(() => {
-        console.log(`useEffect: start`);
         if (canvasSketch == null) {
             return;
         }
         canvasSketch.setSelectedTool(props.canvasToolType);
-        console.log(`useEffect: ${props.canvasToolType}`);
-        console.log(`useEffect: finish`);
     }, [props.canvasToolType, canvasSketch]);
 
 

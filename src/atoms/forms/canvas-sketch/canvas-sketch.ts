@@ -102,6 +102,11 @@ class CanvasSketch {
         }
     }
 
+    public redrawCurrentState(): void {
+        this._redrawBackgroundImage();
+        this._redrawSketch();
+    }
+
     public redrawBackgroundImageUsing(backgroundImageUrl: string): void {
         if (this._config.backgroundImage == null) {
             return;
