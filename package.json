@@ -129,7 +129,7 @@
         "format": "prettier --write \"src/**/*.ts\" --trailing-comma es5",
         "eject": "react-scripts eject",
         "postbuild": "copyfiles src/assets/**/* dist && mv dist/src/assets dist && rimraf dist/src",
-        "postpublish": "cross-env-shell \"git add -A && git commit -m \"$npm_package_version\" && git push origin master && npm run deploy-storybook",
+        "postpublish": "cross-env-shell \"git add -A && git commit -m \"$npm_package_version\" && git push origin master && npm run deploy-storybook\"",
         "prebuild": "npm run clean && npm run format && echo Using TypeScript && tsc --version",
         "prepublishOnly": "npm run build",
         "start": "react-scripts start",
