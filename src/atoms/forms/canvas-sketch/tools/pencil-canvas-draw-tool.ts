@@ -1,4 +1,9 @@
-import { CanvasDrawToolSettings, BaseCanvasDrawTool, CanvasDrawTool, DrawToolConfig } from "./base-canvas-draw-tool";
+import {
+    CanvasDrawToolSettings,
+    BaseCanvasDrawTool,
+    CanvasDrawTool,
+    DrawToolConfig,
+} from "./base-canvas-draw-tool";
 import { CanvasToolType } from "../enums/canvas-tool-type";
 import { PointerPosition } from "../interfaces/pointer-position";
 import { CoreUtils } from "../../../../utilities/core-utils";
@@ -21,9 +26,9 @@ interface PencilStrokeSettings extends CanvasDrawToolSettings {
 
 // #endregion Interfaces
 
-class PencilCanvasDrawTool extends BaseCanvasDrawTool implements CanvasDrawTool {
+class PencilCanvasDrawTool extends BaseCanvasDrawTool
+    implements CanvasDrawTool {
     public toolType: CanvasToolType;
-
 
     protected _path: PointerPosition[];
 
@@ -47,33 +52,58 @@ class PencilCanvasDrawTool extends BaseCanvasDrawTool implements CanvasDrawTool 
     }
 
     public drawStrokes(strokes: CanvasDrawToolSettings[]): void {
-        (strokes as PencilStrokeSettings[]).forEach((stroke: PencilStrokeSettings, strokeI: number) => {
-            let lastX: number = 0;
-            let lastY: number = 0;
-            stroke.path.forEach((path: [PathType, number, number], pathI: number) => {
-                const type = path[0];
-                const color = stroke.stroke;
-                const width = stroke.strokeWidth;
-                if (type === PathType.Starting) {
-                    // started stroke
-                    this._drawStroke(path[1], path[2], path[1], path[2], color, width);
-                    lastX = path[1];
-                    lastY = path[2];
-                }
-                if (type === PathType.Moving) {
-                    // moving
-                    this._drawStroke(lastX, lastY, path[1], path[2], color, width);
-                    lastX = path[1];
-                    lastY = path[2];
-                }
-                if (type === PathType.Finishing) {
-                    // ended stroke
-                    this._drawStroke(lastX, lastY, path[1], path[2], color, width);
-                    lastX = path[1];
-                    lastY = path[2];
-                }
-            });
-        });
+        (strokes as PencilStrokeSettings[]).forEach(
+            (stroke: PencilStrokeSettings, strokeI: number) => {
+                let lastX: number = 0;
+                let lastY: number = 0;
+                stroke.path.forEach(
+                    (path: [PathType, number, number], pathI: number) => {
+                        const type = path[0];
+                        const color = stroke.stroke;
+                        const width = stroke.strokeWidth;
+                        if (type === PathType.Starting) {
+                            // started stroke
+                            this._drawStroke(
+                                path[1],
+                                path[2],
+                                path[1],
+                                path[2],
+                                color,
+                                width
+                            );
+                            lastX = path[1];
+                            lastY = path[2];
+                        }
+                        if (type === PathType.Moving) {
+                            // moving
+                            this._drawStroke(
+                                lastX,
+                                lastY,
+                                path[1],
+                                path[2],
+                                color,
+                                width
+                            );
+                            lastX = path[1];
+                            lastY = path[2];
+                        }
+                        if (type === PathType.Finishing) {
+                            // ended stroke
+                            this._drawStroke(
+                                lastX,
+                                lastY,
+                                path[1],
+                                path[2],
+                                color,
+                                width
+                            );
+                            lastX = path[1];
+                            lastY = path[2];
+                        }
+                    }
+                );
+            }
+        );
     }
 
     public initialize(): void {
@@ -95,12 +125,28 @@ class PencilCanvasDrawTool extends BaseCanvasDrawTool implements CanvasDrawTool 
      * Binds the necessary mouse and touch events
      */
     private _addEventListeners(): void {
-        this._canvas.addEventListener("mousedown", this._onMouseDownCanvas, false);
-        this._canvas.addEventListener("mousemove", this._onMouseMoveCanvas, false);
+        this._canvas.addEventListener(
+            "mousedown",
+            this._onMouseDownCanvas,
+            false
+        );
+        this._canvas.addEventListener(
+            "mousemove",
+            this._onMouseMoveCanvas,
+            false
+        );
         window.addEventListener("mouseup", this._onMouseUpWindow, false);
 
-        this._canvas.addEventListener("touchstart", this._onTouchStartCanvas, false);
-        this._canvas.addEventListener("touchmove", this._onTouchMoveCanvas, false);
+        this._canvas.addEventListener(
+            "touchstart",
+            this._onTouchStartCanvas,
+            false
+        );
+        this._canvas.addEventListener(
+            "touchmove",
+            this._onTouchMoveCanvas,
+            false
+        );
         window.addEventListener("touchend", this._onTouchEndWindow, false);
     }
 
@@ -114,7 +160,8 @@ class PencilCanvasDrawTool extends BaseCanvasDrawTool implements CanvasDrawTool 
             this._currentPosition.x,
             this._currentPosition.y,
             this._uiSettings.color,
-            this._uiSettings.width);
+            this._uiSettings.width
+        );
     }
 
     /**
@@ -133,7 +180,8 @@ class PencilCanvasDrawTool extends BaseCanvasDrawTool implements CanvasDrawTool 
         endX: number,
         endY: number,
         color: string,
-        width: number): void {
+        width: number
+    ): void {
         this._context.beginPath();
 
         // Draw a line between two points
@@ -175,12 +223,10 @@ class PencilCanvasDrawTool extends BaseCanvasDrawTool implements CanvasDrawTool 
             if (index === 0) {
                 // starting point
                 reformattedPath.push([PathType.Starting, value.x, value.y]);
-            }
-            else if (index + 1 === this._path.length) {
+            } else if (index + 1 === this._path.length) {
                 // ending point
                 reformattedPath.push([PathType.Finishing, value.x, value.y]);
-            }
-            else {
+            } else {
                 // moving point
                 reformattedPath.push([PathType.Moving, value.x, value.y]);
             }
@@ -226,12 +272,28 @@ class PencilCanvasDrawTool extends BaseCanvasDrawTool implements CanvasDrawTool 
      * Removed the bound mouse and touch events
      */
     private _removeEventListeners(): void {
-        this._canvas.removeEventListener("mousedown", this._onMouseDownCanvas, false);
-        this._canvas.removeEventListener("mousemove", this._onMouseMoveCanvas, false);
+        this._canvas.removeEventListener(
+            "mousedown",
+            this._onMouseDownCanvas,
+            false
+        );
+        this._canvas.removeEventListener(
+            "mousemove",
+            this._onMouseMoveCanvas,
+            false
+        );
         window.removeEventListener("mouseup", this._onMouseUpWindow, false);
 
-        this._canvas.removeEventListener("touchstart", this._onTouchStartCanvas, false);
-        this._canvas.removeEventListener("touchmove", this._onTouchMoveCanvas, false);
+        this._canvas.removeEventListener(
+            "touchstart",
+            this._onTouchStartCanvas,
+            false
+        );
+        this._canvas.removeEventListener(
+            "touchmove",
+            this._onTouchMoveCanvas,
+            false
+        );
         window.removeEventListener("touchend", this._onTouchEndWindow, false);
     }
 
@@ -288,7 +350,10 @@ class PencilCanvasDrawTool extends BaseCanvasDrawTool implements CanvasDrawTool 
     }
 
     private _onTouchMoveCanvas(e: TouchEvent): void {
-        const touchPosition = PositionUtils.getTouchPosition(e, this._config.canvas);
+        const touchPosition = PositionUtils.getTouchPosition(
+            e,
+            this._config.canvas
+        );
         if (touchPosition != null) {
             this._move(touchPosition);
         }
@@ -298,7 +363,10 @@ class PencilCanvasDrawTool extends BaseCanvasDrawTool implements CanvasDrawTool 
     }
 
     private _onTouchStartCanvas(e: TouchEvent): void {
-        const touchPosition = PositionUtils.getTouchPosition(e, this._config.canvas);
+        const touchPosition = PositionUtils.getTouchPosition(
+            e,
+            this._config.canvas
+        );
         if (touchPosition != null) {
             this._startStroke(touchPosition);
         }

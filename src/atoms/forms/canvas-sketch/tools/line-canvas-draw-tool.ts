@@ -1,4 +1,9 @@
-import { CanvasDrawToolSettings, CanvasDrawTool, DrawToolConfig, BaseCanvasDrawTool } from "./base-canvas-draw-tool";
+import {
+    CanvasDrawToolSettings,
+    CanvasDrawTool,
+    DrawToolConfig,
+    BaseCanvasDrawTool,
+} from "./base-canvas-draw-tool";
 import { CanvasToolType } from "../enums/canvas-tool-type";
 import { CoreUtils } from "../../../../utilities/core-utils";
 import { PointerPosition } from "../interfaces/pointer-position";
@@ -38,17 +43,19 @@ class LineCanvasDrawTool extends BaseCanvasDrawTool implements CanvasDrawTool {
     }
 
     public drawStrokes(strokes: CanvasDrawToolSettings[]): void {
-        (strokes as LineStrokeSettings[]).forEach((stroke: LineStrokeSettings) => {
-            const startX: number = stroke.startX;
-            const endX: number = stroke.endX
-            const startY: number = stroke.startY;
-            const endY: number = stroke.endY;
+        (strokes as LineStrokeSettings[]).forEach(
+            (stroke: LineStrokeSettings) => {
+                const startX: number = stroke.startX;
+                const endX: number = stroke.endX;
+                const startY: number = stroke.startY;
+                const endY: number = stroke.endY;
 
-            const color = stroke.stroke;
-            const width = stroke.strokeWidth;
+                const color = stroke.stroke;
+                const width = stroke.strokeWidth;
 
-            this._drawStroke(startX, startY, endX, endY, color, width);
-        });
+                this._drawStroke(startX, startY, endX, endY, color, width);
+            }
+        );
     }
 
     public initialize(): void {
@@ -65,12 +72,28 @@ class LineCanvasDrawTool extends BaseCanvasDrawTool implements CanvasDrawTool {
      * Binds the necessary mouse and touch events
      */
     private _addEventListeners(): void {
-        this._canvas.addEventListener("mousedown", this._onMouseDownCanvas, false);
-        this._canvas.addEventListener("mousemove", this._onMouseMoveCanvas, false);
+        this._canvas.addEventListener(
+            "mousedown",
+            this._onMouseDownCanvas,
+            false
+        );
+        this._canvas.addEventListener(
+            "mousemove",
+            this._onMouseMoveCanvas,
+            false
+        );
         window.addEventListener("mouseup", this._onMouseUpWindow, false);
 
-        this._canvas.addEventListener("touchstart", this._onTouchStartCanvas, false);
-        this._canvas.addEventListener("touchmove", this._onTouchMoveCanvas, false);
+        this._canvas.addEventListener(
+            "touchstart",
+            this._onTouchStartCanvas,
+            false
+        );
+        this._canvas.addEventListener(
+            "touchmove",
+            this._onTouchMoveCanvas,
+            false
+        );
         window.addEventListener("touchend", this._onTouchEndWindow, false);
     }
 
@@ -84,7 +107,8 @@ class LineCanvasDrawTool extends BaseCanvasDrawTool implements CanvasDrawTool {
             this._currentPosition.x,
             this._currentPosition.y,
             this._uiSettings.color,
-            this._uiSettings.width);
+            this._uiSettings.width
+        );
     }
 
     /**
@@ -103,7 +127,8 @@ class LineCanvasDrawTool extends BaseCanvasDrawTool implements CanvasDrawTool {
         endX: number,
         endY: number,
         color: string,
-        width: number): void {
+        width: number
+    ): void {
         this._context.beginPath();
 
         // Draw a line between two points
@@ -178,12 +203,28 @@ class LineCanvasDrawTool extends BaseCanvasDrawTool implements CanvasDrawTool {
      * Removed the bound mouse and touch events
      */
     private _removeEventListeners(): void {
-        this._canvas.removeEventListener("mousedown", this._onMouseDownCanvas, false);
-        this._canvas.removeEventListener("mousemove", this._onMouseMoveCanvas, false);
+        this._canvas.removeEventListener(
+            "mousedown",
+            this._onMouseDownCanvas,
+            false
+        );
+        this._canvas.removeEventListener(
+            "mousemove",
+            this._onMouseMoveCanvas,
+            false
+        );
         window.removeEventListener("mouseup", this._onMouseUpWindow, false);
 
-        this._canvas.removeEventListener("touchstart", this._onTouchStartCanvas, false);
-        this._canvas.removeEventListener("touchmove", this._onTouchMoveCanvas, false);
+        this._canvas.removeEventListener(
+            "touchstart",
+            this._onTouchStartCanvas,
+            false
+        );
+        this._canvas.removeEventListener(
+            "touchmove",
+            this._onTouchMoveCanvas,
+            false
+        );
         window.removeEventListener("touchend", this._onTouchEndWindow, false);
     }
 
@@ -234,7 +275,10 @@ class LineCanvasDrawTool extends BaseCanvasDrawTool implements CanvasDrawTool {
     }
 
     private _onTouchMoveCanvas(e: TouchEvent): void {
-        const touchPosition = PositionUtils.getTouchPosition(e, this._config.canvas);
+        const touchPosition = PositionUtils.getTouchPosition(
+            e,
+            this._config.canvas
+        );
         if (touchPosition != null) {
             this._move(touchPosition);
         }
@@ -244,7 +288,10 @@ class LineCanvasDrawTool extends BaseCanvasDrawTool implements CanvasDrawTool {
     }
 
     private _onTouchStartCanvas(e: TouchEvent): void {
-        const touchPosition = PositionUtils.getTouchPosition(e, this._config.canvas);
+        const touchPosition = PositionUtils.getTouchPosition(
+            e,
+            this._config.canvas
+        );
         if (touchPosition != null) {
             this._startStroke(touchPosition);
         }

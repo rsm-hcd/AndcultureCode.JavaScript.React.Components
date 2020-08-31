@@ -16,8 +16,8 @@ const getMousePosition = (e: MouseEvent): PointerPosition | null => {
             x: e.offsetX,
             y: e.offsetY,
         };
-    }
-    else if ((e as any).layerX) { // fallback if mousing outside canvas
+    } else if ((e as any).layerX) {
+        // fallback if mousing outside canvas
         return {
             x: (e as any).layerX,
             y: (e as any).layerY,
@@ -32,18 +32,20 @@ const getMousePosition = (e: MouseEvent): PointerPosition | null => {
  *
  * @param e The touch event
  */
-const getTouchPosition = (e: TouchEvent, canvas: HTMLCanvasElement): PointerPosition | null => {
+const getTouchPosition = (
+    e: TouchEvent,
+    canvas: HTMLCanvasElement
+): PointerPosition | null => {
     if (!e) {
         // is this necessary?
         // e = event as TouchEvent;
     }
 
     if (e.touches) {
-
         const viewportOffset = canvas.getBoundingClientRect();
         return {
-            x: (e.touches[0].clientX - viewportOffset.left),
-            y: (e.touches[0].clientY - viewportOffset.top),
+            x: e.touches[0].clientX - viewportOffset.left,
+            y: e.touches[0].clientY - viewportOffset.top,
         };
     }
 

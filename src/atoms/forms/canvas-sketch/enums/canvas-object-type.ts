@@ -1,5 +1,5 @@
 export enum CanvasObjectType {
     image = "image",
-    line  = "line",
-    path  = "path",
+    line = "line",
+    path = "path",
 }

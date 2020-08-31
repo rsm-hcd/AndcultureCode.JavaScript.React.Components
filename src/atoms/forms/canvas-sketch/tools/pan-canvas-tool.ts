@@ -59,12 +59,28 @@ class PanCanvasTool {
      * Binds the necessary mouse and touch events
      */
     private _addEventListeners(): void {
-        this._config.canvas.addEventListener("mousedown", this._onMouseDownCanvas, false);
-        this._config.canvas.addEventListener("mousemove", this._onMouseMoveCanvas, false);
+        this._config.canvas.addEventListener(
+            "mousedown",
+            this._onMouseDownCanvas,
+            false
+        );
+        this._config.canvas.addEventListener(
+            "mousemove",
+            this._onMouseMoveCanvas,
+            false
+        );
         window.addEventListener("mouseup", this._onMouseUpWindow, false);
 
-        this._config.canvas.addEventListener("touchstart", this._onTouchStartCanvas, false);
-        this._config.canvas.addEventListener("touchmove", this._onTouchMoveCanvas, false);
+        this._config.canvas.addEventListener(
+            "touchstart",
+            this._onTouchStartCanvas,
+            false
+        );
+        this._config.canvas.addEventListener(
+            "touchmove",
+            this._onTouchMoveCanvas,
+            false
+        );
         window.addEventListener("touchend", this._onTouchEndWindow, false);
     }
 
@@ -85,7 +101,6 @@ class PanCanvasTool {
     private _pan(newCurrentPosition: PointerPosition): void {
         // If the pointer is active... draw!
         if (this._isPointerActive) {
-
             const newPanX = newCurrentPosition.x - this._lastPosition.x;
             const newPanY = newCurrentPosition.y - this._lastPosition.y;
 
@@ -101,12 +116,28 @@ class PanCanvasTool {
      * Removed the bound mouse and touch events
      */
     private _removeEventListeners(): void {
-        this._config.canvas.removeEventListener("mousedown", this._onMouseDownCanvas, false);
-        this._config.canvas.removeEventListener("mousemove", this._onMouseMoveCanvas, false);
+        this._config.canvas.removeEventListener(
+            "mousedown",
+            this._onMouseDownCanvas,
+            false
+        );
+        this._config.canvas.removeEventListener(
+            "mousemove",
+            this._onMouseMoveCanvas,
+            false
+        );
         window.removeEventListener("mouseup", this._onMouseUpWindow, false);
 
-        this._config.canvas.removeEventListener("touchstart", this._onTouchStartCanvas, false);
-        this._config.canvas.removeEventListener("touchmove", this._onTouchMoveCanvas, false);
+        this._config.canvas.removeEventListener(
+            "touchstart",
+            this._onTouchStartCanvas,
+            false
+        );
+        this._config.canvas.removeEventListener(
+            "touchmove",
+            this._onTouchMoveCanvas,
+            false
+        );
         window.removeEventListener("touchend", this._onTouchEndWindow, false);
     }
 
@@ -153,7 +184,10 @@ class PanCanvasTool {
     }
 
     private _onTouchMoveCanvas(e: TouchEvent): void {
-        const touchPosition = PositionUtils.getTouchPosition(e, this._config.canvas);
+        const touchPosition = PositionUtils.getTouchPosition(
+            e,
+            this._config.canvas
+        );
         if (touchPosition != null) {
             this._pan(touchPosition);
         }
@@ -163,7 +197,10 @@ class PanCanvasTool {
     }
 
     private _onTouchStartCanvas(e: TouchEvent): void {
-        const touchPosition = PositionUtils.getTouchPosition(e, this._config.canvas);
+        const touchPosition = PositionUtils.getTouchPosition(
+            e,
+            this._config.canvas
+        );
         if (touchPosition != null) {
             this._startPan(touchPosition);
         }

@@ -28,7 +28,6 @@ class ImageCanvasTool {
     private _shouldFitInCanvas: boolean;
     private _shouldScaleToFitDestRectangle: boolean;
 
-
     constructor(config: ImageConfig) {
         this._config = config;
         this._shouldCenterInDestRectangle = false;
@@ -44,13 +43,14 @@ class ImageCanvasTool {
     // #region Public Methods
     // ---------------------------------------------------------------------------------------------
 
-    public dispose(): void {
-    }
+    public dispose(): void {}
 
     public drawImages(images: ImageSettings[]): void {
-        (images as ImageSettings[]).forEach((image: ImageSettings, imageI: number) => {
-            this.drawImage(image);
-        });
+        (images as ImageSettings[]).forEach(
+            (image: ImageSettings, imageI: number) => {
+                this.drawImage(image);
+            }
+        );
     }
 
     public drawImage(image: ImageSettings): void {
@@ -59,12 +59,15 @@ class ImageCanvasTool {
             image.destRecEndY,
             image.destRecStartX,
             image.destRecStartY,
-            image.src);
+            image.src
+        );
     }
 
-    public initialize(): void { }
+    public initialize(): void {}
 
-    public setShouldCenterInDestRectangle(shouldCenterInDestRectangle: boolean): void {
+    public setShouldCenterInDestRectangle(
+        shouldCenterInDestRectangle: boolean
+    ): void {
         this._shouldCenterInDestRectangle = shouldCenterInDestRectangle;
     }
 
@@ -72,7 +75,9 @@ class ImageCanvasTool {
         this._shouldFitInCanvas = shouldFitInCanvas;
     }
 
-    public setShouldScaleToFitDestRectangle(shouldScaleToFitDestRectangle: boolean): void {
+    public setShouldScaleToFitDestRectangle(
+        shouldScaleToFitDestRectangle: boolean
+    ): void {
         this._shouldScaleToFitDestRectangle = shouldScaleToFitDestRectangle;
     }
 
@@ -96,12 +101,10 @@ class ImageCanvasTool {
         destRecEndY?: number,
         destRecStartX?: number,
         destRecStartY?: number,
-        url?: string,
+        url?: string
     ): void {
-
         const image = new Image();
         image.onload = () => {
-
             if (destRecStartX == null) {
                 destRecStartX = 0;
             }
@@ -125,16 +128,22 @@ class ImageCanvasTool {
             let newImageWidth = image.width;
             let newImageHeight = image.height;
 
-            if (this._shouldFitInCanvas &&
-                (image.width > this._config.canvas.width || image.height > this._config.canvas.height)) {
+            if (
+                this._shouldFitInCanvas &&
+                (image.width > this._config.canvas.width ||
+                    image.height > this._config.canvas.height)
+            ) {
                 // scale down the image dimensions to fit inside the canvas
-                const canvasAspectRatio = this._config.canvas.width / this._config.canvas.height;
+                const canvasAspectRatio =
+                    this._config.canvas.width / this._config.canvas.height;
                 newImageWidth = image.width / canvasAspectRatio;
                 newImageHeight = image.height / canvasAspectRatio;
             }
 
-            if (this._shouldScaleToFitDestRectangle &&
-                (image.width > destRectWidth || image.height > destRectHeight)) {
+            if (
+                this._shouldScaleToFitDestRectangle &&
+                (image.width > destRectWidth || image.height > destRectHeight)
+            ) {
                 // scale down the image dimension to fit the destination rectangle canvas space
                 const destRectAspectRatio = destRectWidth / destRectHeight;
                 newImageWidth = image.width / destRectAspectRatio;
@@ -143,19 +152,23 @@ class ImageCanvasTool {
 
             if (this._shouldCenterInDestRectangle) {
                 // define the new rect space in order to center the image in the canvas
-                newDestRecStartX = destRecStartX + ((destRectWidth - newImageWidth) / 2);
-                newDestRecStartY = destRecStartY + ((destRectHeight - newImageHeight) / 2);
+                newDestRecStartX =
+                    destRecStartX + (destRectWidth - newImageWidth) / 2;
+                newDestRecStartY =
+                    destRecStartY + (destRectHeight - newImageHeight) / 2;
             }
 
-            this._config.context.drawImage(image,
-                0,                // start of image clipping X
-                0,                // start of image clipping Y
-                image.width,      // finish of image clipping X
-                image.height,     // finish of image clipping Y
+            this._config.context.drawImage(
+                image,
+                0, // start of image clipping X
+                0, // start of image clipping Y
+                image.width, // finish of image clipping X
+                image.height, // finish of image clipping Y
                 newDestRecStartX, // start of destination rectangle X
                 newDestRecStartY, // start of destination rectangle Y
-                newImageWidth,    // new rectangle width
-                newImageHeight);  // new rectangle height
+                newImageWidth, // new rectangle width
+                newImageHeight
+            ); // new rectangle height
         };
 
         if (url != null) {
@@ -164,7 +177,6 @@ class ImageCanvasTool {
     }
 
     // #endregion Private Methods
-
 }
 
 export { ImageCanvasTool };

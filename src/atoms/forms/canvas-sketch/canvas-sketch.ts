@@ -1,9 +1,18 @@
 import { ImageSettings, ImageCanvasTool } from "./tools/image-canvas-tool";
-import { CanvasToolSettings, CanvasTool, ToolConfig } from "./tools/base-canvas-tool";
+import {
+    CanvasToolSettings,
+    CanvasTool,
+    ToolConfig,
+} from "./tools/base-canvas-tool";
 import { LineCanvasDrawTool } from "./tools/line-canvas-draw-tool";
 import { PencilCanvasDrawTool } from "./tools/pencil-canvas-draw-tool";
 import { PanCanvasTool } from "./tools/pan-canvas-tool";
-import { DrawToolUiSettings, DrawToolConfig, CanvasDrawToolSettings, CanvasDrawTool } from "./tools/base-canvas-draw-tool";
+import {
+    DrawToolUiSettings,
+    DrawToolConfig,
+    CanvasDrawToolSettings,
+    CanvasDrawTool,
+} from "./tools/base-canvas-draw-tool";
 import { CanvasToolType } from "./enums/canvas-tool-type";
 import { CanvasObjectType } from "./enums/canvas-object-type";
 import { CoreUtils } from "../../../utilities/core-utils";
@@ -30,7 +39,6 @@ export interface CanvasSketchConfig {
  * the selected tool and selected tool options like color and width through it's API
  */
 class CanvasSketch {
-
     public backgroundImageTool!: ImageCanvasTool;
     public imageTool!: ImageCanvasTool;
     public lineDrawTool!: LineCanvasDrawTool;
@@ -162,7 +170,10 @@ class CanvasSketch {
      * @param {CanvasToolSettings[]} objects - The entire stack of drawn objects
      * @param {number} newCurrentObjectIndex - The point in time / point in stack to draw
      */
-    public redrawSketchAt(objects: CanvasToolSettings[], newCurrentObjectIndex: number): void {
+    public redrawSketchAt(
+        objects: CanvasToolSettings[],
+        newCurrentObjectIndex: number
+    ): void {
         if (!this._isBrowserSupported) {
             return;
         }
@@ -176,11 +187,15 @@ class CanvasSketch {
             return;
         }
         if (newCurrentObjectIndex + 1 > objects.length) {
-            console.error(`Drawing history only contains ${objects.length} objects.  Cannot set object index to ${newCurrentObjectIndex}`);
+            console.error(
+                `Drawing history only contains ${objects.length} objects.  Cannot set object index to ${newCurrentObjectIndex}`
+            );
             return;
         }
         if (newCurrentObjectIndex < -1) {
-            console.error(`Cannot set new object index below -1.  -1 should be used when nothing is to be drawn`);
+            console.error(
+                `Cannot set new object index below -1.  -1 should be used when nothing is to be drawn`
+            );
             return;
         }
 
@@ -237,17 +252,20 @@ class CanvasSketch {
      *  is called when a new drawn object is added to the stack.  Returns the settings of that drawn
      *  object including things like color, width, and the type of tool used
      */
-    public setOnAddedToolStroke(onAddedStroke: (strokeSettings: CanvasDrawToolSettings) => void): void {
+    public setOnAddedToolStroke(
+        onAddedStroke: (strokeSettings: CanvasDrawToolSettings) => void
+    ): void {
         if (!this._isBrowserSupported) {
             return;
         }
 
-        this._drawToolConfig.onFinishStroke = (strokeSettings: CanvasDrawToolSettings) => {
-
+        this._drawToolConfig.onFinishStroke = (
+            strokeSettings: CanvasDrawToolSettings
+        ) => {
             // make sure to track stroke in stack
             this._onAddStroke(strokeSettings);
 
-            if (typeof (onAddedStroke) === "function") {
+            if (typeof onAddedStroke === "function") {
                 // call
                 onAddedStroke(strokeSettings);
             }
@@ -271,7 +289,6 @@ class CanvasSketch {
 
     // #endregion Public Methods
 
-
     // ---------------------------------------------------------------------------------------------
     // #region Private Methods
     // ---------------------------------------------------------------------------------------------
@@ -288,7 +305,10 @@ class CanvasSketch {
             return;
         }
 
-        this._clearCanvas(this._config.backgroundImageCanvas, this._backgroundImageContext);
+        this._clearCanvas(
+            this._config.backgroundImageCanvas,
+            this._backgroundImageContext
+        );
     }
 
     /**
@@ -297,7 +317,10 @@ class CanvasSketch {
      * @param {HTMLCanvasElement} canvas - The canvas that will have its drawing removed
      * @param {CanvasRenderingContext2D} context - The context of the canvas to remove the drawing
      */
-    private _clearCanvas(canvas: HTMLCanvasElement, context: CanvasRenderingContext2D): void {
+    private _clearCanvas(
+        canvas: HTMLCanvasElement,
+        context: CanvasRenderingContext2D
+    ): void {
         context.clearRect(0, 0, canvas.width, canvas.height);
     }
 
@@ -323,15 +346,21 @@ class CanvasSketch {
         }
 
         // Draw the pencil strokes
-        const pencilStrokes = objectStack.filter((value: CanvasToolSettings) => value.type === CanvasObjectType.path) as CanvasDrawToolSettings[];
+        const pencilStrokes = objectStack.filter(
+            (value: CanvasToolSettings) => value.type === CanvasObjectType.path
+        ) as CanvasDrawToolSettings[];
         this.pencilDrawTool.drawStrokes(pencilStrokes);
 
         // Draw the line strokes
-        const lineStrokes = objectStack.filter((value: CanvasToolSettings) => value.type === CanvasObjectType.line) as CanvasDrawToolSettings[];
+        const lineStrokes = objectStack.filter(
+            (value: CanvasToolSettings) => value.type === CanvasObjectType.line
+        ) as CanvasDrawToolSettings[];
         this.lineDrawTool.drawStrokes(lineStrokes);
 
         // Draw the images
-        const images = objectStack.filter((value: CanvasToolSettings) => value.type === CanvasObjectType.image) as any as ImageSettings[];
+        const images = (objectStack.filter(
+            (value: CanvasToolSettings) => value.type === CanvasObjectType.image
+        ) as any) as ImageSettings[];
         this.imageTool.drawImages(images);
     }
 
@@ -352,7 +381,10 @@ class CanvasSketch {
      * Returns an immutable stack of drawn strokes to draw at the point / point in time based on the current object index
      */
     private _getStackToDraw(): CanvasToolSettings[] {
-        const stackToDraw = [...this._config.objectStack].slice(0, this._config.currentObjectIndex + 1);
+        const stackToDraw = [...this._config.objectStack].slice(
+            0,
+            this._config.currentObjectIndex + 1
+        );
         return stackToDraw;
     }
 
@@ -362,9 +394,7 @@ class CanvasSketch {
      * @param {CanvasTool} tool - The tool to evaluate
      */
     private _isInstanceOfDrawTool(tool: CanvasTool): tool is CanvasDrawTool {
-        return "color" in tool
-            && "width" in tool
-            && "drawStrokes" in tool;
+        return "color" in tool && "width" in tool && "drawStrokes" in tool;
     }
 
     /**
@@ -380,23 +410,26 @@ class CanvasSketch {
             }
             this._sketchContext = sketchContext;
             this._isBrowserSupported = true;
-        }
-        else {
+        } else {
             // browser does not support the canvas tag, bail
             this._isBrowserSupported = false;
             return;
         }
 
-        if (this._config.backgroundImageCanvas != null && this._config.backgroundImageCanvas.getContext != null) {
+        if (
+            this._config.backgroundImageCanvas != null &&
+            this._config.backgroundImageCanvas.getContext != null
+        ) {
             // browser supports the canvas tag, get the 2d drawing context for this canvas
-            const backgroundImageContext = this._config.backgroundImageCanvas.getContext("2d");
+            const backgroundImageContext = this._config.backgroundImageCanvas.getContext(
+                "2d"
+            );
             if (backgroundImageContext == null) {
                 return;
             }
             this._backgroundImageContext = backgroundImageContext;
             this._isBrowserSupported = true;
-        }
-        else {
+        } else {
             // browser does not support the canvas tag, bail
             this._isBrowserSupported = false;
             return;
@@ -411,7 +444,10 @@ class CanvasSketch {
             // default the current stroke based on the initialized stroke stack's last object
             const lastObjectIndex = this._config.objectStack.length - 1;
 
-            if (this._config.currentObjectIndex != null && lastObjectIndex !== this._config.currentObjectIndex) {
+            if (
+                this._config.currentObjectIndex != null &&
+                lastObjectIndex !== this._config.currentObjectIndex
+            ) {
                 // caller wants the index to be something different... overwrite with caller's demand
                 this._config.currentObjectIndex = lastObjectIndex;
             }
@@ -432,17 +468,27 @@ class CanvasSketch {
             context: this._sketchContext,
             redraw: this.redrawSketch,
         };
-        this._drawToolConfig = Object.assign({
-            onFinishStroke: (strokeSettings: CanvasDrawToolSettings) => { },
-            uiSettings: this._drawToolUiSettings,
-        }, this._toolConfig);
+        this._drawToolConfig = Object.assign(
+            {
+                onFinishStroke: (strokeSettings: CanvasDrawToolSettings) => {},
+                uiSettings: this._drawToolUiSettings,
+            },
+            this._toolConfig
+        );
 
-        this.imageTool = new ImageCanvasTool(Object.assign({}, this._toolConfig, { redraw: this.redrawSketch }));
+        this.imageTool = new ImageCanvasTool(
+            Object.assign({}, this._toolConfig, { redraw: this.redrawSketch })
+        );
         this.lineDrawTool = new LineCanvasDrawTool(this._drawToolConfig);
         this.pencilDrawTool = new PencilCanvasDrawTool(this._drawToolConfig);
-        this.panTool = new PanCanvasTool(Object.assign({}, this._toolConfig, { panTo: this._panTo }));
+        this.panTool = new PanCanvasTool(
+            Object.assign({}, this._toolConfig, { panTo: this._panTo })
+        );
 
-        if (this._config.backgroundImage?.src != null && this._config.backgroundImageCanvas != null) {
+        if (
+            this._config.backgroundImage?.src != null &&
+            this._config.backgroundImageCanvas != null
+        ) {
             const toolConfig: ToolConfig = {
                 canvas: this._config.backgroundImageCanvas,
                 context: this._backgroundImageContext,
@@ -456,9 +502,12 @@ class CanvasSketch {
                 destRecEndY: this._config.backgroundImageCanvas.height,
                 destRecStartX: 0,
                 destRecStartY: 0,
-                src: '',
+                src: "",
             };
-            Object.assign(defaultBackgroundImageSettings, this._config.backgroundImage);
+            Object.assign(
+                defaultBackgroundImageSettings,
+                this._config.backgroundImage
+            );
 
             // draw the background image
             this.backgroundImageTool.drawImage(defaultBackgroundImageSettings);
@@ -496,7 +545,10 @@ class CanvasSketch {
 
         this._clearBackgroundImageCanvas();
 
-        if (this.backgroundImageTool != null && this._config.backgroundImage != null) {
+        if (
+            this.backgroundImageTool != null &&
+            this._config.backgroundImage != null
+        ) {
             this.backgroundImageTool.drawImage(this._config.backgroundImage);
         }
     }
