@@ -10,6 +10,7 @@ export { Image } from "./atoms/images/image";
 export { ProgressBar } from "./atoms/progress-bar/progress-bar";
 
 // Forms
+export { ReactCanvasSketch } from "./atoms/forms/canvas-sketch/react-canvas-sketch";
 export { CheckboxButton } from "./atoms/forms/checkbox-button";
 export { CheckboxInput } from "./atoms/forms/checkbox-input";
 export { InputCharacterCount } from "./atoms/forms/input-character-count";
