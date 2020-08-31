@@ -105,63 +105,57 @@ const ReactCanvasSketch: React.FunctionComponent<ReactCanvasSketchProps> = (
     const htmlCanvasBackgroundImage = React.createRef<HTMLCanvasElement>();
     const htmlCanvasSketch = React.createRef<HTMLCanvasElement>();
 
-    // track the previous list of objects
-    const prevValueObjectsRef = React.useRef<CanvasDrawToolSettings[]>();
-    useEffect(() => {
-        prevValueObjectsRef.current = props.value.objects;
-    });
-    const prevValueObjects = prevValueObjectsRef.current;
-
     // initialize state
     const canvasSketchDefaultInstance: CanvasSketch = null as any;
     const [isInitialized, setIsInitialized] = React.useState(false);
     const [canvasSketch, setCanvasSketch] = React.useState(canvasSketchDefaultInstance);
 
-    // set up effects
+    // ---------------------------------------------------------------------------------------------
+    // #region Effect Hooks
+    // ---------------------------------------------------------------------------------------------
+
+    // initialization of canvas sketch - NOTE: Must be before other effects using canvasSketch!
     useEffect(() => {
-        console.log("useEffect: initializing");
-        if (!isInitialized) {
-            // set up the default options for the background image
-            const canvasSketchConfig: CanvasSketchConfig = {
-                backgroundImage: { src: props.backgroundImageUrl },
-                backgroundImageCanvas: htmlCanvasBackgroundImage.current as HTMLCanvasElement,
-                currentObjectIndex: props.value.currentObjectIndex,
-                objectStack: props.value.objects,
-                panX: 0,
-                panY: 0,
-                scaleFactor: 1,
-                sketchCanvas: htmlCanvasSketch.current as HTMLCanvasElement,
-            };
-
-            // initialize the canvas sketch object
-            const newCanvasSketch = new CanvasSketch(canvasSketchConfig);
-
-            // set up any default property driven settings
-            newCanvasSketch.setSelectedTool(props.canvasToolType);
-            newCanvasSketch.setToolColor(props.toolColor);
-            newCanvasSketch.setToolWidth(props.toolWidth);
-            newCanvasSketch.setOnAddedToolStroke(props.onAddedStroke);
-
-            // set state
-            setCanvasSketch(newCanvasSketch);
-            setIsInitialized(true);
+        if (isInitialized) {
+            // already initialized, bail
+            return;
         }
+
+        console.log("useEffect: Initializing");
+
+        const {
+            backgroundImageUrl,
+            value,
+        } = { ...props };
+
+        // set up the default options for the background image
+        const canvasSketchConfig: CanvasSketchConfig = {
+            backgroundImage: { src: backgroundImageUrl },
+            backgroundImageCanvas: htmlCanvasBackgroundImage.current as HTMLCanvasElement,
+            currentObjectIndex: value.currentObjectIndex,
+            objectStack: value.objects,
+            panX: 0,
+            panY: 0,
+            scaleFactor: 1,
+            sketchCanvas: htmlCanvasSketch.current as HTMLCanvasElement,
+        };
+
+        // initialize the canvas sketch object
+        const newCanvasSketch = new CanvasSketch(canvasSketchConfig);
+
+        // set state
+        setCanvasSketch(newCanvasSketch);
+        setIsInitialized(true);
     }, [
         canvasSketch,
         htmlCanvasBackgroundImage,
         htmlCanvasSketch,
         isInitialized,
-        props.backgroundImageUrl,
-        props.canvasToolType,
-        props.onAddedStroke,
-        props.toolColor,
-        props.toolWidth,
-        props.value.currentObjectIndex,
-        props.value.objects,
+        props
     ]);
 
+    // cleanup of canvas sketch when unmounting component
     useEffect(() => {
-        console.log("useEffect: canvasSketch");
         return () => {
             // cleanup on unmount
             if (canvasSketch != null) {
@@ -170,12 +164,12 @@ const ReactCanvasSketch: React.FunctionComponent<ReactCanvasSketchProps> = (
         }
     }, [canvasSketch]);
 
+    // redraws current state when dimensions of container or canvas change
     useEffect(() => {
         if (canvasSketch == null) {
             return;
         }
         canvasSketch.redrawCurrentState();
-
     }, [
         canvasSketch,
         props.canvasHeight,
@@ -184,53 +178,89 @@ const ReactCanvasSketch: React.FunctionComponent<ReactCanvasSketchProps> = (
         props.containerWidth,
     ]);
 
+    // redraw the sketch canvas when current object index or objects changes
     useEffect(() => {
         if (canvasSketch == null) {
             return;
         }
-        // Only redraw if currentObjectIndex changes but not the objects list itself.  Being done to
-        // prevent rerenders after every single stroke of the same tool.  See following URL for more
-        // inforamtion on tracking previous state/props using hooks
-        //      https://stackoverflow.com/questions/55724642/react-useeffect-hook-when-only-one-of-the-effects-deps-changes-but-not-the-oth
-        if (prevValueObjects === props.value.objects) {
-            canvasSketch.redrawSketchAt(props.value.objects, props.value.currentObjectIndex);
-        }
-    }, [props.value.currentObjectIndex, props.value.objects, canvasSketch, prevValueObjects]);
 
-    useEffect(() => {
-        if (canvasSketch == null) {
-            return;
-        }
         canvasSketch.redrawSketchAt(props.value.objects, props.value.currentObjectIndex);
-    }, [props.redrawIncrement, canvasSketch, props.value.objects, props.value.currentObjectIndex]);
+    }, [
+        canvasSketch,
+        props.value.currentObjectIndex,
+        props.value.objects,
+    ]);
 
+    // redraw the sketch canvas when redraw increment changes
+    useEffect(() => {
+        if (canvasSketch == null) {
+            return;
+        }
+
+        const { value } = { ...props };
+
+        canvasSketch.redrawSketchAt(value.objects, value.currentObjectIndex);
+    }, [
+        props,
+        canvasSketch
+    ]);
+
+    // redraw the background image when it changes
     useEffect(() => {
         if (canvasSketch == null) {
             return;
         }
         canvasSketch.redrawBackgroundImageUsing(props.backgroundImageUrl);
-    }, [props.backgroundImageUrl, canvasSketch]);
+    }, [
+        props.backgroundImageUrl,
+        canvasSketch
+    ]);
 
+    // set on added stroke when changes
+    useEffect(() => {
+        if (canvasSketch == null) {
+            return;
+        }
+        canvasSketch.setOnAddedToolStroke(props.onAddedStroke);
+    }, [
+        props.onAddedStroke,
+        canvasSketch
+    ]);
+
+    // set tool color when it changes
     useEffect(() => {
         if (canvasSketch == null) {
             return;
         }
         canvasSketch.setToolColor(props.toolColor);
-    }, [props.toolColor, canvasSketch]);
+    }, [
+        props.toolColor,
+        canvasSketch
+    ]);
 
+    // set tool width when it changes
     useEffect(() => {
         if (canvasSketch == null) {
             return;
         }
         canvasSketch.setToolWidth(props.toolWidth);
-    }, [props.toolWidth, canvasSketch]);
+    }, [
+        props.toolWidth,
+        canvasSketch
+    ]);
 
+    // set selected tool when it changes
     useEffect(() => {
         if (canvasSketch == null) {
             return;
         }
         canvasSketch.setSelectedTool(props.canvasToolType);
-    }, [props.canvasToolType, canvasSketch]);
+    }, [
+        props.canvasToolType,
+        canvasSketch
+    ]);
+
+    // #endregion Effect Hooks
 
 
     // configure styles for elemtns

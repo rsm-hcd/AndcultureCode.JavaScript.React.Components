@@ -23,7 +23,7 @@ export const reactCanvasSketch = () => (
         className={text("Class Name", "")}
         containerHeight={number("Container Height", 700)}
         containerWidth={number("Container Width", 700)}
-        onAddedStroke={(strokeSettings: CanvasDrawToolSettings) => { console.log(`onAddedStroke: ${JSON.stringify(strokeSettings)}`) }}
+        onAddedStroke={(strokeSettings: CanvasDrawToolSettings) => { console.log(`STORYBOOK - onAddedStroke: ${JSON.stringify(strokeSettings)}`) }}
         redrawIncrement={number("Redraw Trigger Increment", 1)}
         canvasToolType={select("Tool Type", canvasToolTypes, CanvasToolType.pencil)}
         showCanvasBorder={boolean("Show Border", true)}
