@@ -1,6 +1,6 @@
 import React from "react";
 import { text, number, select, boolean } from "@storybook/addon-knobs";
-import { ReactCanvasSketch } from "./react-canvas-sketch";
+import { ReactCanvasSketch, ReactCanvasSketchValue } from "./react-canvas-sketch";
 import { CanvasDrawToolSettings } from "./tools/base-canvas-draw-tool";
 import { CanvasToolType } from "./enums/canvas-tool-type";
 
@@ -8,6 +8,14 @@ export default {
     component: ReactCanvasSketch,
     title: "Atoms | Forms / Canvas Sketch",
 };
+
+const value: ReactCanvasSketchValue = {
+    currentObjectIndex: -1,
+    objects: []
+}
+
+const onAddedStroke: (strokeSettings: CanvasDrawToolSettings) => void =
+    (strokeSettings: CanvasDrawToolSettings) => { console.log(`STORYBOOK MESSAGE - onAddedStroke: ${JSON.stringify(strokeSettings)}`) };
 
 const canvasToolTypes = [
     CanvasToolType.line,
@@ -23,12 +31,12 @@ export const reactCanvasSketch = () => (
         className={text("Class Name", "")}
         containerHeight={number("Container Height", 700)}
         containerWidth={number("Container Width", 700)}
-        onAddedStroke={(strokeSettings: CanvasDrawToolSettings) => { console.log(`STORYBOOK - onAddedStroke: ${JSON.stringify(strokeSettings)}`) }}
+        onAddedStroke={onAddedStroke}
         redrawIncrement={number("Redraw Trigger Increment", 1)}
         canvasToolType={select("Tool Type", canvasToolTypes, CanvasToolType.pencil)}
         showCanvasBorder={boolean("Show Border", true)}
         toolWidth={number("Tool Width", 1)}
         toolColor={text("Tool Color", "#000000")}
-        value={{ currentObjectIndex: -1, objects: [] }}
+        value={value}
     />
 );

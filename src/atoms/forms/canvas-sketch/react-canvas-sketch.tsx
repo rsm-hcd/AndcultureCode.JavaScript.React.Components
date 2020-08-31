@@ -120,6 +120,7 @@ const ReactCanvasSketch: React.FunctionComponent<ReactCanvasSketchProps> = (
             // already initialized, bail
             return;
         }
+        console.log("useEffect: Initializing");
 
         const {
             backgroundImageUrl,
@@ -167,6 +168,7 @@ const ReactCanvasSketch: React.FunctionComponent<ReactCanvasSketchProps> = (
         if (canvasSketch == null) {
             return;
         }
+        console.log("useEffect: dimensions of container or canvas change");
         canvasSketch.redrawCurrentState();
     }, [
         canvasSketch,
@@ -181,7 +183,7 @@ const ReactCanvasSketch: React.FunctionComponent<ReactCanvasSketchProps> = (
         if (canvasSketch == null) {
             return;
         }
-
+        console.log("useEffect: current object index or objects changes");
         canvasSketch.redrawSketchAt(props.value.objects, props.value.currentObjectIndex);
     }, [
         canvasSketch,
@@ -189,17 +191,16 @@ const ReactCanvasSketch: React.FunctionComponent<ReactCanvasSketchProps> = (
         props.value.objects,
     ]);
 
-    const { redrawIncrement } = props;
     // redraw the sketch canvas when redraw increment changes
     useEffect(() => {
         if (canvasSketch == null) {
             return;
         }
-
+        console.log("useEffect: redrawIncrement changes");
         canvasSketch.redrawSketch();
     }, [
         canvasSketch,
-        redrawIncrement,
+        props.redrawIncrement,
     ]);
 
     // redraw the background image when it changes
@@ -207,6 +208,7 @@ const ReactCanvasSketch: React.FunctionComponent<ReactCanvasSketchProps> = (
         if (canvasSketch == null) {
             return;
         }
+        console.log("useEffect: background image when it changes");
         canvasSketch.redrawBackgroundImageUsing(props.backgroundImageUrl);
     }, [
         props.backgroundImageUrl,
@@ -218,6 +220,7 @@ const ReactCanvasSketch: React.FunctionComponent<ReactCanvasSketchProps> = (
         if (canvasSketch == null) {
             return;
         }
+        console.log("useEffect: on added stroke when changes");
         canvasSketch.setOnAddedToolStroke(props.onAddedStroke);
     }, [
         props.onAddedStroke,
@@ -229,6 +232,7 @@ const ReactCanvasSketch: React.FunctionComponent<ReactCanvasSketchProps> = (
         if (canvasSketch == null) {
             return;
         }
+        console.log("useEffect: tool color when it changes");
         canvasSketch.setToolColor(props.toolColor);
     }, [
         props.toolColor,
@@ -240,6 +244,7 @@ const ReactCanvasSketch: React.FunctionComponent<ReactCanvasSketchProps> = (
         if (canvasSketch == null) {
             return;
         }
+        console.log("useEffect: tool width when it changes");
         canvasSketch.setToolWidth(props.toolWidth);
     }, [
         props.toolWidth,
@@ -251,6 +256,7 @@ const ReactCanvasSketch: React.FunctionComponent<ReactCanvasSketchProps> = (
         if (canvasSketch == null) {
             return;
         }
+        console.log("useEffect: selected tool when it changes");
         canvasSketch.setSelectedTool(props.canvasToolType);
     }, [
         props.canvasToolType,
