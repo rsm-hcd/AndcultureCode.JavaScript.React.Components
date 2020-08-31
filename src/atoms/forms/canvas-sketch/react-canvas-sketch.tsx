@@ -121,8 +121,6 @@ const ReactCanvasSketch: React.FunctionComponent<ReactCanvasSketchProps> = (
             return;
         }
 
-        console.log("useEffect: Initializing");
-
         const {
             backgroundImageUrl,
             value,
