@@ -191,18 +191,17 @@ const ReactCanvasSketch: React.FunctionComponent<ReactCanvasSketchProps> = (
         props.value.objects,
     ]);
 
+    const { redrawIncrement } = props;
     // redraw the sketch canvas when redraw increment changes
     useEffect(() => {
         if (canvasSketch == null) {
             return;
         }
 
-        const { value } = { ...props };
-
-        canvasSketch.redrawSketchAt(value.objects, value.currentObjectIndex);
+        canvasSketch.redrawSketch();
     }, [
-        props,
-        canvasSketch
+        canvasSketch,
+        redrawIncrement,
     ]);
 
     // redraw the background image when it changes

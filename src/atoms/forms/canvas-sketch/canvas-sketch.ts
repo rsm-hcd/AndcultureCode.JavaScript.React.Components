@@ -137,7 +137,22 @@ class CanvasSketch {
      */
     public redrawCurrentState(): void {
         this._redrawBackgroundImage();
-        this._redrawSketch();
+        this.redrawSketch();
+    }
+
+    /**
+     * Clears the sketch canvas and redraws all current stack objects to it
+     */
+    public redrawSketch(): void {
+        if (!this._isBrowserSupported) {
+            return;
+        }
+
+        this._clearSketchCanvas();
+
+        const stackToDraw = this._getStackToDraw();
+
+        this._drawObjects(stackToDraw);
     }
 
     /**
@@ -172,7 +187,7 @@ class CanvasSketch {
         this._config.objectStack = objects;
         this._config.currentObjectIndex = newCurrentObjectIndex;
 
-        this._redrawSketch();
+        this.redrawSketch();
     }
 
     /**
@@ -415,14 +430,14 @@ class CanvasSketch {
         this._toolConfig = {
             canvas: this._config.sketchCanvas,
             context: this._sketchContext,
-            redraw: this._redrawSketch,
+            redraw: this.redrawSketch,
         };
         this._drawToolConfig = Object.assign({
             onFinishStroke: (strokeSettings: CanvasDrawToolSettings) => { },
             uiSettings: this._drawToolUiSettings,
         }, this._toolConfig);
 
-        this.imageTool = new ImageCanvasTool(Object.assign({}, this._toolConfig, { redraw: this._redrawSketch }));
+        this.imageTool = new ImageCanvasTool(Object.assign({}, this._toolConfig, { redraw: this.redrawSketch }));
         this.lineDrawTool = new LineCanvasDrawTool(this._drawToolConfig);
         this.pencilDrawTool = new PencilCanvasDrawTool(this._drawToolConfig);
         this.panTool = new PanCanvasTool(Object.assign({}, this._toolConfig, { panTo: this._panTo }));
@@ -469,21 +484,6 @@ class CanvasSketch {
             this._config.backgroundImageCanvas.style.top = newPanY + "px";
             this._config.backgroundImageCanvas.style.left = newPanX + "px";
         }
-    }
-
-    /**
-     * Clears the sketch canvas and redraws all current stack objects to it
-     */
-    private _redrawSketch(): void {
-        if (!this._isBrowserSupported) {
-            return;
-        }
-
-        this._clearSketchCanvas();
-
-        const stackToDraw = this._getStackToDraw();
-
-        this._drawObjects(stackToDraw);
     }
 
     /**
