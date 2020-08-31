@@ -11,24 +11,82 @@ import { useEffect } from "react";
 // #region Interfaces
 // -------------------------------------------------------------------------------------------------
 
+/**
+ * Represents the objects containing all data necessary to redraw the sketch canvas at a point in
+ * the history of the stack of drawing objects
+ */
 export interface ReactCanvasSketchValue {
+    /**
+     * The current point/index in the history stack of drawing objects
+     */
     currentObjectIndex: number;
+    /**
+     * The drawn objects stack
+     */
     objects: CanvasDrawToolSettings[];
 }
 
+/**
+ * Represents all properties supported by the <ReactCanvasSketch> component
+ */
 export interface ReactCanvasSketchProps {
+    /**
+     * The URL of the background image to be drawn to the sketchpad
+     */
     backgroundImageUrl: string;
+    /**
+     * The height of the canvas element
+     */
     canvasHeight: number;
+    /**
+     * The width of the canvas element
+     */
     canvasWidth: number;
+    /**
+     * The className that will be appended to the sketchpad's outer most container
+     */
     className: string;
+    /**
+     * The height of the container wrapping the sketchpad
+     * NOTE: This can be smaller than the canvasHeight value since the sketchpad supports panning
+     */
     containerHeight: number;
+    /**
+     * The width of the container wrapping the sketchpad
+     * NOTE: This can be smaller than the canvasWidth value since the sketchpad supports panning
+     */
     containerWidth: number;
+    /**
+     * Handler to allow caller to track added stroke settings whenever a tool draws a new object
+     * to the drawn objects stack
+     */
     onAddedStroke: (strokeSettings: CanvasDrawToolSettings) => void;
+    /**
+     * Allows the caller to redraw the sketchpad by changing the numeric value provided
+     */
     redrawIncrement: number;
+    /**
+     * The tool to be selected by the canvas sketch library
+     */
     canvasToolType: CanvasToolType;
+    /**
+     * When true, displays a dashed border around the canvas to identify drawable area.  When false,
+     * hides the dashed border around the canvas.
+     */
     showCanvasBorder: boolean;
+    /**
+     * The width of the selected tool for use by the selected tool
+     */
     toolWidth: number;
+    /**
+     * The color of the selected tool for use by the selected tool
+     */
     toolColor: string;
+    /**
+     * The object literal containing all information necessary to redraw the objects containing all
+     * data necessary to redraw the sketch canvas at a point in the history of the stack of drawing
+     * objects
+     */
     value: ReactCanvasSketchValue;
 }
 
