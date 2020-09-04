@@ -38,6 +38,7 @@
         position: absolute;
         right: 8px;
         top: 12px;
+        max-width: 16px;
         // forward pointer events to the <select> underneath the icon
         pointer-events: none;
     }
