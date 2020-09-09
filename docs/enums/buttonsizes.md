@@ -17,7 +17,7 @@
 
 • **Large**: = "large"
 
-*Defined in [src/atoms/constants/button-sizes.ts:2](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/09a736c/src/atoms/constants/button-sizes.ts#L2)*
+*Defined in [src/atoms/constants/button-sizes.ts:2](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/70e5ccf/src/atoms/constants/button-sizes.ts#L2)*
 
 ___
 
@@ -25,7 +25,7 @@ ___
 
 • **Medium**: = "medium"
 
-*Defined in [src/atoms/constants/button-sizes.ts:3](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/09a736c/src/atoms/constants/button-sizes.ts#L3)*
+*Defined in [src/atoms/constants/button-sizes.ts:3](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/70e5ccf/src/atoms/constants/button-sizes.ts#L3)*
 
 ___
 
@@ -33,7 +33,7 @@ ___
 
 • **Small**: = "small"
 
-*Defined in [src/atoms/constants/button-sizes.ts:4](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/09a736c/src/atoms/constants/button-sizes.ts#L4)*
+*Defined in [src/atoms/constants/button-sizes.ts:4](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/70e5ccf/src/atoms/constants/button-sizes.ts#L4)*
 
 ___
 
@@ -41,4 +41,4 @@ ___
 
 • **XSmall**: = "xsmall"
 
-*Defined in [src/atoms/constants/button-sizes.ts:5](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/09a736c/src/atoms/constants/button-sizes.ts#L5)*
+*Defined in [src/atoms/constants/button-sizes.ts:5](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/70e5ccf/src/atoms/constants/button-sizes.ts#L5)*

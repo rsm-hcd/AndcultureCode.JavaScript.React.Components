@@ -20,7 +20,7 @@
 
 • **iconSize**? : *[IconSizes](../enums/iconsizes.md)*
 
-*Defined in [src/atoms/typography/heading-icon.tsx:13](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/09a736c/src/atoms/typography/heading-icon.tsx#L13)*
+*Defined in [src/atoms/typography/heading-icon.tsx:13](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/70e5ccf/src/atoms/typography/heading-icon.tsx#L13)*
 
 ___
 
@@ -28,7 +28,7 @@ ___
 
 • **priority**? : *[HeadingPriority](../enums/headingpriority.md)*
 
-*Defined in [src/atoms/typography/heading-icon.tsx:14](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/09a736c/src/atoms/typography/heading-icon.tsx#L14)*
+*Defined in [src/atoms/typography/heading-icon.tsx:14](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/70e5ccf/src/atoms/typography/heading-icon.tsx#L14)*
 
 ___
 
@@ -36,4 +36,4 @@ ___
 
 • **type**: *keyof typeof Icons*
 
-*Defined in [src/atoms/typography/heading-icon.tsx:15](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/09a736c/src/atoms/typography/heading-icon.tsx#L15)*
+*Defined in [src/atoms/typography/heading-icon.tsx:15](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/70e5ccf/src/atoms/typography/heading-icon.tsx#L15)*
