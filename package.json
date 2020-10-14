@@ -95,7 +95,8 @@
         "collectCoverageFrom": [
             "src/**/*.ts*",
             "!src/**/*.stories.ts*",
-            "!src/tests/**/*"
+            "!src/tests/**/*",
+            "!src/**/*.scss"
         ],
         "moduleNameMapper": {
             "react-spring": "<rootDir>/node_modules/react-spring/web.cjs",
