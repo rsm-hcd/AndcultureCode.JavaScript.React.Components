@@ -13,17 +13,17 @@ const getTemplate = (
     icon: Icons,
     content: string | ToastContent
 ): ToastContent => (
-        <div className={COMPONENT_CLASS}>
-            <div className={ICON_CONTAINER_CLASS}>
-                <Icon
-                    cssClassName={`${ICON_CONTAINER_CLASS}__icon`}
-                    size={IconSizes.Large}
-                    type={icon}
-                />
-            </div>
-            <div className={`${COMPONENT_CLASS}__body`}>{content}</div>
+    <div className={COMPONENT_CLASS}>
+        <div className={ICON_CONTAINER_CLASS}>
+            <Icon
+                cssClassName={`${ICON_CONTAINER_CLASS}__icon`}
+                size={IconSizes.Large}
+                type={icon}
+            />
         </div>
-    );
+        <div className={`${COMPONENT_CLASS}__body`}>{content}</div>
+    </div>
+);
 
 class ToastTemplates {
     static error(content: string | ToastContent): ToastContent {
