@@ -3,6 +3,7 @@ import { ButtonStyles } from "../constants/button-styles";
 import { ButtonTypes } from "../constants/button-types";
 import React, { forwardRef } from "react";
 import { StringUtils } from "andculturecode-javascript-core";
+import './button.scss';
 
 // -----------------------------------------------------------------------------------------
 // #region Interfaces

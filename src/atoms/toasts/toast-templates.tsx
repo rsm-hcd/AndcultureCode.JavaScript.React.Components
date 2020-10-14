@@ -3,6 +3,7 @@ import { Icon } from "../icons/icon";
 import { Icons } from "../constants/icons";
 import React from "react";
 import { ToastContent } from "react-toastify";
+import './toast.scss';
 
 const COMPONENT_CLASS = "c-toast-content";
 const ICON_CLASS = `${COMPONENT_CLASS}__icon`;
@@ -12,17 +13,17 @@ const getTemplate = (
     icon: Icons,
     content: string | ToastContent
 ): ToastContent => (
-    <div className={COMPONENT_CLASS}>
-        <div className={ICON_CONTAINER_CLASS}>
-            <Icon
-                cssClassName={`${ICON_CONTAINER_CLASS}__icon`}
-                size={IconSizes.Large}
-                type={icon}
-            />
+        <div className={COMPONENT_CLASS}>
+            <div className={ICON_CONTAINER_CLASS}>
+                <Icon
+                    cssClassName={`${ICON_CONTAINER_CLASS}__icon`}
+                    size={IconSizes.Large}
+                    type={icon}
+                />
+            </div>
+            <div className={`${COMPONENT_CLASS}__body`}>{content}</div>
         </div>
-        <div className={`${COMPONENT_CLASS}__body`}>{content}</div>
-    </div>
-);
+    );
 
 class ToastTemplates {
     static error(content: string | ToastContent): ToastContent {
