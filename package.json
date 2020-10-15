@@ -21,7 +21,7 @@
         "url": "https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/issues"
     },
     "dependencies": {
-        "@reach/menu-button": "0.10.2",
+        "@reach/menu-button": "0.11.2",
         "@tippyjs/react": "4.0.2",
         "@types/react": "16.9.11",
         "@types/react-beautiful-dnd": "13.0.0",
