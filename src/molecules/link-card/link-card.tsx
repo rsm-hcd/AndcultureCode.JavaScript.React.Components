@@ -45,6 +45,7 @@ const LinkCard: React.FC<LinkCardProps> = (props: LinkCardProps) => {
     const cssClassNamesFlat = cssClassNames.join(" ");
     const iconType = props.iconType ?? Icons.Lightbulb;
     const type = props.type ?? LinkCardTypes.Link;
+    const to = props.to ?? "#";
 
     const renderChildren = () => (
         <React.Fragment>
@@ -78,7 +79,7 @@ const LinkCard: React.FC<LinkCardProps> = (props: LinkCardProps) => {
             )}
             {// if
             type === LinkCardTypes.Link && (
-                <Anchor cssClassName={cssClassNamesFlat} to={props.to}>
+                <Anchor cssClassName={cssClassNamesFlat} to={to}>
                     {renderChildren()}
                 </Anchor>
             )}
