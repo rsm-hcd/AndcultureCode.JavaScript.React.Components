@@ -1,5 +1,6 @@
 import "@testing-library/jest-dom/extend-expect";
 import { GlobalWithFetchMock } from "jest-fetch-mock";
+import "jest-extended";
 
 // require("tests/factories");
 
