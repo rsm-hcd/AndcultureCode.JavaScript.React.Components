@@ -1,6 +1,6 @@
 import React from "react";
 import faker from "faker";
-import { LinkCard, IconClassName } from "./link-card";
+import { LinkCard, LinkCardIconClassName } from "./link-card";
 import { TestUtils } from "../../tests/test-utils";
 import { LinkCardTypes } from "../constants/link-card-types";
 
@@ -16,10 +16,10 @@ describe("LinkCard", () => {
         );
 
         //Assert
-        expect(getByText(expected)).not.toBeNull();
+        expect(getByText(expected)).not.toBeNil();
     });
 
-    test("when type prop is button, renders LinkCardTypes.Button", () => {
+    test(`when type prop is button, renders ${LinkCardTypes.Button}`, () => {
         // Arrange
         const expected = faker.random.words();
         const label = faker.random.words();
@@ -31,14 +31,13 @@ describe("LinkCard", () => {
                 {expected}
             </LinkCard>
         );
-        const result = container.getElementsByTagName(LinkCardTypes.Button)[0];
+        const result = container.getElementsByTagName("button")[0];
 
         // Assert
-        expect(result).not.toBeNull();
-        expect(container.innerHTML).toContain("button");
+        expect(result).not.toBeNil();
     });
 
-    test("when default props and include icon, renders with class name -with-icon", () => {
+    test(`when default props and include icon, renders with class name ${LinkCardIconClassName}`, () => {
         // Arrange
         const expected = faker.random.words();
         const label = faker.random.words();
@@ -49,10 +48,12 @@ describe("LinkCard", () => {
                 {expected}
             </LinkCard>
         );
-        const result = container.getElementsByClassName(IconClassName)[0];
+        const result = container.getElementsByClassName(
+            LinkCardIconClassName
+        )[0];
 
         // Assert
-        expect(result).not.toBeNull();
-        expect(result.classList).toContain(IconClassName);
+        expect(result).not.toBeNil();
+        expect(result.classList).toContain(LinkCardIconClassName);
     });
 });
