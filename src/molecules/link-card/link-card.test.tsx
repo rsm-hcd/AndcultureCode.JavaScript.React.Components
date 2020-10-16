@@ -1,11 +1,11 @@
 import React from "react";
 import faker from "faker";
-import { LinkCard } from "./link-card";
+import { LinkCard, IconClassName } from "./link-card";
 import { TestUtils } from "../../tests/test-utils";
 import { LinkCardTypes } from "../constants/link-card-types";
 
 describe("LinkCard", () => {
-    test("When default props, renders LinkCard", () => {
+    test("when default props, renders LinkCard", () => {
         // Arrange
         const expected = faker.random.words();
         const label = faker.random.words();
@@ -19,7 +19,7 @@ describe("LinkCard", () => {
         expect(getByText(expected)).not.toBeNull();
     });
 
-    test("When type prop is button, renders LinkCard with button", () => {
+    test("when type prop is button, renders LinkCardTypes.Button", () => {
         // Arrange
         const expected = faker.random.words();
         const label = faker.random.words();
@@ -35,11 +35,10 @@ describe("LinkCard", () => {
 
         // Assert
         expect(result).not.toBeNull();
-        expect(result.classList).toContain("c-button");
         expect(container.innerHTML).toContain("button");
     });
 
-    test("When default props and include icon, renders with class name -with-icon", () => {
+    test("when default props and include icon, renders with class name -with-icon", () => {
         // Arrange
         const expected = faker.random.words();
         const label = faker.random.words();
@@ -50,10 +49,10 @@ describe("LinkCard", () => {
                 {expected}
             </LinkCard>
         );
-        const result = container.getElementsByClassName("-with-icon")[0];
+        const result = container.getElementsByClassName(IconClassName)[0];
 
         // Assert
         expect(result).not.toBeNull();
-        expect(result.classList).toContain("-with-icon");
+        expect(result.classList).toContain(IconClassName);
     });
 });

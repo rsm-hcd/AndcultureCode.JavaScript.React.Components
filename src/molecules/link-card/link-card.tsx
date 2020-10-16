@@ -13,6 +13,7 @@ import { ParagraphSizes } from "../../atoms/constants/paragraph-sizes";
 // -------------------------------------------------------------------------------------------------
 
 const COMPONENT_CLASS = "c-link-card";
+export const IconClassName = "-with-icon";
 
 // #endregion Constants
 
@@ -39,7 +40,7 @@ export interface LinkCardProps {
 const LinkCard: React.FC<LinkCardProps> = (props: LinkCardProps) => {
     const cssClassNames = [COMPONENT_CLASS];
     if (props.includeIcon) {
-        cssClassNames.push("-with-icon");
+        cssClassNames.push(IconClassName);
     }
 
     const cssClassNamesFlat = cssClassNames.join(" ");

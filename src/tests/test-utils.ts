@@ -1,5 +1,6 @@
 import { MemoryRouter } from "react-router-dom";
 import { render } from "@testing-library/react";
+import { ReactElement } from "react";
 
 // -----------------------------------------------------------------------------------------
 // #region Functions
@@ -13,7 +14,7 @@ import { render } from "@testing-library/react";
  * @returns {ReactComponent}
  */
 
-const _renderWithRouter = (ui, { route = "/" } = {}) => {
+const _renderWithRouter = (ui: ReactElement, route: string = "/") => {
     window.history.pushState({}, "Test page", route);
 
     return render(ui, { wrapper: MemoryRouter });
