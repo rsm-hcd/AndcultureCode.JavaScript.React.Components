@@ -11,13 +11,14 @@ import { ReactElement } from "react";
  * must be rendered inside a Route Component.
  *
  * @param component
+ * @param route
  * @returns {ReactComponent}
  */
 
-const _renderWithRouter = (ui: ReactElement, route: string = "/") => {
+const _renderWithRouter = (component: ReactElement, route: string = "/") => {
     window.history.pushState({}, "Test page", route);
 
-    return render(ui, { wrapper: MemoryRouter });
+    return render(component, { wrapper: MemoryRouter });
 };
 
 // #endregion Functions
