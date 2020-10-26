@@ -1,7 +1,8 @@
 import * as React from "react";
 import { UnorderedList } from "./unordered-list";
 
-const COMPONENT_CLASS = "c-radio-list";
+export const COMPONENT_CLASS = "c-radio-list";
+export const RadioListButtonStyleClassName = "-button-style";
 
 export interface RadioListProps {
     items: JSX.Element[];
@@ -22,7 +23,7 @@ const RadioList: React.FunctionComponent<RadioListProps> = (props) => {
 
     const classNames = [COMPONENT_CLASS];
     if (style === RadioListStyles.Button) {
-        classNames.push("-button-style");
+        classNames.push(RadioListButtonStyleClassName);
     }
 
     return (
