@@ -2,6 +2,12 @@ import React from "react";
 import { Icons } from "../../atoms/constants/icons";
 import { StringUtils } from "andculturecode-javascript-core";
 
+// -------------------------------------------------------------------------------------------------
+// #region Constants
+// -------------------------------------------------------------------------------------------------
+
+export const UnorderedListIconClassName = "-has-icon";
+
 // -----------------------------------------------------------------------------------------
 // #region Interfaces
 // -----------------------------------------------------------------------------------------
@@ -29,7 +35,7 @@ const UnorderedList: React.FC<UnorderedListProps> = (
     }
 
     if (props.listIcon != null) {
-        cssClassNames.push("-has-icon");
+        cssClassNames.push(UnorderedListIconClassName);
         cssClassNames.push(props.listIcon);
     }
 
