@@ -8,6 +8,7 @@ import { StringUtils, CollectionUtils } from "andculturecode-javascript-core";
 // -----------------------------------------------------------------------------------------
 
 const COMPONENT_CLASS = "c-form-field";
+export const InvalidInputClassName = "-invalid";
 
 // #endregion Constants
 
@@ -60,7 +61,7 @@ const TextAreaFormField: React.FC<TextAreaFormFieldProps> = (
         value,
     } = props;
 
-    const cssIsValid = isValid ? "" : "-invalid";
+    const cssIsValid = isValid ? "" : InvalidInputClassName;
     const fieldId = props.fieldId ?? uuid.v4();
     const hasErrorMessage = StringUtils.hasValue(errorMessage);
     const hasErrors = CollectionUtils.hasValues(errorMessages);
