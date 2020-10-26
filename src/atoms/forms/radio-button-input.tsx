@@ -2,6 +2,7 @@ import * as React from "react";
 import { forwardRef } from "react";
 
 const COMPONENT_CLASS = "c-radio";
+export const RadioButtonSelectedClassName = "-selected";
 
 export interface RadioButtonProps {
     autofocus?: boolean;
@@ -41,7 +42,7 @@ const RadioButton: React.RefForwardingComponent<
             onCheck?.(e);
         const handleClick = (): void => onClick?.();
 
-        const cssChecked = checked ? "-selected" : "";
+        const cssChecked = checked ? RadioButtonSelectedClassName : "";
 
         return (
             <div className={`${COMPONENT_CLASS} ${cssChecked} ${cssClassName}`}>
