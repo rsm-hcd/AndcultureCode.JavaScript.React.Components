@@ -8,6 +8,7 @@ import { StringUtils, CollectionUtils } from "andculturecode-javascript-core";
 // -----------------------------------------------------------------------------------------
 
 const COMPONENT_CLASS = "c-form-field";
+export const InvalidSelectFormValueClass = "-invalid";
 
 // #endregion Component
 
@@ -49,7 +50,7 @@ const SelectFormField: React.FC<SelectFormFieldProps> = (
         values,
     } = props;
 
-    const cssIsValid = isValid ? "" : "-invalid";
+    const cssIsValid = isValid ? "" : InvalidSelectFormValueClass;
     const fieldId = props.fieldId ?? uuid.v4();
     const hasErrorMessage = StringUtils.hasValue(errorMessage);
     const hasErrors = CollectionUtils.hasValues(errorMessages);
