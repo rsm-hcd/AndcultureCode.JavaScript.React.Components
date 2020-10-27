@@ -1,8 +1,8 @@
 import React from "react";
 import { render } from "@testing-library/react";
 import {
-    RadioList,
     COMPONENT_CLASS,
+    RadioList,
     RadioListStyles,
     RadioListButtonStyleClassName,
 } from "./radio-list";
@@ -22,7 +22,7 @@ describe("RadioList", () => {
         expect(getByText(expected)).not.toBeNull();
     });
 
-    test("when items prop is empty, radio-list returns", () => {
+    test("when items prop is empty, radio-list returns null", () => {
         // Arrange & Act
         const { container } = render(<RadioList items={[]} />);
         const result = container.querySelector("." + COMPONENT_CLASS);
