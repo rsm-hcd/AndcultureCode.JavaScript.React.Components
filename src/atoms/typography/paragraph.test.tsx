@@ -18,7 +18,7 @@ describe("Paragraph", () => {
     test("when given cssClassName prop, renders paragraph with given class name", () => {
         // Act
         const expected = faker.random.words();
-        const testClassName = faker.random.word().replace(/ /, "");
+        const testClassName = "testClassName";
 
         // Arrange
         const { container } = render(
