@@ -44,6 +44,10 @@ npm run watch:coverage # automatically re-run test suite, along with code covera
 
 [Full API documentation](docs/README.md)
 
+# Community
+
+[![](https://sourcerer.io/fame/andCulture/AndcultureCode/AndcultureCode.JavaScript.React.Components/images/0)](https://sourcerer.io/fame/andCulture/AndcultureCode/AndcultureCode.JavaScript.React.Components/links/0)[![](https://sourcerer.io/fame/andCulture/AndcultureCode/AndcultureCode.JavaScript.React.Components/images/1)](https://sourcerer.io/fame/andCulture/AndcultureCode/AndcultureCode.JavaScript.React.Components/links/1)[![](https://sourcerer.io/fame/andCulture/AndcultureCode/AndcultureCode.JavaScript.React.Components/images/2)](https://sourcerer.io/fame/andCulture/AndcultureCode/AndcultureCode.JavaScript.React.Components/links/2)[![](https://sourcerer.io/fame/andCulture/AndcultureCode/AndcultureCode.JavaScript.React.Components/images/3)](https://sourcerer.io/fame/andCulture/AndcultureCode/AndcultureCode.JavaScript.React.Components/links/3)[![](https://sourcerer.io/fame/andCulture/AndcultureCode/AndcultureCode.JavaScript.React.Components/images/4)](https://sourcerer.io/fame/andCulture/AndcultureCode/AndcultureCode.JavaScript.React.Components/links/4)[![](https://sourcerer.io/fame/andCulture/AndcultureCode/AndcultureCode.JavaScript.React.Components/images/5)](https://sourcerer.io/fame/andCulture/AndcultureCode/AndcultureCode.JavaScript.React.Components/links/5)[![](https://sourcerer.io/fame/andCulture/AndcultureCode/AndcultureCode.JavaScript.React.Components/images/6)](https://sourcerer.io/fame/andCulture/AndcultureCode/AndcultureCode.JavaScript.React.Components/links/6)[![](https://sourcerer.io/fame/andCulture/AndcultureCode/AndcultureCode.JavaScript.React.Components/images/7)](https://sourcerer.io/fame/andCulture/AndcultureCode/AndcultureCode.JavaScript.React.Components/links/7)
+
 # Contributing
 
 Information on contributing to this repo is in the [Contributing Guide](CONTRIBUTING.md)
