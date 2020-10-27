@@ -1,8 +1,8 @@
 import React from "react";
 import { render } from "@testing-library/react";
 import {
-    TextAreaFormField,
     InvalidInputClassName,
+    TextAreaFormField,
 } from "./text-area-form-field";
 import faker from "faker";
 
@@ -20,7 +20,7 @@ describe("TextAreaFormField", () => {
         expect(getByLabelText(expected)).not.toBeNull();
     });
 
-    test("when has errorsMessages prop, renders text area form field with error message", () => {
+    test("when has errorMessages prop, renders text area form field with error message", () => {
         // Arrange
         const expected = faker.random.words();
         const testErrorMessage = faker.random.words();
@@ -38,7 +38,7 @@ describe("TextAreaFormField", () => {
         expect(getByText(testErrorMessage)).not.toBeNil();
     });
 
-    test("when has errorsMessage prop, renders text area form field with error message", () => {
+    test("when has errorMessage prop, renders text area form field with error message", () => {
         // Arrange
         const expected = faker.random.words();
         const testErrorMessage = faker.random.words();
@@ -74,7 +74,7 @@ describe("TextAreaFormField", () => {
         expect(result).not.toBeNil();
     });
 
-    test(`when isValid prop is true, renders with out ${InvalidInputClassName} class name`, () => {
+    test(`when isValid prop is true, renders without ${InvalidInputClassName} class name`, () => {
         // Arrange
         const expected = faker.random.words();
 
