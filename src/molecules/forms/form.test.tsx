@@ -41,13 +41,13 @@ describe("Form", () => {
 
     test("when given prop cssClassName, renders with class name", () => {
         // Arrange
-        const randomClassName = faker.random.word().replace(/ /, "");
+        const testClassName = "testClassName";
 
         // Act
         const { container } = render(
-            <Form onSubmit={() => {}} cssClassName={randomClassName} />
+            <Form onSubmit={() => {}} cssClassName={testClassName} />
         );
-        const result = container.querySelector("." + randomClassName);
+        const result = container.querySelector("." + testClassName);
 
         // Assert
         expect(result).not.toBeNil();
