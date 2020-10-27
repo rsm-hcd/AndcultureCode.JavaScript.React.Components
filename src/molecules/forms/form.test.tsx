@@ -41,7 +41,7 @@ describe("Form", () => {
 
     test("when given prop cssClassName, renders with class name", () => {
         // Arrange
-        const randomClassName = faker.random.word();
+        const randomClassName = faker.random.word().replace(/ /, "");
 
         // Act
         const { container } = render(
