@@ -66,8 +66,8 @@ describe("CheckboxButton", () => {
 
     test("when cssClassName provided, assigned class property", () => {
         // Arrange
-        const testClassName = faker.random.word().replace(/ /, "");
         const expected = faker.random.words();
+        const testClassName = "testClassName";
 
         // Act
         const { container } = render(
