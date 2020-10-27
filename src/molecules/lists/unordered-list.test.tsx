@@ -19,7 +19,7 @@ describe("UnorderedList", () => {
     test("when cssClassName prop provided, renders with class name", () => {
         // Arrange
         const expected = faker.random.words();
-        const cssClassNameTest = faker.random.word().replace(/ /, "");
+        const cssClassNameTest = "cssClassNameTest";
 
         // Act
         const { container } = render(
