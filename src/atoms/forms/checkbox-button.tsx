@@ -4,6 +4,12 @@ import { Icon } from "../icons/icon";
 import { Icons } from "../constants/icons";
 
 // -----------------------------------------------------------------------------------------
+// #region Constants
+// -----------------------------------------------------------------------------------------
+
+export const CheckboxButtonCheckedClass = "-checked";
+
+// -----------------------------------------------------------------------------------------
 // #region Interfaces
 // -----------------------------------------------------------------------------------------
 
@@ -41,7 +47,7 @@ const CheckboxButton: React.FC<CheckboxButtonProperties> = (
         props.onChange(e, props.identifier);
     };
 
-    const checkedClassName = checked ? " -checked" : "";
+    const checkedClassName = checked ? CheckboxButtonCheckedClass : "";
 
     return (
         <label
