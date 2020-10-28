@@ -33,10 +33,10 @@ const CheckboxInput: React.FC<CheckboxInputProperties> = (
     const { checked, disabled, label, onChange } = props;
 
     let className = ELEMENT_CLASS;
-    let isDisabled = disabled ? CheckboxDisabledClass : "";
+    let isDisabledClassName = disabled ? CheckboxDisabledClass : "";
 
     return (
-        <label className={`${className} ${isDisabled}`}>
+        <label className={`${className} ${isDisabledClassName}`}>
             {label}
             <input
                 checked={checked}
