@@ -1,5 +1,5 @@
 import React from "react";
-import { render } from "@testing-library/react";
+import { render, fireEvent } from "@testing-library/react";
 import {
     SelectFormField,
     InvalidSelectFormValueClass,
@@ -141,5 +141,31 @@ describe("SelectFormField", () => {
 
         // Assert
         expect(htmlLabelTag[0].textContent).toContain(requiredText);
+    });
+
+    test("when onChange set, calls handler upon change", () => {
+        // Arrange
+        const label = faker.random.word();
+        let isChecked = false;
+        const handleChange = () => (isChecked = true);
+        const selectLabel = faker.random.word();
+        const selectValue = faker.random.word();
+
+        // Act
+        const { getByLabelText, container } = render(
+            <SelectFormField
+                onChange={handleChange}
+                label={label}
+                id={label}
+                values={[{ value: selectValue, label: selectLabel }]}
+            />
+        );
+
+        fireEvent.change(getByLabelText(label), {
+            target: { value: faker.random.word() },
+        });
+
+        // Assert
+        expect(isChecked).toBeTrue();
     });
 });

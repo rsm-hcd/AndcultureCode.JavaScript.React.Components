@@ -19,7 +19,6 @@ export const InvalidSelectFormValueClass = "-invalid";
 export interface SelectFormFieldProps {
     errorMessage?: string;
     errorMessages?: string[];
-    fieldId?: string;
     id: string;
     isValid?: boolean;
     name?: string;
@@ -41,7 +40,6 @@ const SelectFormField: React.FC<SelectFormFieldProps> = (
     const {
         errorMessage,
         errorMessages,
-        id,
         isValid,
         name,
         label,
@@ -51,13 +49,13 @@ const SelectFormField: React.FC<SelectFormFieldProps> = (
     } = props;
 
     const cssIsValid = isValid ? "" : InvalidSelectFormValueClass;
-    const fieldId = props.fieldId ?? uuid.v4();
+    const id = props.id ?? uuid.v4();
     const hasErrorMessage = StringUtils.hasValue(errorMessage);
     const hasErrors = CollectionUtils.hasValues(errorMessages);
 
     return (
         <div className={`${COMPONENT_CLASS} ${cssIsValid}`}>
-            <label htmlFor={fieldId}>
+            <label htmlFor={id}>
                 {label}
                 {required ? "*" : ""}
             </label>

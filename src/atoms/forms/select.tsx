@@ -50,6 +50,7 @@ const Select: React.FC<SelectProps> = (props: SelectProps) => {
     return (
         <div className={classNames.join(" ")}>
             <select
+                id={props.id}
                 onChange={handleChange}
                 value={props.value}
                 name={props.name}>
