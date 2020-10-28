@@ -8,6 +8,8 @@ import { StringUtils } from "andculturecode-javascript-core";
 
 export const UnorderedListIconClassName = "-has-icon";
 
+// #endregion Constants
+
 // -----------------------------------------------------------------------------------------
 // #region Interfaces
 // -----------------------------------------------------------------------------------------
