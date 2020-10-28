@@ -8,7 +8,7 @@ import faker from "faker";
 import uuid from "uuid";
 
 describe("SelectFormField", () => {
-    test("when default props, renders SelectFormField with label", () => {
+    test("when default props, renders with label", () => {
         // Arrange
         const label = faker.random.words();
         const selectLabel = faker.random.word();
@@ -28,10 +28,11 @@ describe("SelectFormField", () => {
         expect(getByText(label)).not.toBeNil();
     });
 
-    test("when has errorsMessages prop, renders select form field with error message", () => {
+    test("when has errorsMessages prop, renders with error messages", () => {
         // Arrange
         const expected = faker.random.words();
-        const testErrorMessage = faker.random.words();
+        const firstErrorMessage = faker.random.words();
+        const secondErrorMessage = faker.random.words();
         const selectLabel = faker.random.word();
         const selectValue = faker.random.word();
 
@@ -41,16 +42,17 @@ describe("SelectFormField", () => {
                 label={expected}
                 onChange={() => {}}
                 id={uuid()}
-                errorMessages={[testErrorMessage]}
+                errorMessages={[firstErrorMessage, secondErrorMessage]}
                 values={[{ value: selectValue, label: selectLabel }]}
             />
         );
 
         // Assert
-        expect(getByText(testErrorMessage)).not.toBeNil();
+        expect(getByText(firstErrorMessage)).not.toBeNil();
+        expect(getByText(secondErrorMessage)).not.toBeNil();
     });
 
-    test("when has errorsMessage prop, renders select form field with error message", () => {
+    test("when has errorsMessage prop, renders with error message", () => {
         // Arrange
         const expected = faker.random.words();
         const testErrorMessage = faker.random.words();
