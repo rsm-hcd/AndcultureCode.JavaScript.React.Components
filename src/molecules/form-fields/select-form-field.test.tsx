@@ -152,7 +152,7 @@ describe("SelectFormField", () => {
         const selectValue = faker.random.word();
 
         // Act
-        const { getByLabelText, container } = render(
+        const { getByLabelText } = render(
             <SelectFormField
                 onChange={handleChange}
                 label={label}
