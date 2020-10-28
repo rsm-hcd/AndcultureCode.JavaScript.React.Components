@@ -1,10 +1,10 @@
 import React from "react";
 import { render } from "@testing-library/react";
 import {
-    COMPONENT_CLASS,
     RadioList,
-    RadioListStyles,
+    RadioListClassName,
     RadioListButtonStyleClassName,
+    RadioListStyles,
 } from "./radio-list";
 import faker from "faker";
 
@@ -25,7 +25,7 @@ describe("RadioList", () => {
     test("when items prop is empty, radio-list returns null", () => {
         // Arrange & Act
         const { container } = render(<RadioList items={[]} />);
-        const result = container.querySelector("." + COMPONENT_CLASS);
+        const result = container.querySelector("." + RadioListClassName);
 
         // Assert
         expect(result).toBeNil();
