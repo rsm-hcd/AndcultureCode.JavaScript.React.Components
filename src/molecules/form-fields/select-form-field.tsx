@@ -4,13 +4,13 @@ import { Select, SelectOption } from "../../atoms/forms/select";
 import { StringUtils, CollectionUtils } from "andculturecode-javascript-core";
 
 // -----------------------------------------------------------------------------------------
-// #region Component
+// #region Constants
 // -----------------------------------------------------------------------------------------
 
 const COMPONENT_CLASS = "c-form-field";
 export const InvalidSelectFormValueClass = "-invalid";
 
-// #endregion Component
+// #endregion Constants
 
 // -----------------------------------------------------------------------------------------
 // #region Interfaces
