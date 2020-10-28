@@ -20,25 +20,27 @@ describe("TextAreaFormField", () => {
         expect(getByLabelText(expected)).not.toBeNull();
     });
 
-    test("when has errorMessages prop, renders text area form field with error message", () => {
+    test("when has errorMessages prop, renders with error messages", () => {
         // Arrange
         const expected = faker.random.words();
-        const testErrorMessage = faker.random.words();
+        const firstErrorMessage = faker.random.words();
+        const secondErrorMessage = faker.random.words();
 
         // Act
         const { getByText } = render(
             <TextAreaFormField
                 label={expected}
                 onChange={() => {}}
-                errorMessages={[testErrorMessage]}
+                errorMessages={[firstErrorMessage, secondErrorMessage]}
             />
         );
 
         // Assert
-        expect(getByText(testErrorMessage)).not.toBeNil();
+        expect(getByText(firstErrorMessage)).not.toBeNil();
+        expect(getByText(secondErrorMessage)).not.toBeNil();
     });
 
-    test("when has errorMessage prop, renders text area form field with error message", () => {
+    test("when has errorMessage prop, renders with error message", () => {
         // Arrange
         const expected = faker.random.words();
         const testErrorMessage = faker.random.words();
