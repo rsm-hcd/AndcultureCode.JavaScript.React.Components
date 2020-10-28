@@ -41,7 +41,7 @@ const TextArea: React.FC<TextAreaProps> = (props: TextAreaProps) => {
 
     return (
         <textarea
-            data-testid={testId}
+            data-test-id={testId}
             disabled={disabled}
             id={id}
             maxLength={maxLength}
