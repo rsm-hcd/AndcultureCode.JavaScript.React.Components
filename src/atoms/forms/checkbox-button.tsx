@@ -9,6 +9,8 @@ import { Icons } from "../constants/icons";
 
 export const CheckboxButtonCheckedClass = "-checked";
 
+// #endregion Constants
+
 // -----------------------------------------------------------------------------------------
 // #region Interfaces
 // -----------------------------------------------------------------------------------------
