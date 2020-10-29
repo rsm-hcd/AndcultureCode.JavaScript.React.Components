@@ -10,6 +10,8 @@ import { InputProperties } from "../../atoms/interfaces/input-properties";
 // -----------------------------------------------------------------------------------------
 
 const COMPONENT_CLASS = "c-form-field";
+export const InvalidInputFormValueClass = "-invalid";
+export const ShowLabelForScreenReadersOnlyClass = "sr-only";
 
 // #endregion Constants
 
@@ -64,14 +66,16 @@ const InputFormField: React.RefForwardingComponent<
         value,
     } = props;
 
-    const cssIsValid = isValid ? "" : "-invalid";
+    const cssIsValid = isValid ? "" : InvalidInputFormValueClass;
     const fieldId = props.fieldId ?? uuid.v4();
 
     return (
         <div className={`${COMPONENT_CLASS} ${cssIsValid}`}>
             <label htmlFor={fieldId}>
                 {showLabelForScreenReadersOnly ? (
-                    <span className="sr-only">{label}</span>
+                    <span className={ShowLabelForScreenReadersOnlyClass}>
+                        {label}
+                    </span>
                 ) : (
                     <React.Fragment>{label}</React.Fragment>
                 )}
@@ -82,7 +86,7 @@ const InputFormField: React.RefForwardingComponent<
                 )}
             </label>
             <input
-                data-test-id={inputTestId}
+                data-testid={inputTestId}
                 disabled={disabled}
                 id={fieldId}
                 placeholder={placeholder}
