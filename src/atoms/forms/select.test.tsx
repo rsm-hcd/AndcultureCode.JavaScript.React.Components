@@ -48,7 +48,7 @@ describe("Select", () => {
         expect(isChecked).toBeTrue();
     });
 
-    test("when given cssClassName prop, renders with class name", () => {
+    test("when cssClassName set, renders with class name", () => {
         // Arrange
         const expected = faker.random.word();
         const testLabel = faker.random.word();
