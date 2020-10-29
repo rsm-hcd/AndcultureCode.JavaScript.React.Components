@@ -21,7 +21,7 @@
 
 • **cssClassName**? : *undefined | string*
 
-*Defined in [src/atoms/progress-bar/progress-bar.tsx:20](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/70e5ccf/src/atoms/progress-bar/progress-bar.tsx#L20)*
+*Defined in [src/atoms/progress-bar/progress-bar.tsx:20](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/d179e3a/src/atoms/progress-bar/progress-bar.tsx#L20)*
 
 ___
 
@@ -29,7 +29,7 @@ ___
 
 • **isErrored**? : *undefined | false | true*
 
-*Defined in [src/atoms/progress-bar/progress-bar.tsx:21](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/70e5ccf/src/atoms/progress-bar/progress-bar.tsx#L21)*
+*Defined in [src/atoms/progress-bar/progress-bar.tsx:21](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/d179e3a/src/atoms/progress-bar/progress-bar.tsx#L21)*
 
 ___
 
@@ -37,7 +37,7 @@ ___
 
 • **style**? : *[ProgressBarStyles](../enums/progressbarstyles.md)*
 
-*Defined in [src/atoms/progress-bar/progress-bar.tsx:22](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/70e5ccf/src/atoms/progress-bar/progress-bar.tsx#L22)*
+*Defined in [src/atoms/progress-bar/progress-bar.tsx:22](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/d179e3a/src/atoms/progress-bar/progress-bar.tsx#L22)*
 
 ___
 
@@ -45,4 +45,4 @@ ___
 
 • **value**: *number*
 
-*Defined in [src/atoms/progress-bar/progress-bar.tsx:23](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/70e5ccf/src/atoms/progress-bar/progress-bar.tsx#L23)*
+*Defined in [src/atoms/progress-bar/progress-bar.tsx:23](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/d179e3a/src/atoms/progress-bar/progress-bar.tsx#L23)*

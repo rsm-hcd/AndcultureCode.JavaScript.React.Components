@@ -16,7 +16,7 @@
 
 • **image**: = "image"
 
-*Defined in [src/atoms/forms/canvas-sketch/enums/canvas-object-type.ts:2](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/70e5ccf/src/atoms/forms/canvas-sketch/enums/canvas-object-type.ts#L2)*
+*Defined in [src/atoms/forms/canvas-sketch/enums/canvas-object-type.ts:2](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/d179e3a/src/atoms/forms/canvas-sketch/enums/canvas-object-type.ts#L2)*
 
 ___
 
@@ -24,7 +24,7 @@ ___
 
 • **line**: = "line"
 
-*Defined in [src/atoms/forms/canvas-sketch/enums/canvas-object-type.ts:3](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/70e5ccf/src/atoms/forms/canvas-sketch/enums/canvas-object-type.ts#L3)*
+*Defined in [src/atoms/forms/canvas-sketch/enums/canvas-object-type.ts:3](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/d179e3a/src/atoms/forms/canvas-sketch/enums/canvas-object-type.ts#L3)*
 
 ___
 
@@ -32,4 +32,4 @@ ___
 
 • **path**: = "path"
 
-*Defined in [src/atoms/forms/canvas-sketch/enums/canvas-object-type.ts:4](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/70e5ccf/src/atoms/forms/canvas-sketch/enums/canvas-object-type.ts#L4)*
+*Defined in [src/atoms/forms/canvas-sketch/enums/canvas-object-type.ts:4](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/d179e3a/src/atoms/forms/canvas-sketch/enums/canvas-object-type.ts#L4)*

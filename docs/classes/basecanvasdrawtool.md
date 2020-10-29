@@ -38,7 +38,7 @@
 
 \+ **new BaseCanvasDrawTool**(`config`: [DrawToolConfig](../interfaces/drawtoolconfig.md)): *[BaseCanvasDrawTool](basecanvasdrawtool.md)*
 
-*Defined in [src/atoms/forms/canvas-sketch/tools/base-canvas-draw-tool.ts:43](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/70e5ccf/src/atoms/forms/canvas-sketch/tools/base-canvas-draw-tool.ts#L43)*
+*Defined in [src/atoms/forms/canvas-sketch/tools/base-canvas-draw-tool.ts:43](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/d179e3a/src/atoms/forms/canvas-sketch/tools/base-canvas-draw-tool.ts#L43)*
 
 **Parameters:**
 
@@ -54,7 +54,7 @@ Name | Type |
 
 • **_canvas**: *HTMLCanvasElement*
 
-*Defined in [src/atoms/forms/canvas-sketch/tools/base-canvas-draw-tool.ts:35](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/70e5ccf/src/atoms/forms/canvas-sketch/tools/base-canvas-draw-tool.ts#L35)*
+*Defined in [src/atoms/forms/canvas-sketch/tools/base-canvas-draw-tool.ts:35](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/d179e3a/src/atoms/forms/canvas-sketch/tools/base-canvas-draw-tool.ts#L35)*
 
 ___
 
@@ -62,7 +62,7 @@ ___
 
 • **_color**: *string*
 
-*Defined in [src/atoms/forms/canvas-sketch/tools/base-canvas-draw-tool.ts:36](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/70e5ccf/src/atoms/forms/canvas-sketch/tools/base-canvas-draw-tool.ts#L36)*
+*Defined in [src/atoms/forms/canvas-sketch/tools/base-canvas-draw-tool.ts:36](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/d179e3a/src/atoms/forms/canvas-sketch/tools/base-canvas-draw-tool.ts#L36)*
 
 ___
 
@@ -70,7 +70,7 @@ ___
 
 • **_config**: *[DrawToolConfig](../interfaces/drawtoolconfig.md)*
 
-*Defined in [src/atoms/forms/canvas-sketch/tools/base-canvas-draw-tool.ts:37](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/70e5ccf/src/atoms/forms/canvas-sketch/tools/base-canvas-draw-tool.ts#L37)*
+*Defined in [src/atoms/forms/canvas-sketch/tools/base-canvas-draw-tool.ts:37](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/d179e3a/src/atoms/forms/canvas-sketch/tools/base-canvas-draw-tool.ts#L37)*
 
 ___
 
@@ -78,7 +78,7 @@ ___
 
 • **_context**: *CanvasRenderingContext2D*
 
-*Defined in [src/atoms/forms/canvas-sketch/tools/base-canvas-draw-tool.ts:38](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/70e5ccf/src/atoms/forms/canvas-sketch/tools/base-canvas-draw-tool.ts#L38)*
+*Defined in [src/atoms/forms/canvas-sketch/tools/base-canvas-draw-tool.ts:38](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/d179e3a/src/atoms/forms/canvas-sketch/tools/base-canvas-draw-tool.ts#L38)*
 
 ___
 
@@ -86,7 +86,7 @@ ___
 
 • **_currentPosition**: *[PointerPosition](../interfaces/pointerposition.md)*
 
-*Defined in [src/atoms/forms/canvas-sketch/tools/base-canvas-draw-tool.ts:39](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/70e5ccf/src/atoms/forms/canvas-sketch/tools/base-canvas-draw-tool.ts#L39)*
+*Defined in [src/atoms/forms/canvas-sketch/tools/base-canvas-draw-tool.ts:39](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/d179e3a/src/atoms/forms/canvas-sketch/tools/base-canvas-draw-tool.ts#L39)*
 
 ___
 
@@ -94,7 +94,7 @@ ___
 
 • **_isPointerActive**: *boolean*
 
-*Defined in [src/atoms/forms/canvas-sketch/tools/base-canvas-draw-tool.ts:40](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/70e5ccf/src/atoms/forms/canvas-sketch/tools/base-canvas-draw-tool.ts#L40)*
+*Defined in [src/atoms/forms/canvas-sketch/tools/base-canvas-draw-tool.ts:40](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/d179e3a/src/atoms/forms/canvas-sketch/tools/base-canvas-draw-tool.ts#L40)*
 
 ___
 
@@ -102,7 +102,7 @@ ___
 
 • **_previousPosition**: *[PointerPosition](../interfaces/pointerposition.md)*
 
-*Defined in [src/atoms/forms/canvas-sketch/tools/base-canvas-draw-tool.ts:41](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/70e5ccf/src/atoms/forms/canvas-sketch/tools/base-canvas-draw-tool.ts#L41)*
+*Defined in [src/atoms/forms/canvas-sketch/tools/base-canvas-draw-tool.ts:41](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/d179e3a/src/atoms/forms/canvas-sketch/tools/base-canvas-draw-tool.ts#L41)*
 
 ___
 
@@ -110,7 +110,7 @@ ___
 
 • **_uiSettings**: *[DrawToolUiSettings](../interfaces/drawtooluisettings.md)*
 
-*Defined in [src/atoms/forms/canvas-sketch/tools/base-canvas-draw-tool.ts:42](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/70e5ccf/src/atoms/forms/canvas-sketch/tools/base-canvas-draw-tool.ts#L42)*
+*Defined in [src/atoms/forms/canvas-sketch/tools/base-canvas-draw-tool.ts:42](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/d179e3a/src/atoms/forms/canvas-sketch/tools/base-canvas-draw-tool.ts#L42)*
 
 ___
 
@@ -118,7 +118,7 @@ ___
 
 • **_width**: *number*
 
-*Defined in [src/atoms/forms/canvas-sketch/tools/base-canvas-draw-tool.ts:43](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/70e5ccf/src/atoms/forms/canvas-sketch/tools/base-canvas-draw-tool.ts#L43)*
+*Defined in [src/atoms/forms/canvas-sketch/tools/base-canvas-draw-tool.ts:43](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/d179e3a/src/atoms/forms/canvas-sketch/tools/base-canvas-draw-tool.ts#L43)*
 
 ## Methods
 
@@ -126,7 +126,7 @@ ___
 
 ▸ **_onFinishStroke**(`strokeSettings`: [CanvasDrawToolSettings](../interfaces/canvasdrawtoolsettings.md)): *void*
 
-*Defined in [src/atoms/forms/canvas-sketch/tools/base-canvas-draw-tool.ts:65](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/70e5ccf/src/atoms/forms/canvas-sketch/tools/base-canvas-draw-tool.ts#L65)*
+*Defined in [src/atoms/forms/canvas-sketch/tools/base-canvas-draw-tool.ts:65](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/d179e3a/src/atoms/forms/canvas-sketch/tools/base-canvas-draw-tool.ts#L65)*
 
 **Parameters:**
 
