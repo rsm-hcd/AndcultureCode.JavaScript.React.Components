@@ -48,17 +48,9 @@ describe("PasswordInput", () => {
     });
 
     test("when isVisible prop set to false, renders with type password", () => {
-        // Arrange
-        const testDataId = "testDataId";
-
-        // Act
+        // Arrange & Act
         const { container } = render(
-            <PasswordInput
-                onChange={() => {}}
-                isVisible={false}
-                id={uuid()}
-                testId={testDataId}
-            />
+            <PasswordInput onChange={() => {}} isVisible={false} id={uuid()} />
         );
         const htmlInputElement = container.getElementsByTagName("input");
 
