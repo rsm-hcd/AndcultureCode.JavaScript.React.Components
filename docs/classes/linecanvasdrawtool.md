@@ -60,7 +60,7 @@
 
 *Overrides [BaseCanvasDrawTool](basecanvasdrawtool.md).[constructor](basecanvasdrawtool.md#constructor)*
 
-*Defined in [src/atoms/forms/canvas-sketch/tools/line-canvas-draw-tool.ts:27](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/70e5ccf/src/atoms/forms/canvas-sketch/tools/line-canvas-draw-tool.ts#L27)*
+*Defined in [src/atoms/forms/canvas-sketch/tools/line-canvas-draw-tool.ts:27](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/d179e3a/src/atoms/forms/canvas-sketch/tools/line-canvas-draw-tool.ts#L27)*
 
 **Parameters:**
 
@@ -78,7 +78,7 @@ Name | Type |
 
 *Inherited from [BaseCanvasDrawTool](basecanvasdrawtool.md).[_canvas](basecanvasdrawtool.md#protected-_canvas)*
 
-*Defined in [src/atoms/forms/canvas-sketch/tools/base-canvas-draw-tool.ts:35](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/70e5ccf/src/atoms/forms/canvas-sketch/tools/base-canvas-draw-tool.ts#L35)*
+*Defined in [src/atoms/forms/canvas-sketch/tools/base-canvas-draw-tool.ts:35](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/d179e3a/src/atoms/forms/canvas-sketch/tools/base-canvas-draw-tool.ts#L35)*
 
 ___
 
@@ -88,7 +88,7 @@ ___
 
 *Inherited from [BaseCanvasDrawTool](basecanvasdrawtool.md).[_color](basecanvasdrawtool.md#protected-_color)*
 
-*Defined in [src/atoms/forms/canvas-sketch/tools/base-canvas-draw-tool.ts:36](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/70e5ccf/src/atoms/forms/canvas-sketch/tools/base-canvas-draw-tool.ts#L36)*
+*Defined in [src/atoms/forms/canvas-sketch/tools/base-canvas-draw-tool.ts:36](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/d179e3a/src/atoms/forms/canvas-sketch/tools/base-canvas-draw-tool.ts#L36)*
 
 ___
 
@@ -98,7 +98,7 @@ ___
 
 *Inherited from [BaseCanvasDrawTool](basecanvasdrawtool.md).[_config](basecanvasdrawtool.md#protected-_config)*
 
-*Defined in [src/atoms/forms/canvas-sketch/tools/base-canvas-draw-tool.ts:37](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/70e5ccf/src/atoms/forms/canvas-sketch/tools/base-canvas-draw-tool.ts#L37)*
+*Defined in [src/atoms/forms/canvas-sketch/tools/base-canvas-draw-tool.ts:37](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/d179e3a/src/atoms/forms/canvas-sketch/tools/base-canvas-draw-tool.ts#L37)*
 
 ___
 
@@ -108,7 +108,7 @@ ___
 
 *Inherited from [BaseCanvasDrawTool](basecanvasdrawtool.md).[_context](basecanvasdrawtool.md#protected-_context)*
 
-*Defined in [src/atoms/forms/canvas-sketch/tools/base-canvas-draw-tool.ts:38](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/70e5ccf/src/atoms/forms/canvas-sketch/tools/base-canvas-draw-tool.ts#L38)*
+*Defined in [src/atoms/forms/canvas-sketch/tools/base-canvas-draw-tool.ts:38](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/d179e3a/src/atoms/forms/canvas-sketch/tools/base-canvas-draw-tool.ts#L38)*
 
 ___
 
@@ -118,7 +118,7 @@ ___
 
 *Inherited from [BaseCanvasDrawTool](basecanvasdrawtool.md).[_currentPosition](basecanvasdrawtool.md#protected-_currentposition)*
 
-*Defined in [src/atoms/forms/canvas-sketch/tools/base-canvas-draw-tool.ts:39](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/70e5ccf/src/atoms/forms/canvas-sketch/tools/base-canvas-draw-tool.ts#L39)*
+*Defined in [src/atoms/forms/canvas-sketch/tools/base-canvas-draw-tool.ts:39](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/d179e3a/src/atoms/forms/canvas-sketch/tools/base-canvas-draw-tool.ts#L39)*
 
 ___
 
@@ -128,7 +128,7 @@ ___
 
 *Inherited from [BaseCanvasDrawTool](basecanvasdrawtool.md).[_isPointerActive](basecanvasdrawtool.md#protected-_ispointeractive)*
 
-*Defined in [src/atoms/forms/canvas-sketch/tools/base-canvas-draw-tool.ts:40](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/70e5ccf/src/atoms/forms/canvas-sketch/tools/base-canvas-draw-tool.ts#L40)*
+*Defined in [src/atoms/forms/canvas-sketch/tools/base-canvas-draw-tool.ts:40](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/d179e3a/src/atoms/forms/canvas-sketch/tools/base-canvas-draw-tool.ts#L40)*
 
 ___
 
@@ -138,7 +138,7 @@ ___
 
 *Inherited from [BaseCanvasDrawTool](basecanvasdrawtool.md).[_previousPosition](basecanvasdrawtool.md#protected-_previousposition)*
 
-*Defined in [src/atoms/forms/canvas-sketch/tools/base-canvas-draw-tool.ts:41](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/70e5ccf/src/atoms/forms/canvas-sketch/tools/base-canvas-draw-tool.ts#L41)*
+*Defined in [src/atoms/forms/canvas-sketch/tools/base-canvas-draw-tool.ts:41](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/d179e3a/src/atoms/forms/canvas-sketch/tools/base-canvas-draw-tool.ts#L41)*
 
 ___
 
@@ -148,7 +148,7 @@ ___
 
 *Inherited from [BaseCanvasDrawTool](basecanvasdrawtool.md).[_uiSettings](basecanvasdrawtool.md#protected-_uisettings)*
 
-*Defined in [src/atoms/forms/canvas-sketch/tools/base-canvas-draw-tool.ts:42](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/70e5ccf/src/atoms/forms/canvas-sketch/tools/base-canvas-draw-tool.ts#L42)*
+*Defined in [src/atoms/forms/canvas-sketch/tools/base-canvas-draw-tool.ts:42](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/d179e3a/src/atoms/forms/canvas-sketch/tools/base-canvas-draw-tool.ts#L42)*
 
 ___
 
@@ -158,7 +158,7 @@ ___
 
 *Inherited from [BaseCanvasDrawTool](basecanvasdrawtool.md).[_width](basecanvasdrawtool.md#protected-_width)*
 
-*Defined in [src/atoms/forms/canvas-sketch/tools/base-canvas-draw-tool.ts:43](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/70e5ccf/src/atoms/forms/canvas-sketch/tools/base-canvas-draw-tool.ts#L43)*
+*Defined in [src/atoms/forms/canvas-sketch/tools/base-canvas-draw-tool.ts:43](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/d179e3a/src/atoms/forms/canvas-sketch/tools/base-canvas-draw-tool.ts#L43)*
 
 ___
 
@@ -168,7 +168,7 @@ ___
 
 *Implementation of [CanvasDrawTool](../interfaces/canvasdrawtool.md).[toolType](../interfaces/canvasdrawtool.md#tooltype)*
 
-*Defined in [src/atoms/forms/canvas-sketch/tools/line-canvas-draw-tool.ts:27](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/70e5ccf/src/atoms/forms/canvas-sketch/tools/line-canvas-draw-tool.ts#L27)*
+*Defined in [src/atoms/forms/canvas-sketch/tools/line-canvas-draw-tool.ts:27](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/d179e3a/src/atoms/forms/canvas-sketch/tools/line-canvas-draw-tool.ts#L27)*
 
 ## Methods
 
@@ -176,7 +176,7 @@ ___
 
 ▸ **_addEventListeners**(): *void*
 
-*Defined in [src/atoms/forms/canvas-sketch/tools/line-canvas-draw-tool.ts:74](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/70e5ccf/src/atoms/forms/canvas-sketch/tools/line-canvas-draw-tool.ts#L74)*
+*Defined in [src/atoms/forms/canvas-sketch/tools/line-canvas-draw-tool.ts:74](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/d179e3a/src/atoms/forms/canvas-sketch/tools/line-canvas-draw-tool.ts#L74)*
 
 Binds the necessary mouse and touch events
 
@@ -188,7 +188,7 @@ ___
 
 ▸ **_drawInteraction**(): *void*
 
-*Defined in [src/atoms/forms/canvas-sketch/tools/line-canvas-draw-tool.ts:103](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/70e5ccf/src/atoms/forms/canvas-sketch/tools/line-canvas-draw-tool.ts#L103)*
+*Defined in [src/atoms/forms/canvas-sketch/tools/line-canvas-draw-tool.ts:103](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/d179e3a/src/atoms/forms/canvas-sketch/tools/line-canvas-draw-tool.ts#L103)*
 
 Draws the current state of the interaction
 
@@ -200,7 +200,7 @@ ___
 
 ▸ **_drawStroke**(`startX`: number, `startY`: number, `endX`: number, `endY`: number, `color`: string, `width`: number): *void*
 
-*Defined in [src/atoms/forms/canvas-sketch/tools/line-canvas-draw-tool.ts:124](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/70e5ccf/src/atoms/forms/canvas-sketch/tools/line-canvas-draw-tool.ts#L124)*
+*Defined in [src/atoms/forms/canvas-sketch/tools/line-canvas-draw-tool.ts:124](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/d179e3a/src/atoms/forms/canvas-sketch/tools/line-canvas-draw-tool.ts#L124)*
 
 Draws the interaction based on the provided state
 
@@ -223,7 +223,7 @@ ___
 
 ▸ **_finishStroke**(): *void*
 
-*Defined in [src/atoms/forms/canvas-sketch/tools/line-canvas-draw-tool.ts:152](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/70e5ccf/src/atoms/forms/canvas-sketch/tools/line-canvas-draw-tool.ts#L152)*
+*Defined in [src/atoms/forms/canvas-sketch/tools/line-canvas-draw-tool.ts:152](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/d179e3a/src/atoms/forms/canvas-sketch/tools/line-canvas-draw-tool.ts#L152)*
 
 Finalizes the entire stroke interaction
 
@@ -235,7 +235,7 @@ ___
 
 ▸ **_getStrokeSettings**(): *[LineStrokeSettings](../interfaces/linestrokesettings.md)*
 
-*Defined in [src/atoms/forms/canvas-sketch/tools/line-canvas-draw-tool.ts:168](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/70e5ccf/src/atoms/forms/canvas-sketch/tools/line-canvas-draw-tool.ts#L168)*
+*Defined in [src/atoms/forms/canvas-sketch/tools/line-canvas-draw-tool.ts:168](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/d179e3a/src/atoms/forms/canvas-sketch/tools/line-canvas-draw-tool.ts#L168)*
 
 Returns the stroke settings for the entire interaction including the stroke, color, and width
 
@@ -247,7 +247,7 @@ ___
 
 ▸ **_move**(`newCurrentPosition`: [PointerPosition](../interfaces/pointerposition.md)): *void*
 
-*Defined in [src/atoms/forms/canvas-sketch/tools/line-canvas-draw-tool.ts:186](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/70e5ccf/src/atoms/forms/canvas-sketch/tools/line-canvas-draw-tool.ts#L186)*
+*Defined in [src/atoms/forms/canvas-sketch/tools/line-canvas-draw-tool.ts:186](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/d179e3a/src/atoms/forms/canvas-sketch/tools/line-canvas-draw-tool.ts#L186)*
 
 Handles the move interaction while drawing
 
@@ -267,7 +267,7 @@ ___
 
 *Inherited from [BaseCanvasDrawTool](basecanvasdrawtool.md).[_onFinishStroke](basecanvasdrawtool.md#protected-_onfinishstroke)*
 
-*Defined in [src/atoms/forms/canvas-sketch/tools/base-canvas-draw-tool.ts:65](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/70e5ccf/src/atoms/forms/canvas-sketch/tools/base-canvas-draw-tool.ts#L65)*
+*Defined in [src/atoms/forms/canvas-sketch/tools/base-canvas-draw-tool.ts:65](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/d179e3a/src/atoms/forms/canvas-sketch/tools/base-canvas-draw-tool.ts#L65)*
 
 **Parameters:**
 
@@ -283,7 +283,7 @@ ___
 
 ▸ **_onMouseDownCanvas**(`e`: MouseEvent): *void*
 
-*Defined in [src/atoms/forms/canvas-sketch/tools/line-canvas-draw-tool.ts:252](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/70e5ccf/src/atoms/forms/canvas-sketch/tools/line-canvas-draw-tool.ts#L252)*
+*Defined in [src/atoms/forms/canvas-sketch/tools/line-canvas-draw-tool.ts:252](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/d179e3a/src/atoms/forms/canvas-sketch/tools/line-canvas-draw-tool.ts#L252)*
 
 **Parameters:**
 
@@ -299,7 +299,7 @@ ___
 
 ▸ **_onMouseMoveCanvas**(`e`: MouseEvent): *void*
 
-*Defined in [src/atoms/forms/canvas-sketch/tools/line-canvas-draw-tool.ts:259](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/70e5ccf/src/atoms/forms/canvas-sketch/tools/line-canvas-draw-tool.ts#L259)*
+*Defined in [src/atoms/forms/canvas-sketch/tools/line-canvas-draw-tool.ts:259](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/d179e3a/src/atoms/forms/canvas-sketch/tools/line-canvas-draw-tool.ts#L259)*
 
 **Parameters:**
 
@@ -315,7 +315,7 @@ ___
 
 ▸ **_onMouseUpWindow**(): *void*
 
-*Defined in [src/atoms/forms/canvas-sketch/tools/line-canvas-draw-tool.ts:266](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/70e5ccf/src/atoms/forms/canvas-sketch/tools/line-canvas-draw-tool.ts#L266)*
+*Defined in [src/atoms/forms/canvas-sketch/tools/line-canvas-draw-tool.ts:266](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/d179e3a/src/atoms/forms/canvas-sketch/tools/line-canvas-draw-tool.ts#L266)*
 
 **Returns:** *void*
 
@@ -325,7 +325,7 @@ ___
 
 ▸ **_onTouchEndWindow**(`e`: TouchEvent): *void*
 
-*Defined in [src/atoms/forms/canvas-sketch/tools/line-canvas-draw-tool.ts:270](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/70e5ccf/src/atoms/forms/canvas-sketch/tools/line-canvas-draw-tool.ts#L270)*
+*Defined in [src/atoms/forms/canvas-sketch/tools/line-canvas-draw-tool.ts:270](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/d179e3a/src/atoms/forms/canvas-sketch/tools/line-canvas-draw-tool.ts#L270)*
 
 **Parameters:**
 
@@ -341,7 +341,7 @@ ___
 
 ▸ **_onTouchMoveCanvas**(`e`: TouchEvent): *void*
 
-*Defined in [src/atoms/forms/canvas-sketch/tools/line-canvas-draw-tool.ts:277](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/70e5ccf/src/atoms/forms/canvas-sketch/tools/line-canvas-draw-tool.ts#L277)*
+*Defined in [src/atoms/forms/canvas-sketch/tools/line-canvas-draw-tool.ts:274](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/d179e3a/src/atoms/forms/canvas-sketch/tools/line-canvas-draw-tool.ts#L274)*
 
 **Parameters:**
 
@@ -357,7 +357,7 @@ ___
 
 ▸ **_onTouchStartCanvas**(`e`: TouchEvent): *void*
 
-*Defined in [src/atoms/forms/canvas-sketch/tools/line-canvas-draw-tool.ts:290](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/70e5ccf/src/atoms/forms/canvas-sketch/tools/line-canvas-draw-tool.ts#L290)*
+*Defined in [src/atoms/forms/canvas-sketch/tools/line-canvas-draw-tool.ts:287](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/d179e3a/src/atoms/forms/canvas-sketch/tools/line-canvas-draw-tool.ts#L287)*
 
 **Parameters:**
 
@@ -373,7 +373,7 @@ ___
 
 ▸ **_removeEventListeners**(): *void*
 
-*Defined in [src/atoms/forms/canvas-sketch/tools/line-canvas-draw-tool.ts:205](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/70e5ccf/src/atoms/forms/canvas-sketch/tools/line-canvas-draw-tool.ts#L205)*
+*Defined in [src/atoms/forms/canvas-sketch/tools/line-canvas-draw-tool.ts:205](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/d179e3a/src/atoms/forms/canvas-sketch/tools/line-canvas-draw-tool.ts#L205)*
 
 Removed the bound mouse and touch events
 
@@ -385,7 +385,7 @@ ___
 
 ▸ **_startStroke**(`startingPosition`: [PointerPosition](../interfaces/pointerposition.md)): *void*
 
-*Defined in [src/atoms/forms/canvas-sketch/tools/line-canvas-draw-tool.ts:236](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/70e5ccf/src/atoms/forms/canvas-sketch/tools/line-canvas-draw-tool.ts#L236)*
+*Defined in [src/atoms/forms/canvas-sketch/tools/line-canvas-draw-tool.ts:236](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/d179e3a/src/atoms/forms/canvas-sketch/tools/line-canvas-draw-tool.ts#L236)*
 
 Captures the starting position and begins the entire stroke interaction
 
@@ -403,7 +403,7 @@ ___
 
 ▸ **dispose**(): *void*
 
-*Defined in [src/atoms/forms/canvas-sketch/tools/line-canvas-draw-tool.ts:41](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/70e5ccf/src/atoms/forms/canvas-sketch/tools/line-canvas-draw-tool.ts#L41)*
+*Defined in [src/atoms/forms/canvas-sketch/tools/line-canvas-draw-tool.ts:41](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/d179e3a/src/atoms/forms/canvas-sketch/tools/line-canvas-draw-tool.ts#L41)*
 
 **Returns:** *void*
 
@@ -413,7 +413,7 @@ ___
 
 ▸ **drawStrokes**(`strokes`: [CanvasDrawToolSettings](../interfaces/canvasdrawtoolsettings.md)[]): *void*
 
-*Defined in [src/atoms/forms/canvas-sketch/tools/line-canvas-draw-tool.ts:45](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/70e5ccf/src/atoms/forms/canvas-sketch/tools/line-canvas-draw-tool.ts#L45)*
+*Defined in [src/atoms/forms/canvas-sketch/tools/line-canvas-draw-tool.ts:45](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/d179e3a/src/atoms/forms/canvas-sketch/tools/line-canvas-draw-tool.ts#L45)*
 
 **Parameters:**
 
@@ -429,6 +429,6 @@ ___
 
 ▸ **initialize**(): *void*
 
-*Defined in [src/atoms/forms/canvas-sketch/tools/line-canvas-draw-tool.ts:61](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/70e5ccf/src/atoms/forms/canvas-sketch/tools/line-canvas-draw-tool.ts#L61)*
+*Defined in [src/atoms/forms/canvas-sketch/tools/line-canvas-draw-tool.ts:61](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/d179e3a/src/atoms/forms/canvas-sketch/tools/line-canvas-draw-tool.ts#L61)*
 
 **Returns:** *void*

@@ -20,7 +20,7 @@
 
 • **altText**? : *undefined | string*
 
-*Defined in [src/atoms/images/image.tsx:14](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/70e5ccf/src/atoms/images/image.tsx#L14)*
+*Defined in [src/atoms/images/image.tsx:14](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/d179e3a/src/atoms/images/image.tsx#L14)*
 
 Alt text to display for screenreaders or if the image does not load.
 
@@ -32,7 +32,7 @@ ___
 
 • **cssClassName**? : *undefined | string*
 
-*Defined in [src/atoms/images/image.tsx:22](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/70e5ccf/src/atoms/images/image.tsx#L22)*
+*Defined in [src/atoms/images/image.tsx:22](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/d179e3a/src/atoms/images/image.tsx#L22)*
 
 Optional class name to be applied to the img element.
 
@@ -44,7 +44,7 @@ ___
 
 • **src**: *string*
 
-*Defined in [src/atoms/images/image.tsx:30](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/70e5ccf/src/atoms/images/image.tsx#L30)*
+*Defined in [src/atoms/images/image.tsx:30](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/d179e3a/src/atoms/images/image.tsx#L30)*
 
 Path to the image to be rendered.
 

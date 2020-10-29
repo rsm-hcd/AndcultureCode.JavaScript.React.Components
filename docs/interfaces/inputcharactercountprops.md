@@ -19,7 +19,7 @@
 
 • **currentLength**: *number*
 
-*Defined in [src/atoms/forms/input-character-count.tsx:8](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/70e5ccf/src/atoms/forms/input-character-count.tsx#L8)*
+*Defined in [src/atoms/forms/input-character-count.tsx:8](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/d179e3a/src/atoms/forms/input-character-count.tsx#L8)*
 
 ___
 
@@ -27,4 +27,4 @@ ___
 
 • **maxLength**: *number*
 
-*Defined in [src/atoms/forms/input-character-count.tsx:9](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/70e5ccf/src/atoms/forms/input-character-count.tsx#L9)*
+*Defined in [src/atoms/forms/input-character-count.tsx:9](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/d179e3a/src/atoms/forms/input-character-count.tsx#L9)*
