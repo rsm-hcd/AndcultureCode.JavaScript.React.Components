@@ -2,6 +2,14 @@ import React from "react";
 import { StringUtils } from "andculturecode-javascript-core";
 
 // -------------------------------------------------------------------------------------------------
+// #region Constants
+// -------------------------------------------------------------------------------------------------
+
+export const ProgressBarErrorClass = "-error";
+
+// #endregion Constants
+
+// -------------------------------------------------------------------------------------------------
 // #region Enums
 // -------------------------------------------------------------------------------------------------
 
@@ -21,6 +29,11 @@ interface ProgressBarProps {
     isErrored?: boolean;
     style?: ProgressBarStyles;
     value: number;
+
+    /**
+     * Unique identifier used to select the underlying <div> for functional/e2e testing
+     */
+    testId?: string;
 }
 
 // #endregion Interfaces
@@ -42,7 +55,7 @@ const ProgressBar: React.FC<ProgressBarProps> = (props: ProgressBarProps) => {
     }
 
     if (props.isErrored) {
-        classNames.push("-error");
+        classNames.push(ProgressBarErrorClass);
     }
 
     // value must be an integer 0 < value < 100
@@ -57,7 +70,7 @@ const ProgressBar: React.FC<ProgressBarProps> = (props: ProgressBarProps) => {
     }
 
     return (
-        <div className={classNames.join(" ")}>
+        <div className={classNames.join(" ")} data-testid={props.testId}>
             <div className={`${CSS_CLASS_NAME}__bar -w-${value}`} />
         </div>
     );
