@@ -1,5 +1,5 @@
 import React from "react";
-import { render } from "@testing-library/react";
+import { render, fireEvent } from "@testing-library/react";
 import {
     InputFormField,
     InvalidInputFormValueClass,
@@ -136,5 +136,29 @@ describe("InputFormField", () => {
         expect(htmlLabelTag[0].classList).toContain(
             ShowLabelForScreenReadersOnlyClass
         );
+    });
+
+    test("when onChange set, calls handler upon change", () => {
+        // Arrange
+        let isChecked = false;
+        const expected = faker.random.word();
+        const handleChange = () => (isChecked = true);
+        const inputTestId = "inputTestId";
+
+        // Act
+        const { getByTestId } = render(
+            <InputFormField
+                label={expected}
+                onChange={handleChange}
+                inputTestId={inputTestId}
+            />
+        );
+
+        fireEvent.change(getByTestId(inputTestId), {
+            target: { value: faker.random.word() },
+        });
+
+        // Assert
+        expect(isChecked).toBeTrue();
     });
 });
