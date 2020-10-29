@@ -7,6 +7,11 @@ import React from "react";
 export interface InputCharacterCountProps {
     currentLength: number;
     maxLength: number;
+
+    /**
+     * Unique identifier used select the underlying <input> for functional/e2e testing
+     */
+    testId?: string;
 }
 
 // #endregion Interfaces
@@ -19,7 +24,9 @@ const InputCharacterCount: React.FC<InputCharacterCountProps> = (
     props: InputCharacterCountProps
 ) => {
     return (
-        <div className="c-form-field__bottom__character-count">
+        <div
+            className="c-form-field__bottom__character-count"
+            data-testid={props.testId}>
             {props.currentLength}/{props.maxLength}
         </div>
     );
