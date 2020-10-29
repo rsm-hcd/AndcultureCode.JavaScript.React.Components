@@ -344,9 +344,6 @@ class PencilCanvasDrawTool extends BaseCanvasDrawTool
 
     private _onTouchEndWindow(e: TouchEvent): void {
         this._finishStroke();
-
-        // Don't allow touch events to be called
-        e.preventDefault();
     }
 
     private _onTouchMoveCanvas(e: TouchEvent): void {
@@ -358,7 +355,7 @@ class PencilCanvasDrawTool extends BaseCanvasDrawTool
             this._move(touchPosition);
         }
 
-        // Don't allow touch events to be called
+        // prevents scrolling screen (if inside scrollable content)
         e.preventDefault();
     }
 
@@ -371,7 +368,8 @@ class PencilCanvasDrawTool extends BaseCanvasDrawTool
             this._startStroke(touchPosition);
         }
 
-        // Don't allow touch events to be called
+        // prevents click event from firing when not moving / gesturing with touch
+        // effectively duplicating drawing stroke
         e.preventDefault();
     }
 
