@@ -39,7 +39,7 @@ const PasswordInput: React.FC<PasswordInputProps> = (
 
     return (
         <input
-            data-test-id={testId}
+            data-testid={testId}
             disabled={disabled}
             id={id}
             maxLength={20}
