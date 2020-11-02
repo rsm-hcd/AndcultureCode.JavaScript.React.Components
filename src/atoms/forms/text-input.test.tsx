@@ -49,10 +49,10 @@ describe("TextInput", () => {
         // Act
         const { getByTestId } = render(
             <TextInput
-                testId={dataTestId}
-                onChange={() => {}}
                 id={uuid()}
                 maxLength={maximumLength}
+                onChange={() => {}}
+                testId={dataTestId}
             />
         );
 
