@@ -23,16 +23,16 @@ describe("CheckboxFormField", () => {
 
     test("when errorsMessage prop set, renders with error message", () => {
         // Arrange
-        const expected = faker.random.words();
+        const label = faker.random.words();
         const testErrorMessage = "testErrorMessage";
 
         // Act
         const { getByText } = render(
             <CheckboxFormField
                 checked={false}
-                label={expected}
-                onChange={() => {}}
                 errorMessage={testErrorMessage}
+                label={label}
+                onChange={() => {}}
             />
         );
 
@@ -43,19 +43,19 @@ describe("CheckboxFormField", () => {
     test("when onChange set, calls handler upon change", () => {
         // Arrange
         let isChecked = false;
-        const expected = faker.random.word();
+        const label = faker.random.word();
         const handleChange = () => (isChecked = true);
 
         // Act
         const { getByText } = render(
             <CheckboxFormField
                 checked={isChecked}
-                label={expected}
+                label={label}
                 onChange={handleChange}
             />
         );
 
-        fireEvent.click(getByText(expected));
+        fireEvent.click(getByText(label));
 
         // Assert
         expect(isChecked).toBeTrue();
