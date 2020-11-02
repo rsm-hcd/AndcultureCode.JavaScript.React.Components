@@ -43,8 +43,8 @@ describe("CheckboxFormField", () => {
     test("when onChange set, calls handler upon change", () => {
         // Arrange
         let isChecked = false;
-        const label = faker.random.word();
         const handleChange = () => (isChecked = true);
+        const label = faker.random.word();
 
         // Act
         const { getByText } = render(
