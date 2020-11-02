@@ -13,9 +13,9 @@ describe("PasswordInput", () => {
         // Act
         const { getByTestId } = render(
             <PasswordInput
-                onChange={() => {}}
                 isVisible={true}
                 id={uuid()}
+                onChange={() => {}}
                 testId={testDataId}
             />
         );
@@ -27,15 +27,15 @@ describe("PasswordInput", () => {
     test("when onChange prop set, calls handler upon change", () => {
         // Arrange
         let isChecked = false;
-        const testDataId = "testDataId";
         const handleChange = () => (isChecked = true);
+        const testDataId = "testDataId";
 
         // Act
         const { getByTestId } = render(
             <PasswordInput
-                onChange={handleChange}
                 isVisible={true}
                 id={uuid()}
+                onChange={handleChange}
                 testId={testDataId}
             />
         );
