@@ -23,16 +23,16 @@ describe("InputFormField", () => {
 
     test("when errorsMessages prop set, renders with error messages", () => {
         // Arrange
-        const expected = faker.random.words();
+        const label = faker.random.words();
         const firstErrorMessage = faker.random.words();
         const secondErrorMessage = faker.random.words();
 
         // Act
         const { getByText } = render(
             <InputFormField
-                label={expected}
-                onChange={() => {}}
                 errorMessages={[firstErrorMessage, secondErrorMessage]}
+                label={label}
+                onChange={() => {}}
             />
         );
 
@@ -43,15 +43,15 @@ describe("InputFormField", () => {
 
     test("when errorsMessage prop set, renders with error message", () => {
         // Arrange
-        const expected = faker.random.words();
+        const label = faker.random.words();
         const testErrorMessage = faker.random.words();
 
         // Act
         const { getByText } = render(
             <InputFormField
-                label={expected}
-                onChange={() => {}}
                 errorMessage={testErrorMessage}
+                label={label}
+                onChange={() => {}}
             />
         );
 
@@ -61,15 +61,11 @@ describe("InputFormField", () => {
 
     test(`when isValid prop set to false, renders with ${InvalidInputFormValueClass} class name`, () => {
         // Arrange
-        const expected = faker.random.words();
+        const label = faker.random.words();
 
         // Act
         const { container } = render(
-            <InputFormField
-                label={expected}
-                onChange={() => {}}
-                isValid={false}
-            />
+            <InputFormField isValid={false} label={label} onChange={() => {}} />
         );
         const result = container.getElementsByClassName(
             InvalidInputFormValueClass
@@ -81,15 +77,11 @@ describe("InputFormField", () => {
 
     test(`when isValid prop set to true, renders without ${InvalidInputFormValueClass} class name`, () => {
         // Arrange
-        const expected = faker.random.words();
+        const label = faker.random.words();
 
         // Act
         const { container } = render(
-            <InputFormField
-                label={expected}
-                onChange={() => {}}
-                isValid={true}
-            />
+            <InputFormField isValid={true} label={label} onChange={() => {}} />
         );
         const result = container.getElementsByClassName(
             InvalidInputFormValueClass
@@ -101,16 +93,12 @@ describe("InputFormField", () => {
 
     test("when required prop set, renders with required text", () => {
         // Arrange
-        const expected = faker.random.words();
+        const label = faker.random.words();
         const requiredText = "*";
 
         // Act
         const { container } = render(
-            <InputFormField
-                label={expected}
-                onChange={() => {}}
-                required={true}
-            />
+            <InputFormField label={label} onChange={() => {}} required={true} />
         );
         const htmlLabelTag = container.getElementsByTagName("label");
 
@@ -120,12 +108,12 @@ describe("InputFormField", () => {
 
     test(`when showLabelForScreenReadersOnly prop set, renders with ${ShowLabelForScreenReadersOnlyClass} class name`, () => {
         // Arrange
-        const expected = faker.random.words();
+        const label = faker.random.words();
 
         // Act
         const { container } = render(
             <InputFormField
-                label={expected}
+                label={label}
                 onChange={() => {}}
                 showLabelForScreenReadersOnly={true}
             />
@@ -141,16 +129,16 @@ describe("InputFormField", () => {
     test("when onChange set, calls handler upon change", () => {
         // Arrange
         let isChecked = false;
-        const expected = faker.random.word();
+        const label = faker.random.word();
         const handleChange = () => (isChecked = true);
         const inputTestId = "inputTestId";
 
         // Act
         const { getByTestId } = render(
             <InputFormField
-                label={expected}
-                onChange={handleChange}
                 inputTestId={inputTestId}
+                label={label}
+                onChange={handleChange}
             />
         );
 
