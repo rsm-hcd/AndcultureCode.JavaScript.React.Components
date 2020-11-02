@@ -28,12 +28,13 @@ interface ProgressBarProps {
     cssClassName?: string;
     isErrored?: boolean;
     style?: ProgressBarStyles;
-    value: number;
 
     /**
      * Unique identifier used to select the underlying <div> for functional/e2e testing
      */
     testId?: string;
+
+    value: number;
 }
 
 // #endregion Interfaces

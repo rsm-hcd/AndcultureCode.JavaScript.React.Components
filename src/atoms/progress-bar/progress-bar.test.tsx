@@ -5,20 +5,20 @@ import {
     ProgressBarStyles,
     ProgressBarErrorClass,
 } from "./progress-bar";
-import { render, getByTestId } from "@testing-library/react";
+import { render } from "@testing-library/react";
 
 describe("ProgressBar", () => {
     test("when default props, renders progress bar", () => {
         // Arrange
-        const expected = "dataTestId";
+        const dataTestId = "dataTestId";
 
         // Act
         const { getByTestId } = render(
-            <ProgressBar value={faker.random.number(100)} testId={expected} />
+            <ProgressBar value={faker.random.number(100)} testId={dataTestId} />
         );
 
         // Assert
-        expect(getByTestId(expected)).not.toBeNil();
+        expect(getByTestId(dataTestId)).not.toBeNil();
     });
 
     test("when cssClassName set, renders with class name", () => {
@@ -28,8 +28,8 @@ describe("ProgressBar", () => {
         // Act
         const { container } = render(
             <ProgressBar
-                value={faker.random.number(100)}
                 cssClassName={testCssClassName}
+                value={faker.random.number(100)}
             />
         );
         const result = container.getElementsByClassName(testCssClassName);
@@ -44,11 +44,11 @@ describe("ProgressBar", () => {
         ${ProgressBarStyles.Thin}
     `("when style prop set, renders with $style", ({ style }) => {
         // Arrange
-        const expected = faker.random.number(100);
+        const randomInt = faker.random.number(100);
 
         // Act
         const { container } = render(
-            <ProgressBar value={expected} style={style} />
+            <ProgressBar value={randomInt} style={style} />
         );
         const result = container.getElementsByClassName(style);
 
@@ -58,11 +58,11 @@ describe("ProgressBar", () => {
 
     test(`when isErrored prop set, renders with ${ProgressBarErrorClass} class name`, () => {
         // Arrange
-        const expected = faker.random.number(100);
+        const randomInt = faker.random.number(100);
 
         // Act
         const { container } = render(
-            <ProgressBar value={expected} isErrored={true} />
+            <ProgressBar value={randomInt} isErrored={true} />
         );
         const result = container.getElementsByClassName(ProgressBarErrorClass);
 
