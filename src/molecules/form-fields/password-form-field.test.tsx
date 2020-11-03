@@ -41,15 +41,15 @@ describe("PasswordFormField", () => {
 
     test("when has errorMessage prop, renders with error message", () => {
         // Arrange
-        const testLabel = faker.random.words();
         const testErrorMessage = faker.random.words();
+        const testLabel = faker.random.words();
 
         // Act
         const { getByText } = render(
             <PasswordFormField
+                errorMessage={testErrorMessage}
                 label={testLabel}
                 onChange={() => {}}
-                errorMessage={testErrorMessage}
             />
         );
 
@@ -65,8 +65,8 @@ describe("PasswordFormField", () => {
         // Act
         const { container } = render(
             <PasswordFormField
-                onChange={() => {}}
                 label={testLabel}
+                onChange={() => {}}
                 required={true}
             />
         );
@@ -83,8 +83,8 @@ describe("PasswordFormField", () => {
         // Act
         const { getByText } = render(
             <PasswordFormField
-                onChange={() => {}}
                 label={testLabel}
+                onChange={() => {}}
                 value={faker.random.word()}
             />
         );
@@ -102,10 +102,10 @@ describe("PasswordFormField", () => {
         // Act
         const { container, getByText } = render(
             <PasswordFormField
-                onChange={() => {}}
-                label={testLabel}
-                value={faker.random.word()}
                 disabled={true}
+                label={testLabel}
+                onChange={() => {}}
+                value={faker.random.word()}
             />
         );
         const htmlInputElement = container.getElementsByTagName("input");
@@ -116,14 +116,14 @@ describe("PasswordFormField", () => {
 
     test(`when isValid prop is false, renders with ${InvalidInputClassName} class name`, () => {
         // Arrange
-        const label = faker.random.words();
+        const testLabel = faker.random.words();
 
         // Act
         const { container } = render(
             <PasswordFormField
-                onChange={() => {}}
-                label={label}
                 isValid={false}
+                label={testLabel}
+                onChange={() => {}}
             />
         );
         const result = container.getElementsByClassName(InvalidInputClassName);
