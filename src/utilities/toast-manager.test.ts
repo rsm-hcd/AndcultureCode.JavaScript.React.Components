@@ -79,9 +79,9 @@ describe("ToastManager", () => {
 
     test("when update toast, calls update method", () => {
         // Arrange
-        const updateMethodSpy = jest.spyOn(ToastManager, "update");
         const newContent = faker.random.words();
         const testId = faker.random.number(99);
+        const updateMethodSpy = jest.spyOn(ToastManager, "update");
 
         // Act
         ToastManager.update(testId, newContent);
