@@ -40,7 +40,7 @@ const TextInput: React.FC<TextInputProps> = (props: TextInputProps) => {
     return (
         <input
             aria-labelledby={ariaLabelledBy}
-            data-test-id={testId}
+            data-testid={testId}
             disabled={disabled}
             id={id}
             placeholder={placeholder}
