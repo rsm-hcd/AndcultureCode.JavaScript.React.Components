@@ -56,8 +56,8 @@ describe("ToastManager", () => {
 
     test("when toast dismissed, calls dismiss method", () => {
         // Arrange
-        const testId = faker.random.number(99);
         const dismissMethodSpy = jest.spyOn(ToastManager, "dismiss");
+        const testId = faker.random.number(99);
 
         // Act
         ToastManager.dismiss(testId);
