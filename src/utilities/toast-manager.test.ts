@@ -57,29 +57,29 @@ describe("ToastManager", () => {
     test("when toast dismissed, calls dismiss method", () => {
         // Arrange
         const testId = faker.random.number(99);
-        const dismissSpy = jest.spyOn(ToastManager, "dismiss");
+        const dismissMethodSpy = jest.spyOn(ToastManager, "dismiss");
 
         // Act
         ToastManager.dismiss(testId);
 
         // Assert
-        expect(dismissSpy).toHaveBeenCalled();
+        expect(dismissMethodSpy).toHaveBeenCalled();
     });
 
     test("when dismiss All toasts, calls dismissAll method", () => {
         // Arrange
-        const dismissSpy = jest.spyOn(ToastManager, "dismissAll");
+        const dismissAllMethodSpy = jest.spyOn(ToastManager, "dismissAll");
 
         // Act
         ToastManager.dismissAll();
 
         // Assert
-        expect(dismissSpy).toHaveBeenCalled();
+        expect(dismissAllMethodSpy).toHaveBeenCalled();
     });
 
     test("when update toast, calls update method", () => {
         // Arrange
-        const dismissSpy = jest.spyOn(ToastManager, "update");
+        const updateMethodSpy = jest.spyOn(ToastManager, "update");
         const newContent = faker.random.words();
         const testId = faker.random.number(99);
 
@@ -87,6 +87,6 @@ describe("ToastManager", () => {
         ToastManager.update(testId, newContent);
 
         // Assert
-        expect(dismissSpy).toHaveBeenCalled();
+        expect(updateMethodSpy).toHaveBeenCalled();
     });
 });
