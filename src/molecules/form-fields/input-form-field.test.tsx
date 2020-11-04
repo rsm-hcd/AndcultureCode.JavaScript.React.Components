@@ -1,11 +1,8 @@
 import React from "react";
 import { render, fireEvent } from "@testing-library/react";
-import {
-    InputFormField,
-    InvalidInputFormValueClass,
-    ShowLabelForScreenReadersOnlyClass,
-} from "./input-form-field";
+import { InputFormField, InputFormFieldInvalidClass } from "./input-form-field";
 import faker from "faker";
+import { AccessibilityLabels } from "../../atoms/constants/accessibility-labels";
 
 describe("InputFormField", () => {
     test("when default props, renders input with label", () => {
@@ -23,22 +20,21 @@ describe("InputFormField", () => {
 
     test("when errorsMessages prop set, renders with error messages", () => {
         // Arrange
+        const errorMessages = [faker.random.words(), faker.random.words()];
         const label = faker.random.words();
-        const firstErrorMessage = faker.random.words();
-        const secondErrorMessage = faker.random.words();
 
         // Act
         const { getByText } = render(
             <InputFormField
-                errorMessages={[firstErrorMessage, secondErrorMessage]}
+                errorMessages={errorMessages}
                 label={label}
                 onChange={() => {}}
             />
         );
 
         // Assert
-        expect(getByText(firstErrorMessage)).not.toBeNil();
-        expect(getByText(secondErrorMessage)).not.toBeNil();
+        expect(getByText(errorMessages[0])).not.toBeNil();
+        expect(getByText(errorMessages[1])).not.toBeNil();
     });
 
     test("when errorsMessage prop set, renders with error message", () => {
@@ -59,7 +55,7 @@ describe("InputFormField", () => {
         expect(getByText(testErrorMessage)).not.toBeNil();
     });
 
-    test(`when isValid prop set to false, renders with ${InvalidInputFormValueClass} class name`, () => {
+    test(`when isValid prop set to false, renders with ${InputFormFieldInvalidClass} class name`, () => {
         // Arrange
         const label = faker.random.words();
 
@@ -68,14 +64,14 @@ describe("InputFormField", () => {
             <InputFormField isValid={false} label={label} onChange={() => {}} />
         );
         const result = container.getElementsByClassName(
-            InvalidInputFormValueClass
+            InputFormFieldInvalidClass
         );
 
         // Assert
         expect(result).toHaveLength(1);
     });
 
-    test(`when isValid prop set to true, renders without ${InvalidInputFormValueClass} class name`, () => {
+    test(`when isValid prop set to true, renders without ${InputFormFieldInvalidClass} class name`, () => {
         // Arrange
         const label = faker.random.words();
 
@@ -84,7 +80,7 @@ describe("InputFormField", () => {
             <InputFormField isValid={true} label={label} onChange={() => {}} />
         );
         const result = container.getElementsByClassName(
-            InvalidInputFormValueClass
+            InputFormFieldInvalidClass
         );
 
         // Assert
@@ -106,7 +102,7 @@ describe("InputFormField", () => {
         expect(htmlLabelTag[0].textContent).toContain(requiredText);
     });
 
-    test(`when showLabelForScreenReadersOnly prop set, renders with ${ShowLabelForScreenReadersOnlyClass} class name`, () => {
+    test(`when showLabelForScreenReadersOnly prop set, renders with ${AccessibilityLabels.ScreenReadersOnlyClass} class name`, () => {
         // Arrange
         const label = faker.random.words();
 
@@ -122,7 +118,7 @@ describe("InputFormField", () => {
 
         // Assert
         expect(htmlLabelTag[0].classList).toContain(
-            ShowLabelForScreenReadersOnlyClass
+            AccessibilityLabels.ScreenReadersOnlyClass
         );
     });
 
