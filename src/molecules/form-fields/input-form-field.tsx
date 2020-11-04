@@ -1,6 +1,6 @@
 import React, { forwardRef, Ref, RefObject } from "react";
 import uuid from "uuid";
-import { AccessibilityLabels } from "../../atoms/constants/accessibility-labels";
+import { AccessibilityLabels } from "../../enums/accessibility-labels";
 import { CollectionUtils, StringUtils } from "andculturecode-javascript-core";
 import { InputCharacterCount } from "../../atoms/forms/input-character-count";
 import { InputTypes } from "../../atoms/constants/input-types";

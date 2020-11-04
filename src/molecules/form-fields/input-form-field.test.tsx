@@ -2,7 +2,7 @@ import React from "react";
 import { render, fireEvent } from "@testing-library/react";
 import { InputFormField, InputFormFieldInvalidClass } from "./input-form-field";
 import faker from "faker";
-import { AccessibilityLabels } from "../../atoms/constants/accessibility-labels";
+import { AccessibilityLabels } from "../../enums/accessibility-labels";
 
 describe("InputFormField", () => {
     test("when default props, renders input with label", () => {
