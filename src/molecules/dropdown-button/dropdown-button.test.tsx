@@ -6,18 +6,18 @@ import { DropdownButton } from "./dropdown-button";
 import { render } from "@testing-library/react";
 
 describe("DropdownButton", () => {
+    const menuItems = [
+        { component: faker.random.word(), onSelect: () => {} },
+        { component: faker.random.word(), onSelect: () => {} },
+    ];
+
     test("when default props, renders Dropdown Button", () => {
         // Arrange
         const expected = faker.random.words();
-        const itemOne = { component: faker.random.word(), onSelect: () => {} };
-        const itemTwo = { component: faker.random.word(), onSelect: () => {} };
 
         // Act
         const { getByText } = render(
-            <DropdownButton
-                buttonContents={expected}
-                menuItems={[itemOne, itemTwo]}
-            />
+            <DropdownButton buttonContents={expected} menuItems={menuItems} />
         );
 
         // Assert
@@ -26,8 +26,6 @@ describe("DropdownButton", () => {
 
     test("when buttonClassName prop provided, renders with class name", () => {
         // Arrange
-        const itemOne = { component: faker.random.word(), onSelect: () => {} };
-        const itemTwo = { component: faker.random.word(), onSelect: () => {} };
         const testButtonContents = faker.random.words();
         const testButtonClassName = "testButtonClassName";
 
@@ -36,7 +34,7 @@ describe("DropdownButton", () => {
             <DropdownButton
                 buttonClassName={testButtonClassName}
                 buttonContents={testButtonContents}
-                menuItems={[itemOne, itemTwo]}
+                menuItems={menuItems}
             />
         );
         const result = container.getElementsByClassName(testButtonClassName);
@@ -47,8 +45,6 @@ describe("DropdownButton", () => {
 
     test("when button size prop provided, renders with correct size class", () => {
         // Arrange
-        const itemOne = { component: faker.random.word(), onSelect: () => {} };
-        const itemTwo = { component: faker.random.word(), onSelect: () => {} };
         const testButtonContents = faker.random.words();
         const testButtonSize = ButtonSizes.Large;
 
@@ -56,7 +52,7 @@ describe("DropdownButton", () => {
         const { container } = render(
             <DropdownButton
                 buttonContents={testButtonContents}
-                menuItems={[itemOne, itemTwo]}
+                menuItems={menuItems}
                 size={testButtonSize}
             />
         );
@@ -68,8 +64,6 @@ describe("DropdownButton", () => {
 
     test("when button style prop provided, renders with correct style class", () => {
         // Arrange
-        const itemOne = { component: faker.random.word(), onSelect: () => {} };
-        const itemTwo = { component: faker.random.word(), onSelect: () => {} };
         const testButtonContents = faker.random.words();
         const testButtonStyle = ButtonStyles.Destructive;
 
@@ -77,7 +71,7 @@ describe("DropdownButton", () => {
         const { container } = render(
             <DropdownButton
                 buttonContents={testButtonContents}
-                menuItems={[itemOne, itemTwo]}
+                menuItems={menuItems}
                 style={testButtonStyle}
             />
         );
