@@ -3,6 +3,7 @@ import { ButtonStyles } from "../constants/button-styles";
 import { ButtonTypes } from "../constants/button-types";
 import React, { forwardRef } from "react";
 import { StringUtils } from "andculturecode-javascript-core";
+import { AccessibilityLabels } from "../../enums/accessibility-labels";
 
 // -----------------------------------------------------------------------------------------
 // #region Interfaces
@@ -84,7 +85,9 @@ const Button: React.RefForwardingComponent<
             {children}
             {accessibleText != null && (
                 // if
-                <span className="sr-only">{accessibleText}</span>
+                <span className={AccessibilityLabels.ScreenReadersOnlyClass}>
+                    {accessibleText}
+                </span>
             )}
         </button>
     );
