@@ -14,8 +14,8 @@ describe("Select", () => {
         const { getByText } = render(
             <Select
                 id={expected}
-                options={[{ label: testLabel, value: testValue }]}
                 onChange={() => {}}
+                options={[{ label: testLabel, value: testValue }]}
             />
         );
 
@@ -35,8 +35,8 @@ describe("Select", () => {
         const { getByDisplayValue } = render(
             <Select
                 id={expected}
-                options={[{ label: testLabel, value: testValue }]}
                 onChange={handleChange}
+                options={[{ label: testLabel, value: testValue }]}
             />
         );
 
@@ -58,10 +58,10 @@ describe("Select", () => {
         // Act
         const { container } = render(
             <Select
-                id={expected}
-                options={[{ label: testLabel, value: testValue }]}
-                onChange={() => {}}
                 cssClassName={testClassName}
+                id={expected}
+                onChange={() => {}}
+                options={[{ label: testLabel, value: testValue }]}
             />
         );
         const result = container.getElementsByClassName(testClassName);
