@@ -15,7 +15,7 @@ describe("Heading", () => {
         expect(getByText(expected)).not.toBeNil();
     });
 
-    test("when given cssClassName prop, renders with given class name", () => {
+    test("when cssClassName prop has value, renders with class name", () => {
         // Act
         const randomText = faker.random.words();
         const testClassName = "testClassName";
