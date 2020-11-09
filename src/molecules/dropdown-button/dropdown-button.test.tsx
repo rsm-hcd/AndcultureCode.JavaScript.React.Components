@@ -56,7 +56,7 @@ describe("DropdownButton", () => {
                 size={testButtonSize}
             />
         );
-        const result = container.getElementsByClassName(testButtonSize);
+        const result = container.getElementsByClassName(`-${testButtonSize}`);
 
         // Assert
         expect(result).toHaveLength(1);
@@ -75,7 +75,7 @@ describe("DropdownButton", () => {
                 style={testButtonStyle}
             />
         );
-        const result = container.getElementsByClassName(testButtonStyle);
+        const result = container.getElementsByClassName(`-${testButtonStyle}`);
 
         // Assert
         expect(result).toHaveLength(1);
