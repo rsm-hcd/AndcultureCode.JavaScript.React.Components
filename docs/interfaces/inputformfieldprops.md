@@ -39,7 +39,7 @@
 
 *Inherited from [InputProperties](inputproperties.md).[ariaLabelledBy](inputproperties.md#optional-arialabelledby)*
 
-*Defined in [src/atoms/interfaces/input-properties.ts:4](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/d179e3a/src/atoms/interfaces/input-properties.ts#L4)*
+*Defined in [src/atoms/interfaces/input-properties.ts:4](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/059eef4/src/atoms/interfaces/input-properties.ts#L4)*
 
 ___
 
@@ -49,7 +49,7 @@ ___
 
 *Inherited from [InputProperties](inputproperties.md).[disabled](inputproperties.md#optional-disabled)*
 
-*Defined in [src/atoms/interfaces/input-properties.ts:5](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/d179e3a/src/atoms/interfaces/input-properties.ts#L5)*
+*Defined in [src/atoms/interfaces/input-properties.ts:5](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/059eef4/src/atoms/interfaces/input-properties.ts#L5)*
 
 ___
 
@@ -57,7 +57,7 @@ ___
 
 • **errorMessage**? : *undefined | string*
 
-*Defined in [src/molecules/form-fields/input-form-field.tsx:21](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/d179e3a/src/molecules/form-fields/input-form-field.tsx#L21)*
+*Defined in [src/molecules/form-fields/input-form-field.tsx:23](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/059eef4/src/molecules/form-fields/input-form-field.tsx#L23)*
 
 ___
 
@@ -65,7 +65,7 @@ ___
 
 • **errorMessages**? : *string[]*
 
-*Defined in [src/molecules/form-fields/input-form-field.tsx:22](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/d179e3a/src/molecules/form-fields/input-form-field.tsx#L22)*
+*Defined in [src/molecules/form-fields/input-form-field.tsx:24](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/059eef4/src/molecules/form-fields/input-form-field.tsx#L24)*
 
 ___
 
@@ -73,7 +73,7 @@ ___
 
 • **fieldId**? : *undefined | string*
 
-*Defined in [src/molecules/form-fields/input-form-field.tsx:29](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/d179e3a/src/molecules/form-fields/input-form-field.tsx#L29)*
+*Defined in [src/molecules/form-fields/input-form-field.tsx:31](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/059eef4/src/molecules/form-fields/input-form-field.tsx#L31)*
 
 ___
 
@@ -81,7 +81,7 @@ ___
 
 • **inputTestId**? : *undefined | string*
 
-*Defined in [src/molecules/form-fields/input-form-field.tsx:27](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/d179e3a/src/molecules/form-fields/input-form-field.tsx#L27)*
+*Defined in [src/molecules/form-fields/input-form-field.tsx:29](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/059eef4/src/molecules/form-fields/input-form-field.tsx#L29)*
 
 Unique identifier used select the underlying <input> for functional/e2e testing
 
@@ -93,7 +93,7 @@ ___
 
 *Inherited from [InputProperties](inputproperties.md).[isValid](inputproperties.md#optional-isvalid)*
 
-*Defined in [src/atoms/interfaces/input-properties.ts:6](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/d179e3a/src/atoms/interfaces/input-properties.ts#L6)*
+*Defined in [src/atoms/interfaces/input-properties.ts:6](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/059eef4/src/atoms/interfaces/input-properties.ts#L6)*
 
 ___
 
@@ -101,7 +101,7 @@ ___
 
 • **label**: *string*
 
-*Defined in [src/molecules/form-fields/input-form-field.tsx:30](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/d179e3a/src/molecules/form-fields/input-form-field.tsx#L30)*
+*Defined in [src/molecules/form-fields/input-form-field.tsx:32](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/059eef4/src/molecules/form-fields/input-form-field.tsx#L32)*
 
 ___
 
@@ -109,7 +109,7 @@ ___
 
 • **maxLength**? : *undefined | number*
 
-*Defined in [src/molecules/form-fields/input-form-field.tsx:31](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/d179e3a/src/molecules/form-fields/input-form-field.tsx#L31)*
+*Defined in [src/molecules/form-fields/input-form-field.tsx:33](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/059eef4/src/molecules/form-fields/input-form-field.tsx#L33)*
 
 ___
 
@@ -117,7 +117,7 @@ ___
 
 • **name**? : *undefined | string*
 
-*Defined in [src/molecules/form-fields/input-form-field.tsx:32](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/d179e3a/src/molecules/form-fields/input-form-field.tsx#L32)*
+*Defined in [src/molecules/form-fields/input-form-field.tsx:34](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/059eef4/src/molecules/form-fields/input-form-field.tsx#L34)*
 
 ___
 
@@ -127,7 +127,7 @@ ___
 
 *Inherited from [InputProperties](inputproperties.md).[onChange](inputproperties.md#onchange)*
 
-*Defined in [src/atoms/interfaces/input-properties.ts:7](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/d179e3a/src/atoms/interfaces/input-properties.ts#L7)*
+*Defined in [src/atoms/interfaces/input-properties.ts:7](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/059eef4/src/atoms/interfaces/input-properties.ts#L7)*
 
 #### Type declaration:
 
@@ -147,7 +147,7 @@ ___
 
 *Inherited from [InputProperties](inputproperties.md).[placeholder](inputproperties.md#optional-placeholder)*
 
-*Defined in [src/atoms/interfaces/input-properties.ts:8](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/d179e3a/src/atoms/interfaces/input-properties.ts#L8)*
+*Defined in [src/atoms/interfaces/input-properties.ts:8](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/059eef4/src/atoms/interfaces/input-properties.ts#L8)*
 
 ___
 
@@ -155,7 +155,7 @@ ___
 
 • **ref**? : *RefObject‹HTMLInputElement›*
 
-*Defined in [src/molecules/form-fields/input-form-field.tsx:33](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/d179e3a/src/molecules/form-fields/input-form-field.tsx#L33)*
+*Defined in [src/molecules/form-fields/input-form-field.tsx:35](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/059eef4/src/molecules/form-fields/input-form-field.tsx#L35)*
 
 ___
 
@@ -163,7 +163,7 @@ ___
 
 • **required**? : *undefined | false | true*
 
-*Defined in [src/molecules/form-fields/input-form-field.tsx:34](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/d179e3a/src/molecules/form-fields/input-form-field.tsx#L34)*
+*Defined in [src/molecules/form-fields/input-form-field.tsx:36](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/059eef4/src/molecules/form-fields/input-form-field.tsx#L36)*
 
 ___
 
@@ -171,7 +171,7 @@ ___
 
 • **showCharacterCount**? : *undefined | false | true*
 
-*Defined in [src/molecules/form-fields/input-form-field.tsx:35](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/d179e3a/src/molecules/form-fields/input-form-field.tsx#L35)*
+*Defined in [src/molecules/form-fields/input-form-field.tsx:37](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/059eef4/src/molecules/form-fields/input-form-field.tsx#L37)*
 
 ___
 
@@ -179,7 +179,7 @@ ___
 
 • **showLabelForScreenReadersOnly**? : *undefined | false | true*
 
-*Defined in [src/molecules/form-fields/input-form-field.tsx:36](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/d179e3a/src/molecules/form-fields/input-form-field.tsx#L36)*
+*Defined in [src/molecules/form-fields/input-form-field.tsx:38](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/059eef4/src/molecules/form-fields/input-form-field.tsx#L38)*
 
 ___
 
@@ -189,7 +189,7 @@ ___
 
 *Inherited from [InputProperties](inputproperties.md).[type](inputproperties.md#optional-type)*
 
-*Defined in [src/atoms/interfaces/input-properties.ts:9](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/d179e3a/src/atoms/interfaces/input-properties.ts#L9)*
+*Defined in [src/atoms/interfaces/input-properties.ts:9](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/059eef4/src/atoms/interfaces/input-properties.ts#L9)*
 
 ___
 
@@ -199,4 +199,4 @@ ___
 
 *Inherited from [InputProperties](inputproperties.md).[value](inputproperties.md#optional-value)*
 
-*Defined in [src/atoms/interfaces/input-properties.ts:10](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/d179e3a/src/atoms/interfaces/input-properties.ts#L10)*
+*Defined in [src/atoms/interfaces/input-properties.ts:10](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/059eef4/src/atoms/interfaces/input-properties.ts#L10)*

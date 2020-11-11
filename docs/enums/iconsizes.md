@@ -15,7 +15,7 @@
 
 • **Base**: = "base"
 
-*Defined in [src/atoms/constants/icon-sizes.ts:2](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/d179e3a/src/atoms/constants/icon-sizes.ts#L2)*
+*Defined in [src/atoms/constants/icon-sizes.ts:2](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/059eef4/src/atoms/constants/icon-sizes.ts#L2)*
 
 ___
 
@@ -23,4 +23,4 @@ ___
 
 • **Large**: = "large"
 
-*Defined in [src/atoms/constants/icon-sizes.ts:3](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/d179e3a/src/atoms/constants/icon-sizes.ts#L3)*
+*Defined in [src/atoms/constants/icon-sizes.ts:3](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/059eef4/src/atoms/constants/icon-sizes.ts#L3)*

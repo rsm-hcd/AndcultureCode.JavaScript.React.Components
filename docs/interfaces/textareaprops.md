@@ -26,7 +26,7 @@
 
 • **disabled**? : *undefined | false | true*
 
-*Defined in [src/atoms/forms/text-area.tsx:8](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/d179e3a/src/atoms/forms/text-area.tsx#L8)*
+*Defined in [src/atoms/forms/text-area.tsx:8](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/059eef4/src/atoms/forms/text-area.tsx#L8)*
 
 ___
 
@@ -34,7 +34,7 @@ ___
 
 • **id**: *string*
 
-*Defined in [src/atoms/forms/text-area.tsx:9](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/d179e3a/src/atoms/forms/text-area.tsx#L9)*
+*Defined in [src/atoms/forms/text-area.tsx:9](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/059eef4/src/atoms/forms/text-area.tsx#L9)*
 
 ___
 
@@ -42,7 +42,7 @@ ___
 
 • **maxLength**? : *undefined | number*
 
-*Defined in [src/atoms/forms/text-area.tsx:10](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/d179e3a/src/atoms/forms/text-area.tsx#L10)*
+*Defined in [src/atoms/forms/text-area.tsx:10](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/059eef4/src/atoms/forms/text-area.tsx#L10)*
 
 ___
 
@@ -50,7 +50,7 @@ ___
 
 • **name**? : *undefined | string*
 
-*Defined in [src/atoms/forms/text-area.tsx:11](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/d179e3a/src/atoms/forms/text-area.tsx#L11)*
+*Defined in [src/atoms/forms/text-area.tsx:11](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/059eef4/src/atoms/forms/text-area.tsx#L11)*
 
 ___
 
@@ -58,7 +58,7 @@ ___
 
 • **onChange**: *function*
 
-*Defined in [src/atoms/forms/text-area.tsx:12](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/d179e3a/src/atoms/forms/text-area.tsx#L12)*
+*Defined in [src/atoms/forms/text-area.tsx:12](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/059eef4/src/atoms/forms/text-area.tsx#L12)*
 
 #### Type declaration:
 
@@ -76,7 +76,7 @@ ___
 
 • **placeholder**? : *undefined | string*
 
-*Defined in [src/atoms/forms/text-area.tsx:13](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/d179e3a/src/atoms/forms/text-area.tsx#L13)*
+*Defined in [src/atoms/forms/text-area.tsx:13](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/059eef4/src/atoms/forms/text-area.tsx#L13)*
 
 ___
 
@@ -84,7 +84,7 @@ ___
 
 • **rows**? : *undefined | number*
 
-*Defined in [src/atoms/forms/text-area.tsx:14](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/d179e3a/src/atoms/forms/text-area.tsx#L14)*
+*Defined in [src/atoms/forms/text-area.tsx:14](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/059eef4/src/atoms/forms/text-area.tsx#L14)*
 
 ___
 
@@ -92,7 +92,7 @@ ___
 
 • **testId**? : *undefined | string*
 
-*Defined in [src/atoms/forms/text-area.tsx:19](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/d179e3a/src/atoms/forms/text-area.tsx#L19)*
+*Defined in [src/atoms/forms/text-area.tsx:19](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/059eef4/src/atoms/forms/text-area.tsx#L19)*
 
 Unique identifier used select the underlying <textarea> for functional/e2e testing
 
@@ -102,4 +102,4 @@ ___
 
 • **value**? : *undefined | string*
 
-*Defined in [src/atoms/forms/text-area.tsx:20](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/d179e3a/src/atoms/forms/text-area.tsx#L20)*
+*Defined in [src/atoms/forms/text-area.tsx:20](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/059eef4/src/atoms/forms/text-area.tsx#L20)*

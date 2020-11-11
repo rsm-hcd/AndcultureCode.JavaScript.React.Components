@@ -22,7 +22,7 @@ the history of the stack of drawing objects
 
 • **currentObjectIndex**: *number*
 
-*Defined in [src/atoms/forms/canvas-sketch/react-canvas-sketch.tsx:22](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/d179e3a/src/atoms/forms/canvas-sketch/react-canvas-sketch.tsx#L22)*
+*Defined in [src/atoms/forms/canvas-sketch/react-canvas-sketch.tsx:22](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/059eef4/src/atoms/forms/canvas-sketch/react-canvas-sketch.tsx#L22)*
 
 The current point/index in the history stack of drawing objects
 
@@ -32,6 +32,6 @@ ___
 
 • **objects**: *[CanvasDrawToolSettings](canvasdrawtoolsettings.md)[]*
 
-*Defined in [src/atoms/forms/canvas-sketch/react-canvas-sketch.tsx:26](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/d179e3a/src/atoms/forms/canvas-sketch/react-canvas-sketch.tsx#L26)*
+*Defined in [src/atoms/forms/canvas-sketch/react-canvas-sketch.tsx:26](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/059eef4/src/atoms/forms/canvas-sketch/react-canvas-sketch.tsx#L26)*
 
 The drawn objects stack

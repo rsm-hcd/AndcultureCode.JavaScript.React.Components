@@ -26,7 +26,7 @@
 
 • **delete**: *[AxiosJestMock](../README.md#axiosjestmock)*
 
-*Defined in [src/tests/mocks/mock-axios.ts:15](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/d179e3a/src/tests/mocks/mock-axios.ts#L15)*
+*Defined in [src/tests/mocks/mock-axios.ts:15](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/059eef4/src/tests/mocks/mock-axios.ts#L15)*
 
 ___
 
@@ -34,7 +34,7 @@ ___
 
 • **deleteSuccess**: *function*
 
-*Defined in [src/tests/mocks/mock-axios.ts:22](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/d179e3a/src/tests/mocks/mock-axios.ts#L22)*
+*Defined in [src/tests/mocks/mock-axios.ts:22](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/059eef4/src/tests/mocks/mock-axios.ts#L22)*
 
 Simple way to mock a successful axios delete request
 
@@ -59,7 +59,7 @@ ___
 
 • **get**: *[AxiosJestMock](../README.md#axiosjestmock)*
 
-*Defined in [src/tests/mocks/mock-axios.ts:24](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/d179e3a/src/tests/mocks/mock-axios.ts#L24)*
+*Defined in [src/tests/mocks/mock-axios.ts:24](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/059eef4/src/tests/mocks/mock-axios.ts#L24)*
 
 ___
 
@@ -67,7 +67,7 @@ ___
 
 • **getSuccess**: *function*
 
-*Defined in [src/tests/mocks/mock-axios.ts:31](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/d179e3a/src/tests/mocks/mock-axios.ts#L31)*
+*Defined in [src/tests/mocks/mock-axios.ts:31](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/059eef4/src/tests/mocks/mock-axios.ts#L31)*
 
 Simple way to mock a successful axios get/find request
 
@@ -92,7 +92,7 @@ ___
 
 • **listSuccess**: *function*
 
-*Defined in [src/tests/mocks/mock-axios.ts:38](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/d179e3a/src/tests/mocks/mock-axios.ts#L38)*
+*Defined in [src/tests/mocks/mock-axios.ts:38](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/059eef4/src/tests/mocks/mock-axios.ts#L38)*
 
 Simple way to mock a successful axios get/list request
 
@@ -117,7 +117,7 @@ ___
 
 • **post**: *[AxiosJestMock](../README.md#axiosjestmock)*
 
-*Defined in [src/tests/mocks/mock-axios.ts:40](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/d179e3a/src/tests/mocks/mock-axios.ts#L40)*
+*Defined in [src/tests/mocks/mock-axios.ts:40](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/059eef4/src/tests/mocks/mock-axios.ts#L40)*
 
 ___
 
@@ -125,7 +125,7 @@ ___
 
 • **postSuccess**: *function*
 
-*Defined in [src/tests/mocks/mock-axios.ts:47](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/d179e3a/src/tests/mocks/mock-axios.ts#L47)*
+*Defined in [src/tests/mocks/mock-axios.ts:47](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/059eef4/src/tests/mocks/mock-axios.ts#L47)*
 
 Simple way to mock a successful axios post request
 
@@ -150,7 +150,7 @@ ___
 
 • **put**: *[AxiosJestMock](../README.md#axiosjestmock)*
 
-*Defined in [src/tests/mocks/mock-axios.ts:49](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/d179e3a/src/tests/mocks/mock-axios.ts#L49)*
+*Defined in [src/tests/mocks/mock-axios.ts:49](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/059eef4/src/tests/mocks/mock-axios.ts#L49)*
 
 ___
 
@@ -158,7 +158,7 @@ ___
 
 • **putSuccess**: *function*
 
-*Defined in [src/tests/mocks/mock-axios.ts:56](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/d179e3a/src/tests/mocks/mock-axios.ts#L56)*
+*Defined in [src/tests/mocks/mock-axios.ts:56](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/059eef4/src/tests/mocks/mock-axios.ts#L56)*
 
 Simple way to mock a successful axios put request
 

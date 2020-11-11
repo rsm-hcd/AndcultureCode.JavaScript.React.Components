@@ -18,4 +18,4 @@
 
 • **text**: *string*
 
-*Defined in [src/molecules/errors/error-banner.tsx:18](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/d179e3a/src/molecules/errors/error-banner.tsx#L18)*
+*Defined in [src/molecules/errors/error-banner.tsx:18](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/059eef4/src/molecules/errors/error-banner.tsx#L18)*
