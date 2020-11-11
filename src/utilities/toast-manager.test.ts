@@ -4,6 +4,45 @@ import { toast } from "react-toastify";
 
 describe("ToastManager", () => {
     // -----------------------------------------------------------------------------------------
+    // #region dismiss
+    // -----------------------------------------------------------------------------------------
+
+    describe("dismiss", () => {
+        test("when executed, calls dismiss", () => {
+            // Arrange
+            const dismissMethodSpy = jest.spyOn(toast, "dismiss");
+            const testId = faker.random.number(99);
+
+            // Act
+            ToastManager.dismiss(testId);
+
+            // Assert
+            expect(dismissMethodSpy).toHaveBeenCalledWith(testId);
+        });
+    });
+
+    // #endregion dismiss
+
+    // -----------------------------------------------------------------------------------------
+    // #region dismissAll
+    // -----------------------------------------------------------------------------------------
+
+    describe("dismissAll", () => {
+        test("when executed, calls dismiss", () => {
+            // Arrange
+            const dismissMethodSpy = jest.spyOn(toast, "dismiss");
+
+            // Act
+            ToastManager.dismissAll();
+
+            // Assert
+            expect(dismissMethodSpy).toHaveBeenCalled();
+        });
+    });
+
+    // #endregion dismissAll
+
+    // -----------------------------------------------------------------------------------------
     // #region error
     // -----------------------------------------------------------------------------------------
 
@@ -100,6 +139,27 @@ describe("ToastManager", () => {
     // #endregion success
 
     // -----------------------------------------------------------------------------------------
+    // #region update
+    // -----------------------------------------------------------------------------------------
+
+    describe("update", () => {
+        test("when executed, calls update", () => {
+            // Arrange
+            const newContent = faker.random.words();
+            const testId = faker.random.number(99);
+            const updateMethodSpy = jest.spyOn(ToastManager, "update");
+
+            // Act
+            ToastManager.update(testId, newContent);
+
+            // Assert
+            expect(updateMethodSpy).toHaveBeenCalledWith(testId, newContent);
+        });
+    });
+
+    // #endregion update
+
+    // -----------------------------------------------------------------------------------------
     // #region warn
     // -----------------------------------------------------------------------------------------
 
@@ -130,64 +190,4 @@ describe("ToastManager", () => {
     });
 
     // #endregion warn
-
-    // -----------------------------------------------------------------------------------------
-    // #region dismiss
-    // -----------------------------------------------------------------------------------------
-
-    describe("dismiss", () => {
-        test("when executed, calls dismiss", () => {
-            // Arrange
-            const dismissMethodSpy = jest.spyOn(toast, "dismiss");
-            const testId = faker.random.number(99);
-
-            // Act
-            ToastManager.dismiss(testId);
-
-            // Assert
-            expect(dismissMethodSpy).toHaveBeenCalledWith(testId);
-        });
-    });
-
-    // #endregion dismiss
-
-    // -----------------------------------------------------------------------------------------
-    // #region dismissAll
-    // -----------------------------------------------------------------------------------------
-
-    describe("dismissAll", () => {
-        test("when executed, calls dismiss", () => {
-            // Arrange
-            const dismissMethodSpy = jest.spyOn(toast, "dismiss");
-
-            // Act
-            ToastManager.dismissAll();
-
-            // Assert
-            expect(dismissMethodSpy).toHaveBeenCalled();
-        });
-    });
-
-    // #endregion dismissAll
-
-    // -----------------------------------------------------------------------------------------
-    // #region update
-    // -----------------------------------------------------------------------------------------
-
-    describe("update", () => {
-        test("when executed, calls update", () => {
-            // Arrange
-            const newContent = faker.random.words();
-            const testId = faker.random.number(99);
-            const updateMethodSpy = jest.spyOn(ToastManager, "update");
-
-            // Act
-            ToastManager.update(testId, newContent);
-
-            // Assert
-            expect(updateMethodSpy).toHaveBeenCalledWith(testId, newContent);
-        });
-    });
-
-    // #endregion update
 });
