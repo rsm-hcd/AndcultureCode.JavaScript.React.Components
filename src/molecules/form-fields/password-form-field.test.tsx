@@ -2,7 +2,7 @@ import React from "react";
 import { render, fireEvent } from "@testing-library/react";
 import {
     PasswordFormField,
-    InvalidInputClassName,
+    PasswordFormFieldInvalidClassName,
 } from "./password-form-field";
 import faker from "faker";
 import { InputTypes } from "../../atoms/constants/input-types";
@@ -114,7 +114,7 @@ describe("PasswordFormField", () => {
         expect(htmlInputElement[0].type).toBe(InputTypes.Password);
     });
 
-    test(`when isValid prop is false, renders with ${InvalidInputClassName} class name`, () => {
+    test(`when isValid prop is false, renders with ${PasswordFormFieldInvalidClassName} class name`, () => {
         // Arrange
         const testLabel = faker.random.words();
 
@@ -126,7 +126,9 @@ describe("PasswordFormField", () => {
                 onChange={() => {}}
             />
         );
-        const result = container.getElementsByClassName(InvalidInputClassName);
+        const result = container.getElementsByClassName(
+            PasswordFormFieldInvalidClassName
+        );
 
         // Assert
         expect(result).toHaveLength(1);
