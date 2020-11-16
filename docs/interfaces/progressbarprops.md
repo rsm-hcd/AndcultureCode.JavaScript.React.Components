@@ -22,7 +22,7 @@
 
 • **cssClassName**? : *undefined | string*
 
-*Defined in [src/atoms/progress-bar/progress-bar.tsx:28](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/059eef4/src/atoms/progress-bar/progress-bar.tsx#L28)*
+*Defined in [src/atoms/progress-bar/progress-bar.tsx:28](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/1237fb1/src/atoms/progress-bar/progress-bar.tsx#L28)*
 
 ___
 
@@ -30,7 +30,7 @@ ___
 
 • **isErrored**? : *undefined | false | true*
 
-*Defined in [src/atoms/progress-bar/progress-bar.tsx:29](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/059eef4/src/atoms/progress-bar/progress-bar.tsx#L29)*
+*Defined in [src/atoms/progress-bar/progress-bar.tsx:29](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/1237fb1/src/atoms/progress-bar/progress-bar.tsx#L29)*
 
 ___
 
@@ -38,7 +38,7 @@ ___
 
 • **style**? : *[ProgressBarStyles](../enums/progressbarstyles.md)*
 
-*Defined in [src/atoms/progress-bar/progress-bar.tsx:30](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/059eef4/src/atoms/progress-bar/progress-bar.tsx#L30)*
+*Defined in [src/atoms/progress-bar/progress-bar.tsx:30](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/1237fb1/src/atoms/progress-bar/progress-bar.tsx#L30)*
 
 ___
 
@@ -46,7 +46,7 @@ ___
 
 • **testId**? : *undefined | string*
 
-*Defined in [src/atoms/progress-bar/progress-bar.tsx:35](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/059eef4/src/atoms/progress-bar/progress-bar.tsx#L35)*
+*Defined in [src/atoms/progress-bar/progress-bar.tsx:35](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/1237fb1/src/atoms/progress-bar/progress-bar.tsx#L35)*
 
 Unique identifier used to select the underlying <div> for functional/e2e testing
 
@@ -56,4 +56,4 @@ ___
 
 • **value**: *number*
 
-*Defined in [src/atoms/progress-bar/progress-bar.tsx:37](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/059eef4/src/atoms/progress-bar/progress-bar.tsx#L37)*
+*Defined in [src/atoms/progress-bar/progress-bar.tsx:37](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/1237fb1/src/atoms/progress-bar/progress-bar.tsx#L37)*

@@ -19,7 +19,7 @@
 
 • **items**: *Element[]*
 
-*Defined in [src/molecules/lists/radio-list.tsx:18](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/059eef4/src/molecules/lists/radio-list.tsx#L18)*
+*Defined in [src/molecules/lists/radio-list.tsx:18](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/1237fb1/src/molecules/lists/radio-list.tsx#L18)*
 
 ___
 
@@ -27,4 +27,4 @@ ___
 
 • **style**? : *[RadioListStyles](../enums/radioliststyles.md)*
 
-*Defined in [src/molecules/lists/radio-list.tsx:19](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/059eef4/src/molecules/lists/radio-list.tsx#L19)*
+*Defined in [src/molecules/lists/radio-list.tsx:19](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/1237fb1/src/molecules/lists/radio-list.tsx#L19)*

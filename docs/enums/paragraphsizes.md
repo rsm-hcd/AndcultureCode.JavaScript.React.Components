@@ -18,7 +18,7 @@
 
 • **Base**: = "base"
 
-*Defined in [src/atoms/constants/paragraph-sizes.ts:2](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/059eef4/src/atoms/constants/paragraph-sizes.ts#L2)*
+*Defined in [src/atoms/constants/paragraph-sizes.ts:2](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/1237fb1/src/atoms/constants/paragraph-sizes.ts#L2)*
 
 ___
 
@@ -26,7 +26,7 @@ ___
 
 • **Large**: = "large"
 
-*Defined in [src/atoms/constants/paragraph-sizes.ts:3](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/059eef4/src/atoms/constants/paragraph-sizes.ts#L3)*
+*Defined in [src/atoms/constants/paragraph-sizes.ts:3](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/1237fb1/src/atoms/constants/paragraph-sizes.ts#L3)*
 
 ___
 
@@ -34,7 +34,7 @@ ___
 
 • **Small**: = "small"
 
-*Defined in [src/atoms/constants/paragraph-sizes.ts:4](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/059eef4/src/atoms/constants/paragraph-sizes.ts#L4)*
+*Defined in [src/atoms/constants/paragraph-sizes.ts:4](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/1237fb1/src/atoms/constants/paragraph-sizes.ts#L4)*
 
 ___
 
@@ -42,7 +42,7 @@ ___
 
 • **XLarge**: = "xlarge"
 
-*Defined in [src/atoms/constants/paragraph-sizes.ts:6](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/059eef4/src/atoms/constants/paragraph-sizes.ts#L6)*
+*Defined in [src/atoms/constants/paragraph-sizes.ts:6](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/1237fb1/src/atoms/constants/paragraph-sizes.ts#L6)*
 
 ___
 
@@ -50,4 +50,4 @@ ___
 
 • **XSmall**: = "xsmall"
 
-*Defined in [src/atoms/constants/paragraph-sizes.ts:5](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/059eef4/src/atoms/constants/paragraph-sizes.ts#L5)*
+*Defined in [src/atoms/constants/paragraph-sizes.ts:5](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/1237fb1/src/atoms/constants/paragraph-sizes.ts#L5)*
