@@ -20,7 +20,7 @@
 
 • **buttonText**? : *undefined | string*
 
-*Defined in [src/atoms/forms/submit-button.tsx:8](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/d179e3a/src/atoms/forms/submit-button.tsx#L8)*
+*Defined in [src/atoms/forms/submit-button.tsx:8](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/1237fb1/src/atoms/forms/submit-button.tsx#L8)*
 
 ___
 
@@ -28,7 +28,7 @@ ___
 
 • **cssClassName**? : *undefined | string*
 
-*Defined in [src/atoms/forms/submit-button.tsx:9](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/d179e3a/src/atoms/forms/submit-button.tsx#L9)*
+*Defined in [src/atoms/forms/submit-button.tsx:9](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/1237fb1/src/atoms/forms/submit-button.tsx#L9)*
 
 ___
 
@@ -36,7 +36,7 @@ ___
 
 • **formId**? : *undefined | string*
 
-*Defined in [src/atoms/forms/submit-button.tsx:15](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/d179e3a/src/atoms/forms/submit-button.tsx#L15)*
+*Defined in [src/atoms/forms/submit-button.tsx:15](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/1237fb1/src/atoms/forms/submit-button.tsx#L15)*
 
 Typically you do not need this, but using it can allow you to
 place the button outside of the form for styling purposes.

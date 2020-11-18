@@ -9,6 +9,7 @@ import { StringUtils } from "andculturecode-javascript-core";
 // -----------------------------------------------------------------------------------------
 
 const COMPONENT_CLASS = "c-form-field";
+export const PasswordFormFieldInvalidClassName = "-invalid";
 
 // #endregion Constants
 
@@ -50,7 +51,7 @@ const PasswordFormField: React.FC<PasswordFormFields> = (
     } = props;
 
     const [isVisible, setIsVisible] = useState<boolean>(false);
-    const cssIsValid = isValid ? "" : "-invalid";
+    const cssIsValid = isValid ? "" : PasswordFormFieldInvalidClassName;
     const disableShowHide = StringUtils.isEmpty(value) || disabled;
     const fieldId = uuid.v4();
     const passwordShowHideLabel = isVisible ? "Hide" : "Show";

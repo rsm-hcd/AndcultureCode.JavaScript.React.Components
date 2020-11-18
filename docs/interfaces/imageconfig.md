@@ -19,7 +19,7 @@
 
 • **canvas**: *HTMLCanvasElement*
 
-*Defined in [src/atoms/forms/canvas-sketch/tools/image-canvas-tool.ts:17](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/d179e3a/src/atoms/forms/canvas-sketch/tools/image-canvas-tool.ts#L17)*
+*Defined in [src/atoms/forms/canvas-sketch/tools/image-canvas-tool.ts:17](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/1237fb1/src/atoms/forms/canvas-sketch/tools/image-canvas-tool.ts#L17)*
 
 ___
 
@@ -27,4 +27,4 @@ ___
 
 • **context**: *CanvasRenderingContext2D*
 
-*Defined in [src/atoms/forms/canvas-sketch/tools/image-canvas-tool.ts:18](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/d179e3a/src/atoms/forms/canvas-sketch/tools/image-canvas-tool.ts#L18)*
+*Defined in [src/atoms/forms/canvas-sketch/tools/image-canvas-tool.ts:18](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/1237fb1/src/atoms/forms/canvas-sketch/tools/image-canvas-tool.ts#L18)*

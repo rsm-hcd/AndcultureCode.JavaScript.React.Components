@@ -37,7 +37,7 @@
 
 \+ **new ImageCanvasTool**(`config`: [ImageConfig](../interfaces/imageconfig.md)): *[ImageCanvasTool](imagecanvastool.md)*
 
-*Defined in [src/atoms/forms/canvas-sketch/tools/image-canvas-tool.ts:29](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/d179e3a/src/atoms/forms/canvas-sketch/tools/image-canvas-tool.ts#L29)*
+*Defined in [src/atoms/forms/canvas-sketch/tools/image-canvas-tool.ts:29](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/1237fb1/src/atoms/forms/canvas-sketch/tools/image-canvas-tool.ts#L29)*
 
 **Parameters:**
 
@@ -53,7 +53,7 @@ Name | Type |
 
 • **_config**: *[ImageConfig](../interfaces/imageconfig.md)*
 
-*Defined in [src/atoms/forms/canvas-sketch/tools/image-canvas-tool.ts:26](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/d179e3a/src/atoms/forms/canvas-sketch/tools/image-canvas-tool.ts#L26)*
+*Defined in [src/atoms/forms/canvas-sketch/tools/image-canvas-tool.ts:26](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/1237fb1/src/atoms/forms/canvas-sketch/tools/image-canvas-tool.ts#L26)*
 
 ___
 
@@ -61,7 +61,7 @@ ___
 
 • **_shouldCenterInDestRectangle**: *boolean*
 
-*Defined in [src/atoms/forms/canvas-sketch/tools/image-canvas-tool.ts:27](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/d179e3a/src/atoms/forms/canvas-sketch/tools/image-canvas-tool.ts#L27)*
+*Defined in [src/atoms/forms/canvas-sketch/tools/image-canvas-tool.ts:27](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/1237fb1/src/atoms/forms/canvas-sketch/tools/image-canvas-tool.ts#L27)*
 
 ___
 
@@ -69,7 +69,7 @@ ___
 
 • **_shouldFitInCanvas**: *boolean*
 
-*Defined in [src/atoms/forms/canvas-sketch/tools/image-canvas-tool.ts:28](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/d179e3a/src/atoms/forms/canvas-sketch/tools/image-canvas-tool.ts#L28)*
+*Defined in [src/atoms/forms/canvas-sketch/tools/image-canvas-tool.ts:28](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/1237fb1/src/atoms/forms/canvas-sketch/tools/image-canvas-tool.ts#L28)*
 
 ___
 
@@ -77,7 +77,7 @@ ___
 
 • **_shouldScaleToFitDestRectangle**: *boolean*
 
-*Defined in [src/atoms/forms/canvas-sketch/tools/image-canvas-tool.ts:29](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/d179e3a/src/atoms/forms/canvas-sketch/tools/image-canvas-tool.ts#L29)*
+*Defined in [src/atoms/forms/canvas-sketch/tools/image-canvas-tool.ts:29](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/1237fb1/src/atoms/forms/canvas-sketch/tools/image-canvas-tool.ts#L29)*
 
 ___
 
@@ -85,7 +85,7 @@ ___
 
 • **toolType**: *[CanvasToolType](../enums/canvastooltype.md)*
 
-*Defined in [src/atoms/forms/canvas-sketch/tools/image-canvas-tool.ts:24](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/d179e3a/src/atoms/forms/canvas-sketch/tools/image-canvas-tool.ts#L24)*
+*Defined in [src/atoms/forms/canvas-sketch/tools/image-canvas-tool.ts:24](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/1237fb1/src/atoms/forms/canvas-sketch/tools/image-canvas-tool.ts#L24)*
 
 ## Methods
 
@@ -93,7 +93,7 @@ ___
 
 ▸ **_drawImage**(`destRecEndX?`: undefined | number, `destRecEndY?`: undefined | number, `destRecStartX?`: undefined | number, `destRecStartY?`: undefined | number, `url?`: undefined | string): *void*
 
-*Defined in [src/atoms/forms/canvas-sketch/tools/image-canvas-tool.ts:99](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/d179e3a/src/atoms/forms/canvas-sketch/tools/image-canvas-tool.ts#L99)*
+*Defined in [src/atoms/forms/canvas-sketch/tools/image-canvas-tool.ts:99](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/1237fb1/src/atoms/forms/canvas-sketch/tools/image-canvas-tool.ts#L99)*
 
 Draws the image url to the canvas
 
@@ -115,7 +115,7 @@ ___
 
 ▸ **dispose**(): *void*
 
-*Defined in [src/atoms/forms/canvas-sketch/tools/image-canvas-tool.ts:46](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/d179e3a/src/atoms/forms/canvas-sketch/tools/image-canvas-tool.ts#L46)*
+*Defined in [src/atoms/forms/canvas-sketch/tools/image-canvas-tool.ts:46](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/1237fb1/src/atoms/forms/canvas-sketch/tools/image-canvas-tool.ts#L46)*
 
 **Returns:** *void*
 
@@ -125,7 +125,7 @@ ___
 
 ▸ **drawImage**(`image`: [ImageSettings](../interfaces/imagesettings.md)): *void*
 
-*Defined in [src/atoms/forms/canvas-sketch/tools/image-canvas-tool.ts:56](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/d179e3a/src/atoms/forms/canvas-sketch/tools/image-canvas-tool.ts#L56)*
+*Defined in [src/atoms/forms/canvas-sketch/tools/image-canvas-tool.ts:56](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/1237fb1/src/atoms/forms/canvas-sketch/tools/image-canvas-tool.ts#L56)*
 
 **Parameters:**
 
@@ -141,7 +141,7 @@ ___
 
 ▸ **drawImages**(`images`: [ImageSettings](../interfaces/imagesettings.md)[]): *void*
 
-*Defined in [src/atoms/forms/canvas-sketch/tools/image-canvas-tool.ts:48](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/d179e3a/src/atoms/forms/canvas-sketch/tools/image-canvas-tool.ts#L48)*
+*Defined in [src/atoms/forms/canvas-sketch/tools/image-canvas-tool.ts:48](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/1237fb1/src/atoms/forms/canvas-sketch/tools/image-canvas-tool.ts#L48)*
 
 **Parameters:**
 
@@ -157,7 +157,7 @@ ___
 
 ▸ **initialize**(): *void*
 
-*Defined in [src/atoms/forms/canvas-sketch/tools/image-canvas-tool.ts:66](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/d179e3a/src/atoms/forms/canvas-sketch/tools/image-canvas-tool.ts#L66)*
+*Defined in [src/atoms/forms/canvas-sketch/tools/image-canvas-tool.ts:66](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/1237fb1/src/atoms/forms/canvas-sketch/tools/image-canvas-tool.ts#L66)*
 
 **Returns:** *void*
 
@@ -167,7 +167,7 @@ ___
 
 ▸ **setShouldCenterInDestRectangle**(`shouldCenterInDestRectangle`: boolean): *void*
 
-*Defined in [src/atoms/forms/canvas-sketch/tools/image-canvas-tool.ts:68](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/d179e3a/src/atoms/forms/canvas-sketch/tools/image-canvas-tool.ts#L68)*
+*Defined in [src/atoms/forms/canvas-sketch/tools/image-canvas-tool.ts:68](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/1237fb1/src/atoms/forms/canvas-sketch/tools/image-canvas-tool.ts#L68)*
 
 **Parameters:**
 
@@ -183,7 +183,7 @@ ___
 
 ▸ **setShouldFitInCanvas**(`shouldFitInCanvas`: boolean): *void*
 
-*Defined in [src/atoms/forms/canvas-sketch/tools/image-canvas-tool.ts:74](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/d179e3a/src/atoms/forms/canvas-sketch/tools/image-canvas-tool.ts#L74)*
+*Defined in [src/atoms/forms/canvas-sketch/tools/image-canvas-tool.ts:74](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/1237fb1/src/atoms/forms/canvas-sketch/tools/image-canvas-tool.ts#L74)*
 
 **Parameters:**
 
@@ -199,7 +199,7 @@ ___
 
 ▸ **setShouldScaleToFitDestRectangle**(`shouldScaleToFitDestRectangle`: boolean): *void*
 
-*Defined in [src/atoms/forms/canvas-sketch/tools/image-canvas-tool.ts:78](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/d179e3a/src/atoms/forms/canvas-sketch/tools/image-canvas-tool.ts#L78)*
+*Defined in [src/atoms/forms/canvas-sketch/tools/image-canvas-tool.ts:78](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/1237fb1/src/atoms/forms/canvas-sketch/tools/image-canvas-tool.ts#L78)*
 
 **Parameters:**
 

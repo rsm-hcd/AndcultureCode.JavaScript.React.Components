@@ -62,7 +62,7 @@ the selected tool and selected tool options like color and width through it's AP
 
 \+ **new CanvasSketch**(`canvasSketchConfig`: [CanvasSketchConfig](../interfaces/canvassketchconfig.md)): *[CanvasSketch](canvassketch.md)*
 
-*Defined in [src/atoms/forms/canvas-sketch/canvas-sketch.ts:55](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/d179e3a/src/atoms/forms/canvas-sketch/canvas-sketch.ts#L55)*
+*Defined in [src/atoms/forms/canvas-sketch/canvas-sketch.ts:55](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/1237fb1/src/atoms/forms/canvas-sketch/canvas-sketch.ts#L55)*
 
 Tracks
 
@@ -80,7 +80,7 @@ Name | Type | Description |
 
 • **_backgroundImageContext**: *CanvasRenderingContext2D*
 
-*Defined in [src/atoms/forms/canvas-sketch/canvas-sketch.ts:50](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/d179e3a/src/atoms/forms/canvas-sketch/canvas-sketch.ts#L50)*
+*Defined in [src/atoms/forms/canvas-sketch/canvas-sketch.ts:50](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/1237fb1/src/atoms/forms/canvas-sketch/canvas-sketch.ts#L50)*
 
 ___
 
@@ -88,7 +88,7 @@ ___
 
 • **_config**: *[CanvasSketchConfig](../interfaces/canvassketchconfig.md)*
 
-*Defined in [src/atoms/forms/canvas-sketch/canvas-sketch.ts:49](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/d179e3a/src/atoms/forms/canvas-sketch/canvas-sketch.ts#L49)*
+*Defined in [src/atoms/forms/canvas-sketch/canvas-sketch.ts:49](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/1237fb1/src/atoms/forms/canvas-sketch/canvas-sketch.ts#L49)*
 
 ___
 
@@ -96,7 +96,7 @@ ___
 
 • **_drawToolConfig**: *[DrawToolConfig](../interfaces/drawtoolconfig.md)*
 
-*Defined in [src/atoms/forms/canvas-sketch/canvas-sketch.ts:52](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/d179e3a/src/atoms/forms/canvas-sketch/canvas-sketch.ts#L52)*
+*Defined in [src/atoms/forms/canvas-sketch/canvas-sketch.ts:52](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/1237fb1/src/atoms/forms/canvas-sketch/canvas-sketch.ts#L52)*
 
 ___
 
@@ -104,7 +104,7 @@ ___
 
 • **_drawToolUiSettings**: *[DrawToolUiSettings](../interfaces/drawtooluisettings.md)*
 
-*Defined in [src/atoms/forms/canvas-sketch/canvas-sketch.ts:51](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/d179e3a/src/atoms/forms/canvas-sketch/canvas-sketch.ts#L51)*
+*Defined in [src/atoms/forms/canvas-sketch/canvas-sketch.ts:51](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/1237fb1/src/atoms/forms/canvas-sketch/canvas-sketch.ts#L51)*
 
 ___
 
@@ -112,7 +112,7 @@ ___
 
 • **_isBrowserSupported**: *boolean*
 
-*Defined in [src/atoms/forms/canvas-sketch/canvas-sketch.ts:53](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/d179e3a/src/atoms/forms/canvas-sketch/canvas-sketch.ts#L53)*
+*Defined in [src/atoms/forms/canvas-sketch/canvas-sketch.ts:53](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/1237fb1/src/atoms/forms/canvas-sketch/canvas-sketch.ts#L53)*
 
 ___
 
@@ -120,7 +120,7 @@ ___
 
 • **_sketchContext**: *CanvasRenderingContext2D*
 
-*Defined in [src/atoms/forms/canvas-sketch/canvas-sketch.ts:54](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/d179e3a/src/atoms/forms/canvas-sketch/canvas-sketch.ts#L54)*
+*Defined in [src/atoms/forms/canvas-sketch/canvas-sketch.ts:54](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/1237fb1/src/atoms/forms/canvas-sketch/canvas-sketch.ts#L54)*
 
 ___
 
@@ -128,7 +128,7 @@ ___
 
 • **_toolConfig**: *[ToolConfig](../interfaces/toolconfig.md)*
 
-*Defined in [src/atoms/forms/canvas-sketch/canvas-sketch.ts:55](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/d179e3a/src/atoms/forms/canvas-sketch/canvas-sketch.ts#L55)*
+*Defined in [src/atoms/forms/canvas-sketch/canvas-sketch.ts:55](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/1237fb1/src/atoms/forms/canvas-sketch/canvas-sketch.ts#L55)*
 
 ___
 
@@ -136,7 +136,7 @@ ___
 
 • **backgroundImageTool**: *[ImageCanvasTool](imagecanvastool.md)*
 
-*Defined in [src/atoms/forms/canvas-sketch/canvas-sketch.ts:42](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/d179e3a/src/atoms/forms/canvas-sketch/canvas-sketch.ts#L42)*
+*Defined in [src/atoms/forms/canvas-sketch/canvas-sketch.ts:42](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/1237fb1/src/atoms/forms/canvas-sketch/canvas-sketch.ts#L42)*
 
 ___
 
@@ -144,7 +144,7 @@ ___
 
 • **imageTool**: *[ImageCanvasTool](imagecanvastool.md)*
 
-*Defined in [src/atoms/forms/canvas-sketch/canvas-sketch.ts:43](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/d179e3a/src/atoms/forms/canvas-sketch/canvas-sketch.ts#L43)*
+*Defined in [src/atoms/forms/canvas-sketch/canvas-sketch.ts:43](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/1237fb1/src/atoms/forms/canvas-sketch/canvas-sketch.ts#L43)*
 
 ___
 
@@ -152,7 +152,7 @@ ___
 
 • **lineDrawTool**: *[LineCanvasDrawTool](linecanvasdrawtool.md)*
 
-*Defined in [src/atoms/forms/canvas-sketch/canvas-sketch.ts:44](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/d179e3a/src/atoms/forms/canvas-sketch/canvas-sketch.ts#L44)*
+*Defined in [src/atoms/forms/canvas-sketch/canvas-sketch.ts:44](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/1237fb1/src/atoms/forms/canvas-sketch/canvas-sketch.ts#L44)*
 
 ___
 
@@ -160,7 +160,7 @@ ___
 
 • **panTool**: *[PanCanvasTool](pancanvastool.md)*
 
-*Defined in [src/atoms/forms/canvas-sketch/canvas-sketch.ts:45](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/d179e3a/src/atoms/forms/canvas-sketch/canvas-sketch.ts#L45)*
+*Defined in [src/atoms/forms/canvas-sketch/canvas-sketch.ts:45](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/1237fb1/src/atoms/forms/canvas-sketch/canvas-sketch.ts#L45)*
 
 ___
 
@@ -168,7 +168,7 @@ ___
 
 • **pencilDrawTool**: *[PencilCanvasDrawTool](pencilcanvasdrawtool.md)*
 
-*Defined in [src/atoms/forms/canvas-sketch/canvas-sketch.ts:46](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/d179e3a/src/atoms/forms/canvas-sketch/canvas-sketch.ts#L46)*
+*Defined in [src/atoms/forms/canvas-sketch/canvas-sketch.ts:46](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/1237fb1/src/atoms/forms/canvas-sketch/canvas-sketch.ts#L46)*
 
 ___
 
@@ -176,7 +176,7 @@ ___
 
 • **selectedTool**: *[CanvasTool](../interfaces/canvastool.md)*
 
-*Defined in [src/atoms/forms/canvas-sketch/canvas-sketch.ts:47](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/d179e3a/src/atoms/forms/canvas-sketch/canvas-sketch.ts#L47)*
+*Defined in [src/atoms/forms/canvas-sketch/canvas-sketch.ts:47](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/1237fb1/src/atoms/forms/canvas-sketch/canvas-sketch.ts#L47)*
 
 ## Methods
 
@@ -184,7 +184,7 @@ ___
 
 ▸ **_clearBackgroundImageCanvas**(): *void*
 
-*Defined in [src/atoms/forms/canvas-sketch/canvas-sketch.ts:299](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/d179e3a/src/atoms/forms/canvas-sketch/canvas-sketch.ts#L299)*
+*Defined in [src/atoms/forms/canvas-sketch/canvas-sketch.ts:299](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/1237fb1/src/atoms/forms/canvas-sketch/canvas-sketch.ts#L299)*
 
 Removes the background image from the background image canvas so that it is no longer visible
 
@@ -196,7 +196,7 @@ ___
 
 ▸ **_clearCanvas**(`canvas`: HTMLCanvasElement, `context`: CanvasRenderingContext2D): *void*
 
-*Defined in [src/atoms/forms/canvas-sketch/canvas-sketch.ts:320](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/d179e3a/src/atoms/forms/canvas-sketch/canvas-sketch.ts#L320)*
+*Defined in [src/atoms/forms/canvas-sketch/canvas-sketch.ts:320](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/1237fb1/src/atoms/forms/canvas-sketch/canvas-sketch.ts#L320)*
 
 Removes all drawing on the provided canvas and context
 
@@ -215,7 +215,7 @@ ___
 
 ▸ **_clearSketchCanvas**(): *void*
 
-*Defined in [src/atoms/forms/canvas-sketch/canvas-sketch.ts:330](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/d179e3a/src/atoms/forms/canvas-sketch/canvas-sketch.ts#L330)*
+*Defined in [src/atoms/forms/canvas-sketch/canvas-sketch.ts:330](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/1237fb1/src/atoms/forms/canvas-sketch/canvas-sketch.ts#L330)*
 
 Removes all drawing from the sketch canvas so that it is no longer visible
 
@@ -227,7 +227,7 @@ ___
 
 ▸ **_drawObjects**(`objectStack`: [CanvasToolSettings](../interfaces/canvastoolsettings.md)[]): *void*
 
-*Defined in [src/atoms/forms/canvas-sketch/canvas-sketch.ts:343](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/d179e3a/src/atoms/forms/canvas-sketch/canvas-sketch.ts#L343)*
+*Defined in [src/atoms/forms/canvas-sketch/canvas-sketch.ts:343](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/1237fb1/src/atoms/forms/canvas-sketch/canvas-sketch.ts#L343)*
 
 Draws the provided objects onto the sketch canvas
 
@@ -245,7 +245,7 @@ ___
 
 ▸ **_getStackToDraw**(): *[CanvasToolSettings](../interfaces/canvastoolsettings.md)[]*
 
-*Defined in [src/atoms/forms/canvas-sketch/canvas-sketch.ts:383](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/d179e3a/src/atoms/forms/canvas-sketch/canvas-sketch.ts#L383)*
+*Defined in [src/atoms/forms/canvas-sketch/canvas-sketch.ts:383](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/1237fb1/src/atoms/forms/canvas-sketch/canvas-sketch.ts#L383)*
 
 Returns an immutable stack of drawn strokes to draw at the point / point in time based on the current object index
 
@@ -257,7 +257,7 @@ ___
 
 ▸ **_initializeCanvasContexts**(): *void*
 
-*Defined in [src/atoms/forms/canvas-sketch/canvas-sketch.ts:404](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/d179e3a/src/atoms/forms/canvas-sketch/canvas-sketch.ts#L404)*
+*Defined in [src/atoms/forms/canvas-sketch/canvas-sketch.ts:404](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/1237fb1/src/atoms/forms/canvas-sketch/canvas-sketch.ts#L404)*
 
 Uses the current canvas instances to establish the sketch and background image contexts and
 while determining browser compatability with canvas at the same time
@@ -270,7 +270,7 @@ ___
 
 ▸ **_initializeCurrentDrawing**(): *void*
 
-*Defined in [src/atoms/forms/canvas-sketch/canvas-sketch.ts:442](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/d179e3a/src/atoms/forms/canvas-sketch/canvas-sketch.ts#L442)*
+*Defined in [src/atoms/forms/canvas-sketch/canvas-sketch.ts:442](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/1237fb1/src/atoms/forms/canvas-sketch/canvas-sketch.ts#L442)*
 
 Uses the current object stack (if provided) to redraw the strokes onto the sketch canvas
 
@@ -282,7 +282,7 @@ ___
 
 ▸ **_initializeTools**(): *void*
 
-*Defined in [src/atoms/forms/canvas-sketch/canvas-sketch.ts:464](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/d179e3a/src/atoms/forms/canvas-sketch/canvas-sketch.ts#L464)*
+*Defined in [src/atoms/forms/canvas-sketch/canvas-sketch.ts:464](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/1237fb1/src/atoms/forms/canvas-sketch/canvas-sketch.ts#L464)*
 
 Uses the current sketch canvas and context to set up all available tools to the caller
 
@@ -294,7 +294,7 @@ ___
 
 ▸ **_isInstanceOfDrawTool**(`tool`: [CanvasTool](../interfaces/canvastool.md)): *tool is CanvasDrawTool*
 
-*Defined in [src/atoms/forms/canvas-sketch/canvas-sketch.ts:396](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/d179e3a/src/atoms/forms/canvas-sketch/canvas-sketch.ts#L396)*
+*Defined in [src/atoms/forms/canvas-sketch/canvas-sketch.ts:396](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/1237fb1/src/atoms/forms/canvas-sketch/canvas-sketch.ts#L396)*
 
 Determines if the provided canvas tool is a drawable tool
 
@@ -312,7 +312,7 @@ ___
 
 ▸ **_onAddStroke**(`strokeSettings`: [CanvasDrawToolSettings](../interfaces/canvasdrawtoolsettings.md)): *void*
 
-*Defined in [src/atoms/forms/canvas-sketch/canvas-sketch.ts:372](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/d179e3a/src/atoms/forms/canvas-sketch/canvas-sketch.ts#L372)*
+*Defined in [src/atoms/forms/canvas-sketch/canvas-sketch.ts:372](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/1237fb1/src/atoms/forms/canvas-sketch/canvas-sketch.ts#L372)*
 
 Handler bound to tools drawing so capture the drawn stroke int he canvas sketch stack
 
@@ -330,7 +330,7 @@ ___
 
 ▸ **_panTo**(`panXDelta`: number, `panYDelta`: number): *void*
 
-*Defined in [src/atoms/forms/canvas-sketch/canvas-sketch.ts:523](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/d179e3a/src/atoms/forms/canvas-sketch/canvas-sketch.ts#L523)*
+*Defined in [src/atoms/forms/canvas-sketch/canvas-sketch.ts:523](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/1237fb1/src/atoms/forms/canvas-sketch/canvas-sketch.ts#L523)*
 
 Positions the canvases (background image and sketch) to the provided coordinate values
 
@@ -349,7 +349,7 @@ ___
 
 ▸ **_redrawBackgroundImage**(): *void*
 
-*Defined in [src/atoms/forms/canvas-sketch/canvas-sketch.ts:541](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/d179e3a/src/atoms/forms/canvas-sketch/canvas-sketch.ts#L541)*
+*Defined in [src/atoms/forms/canvas-sketch/canvas-sketch.ts:541](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/1237fb1/src/atoms/forms/canvas-sketch/canvas-sketch.ts#L541)*
 
 Clears the background image canvas and redraws the background image to it
 
@@ -361,7 +361,7 @@ ___
 
 ▸ **dispose**(): *void*
 
-*Defined in [src/atoms/forms/canvas-sketch/canvas-sketch.ts:97](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/d179e3a/src/atoms/forms/canvas-sketch/canvas-sketch.ts#L97)*
+*Defined in [src/atoms/forms/canvas-sketch/canvas-sketch.ts:97](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/1237fb1/src/atoms/forms/canvas-sketch/canvas-sketch.ts#L97)*
 
 Disposes of any active bound events through the selected tool and anything else that this
 object may need to clean up
@@ -374,7 +374,7 @@ ___
 
 ▸ **getTool**(`toolType`: [CanvasToolType](../enums/canvastooltype.md)): *[CanvasTool](../interfaces/canvastool.md) | null*
 
-*Defined in [src/atoms/forms/canvas-sketch/canvas-sketch.ts:110](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/d179e3a/src/atoms/forms/canvas-sketch/canvas-sketch.ts#L110)*
+*Defined in [src/atoms/forms/canvas-sketch/canvas-sketch.ts:110](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/1237fb1/src/atoms/forms/canvas-sketch/canvas-sketch.ts#L110)*
 
 Gets the appropriate canva tool based on the provided tool type
 
@@ -392,7 +392,7 @@ ___
 
 ▸ **redrawBackgroundImageUsing**(`backgroundImageUrl`: string): *void*
 
-*Defined in [src/atoms/forms/canvas-sketch/canvas-sketch.ts:134](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/d179e3a/src/atoms/forms/canvas-sketch/canvas-sketch.ts#L134)*
+*Defined in [src/atoms/forms/canvas-sketch/canvas-sketch.ts:134](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/1237fb1/src/atoms/forms/canvas-sketch/canvas-sketch.ts#L134)*
 
 Redraws the background image based on the URL provided
 
@@ -410,7 +410,7 @@ ___
 
 ▸ **redrawCurrentState**(): *void*
 
-*Defined in [src/atoms/forms/canvas-sketch/canvas-sketch.ts:146](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/d179e3a/src/atoms/forms/canvas-sketch/canvas-sketch.ts#L146)*
+*Defined in [src/atoms/forms/canvas-sketch/canvas-sketch.ts:146](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/1237fb1/src/atoms/forms/canvas-sketch/canvas-sketch.ts#L146)*
 
 Forces a redraw of the current state of the canvases.  This is useful in cases where the
 caller needs to redraw on demand
@@ -423,7 +423,7 @@ ___
 
 ▸ **redrawSketch**(): *void*
 
-*Defined in [src/atoms/forms/canvas-sketch/canvas-sketch.ts:154](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/d179e3a/src/atoms/forms/canvas-sketch/canvas-sketch.ts#L154)*
+*Defined in [src/atoms/forms/canvas-sketch/canvas-sketch.ts:154](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/1237fb1/src/atoms/forms/canvas-sketch/canvas-sketch.ts#L154)*
 
 Clears the sketch canvas and redraws all current stack objects to it
 
@@ -435,7 +435,7 @@ ___
 
 ▸ **redrawSketchAt**(`objects`: [CanvasToolSettings](../interfaces/canvastoolsettings.md)[], `newCurrentObjectIndex`: number): *void*
 
-*Defined in [src/atoms/forms/canvas-sketch/canvas-sketch.ts:173](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/d179e3a/src/atoms/forms/canvas-sketch/canvas-sketch.ts#L173)*
+*Defined in [src/atoms/forms/canvas-sketch/canvas-sketch.ts:173](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/1237fb1/src/atoms/forms/canvas-sketch/canvas-sketch.ts#L173)*
 
 Allows the caller to redraw the sketchpad at any point within the provided stack and
 point in time within that stack
@@ -455,7 +455,7 @@ ___
 
 ▸ **setOnAddedToolStroke**(`onAddedStroke`: function): *void*
 
-*Defined in [src/atoms/forms/canvas-sketch/canvas-sketch.ts:255](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/d179e3a/src/atoms/forms/canvas-sketch/canvas-sketch.ts#L255)*
+*Defined in [src/atoms/forms/canvas-sketch/canvas-sketch.ts:255](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/1237fb1/src/atoms/forms/canvas-sketch/canvas-sketch.ts#L255)*
 
 Allows the caller to define what happens when a tool successfully adds a stroke to the
 drawn stack of objects
@@ -484,7 +484,7 @@ ___
 
 ▸ **setSelectedTool**(`toolType`: [CanvasToolType](../enums/canvastooltype.md)): *void*
 
-*Defined in [src/atoms/forms/canvas-sketch/canvas-sketch.ts:213](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/d179e3a/src/atoms/forms/canvas-sketch/canvas-sketch.ts#L213)*
+*Defined in [src/atoms/forms/canvas-sketch/canvas-sketch.ts:213](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/1237fb1/src/atoms/forms/canvas-sketch/canvas-sketch.ts#L213)*
 
 Allows the caller to select one of the availalbe tool type
 
@@ -502,7 +502,7 @@ ___
 
 ▸ **setToolColor**(`color`: string): *void*
 
-*Defined in [src/atoms/forms/canvas-sketch/canvas-sketch.ts:239](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/d179e3a/src/atoms/forms/canvas-sketch/canvas-sketch.ts#L239)*
+*Defined in [src/atoms/forms/canvas-sketch/canvas-sketch.ts:239](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/1237fb1/src/atoms/forms/canvas-sketch/canvas-sketch.ts#L239)*
 
 Allows the caller to define the color being used by the tool
 
@@ -523,7 +523,7 @@ ___
 
 ▸ **setToolWidth**(`width`: number): *void*
 
-*Defined in [src/atoms/forms/canvas-sketch/canvas-sketch.ts:282](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/d179e3a/src/atoms/forms/canvas-sketch/canvas-sketch.ts#L282)*
+*Defined in [src/atoms/forms/canvas-sketch/canvas-sketch.ts:282](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/1237fb1/src/atoms/forms/canvas-sketch/canvas-sketch.ts#L282)*
 
 Allows the caller to define the width being used by the tool
 
