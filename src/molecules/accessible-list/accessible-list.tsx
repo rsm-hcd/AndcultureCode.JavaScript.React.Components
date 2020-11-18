@@ -37,47 +37,46 @@ const AccessibleList: React.FunctionComponent<AccessibleListProps> = (
     }, [refArray, current, props.focusFirstItem]);
 
     const handleKeyDown = (e: KeyboardEvent) => {
-        if (
-            e.key === KeyboardKeys.DownArrow &&
-            current === refArray.length - 1
-        ) {
-            e.preventDefault();
-            setCurrent(0);
-            return;
-        }
-
-        if (e.key === KeyboardKeys.UpArrow && current === 0) {
-            e.preventDefault();
-            setCurrent(refArray.length - 1);
-            return;
-        }
-
-        if (
-            e.key === KeyboardKeys.DownArrow &&
-            current !== refArray.length - 1
-        ) {
-            e.preventDefault();
-
-            setCurrent(current + 1);
-            return;
-        }
-
-        if (e.key === KeyboardKeys.UpArrow && current !== 0) {
-            e.preventDefault();
-
-            setCurrent(current - 1);
-            return;
-        }
-
-        if (e.key === KeyboardKeys.Escape) {
-            e.preventDefault();
-            setCurrent(0);
-
-            if (props.onEsc != null) {
-                props.onEsc();
+        switch (e.key) {
+            case KeyboardKeys.UpArrow: {
+                handleUpArrowPress(e);
+                break;
             }
-            return;
+            case KeyboardKeys.DownArrow: {
+                handleDownArrowPress(e);
+                break;
+            }
+            case KeyboardKeys.Escape: {
+                handleEscapePress(e);
+                break;
+            }
+            default: {
+                return;
+            }
         }
+    };
+
+    const handleDownArrowPress = (e: KeyboardEvent) => {
+        const isLastElementFocused = current === refArray.length - 1;
+        const indexToFocus = isLastElementFocused ? 0 : current + 1;
+
+        setCurrentAndPreventDefault(e, indexToFocus);
+    };
+
+    const handleEscapePress = (e: KeyboardEvent) => {
+        setCurrentAndPreventDefault(e, 0);
+        if (props.onEsc != null) {
+            props.onEsc();
+        }
+    };
+
+    const handleUpArrowPress = (e: KeyboardEvent) => {
+        const isFirstElementFocused = current === 0;
+        const indexToFocus = isFirstElementFocused
+            ? refArray.length - 1
+            : current - 1;
+
+        setCurrentAndPreventDefault(e, indexToFocus);
     };
 
     const renderChildren = () => {
@@ -98,6 +97,17 @@ const AccessibleList: React.FunctionComponent<AccessibleListProps> = (
                 ref: (el: HTMLElement) => (refArray[validElementIndex++] = el),
             });
         });
+    };
+
+    const setCurrentAndPreventDefault = (
+        e: KeyboardEvent,
+        indexToFocus: number
+    ) => {
+        if (indexToFocus < 0) {
+            return;
+        }
+        e.preventDefault();
+        setCurrent(indexToFocus);
     };
 
     return <React.Fragment>{renderChildren()}</React.Fragment>;
