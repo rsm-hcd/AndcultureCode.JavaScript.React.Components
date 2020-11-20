@@ -1,6 +1,6 @@
-import React from "react";
+import React, { Component } from "react";
 import faker from "faker";
-import { render, fireEvent } from "@testing-library/react";
+import { render, fireEvent, screen } from "@testing-library/react";
 import { AccessibleList } from "./accessible-list";
 import { KeyboardKeys } from "../../constants/keyboard-keys";
 
@@ -40,22 +40,48 @@ describe("AccessibleList", () => {
         expect(isChecked).toBeTrue();
     });
 
-    test("when down arrow pressed, calls setCurrent method", () => {
+    test("when invalid react element, does not render in list", () => {
         // Arrange
         const buttonText1 = faker.random.word();
         const buttonText2 = faker.random.word();
 
         // Act
-        const { getByText } = render(
+        const { container } = render(
             <AccessibleList focusFirstItem={true}>
                 <button>{buttonText1}</button>
+                {null}
+                {undefined}
                 <button>{buttonText2}</button>
             </AccessibleList>
         );
+        const buttons = container.getElementsByTagName("button");
+
+        // Assert
+        expect(buttons).toHaveLength(2);
+    });
+
+    it("when onClick set, calls handler upon click", async () => {
+        // Arrange
+        let isChecked = false;
+        const handleClick = () => {
+            isChecked = true;
+        };
+        const buttonText1 = faker.random.word();
+        const buttonText2 = faker.random.words();
+
+        // Act
+        const { getByText } = render(
+            <AccessibleList focusFirstItem={true}>
+                <button onClick={handleClick}>{buttonText1}</button>
+                <button onClick={handleClick}>{buttonText2}</button>
+            </AccessibleList>
+        );
+
         fireEvent.keyDown(getByText(buttonText1), {
             key: KeyboardKeys.DownArrow,
         });
 
         // Assert
+        expect(isChecked).toBeTrue();
     });
 });

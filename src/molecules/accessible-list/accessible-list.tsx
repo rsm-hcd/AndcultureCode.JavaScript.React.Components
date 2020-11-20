@@ -86,16 +86,22 @@ const AccessibleList: React.FunctionComponent<AccessibleListProps> = (
                 return child;
             }
 
-            return React.cloneElement(child, {
-                ...child.props,
-                onClick: () => {
-                    if (child.props.onClick != null) {
-                        child.props.onClick();
-                    }
-                },
-                onKeyDown: handleKeyDown,
-                ref: (el: HTMLElement) => (refArray[validElementIndex++] = el),
-            });
+            const renderedChild = renderChild(child, validElementIndex);
+            validElementIndex++;
+            return renderedChild;
+        });
+    };
+
+    const renderChild = (child: React.ReactElement, index: number) => {
+        return React.cloneElement(child, {
+            ...child.props,
+            onClick: () => {
+                if (child.props.onClick != null) {
+                    child.props.onClick();
+                }
+            },
+            onKeyDown: handleKeyDown,
+            ref: (el: HTMLElement) => (refArray[index] = el),
         });
     };
 
