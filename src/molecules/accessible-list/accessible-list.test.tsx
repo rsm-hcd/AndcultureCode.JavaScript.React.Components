@@ -66,20 +66,16 @@ describe("AccessibleList", () => {
         const handleClick = () => {
             isChecked = true;
         };
-        const buttonText1 = faker.random.word();
-        const buttonText2 = faker.random.words();
+        const buttonText = faker.random.word();
 
         // Act
         const { getByText } = render(
             <AccessibleList focusFirstItem={true}>
-                <button onClick={handleClick}>{buttonText1}</button>
-                <button onClick={handleClick}>{buttonText2}</button>
+                <button onClick={handleClick}>{buttonText}</button>
             </AccessibleList>
         );
 
-        fireEvent.keyDown(getByText(buttonText1), {
-            key: KeyboardKeys.DownArrow,
-        });
+        fireEvent.click(getByText(buttonText));
 
         // Assert
         expect(isChecked).toBeTrue();
