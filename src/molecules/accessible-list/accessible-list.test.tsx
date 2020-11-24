@@ -42,16 +42,15 @@ describe("AccessibleList", () => {
 
     test("when invalid react element, does not render in list", () => {
         // Arrange
-        const buttonText1 = faker.random.word();
-        const buttonText2 = faker.random.word();
+        const buttonText = [faker.random.word(), faker.random.word()];
 
         // Act
         const { container } = render(
             <AccessibleList focusFirstItem={true}>
-                <button>{buttonText1}</button>
+                <button>{buttonText[0]}</button>
                 {null}
                 {undefined}
-                <button>{buttonText2}</button>
+                <button>{buttonText[1]}</button>
             </AccessibleList>
         );
 
