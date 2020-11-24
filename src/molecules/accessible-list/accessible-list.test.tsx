@@ -54,10 +54,10 @@ describe("AccessibleList", () => {
                 <button>{buttonText2}</button>
             </AccessibleList>
         );
-        const buttons = container.getElementsByTagName("button");
 
         // Assert
-        expect(buttons).toHaveLength(2);
+        expect(container.innerHTML).not.toContain("null");
+        expect(container.innerHTML).not.toContain("undefined");
     });
 
     it("when onClick set, calls handler upon click", async () => {
@@ -74,7 +74,6 @@ describe("AccessibleList", () => {
                 <button onClick={handleClick}>{buttonText}</button>
             </AccessibleList>
         );
-
         fireEvent.click(getByText(buttonText));
 
         // Assert
