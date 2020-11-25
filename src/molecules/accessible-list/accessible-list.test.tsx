@@ -55,8 +55,7 @@ describe("AccessibleList", () => {
         );
 
         // Assert
-        expect(container.innerHTML).not.toContain("null");
-        expect(container.innerHTML).not.toContain("undefined");
+        expect(container.childNodes).toHaveLength(2);
     });
 
     it("when onClick set, calls handler upon click", async () => {
