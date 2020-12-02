@@ -138,5 +138,5 @@
         "test:debug": "react-scripts --inspect-brk test --runInBand --no-cache"
     },
     "types": "dist/index",
-    "version": "0.3.4"
+    "version": "0.3.5"
 }

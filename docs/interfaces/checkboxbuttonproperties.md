@@ -24,7 +24,7 @@
 
 • **checked**: *boolean*
 
-*Defined in [src/atoms/forms/checkbox-button.tsx:19](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/1237fb1/src/atoms/forms/checkbox-button.tsx#L19)*
+*Defined in [src/atoms/forms/checkbox-button.tsx:19](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/29c8649/src/atoms/forms/checkbox-button.tsx#L19)*
 
 ___
 
@@ -32,7 +32,7 @@ ___
 
 • **cssClassName**? : *undefined | string*
 
-*Defined in [src/atoms/forms/checkbox-button.tsx:20](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/1237fb1/src/atoms/forms/checkbox-button.tsx#L20)*
+*Defined in [src/atoms/forms/checkbox-button.tsx:20](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/29c8649/src/atoms/forms/checkbox-button.tsx#L20)*
 
 ___
 
@@ -40,7 +40,7 @@ ___
 
 • **disabled**? : *undefined | false | true*
 
-*Defined in [src/atoms/forms/checkbox-button.tsx:21](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/1237fb1/src/atoms/forms/checkbox-button.tsx#L21)*
+*Defined in [src/atoms/forms/checkbox-button.tsx:21](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/29c8649/src/atoms/forms/checkbox-button.tsx#L21)*
 
 ___
 
@@ -48,7 +48,7 @@ ___
 
 • **id**? : *undefined | string*
 
-*Defined in [src/atoms/forms/checkbox-button.tsx:25](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/1237fb1/src/atoms/forms/checkbox-button.tsx#L25)*
+*Defined in [src/atoms/forms/checkbox-button.tsx:25](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/29c8649/src/atoms/forms/checkbox-button.tsx#L25)*
 
 id applied to the HTML element
 
@@ -58,7 +58,7 @@ ___
 
 • **identifier**? : *undefined | number*
 
-*Defined in [src/atoms/forms/checkbox-button.tsx:29](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/1237fb1/src/atoms/forms/checkbox-button.tsx#L29)*
+*Defined in [src/atoms/forms/checkbox-button.tsx:29](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/29c8649/src/atoms/forms/checkbox-button.tsx#L29)*
 
 an identifier used for the onChange event
 
@@ -68,7 +68,7 @@ ___
 
 • **label**: *string*
 
-*Defined in [src/atoms/forms/checkbox-button.tsx:30](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/1237fb1/src/atoms/forms/checkbox-button.tsx#L30)*
+*Defined in [src/atoms/forms/checkbox-button.tsx:30](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/29c8649/src/atoms/forms/checkbox-button.tsx#L30)*
 
 ___
 
@@ -76,7 +76,7 @@ ___
 
 • **onChange**: *function*
 
-*Defined in [src/atoms/forms/checkbox-button.tsx:31](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/1237fb1/src/atoms/forms/checkbox-button.tsx#L31)*
+*Defined in [src/atoms/forms/checkbox-button.tsx:31](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/29c8649/src/atoms/forms/checkbox-button.tsx#L31)*
 
 #### Type declaration:
 

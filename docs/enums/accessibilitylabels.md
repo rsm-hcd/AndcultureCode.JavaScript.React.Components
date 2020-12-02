@@ -14,4 +14,4 @@
 
 • **ScreenReadersOnlyClass**: = "sr-only"
 
-*Defined in [src/enums/accessibility-labels.ts:2](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/1237fb1/src/enums/accessibility-labels.ts#L2)*
+*Defined in [src/enums/accessibility-labels.ts:2](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/29c8649/src/enums/accessibility-labels.ts#L2)*
