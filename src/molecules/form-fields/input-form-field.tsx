@@ -5,6 +5,7 @@ import { CollectionUtils, StringUtils } from "andculturecode-javascript-core";
 import { InputCharacterCount } from "../../atoms/forms/input-character-count";
 import { InputTypes } from "../../atoms/constants/input-types";
 import { InputProperties } from "../../atoms/interfaces/input-properties";
+import "./form-field.scss";
 
 // -----------------------------------------------------------------------------------------
 // #region Constants
