@@ -1,5 +1,6 @@
 import * as React from "react";
 import { PropsWithChildren } from "react";
+import "./form.scss";
 
 const COMPONENT_CLASS = "c-form";
 

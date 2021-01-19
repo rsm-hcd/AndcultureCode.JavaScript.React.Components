@@ -1,3 +1,5 @@
+@import "../../assets/scss/_global";
+
 .c-form {
     > .c-form-field {
         @include margin-bottom(25px);
