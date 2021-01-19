@@ -68,6 +68,7 @@ export { DropdownButton } from "./molecules/dropdown-button/dropdown-button";
 export { ErrorBanner } from "./molecules/errors/error-banner";
 export { Form } from "./molecules/forms/form";
 export { LinkCard } from "./molecules/link-card/link-card";
+export { ListBox } from "./molecules/lists/list-box";
 export { RadioList } from "./molecules/lists/radio-list";
 export { RootPortal } from "./molecules/portals/root-portal";
 export { Tooltip } from "./molecules/tooltips/tooltip";

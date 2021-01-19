@@ -178,9 +178,6 @@ class PanCanvasTool {
 
     private _onTouchEndWindow(e: TouchEvent): void {
         this._finishPan();
-
-        // Don't allow touch events to be called
-        e.preventDefault();
     }
 
     private _onTouchMoveCanvas(e: TouchEvent): void {
@@ -192,7 +189,7 @@ class PanCanvasTool {
             this._pan(touchPosition);
         }
 
-        // Don't allow touch events to be called
+        // prevents scrolling screen (if inside scrollable content)
         e.preventDefault();
     }
 
@@ -205,7 +202,7 @@ class PanCanvasTool {
             this._startPan(touchPosition);
         }
 
-        // Don't allow touch events to be called
+        // prevents click event from firing when not moving / gesturing with touch
         e.preventDefault();
     }
 

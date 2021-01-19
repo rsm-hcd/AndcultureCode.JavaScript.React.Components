@@ -19,7 +19,7 @@
 
 • **x**: *number*
 
-*Defined in [src/atoms/forms/canvas-sketch/interfaces/pointer-position.ts:2](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/70e5ccf/src/atoms/forms/canvas-sketch/interfaces/pointer-position.ts#L2)*
+*Defined in [src/atoms/forms/canvas-sketch/interfaces/pointer-position.ts:2](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/29c8649/src/atoms/forms/canvas-sketch/interfaces/pointer-position.ts#L2)*
 
 ___
 
@@ -27,4 +27,4 @@ ___
 
 • **y**: *number*
 
-*Defined in [src/atoms/forms/canvas-sketch/interfaces/pointer-position.ts:3](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/70e5ccf/src/atoms/forms/canvas-sketch/interfaces/pointer-position.ts#L3)*
+*Defined in [src/atoms/forms/canvas-sketch/interfaces/pointer-position.ts:3](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/29c8649/src/atoms/forms/canvas-sketch/interfaces/pointer-position.ts#L3)*

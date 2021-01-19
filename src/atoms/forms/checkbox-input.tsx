@@ -6,6 +6,7 @@ import React from "react";
 // -----------------------------------------------------------------------------------------
 
 const ELEMENT_CLASS = "e-checkbox";
+export const CheckboxDisabledClass = "-disabled";
 
 // #endregion Constants
 
@@ -32,12 +33,10 @@ const CheckboxInput: React.FC<CheckboxInputProperties> = (
     const { checked, disabled, label, onChange } = props;
 
     let className = ELEMENT_CLASS;
-    if (disabled) {
-        className += " -disabled";
-    }
+    let isDisabledClassName = disabled ? CheckboxDisabledClass : "";
 
     return (
-        <label className={className}>
+        <label className={`${className} ${isDisabledClassName}`}>
             {label}
             <input
                 checked={checked}
