@@ -1,5 +1,6 @@
 import React, { forwardRef, Ref, RefObject } from "react";
 import uuid from "uuid";
+import { AccessibilityLabels } from "../../enums/accessibility-labels";
 import { CollectionUtils, StringUtils } from "andculturecode-javascript-core";
 import { InputCharacterCount } from "../../atoms/forms/input-character-count";
 import { InputTypes } from "../../atoms/constants/input-types";
@@ -10,6 +11,7 @@ import { InputProperties } from "../../atoms/interfaces/input-properties";
 // -----------------------------------------------------------------------------------------
 
 const COMPONENT_CLASS = "c-form-field";
+export const InputFormFieldInvalidClass = "-invalid";
 
 // #endregion Constants
 
@@ -64,14 +66,17 @@ const InputFormField: React.RefForwardingComponent<
         value,
     } = props;
 
-    const cssIsValid = isValid ? "" : "-invalid";
+    const cssIsValid = isValid ? "" : InputFormFieldInvalidClass;
     const fieldId = props.fieldId ?? uuid.v4();
 
     return (
         <div className={`${COMPONENT_CLASS} ${cssIsValid}`}>
             <label htmlFor={fieldId}>
                 {showLabelForScreenReadersOnly ? (
-                    <span className="sr-only">{label}</span>
+                    <span
+                        className={AccessibilityLabels.ScreenReadersOnlyClass}>
+                        {label}
+                    </span>
                 ) : (
                     <React.Fragment>{label}</React.Fragment>
                 )}
@@ -82,7 +87,7 @@ const InputFormField: React.RefForwardingComponent<
                 )}
             </label>
             <input
-                data-test-id={inputTestId}
+                data-testid={inputTestId}
                 disabled={disabled}
                 id={fieldId}
                 placeholder={placeholder}

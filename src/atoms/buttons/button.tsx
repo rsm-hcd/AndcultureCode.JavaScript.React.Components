@@ -1,6 +1,7 @@
 import { ButtonSizes } from "../constants/button-sizes";
 import { ButtonStyles } from "../constants/button-styles";
 import { ButtonTypes } from "../constants/button-types";
+import { AccessibilityLabels } from "../../enums/accessibility-labels";
 import React, { forwardRef } from "react";
 import { StringUtils } from "andculturecode-javascript-core";
 import './button.scss';
@@ -85,7 +86,9 @@ const Button: React.RefForwardingComponent<
             {children}
             {accessibleText != null && (
                 // if
-                <span className="sr-only">{accessibleText}</span>
+                <span className={AccessibilityLabels.ScreenReadersOnlyClass}>
+                    {accessibleText}
+                </span>
             )}
         </button>
     );

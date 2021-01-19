@@ -9,6 +9,6 @@ module.exports = {
     modulePathIgnorePatterns: ["<rootDir>/dist"],
     preset: "ts-jest",
     roots: ["<rootDir>/src"],
-    setupFilesAfterEnv: ["<rootDir>/src/setupTests.ts"],
+    setupFilesAfterEnv: ["<rootDir>/src/setupTests.ts", "jest-extended"],
     testEnvironment: "jsdom",
 };

@@ -21,7 +21,7 @@
         "url": "https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/issues"
     },
     "dependencies": {
-        "@reach/menu-button": "0.10.2",
+        "@reach/menu-button": "0.11.2",
         "@tippyjs/react": "4.0.2",
         "@types/react": "16.9.11",
         "@types/react-beautiful-dnd": "13.0.0",
@@ -130,7 +130,7 @@
         "format": "prettier --write \"src/**/*.ts\" --trailing-comma es5",
         "eject": "react-scripts eject",
         "postbuild": "copyfiles src/assets/**/* dist && mv dist/src/assets dist && rimraf dist/src && npm run docs",
-        "postpublish": "cross-env-shell \"git add -A && git commit -m \"$npm_package_version\" && git push origin master && npm run deploy-storybook\"",
+        "postpublish": "cross-env-shell \"git add -A && git commit -m \"$npm_package_version\" && git push origin main && npm run deploy-storybook\"",
         "prebuild": "npm run clean && npm run format && echo Using TypeScript && tsc --version",
         "prepublishOnly": "npm run build",
         "start": "react-scripts start",
@@ -139,5 +139,5 @@
         "test:debug": "react-scripts --inspect-brk test --runInBand --no-cache"
     },
     "types": "dist/index",
-    "version": "0.3.1"
+    "version": "0.3.5"
 }

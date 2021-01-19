@@ -13,6 +13,7 @@
 * [cssClassName](progressbarprops.md#optional-cssclassname)
 * [isErrored](progressbarprops.md#optional-iserrored)
 * [style](progressbarprops.md#optional-style)
+* [testId](progressbarprops.md#optional-testid)
 * [value](progressbarprops.md#value)
 
 ## Properties
@@ -21,7 +22,7 @@
 
 • **cssClassName**? : *undefined | string*
 
-*Defined in [src/atoms/progress-bar/progress-bar.tsx:20](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/70e5ccf/src/atoms/progress-bar/progress-bar.tsx#L20)*
+*Defined in [src/atoms/progress-bar/progress-bar.tsx:28](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/29c8649/src/atoms/progress-bar/progress-bar.tsx#L28)*
 
 ___
 
@@ -29,7 +30,7 @@ ___
 
 • **isErrored**? : *undefined | false | true*
 
-*Defined in [src/atoms/progress-bar/progress-bar.tsx:21](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/70e5ccf/src/atoms/progress-bar/progress-bar.tsx#L21)*
+*Defined in [src/atoms/progress-bar/progress-bar.tsx:29](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/29c8649/src/atoms/progress-bar/progress-bar.tsx#L29)*
 
 ___
 
@@ -37,7 +38,17 @@ ___
 
 • **style**? : *[ProgressBarStyles](../enums/progressbarstyles.md)*
 
-*Defined in [src/atoms/progress-bar/progress-bar.tsx:22](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/70e5ccf/src/atoms/progress-bar/progress-bar.tsx#L22)*
+*Defined in [src/atoms/progress-bar/progress-bar.tsx:30](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/29c8649/src/atoms/progress-bar/progress-bar.tsx#L30)*
+
+___
+
+### `Optional` testId
+
+• **testId**? : *undefined | string*
+
+*Defined in [src/atoms/progress-bar/progress-bar.tsx:35](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/29c8649/src/atoms/progress-bar/progress-bar.tsx#L35)*
+
+Unique identifier used to select the underlying <div> for functional/e2e testing
 
 ___
 
@@ -45,4 +56,4 @@ ___
 
 • **value**: *number*
 
-*Defined in [src/atoms/progress-bar/progress-bar.tsx:23](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/70e5ccf/src/atoms/progress-bar/progress-bar.tsx#L23)*
+*Defined in [src/atoms/progress-bar/progress-bar.tsx:37](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/29c8649/src/atoms/progress-bar/progress-bar.tsx#L37)*

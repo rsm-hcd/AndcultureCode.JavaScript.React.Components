@@ -50,11 +50,11 @@ const DropdownButton: React.FC<DropdownButtonProps> = (
     }
 
     if (size != null) {
-        classNames.push(size);
+        classNames.push(`-${size}`);
     }
 
     if (style != null) {
-        classNames.push(style);
+        classNames.push(`-${style}`);
     }
 
     return (

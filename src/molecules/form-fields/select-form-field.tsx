@@ -4,12 +4,13 @@ import { Select, SelectOption } from "../../atoms/forms/select";
 import { StringUtils, CollectionUtils } from "andculturecode-javascript-core";
 
 // -----------------------------------------------------------------------------------------
-// #region Component
+// #region Constants
 // -----------------------------------------------------------------------------------------
 
 const COMPONENT_CLASS = "c-form-field";
+export const InvalidSelectFormValueClass = "-invalid";
 
-// #endregion Component
+// #endregion Constants
 
 // -----------------------------------------------------------------------------------------
 // #region Interfaces
@@ -18,7 +19,6 @@ const COMPONENT_CLASS = "c-form-field";
 export interface SelectFormFieldProps {
     errorMessage?: string;
     errorMessages?: string[];
-    fieldId?: string;
     id: string;
     isValid?: boolean;
     name?: string;
@@ -40,7 +40,6 @@ const SelectFormField: React.FC<SelectFormFieldProps> = (
     const {
         errorMessage,
         errorMessages,
-        id,
         isValid,
         name,
         label,
@@ -49,14 +48,14 @@ const SelectFormField: React.FC<SelectFormFieldProps> = (
         values,
     } = props;
 
-    const cssIsValid = isValid ? "" : "-invalid";
-    const fieldId = props.fieldId ?? uuid.v4();
+    const cssIsValid = isValid ? "" : InvalidSelectFormValueClass;
+    const id = props.id ?? uuid.v4();
     const hasErrorMessage = StringUtils.hasValue(errorMessage);
     const hasErrors = CollectionUtils.hasValues(errorMessages);
 
     return (
         <div className={`${COMPONENT_CLASS} ${cssIsValid}`}>
-            <label htmlFor={fieldId}>
+            <label htmlFor={id}>
                 {label}
                 {required ? "*" : ""}
             </label>
