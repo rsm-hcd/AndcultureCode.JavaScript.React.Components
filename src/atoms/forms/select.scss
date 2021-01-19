@@ -1,3 +1,5 @@
+@import "../../assets/scss/_global";
+
 .c-select {
     @include icon-fill(get-color-neutral("30"));
     position: relative;
