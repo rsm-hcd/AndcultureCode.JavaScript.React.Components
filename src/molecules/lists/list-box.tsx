@@ -5,6 +5,7 @@ import { ButtonTypes } from "../../atoms/constants/button-types";
 import { ButtonSizes } from "../../atoms/constants/button-sizes";
 import { ButtonStyles } from "../../atoms/constants/button-styles";
 import { Paragraph } from "../../atoms/typography/paragraph";
+import "./list-box.scss";
 
 // -------------------------------------------------------------------------------------------------
 // #region Constants
