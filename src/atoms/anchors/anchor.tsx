@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import React, { forwardRef } from "react";
+import "./anchor.scss";
 
 /*
 -----------------------------------------------------------------------------------------
