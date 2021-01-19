@@ -2,7 +2,7 @@ import { InputTypes } from "../constants/input-types";
 import React from "react";
 import { Icon } from "../icons/icon";
 import { Icons } from "../constants/icons";
-import './checkbox-button.scss';
+import "./checkbox-button.scss";
 
 // -----------------------------------------------------------------------------------------
 // #region Constants

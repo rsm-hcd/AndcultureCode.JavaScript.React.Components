@@ -1,5 +1,6 @@
 import * as React from "react";
 import { forwardRef } from "react";
+import "./radio-button-input.scss";
 
 const COMPONENT_CLASS = "c-radio";
 export const RadioButtonSelectedClassName = "-selected";

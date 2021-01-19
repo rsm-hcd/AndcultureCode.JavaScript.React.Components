@@ -1,6 +1,6 @@
 import React from "react";
 import { StringUtils } from "andculturecode-javascript-core";
-import './progress-bar.scss';
+import "./progress-bar.scss";
 
 // -------------------------------------------------------------------------------------------------
 // #region Constants

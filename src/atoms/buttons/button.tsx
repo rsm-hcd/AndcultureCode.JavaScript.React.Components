@@ -4,7 +4,7 @@ import { ButtonTypes } from "../constants/button-types";
 import { AccessibilityLabels } from "../../enums/accessibility-labels";
 import React, { forwardRef } from "react";
 import { StringUtils } from "andculturecode-javascript-core";
-import './button.scss';
+import "./button.scss";
 
 // -----------------------------------------------------------------------------------------
 // #region Interfaces

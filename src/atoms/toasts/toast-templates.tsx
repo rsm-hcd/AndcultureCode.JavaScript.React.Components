@@ -3,7 +3,7 @@ import { Icon } from "../icons/icon";
 import { Icons } from "../constants/icons";
 import React from "react";
 import { ToastContent } from "react-toastify";
-import './toast.scss';
+import "./toast.scss";
 
 const COMPONENT_CLASS = "c-toast-content";
 const ICON_CLASS = `${COMPONENT_CLASS}__icon`;
