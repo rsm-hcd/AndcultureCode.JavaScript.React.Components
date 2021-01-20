@@ -1,0 +1,11 @@
+/*------------------------------------*\
+  Component base SCSS import file
+  -------------------------------
+  Imported directly into individual
+  component SCSS files. Anything added
+  is imported into every component.
+\*------------------------------------*/
+
+@import "../0-vendor/__vendor";
+@import "../1-settings/__settings";
+@import "../2-tools/__tools";

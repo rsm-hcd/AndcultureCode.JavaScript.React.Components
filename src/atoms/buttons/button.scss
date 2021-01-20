@@ -1,4 +1,4 @@
-@import "../../assets/scss/_global";
+@import "../../assets/scss/6-components/_component-base";
 
 .c-button {
     @include font-style($font-primary, "small", #ffffff, 800, 16px);
