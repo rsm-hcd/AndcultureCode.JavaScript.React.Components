@@ -1,0 +1,26 @@
+@import "../../assets/scss/6-components/_component-base";
+
+.c-text-input {
+    display: flex;
+    align-items: center;
+
+    input {
+        width: 100%;
+        position: relative;
+        z-index: 1;
+    }
+
+    .c-icon {
+        position: relative;
+        width: 48px;
+        margin-right: -48px;
+        z-index: 2;
+    }
+
+    &.-icon {
+        input {
+            padding-left: 48px;
+        }
+    }
+    
+}

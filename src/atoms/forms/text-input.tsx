@@ -1,12 +1,18 @@
 import { InputTypes } from "../constants/input-types";
 import { InputProperties } from "../interfaces/input-properties";
+import { Icons } from "../constants/icons";
+import { IconSizes } from "../constants/icon-sizes";
+import { Icon } from "../icons/icon";
 import React from "react";
+import "./text-input.scss";
 
 // -----------------------------------------------------------------------------------------
 // #region Interfaces
 // -----------------------------------------------------------------------------------------
 
 export interface TextInputProps extends InputProperties {
+    icon?: Icons;
+    iconSize?: IconSizes;
     id: string;
     maxLength?: number;
     name?: string;
@@ -24,9 +30,13 @@ export interface TextInputProps extends InputProperties {
 // -----------------------------------------------------------------------------------------
 
 const TextInput: React.FC<TextInputProps> = (props: TextInputProps) => {
+    let classNames: string[] = ["c-text-input"];
+
     const {
         ariaLabelledBy,
         disabled,
+        icon,
+        iconSize,
         id,
         name,
         onChange,
@@ -37,19 +47,29 @@ const TextInput: React.FC<TextInputProps> = (props: TextInputProps) => {
 
     const maxLength = props.maxLength != null ? props.maxLength : 20;
 
+    if (icon) {
+        classNames.push("-icon");
+    }
+
     return (
-        <input
-            aria-labelledby={ariaLabelledBy}
-            data-testid={testId}
-            disabled={disabled}
-            id={id}
-            placeholder={placeholder}
-            maxLength={maxLength}
-            name={name}
-            onChange={onChange}
-            type={InputTypes.Text}
-            value={value}
-        />
+        <div className={classNames.join(" ")}>
+            {// if
+                icon &&
+                <Icon type={icon} size={iconSize ?? IconSizes.Large} />
+            }
+            <input
+                aria-labelledby={ariaLabelledBy}
+                data-testid={testId}
+                disabled={disabled}
+                id={id}
+                placeholder={placeholder}
+                maxLength={maxLength}
+                name={name}
+                onChange={onChange}
+                type={InputTypes.Text}
+                value={value}
+            />
+        </div>
     );
 };
 

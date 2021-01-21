@@ -14,7 +14,6 @@ export { PasswordInput } from "./atoms/forms/password-input";
 export { SubmitButton } from "./atoms/forms/submit-button";
 export { TextArea } from "./atoms/forms/text-area";
 export { TextInput } from "./atoms/forms/text-input";
-export { TextInputIcon } from "./atoms/forms/text-input-icon";
 
 // Typography
 export { Heading } from "./atoms/typography/heading";
