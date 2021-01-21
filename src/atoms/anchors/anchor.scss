@@ -5,6 +5,9 @@
 \*------------------------------------*/
 
 a {
+    display: flex;
+    align-items: center;
+
     @include font-style(
         $font-primary,
         "small",
@@ -13,27 +16,15 @@ a {
         16px
     );
 
-    &.c-button {
-        display: inline-block;
-        text-decoration: none;
-
-        &.-icon {
-            text-align: center;
-
-            .c-icon {
-                margin-top: calc(50% - 6px);
-
-                &.-large {
-                    margin-top: calc(50% - 12px);
-                }
-            }
-        }
-    }
-
     &.-secondary {
         color: get-color("links", "secondary");
     }
+
     &.-disabled {
         cursor: not-allowed;
+    }
+
+    .c-icon {
+        margin-right: .25em;
     }
 }
