@@ -17,7 +17,6 @@ export { TextInput } from "./atoms/forms/text-input";
 
 // Typography
 export { Heading } from "./atoms/typography/heading";
-export { HeadingIcon } from "./atoms/typography/heading-icon";
 export { Paragraph } from "./atoms/typography/paragraph";
 
 // #endregion Atoms
