@@ -4,7 +4,7 @@ import { boolean, text } from "@storybook/addon-knobs";
 
 export default {
     component: CheckboxInput,
-    title: "Atoms | Forms / Checkbox Input",
+    title: "Molecules | Checkbox Input",
 };
 
 export const checkboxInputKnobs = () => (

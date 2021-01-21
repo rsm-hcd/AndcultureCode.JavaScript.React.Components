@@ -1,7 +1,7 @@
 import React, { ChangeEvent } from "react";
 import { StringUtils } from "andculturecode-javascript-core";
-import { Icons } from "../constants/icons";
-import { Icon } from "../icons/icon";
+import { Icons } from "../../atoms/constants/icons";
+import { Icon } from "../../atoms/icons/icon";
 import "./select.scss";
 
 // -----------------------------------------------------------------------------------------

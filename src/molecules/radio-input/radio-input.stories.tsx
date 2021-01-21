@@ -1,15 +1,15 @@
 import React from "react";
 import { text, boolean } from "@storybook/addon-knobs";
-import { RadioButton } from "./radio-button-input";
+import { RadioInput } from "./radio-input";
 import Faker from "faker";
 
 export default {
-    component: RadioButton,
-    title: "Atoms | Forms / Radio Button",
+    component: RadioInput,
+    title: "Molecules | Radio Input",
 };
 
-export const radioButtonKnobs = () => (
-    <RadioButton
+export const radioInputKnobs = () => (
+    <RadioInput
         checked={boolean("checked", false)}
         id={Faker.random.uuid()}
         label={text("Label", Faker.random.word())}

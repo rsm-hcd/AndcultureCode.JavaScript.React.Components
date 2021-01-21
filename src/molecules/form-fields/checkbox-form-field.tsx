@@ -1,7 +1,7 @@
 import {
     CheckboxInput,
     CheckboxInputProperties,
-} from "../../atoms/forms/checkbox-input";
+} from "../checkbox-input/checkbox-input";
 import React from "react";
 import { StringUtils } from "andculturecode-javascript-core";
 import "./form-field.scss";

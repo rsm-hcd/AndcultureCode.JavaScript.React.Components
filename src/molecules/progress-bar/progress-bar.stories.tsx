@@ -4,7 +4,7 @@ import React from "react";
 
 export default {
     component: ProgressBar,
-    title: "Atoms | Progress / Progress Bar",
+    title: "Molecules | Progress Bar",
 };
 
 export const progressBarKnobs = () => (

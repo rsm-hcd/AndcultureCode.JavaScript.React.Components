@@ -4,7 +4,7 @@ import { CheckboxButton } from "./checkbox-button";
 
 export default {
     component: CheckboxButton,
-    title: "Atoms | Forms / Checkbox Button",
+    title: "Molecules | Checkbox Button",
 };
 
 export const checkboxButtonKnobs = () => (

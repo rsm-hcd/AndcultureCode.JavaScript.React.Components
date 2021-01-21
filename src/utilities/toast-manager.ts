@@ -5,7 +5,7 @@ import {
     ToastOptions,
     ToastPosition,
 } from "react-toastify";
-import { ToastTemplates } from "../atoms/toasts/toast-templates";
+import { ToastTemplates } from "../molecules/toasts/toast-templates";
 
 const defaultToastOptions: ToastOptions = {
     draggable: false,

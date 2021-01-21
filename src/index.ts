@@ -7,21 +7,15 @@ export { AnchorWithIcon } from "./atoms/anchors/anchor-with-icon";
 export { Button } from "./atoms/buttons/button";
 export { Icon } from "./atoms/icons/icon";
 export { Image } from "./atoms/images/image";
-export { ProgressBar } from "./atoms/progress-bar/progress-bar";
 
 // Forms
 export { ReactCanvasSketch } from "./atoms/forms/canvas-sketch/react-canvas-sketch";
-export { CheckboxButton } from "./atoms/forms/checkbox-button";
-export { CheckboxInput } from "./atoms/forms/checkbox-input";
 export { InputCharacterCount } from "./atoms/forms/input-character-count";
-export { RadioButton } from "./atoms/forms/radio-button-input";
 export { PasswordInput } from "./atoms/forms/password-input";
-export { Select } from "./atoms/forms/select";
 export { SubmitButton } from "./atoms/forms/submit-button";
 export { TextArea } from "./atoms/forms/text-area";
 export { TextInput } from "./atoms/forms/text-input";
 export { TextInputIcon } from "./atoms/forms/text-input-icon";
-export { ToastTemplates } from "./atoms/toasts/toast-templates";
 
 // Typography
 export { Heading } from "./atoms/typography/heading";
@@ -64,13 +58,19 @@ export * from "./atoms/interfaces/svg-icon";
 
 export { AccessibleList } from "./molecules/accessible-list/accessible-list";
 export { Card } from "./molecules/cards/card";
+export { CheckboxButton } from "./molecules/checkbox-button/checkbox-button";
+export { CheckboxInput } from "./molecules/checkbox-input/checkbox-input";
 export { DropdownButton } from "./molecules/dropdown-button/dropdown-button";
 export { ErrorBanner } from "./molecules/errors/error-banner";
 export { Form } from "./molecules/forms/form";
 export { LinkCard } from "./molecules/link-card/link-card";
 export { ListBox } from "./molecules/lists/list-box";
+export { RadioInput } from "./molecules/radio-input/radio-input";
 export { RadioList } from "./molecules/lists/radio-list";
 export { RootPortal } from "./molecules/portals/root-portal";
+export { ProgressBar } from "./molecules/progress-bar/progress-bar";
+export { Select } from "./molecules/select/select";
+export { ToastTemplates } from "./molecules/toasts/toast-templates";
 export { Tooltip } from "./molecules/tooltips/tooltip";
 export { UnorderedList } from "./molecules/lists/unordered-list";
 

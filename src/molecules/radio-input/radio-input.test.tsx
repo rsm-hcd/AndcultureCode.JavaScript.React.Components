@@ -1,20 +1,20 @@
 import React from "react";
 import { render, fireEvent, wait } from "@testing-library/react";
 import {
-    RadioButton,
-    RadioButtonSelectedClassName,
-} from "./radio-button-input";
+    RadioInput,
+    RadioInputSelectedClassName,
+} from "./radio-input";
 import faker from "faker";
 import uuid from "uuid";
 
-describe("RadioButton", () => {
+describe("RadioInput", () => {
     test("when default props, renders button with label", () => {
         // Arrange
         const expected = faker.random.word();
 
         // Act
         const { getByLabelText } = render(
-            <RadioButton
+            <RadioInput
                 checked={false}
                 id={uuid()}
                 label={expected}
@@ -26,13 +26,13 @@ describe("RadioButton", () => {
         expect(getByLabelText(expected)).not.toBeNull();
     });
 
-    test(`when checked prop is true, renders check ${RadioButtonSelectedClassName} class name`, () => {
+    test(`when checked prop is true, renders check ${RadioInputSelectedClassName} class name`, () => {
         // Arrange
         const expected = faker.random.word();
 
         // Act
         const { container } = render(
-            <RadioButton
+            <RadioInput
                 checked={true}
                 id={uuid()}
                 label={expected}
@@ -40,7 +40,7 @@ describe("RadioButton", () => {
             />
         );
         const result = container.querySelector(
-            "." + RadioButtonSelectedClassName
+            "." + RadioInputSelectedClassName
         );
 
         // Assert
@@ -55,7 +55,7 @@ describe("RadioButton", () => {
 
         // Act
         const { getByText } = render(
-            <RadioButton
+            <RadioInput
                 onClick={handleClick}
                 checked={false}
                 id={uuid()}
