@@ -1,9 +1,10 @@
 import { ButtonSizes } from "../constants/button-sizes";
 import { ButtonStyles } from "../constants/button-styles";
 import { ButtonTypes } from "../constants/button-types";
+import { AccessibilityLabels } from "../../enums/accessibility-labels";
 import React, { forwardRef } from "react";
 import { StringUtils } from "andculturecode-javascript-core";
-import { AccessibilityLabels } from "../../enums/accessibility-labels";
+import "./button.scss";
 
 // -----------------------------------------------------------------------------------------
 // #region Interfaces

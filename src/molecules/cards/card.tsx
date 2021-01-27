@@ -1,5 +1,6 @@
 import React, { PropsWithChildren } from "react";
 import { Paragraph } from "../../atoms/typography/paragraph";
+import "./card.scss";
 
 // -------------------------------------------------------------------------------------------------
 // #region Constants

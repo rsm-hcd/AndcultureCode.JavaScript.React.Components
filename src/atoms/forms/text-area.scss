@@ -1,3 +1,5 @@
+@import "../../assets/scss/6-components/_component-base";
+
 textarea {
     @include placeholder() {
         color: get-color-neutral("70");

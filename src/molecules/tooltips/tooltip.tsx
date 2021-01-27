@@ -2,6 +2,7 @@ import Tippy from "@tippyjs/react";
 import { followCursor } from "tippy.js";
 import React from "react";
 import { StringUtils } from "andculturecode-javascript-core";
+import "./tooltip.scss";
 
 // -------------------------------------------------------------------------------------------------
 // #region Interfaces

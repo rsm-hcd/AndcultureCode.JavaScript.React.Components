@@ -1,6 +1,7 @@
 import React from "react";
 import { Icon } from "../../atoms/icons/icon";
 import { Icons } from "../../atoms/constants/icons";
+import "./error-banner.scss";
 
 // -----------------------------------------------------------------------------------------
 // #region Constants

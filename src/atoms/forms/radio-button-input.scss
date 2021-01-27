@@ -1,3 +1,6 @@
+@import "../../assets/scss/6-components/_component-base";
+@import "../buttons/button.scss";
+
 .c-radio {
     @include padding(16px);
 

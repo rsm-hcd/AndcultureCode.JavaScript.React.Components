@@ -2,6 +2,7 @@ import React, { ChangeEvent } from "react";
 import { StringUtils } from "andculturecode-javascript-core";
 import { Icons } from "../constants/icons";
 import { Icon } from "../icons/icon";
+import "./select.scss";
 
 // -----------------------------------------------------------------------------------------
 // #region Interfaces

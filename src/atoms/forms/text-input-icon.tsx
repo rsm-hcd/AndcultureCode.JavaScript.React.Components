@@ -3,6 +3,7 @@ import React from "react";
 import { Icons } from "../constants/icons";
 import { IconSizes } from "../constants/icon-sizes";
 import { Icon } from "../icons/icon";
+import "./text-input-icon.scss";
 
 // -------------------------------------------------------------------------------------------------
 // #region Interfaces

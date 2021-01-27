@@ -25,6 +25,7 @@ import { Button } from "../../atoms/buttons/button";
 import { ButtonSizes } from "../../atoms/constants/button-sizes";
 import { ButtonTypes } from "../../atoms/constants/button-types";
 import { ButtonStyles } from "../../atoms/constants/button-styles";
+import "./drag-and-drop-list-box.scss";
 
 // -------------------------------------------------------------------------------------------------
 // #region Constants

@@ -3,6 +3,7 @@ import { Menu, MenuButton, MenuItem, MenuList } from "@reach/menu-button";
 import uuid from "uuid";
 import { ButtonSizes } from "../../atoms/constants/button-sizes";
 import { ButtonStyles } from "../../atoms/constants/button-styles";
+import "./dropdown-button.scss";
 
 // -------------------------------------------------------------------------------------------------
 // #region Constants

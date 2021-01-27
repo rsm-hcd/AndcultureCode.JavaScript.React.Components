@@ -4,6 +4,7 @@ import { ButtonStyles } from "../constants/button-styles";
 import { Icons } from "../constants/icons";
 import { Anchor } from "../anchors/anchor";
 import { Icon } from "../icons/icon";
+import "./anchor.scss";
 
 export interface AnchorWithIconProps {
     accessibleText?: string;

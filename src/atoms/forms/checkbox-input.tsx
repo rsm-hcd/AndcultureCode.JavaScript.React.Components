@@ -1,5 +1,6 @@
 import { InputTypes } from "../constants/input-types";
 import React from "react";
+import "./checkbox.scss";
 
 // -----------------------------------------------------------------------------------------
 // #region Constants
