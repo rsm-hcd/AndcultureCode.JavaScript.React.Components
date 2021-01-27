@@ -20,7 +20,7 @@
 
 • **currentLength**: *number*
 
-*Defined in [src/atoms/forms/input-character-count.tsx:8](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/29c8649/src/atoms/forms/input-character-count.tsx#L8)*
+*Defined in [src/atoms/forms/input-character-count.tsx:8](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/85bf079/src/atoms/forms/input-character-count.tsx#L8)*
 
 ___
 
@@ -28,7 +28,7 @@ ___
 
 • **maxLength**: *number*
 
-*Defined in [src/atoms/forms/input-character-count.tsx:9](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/29c8649/src/atoms/forms/input-character-count.tsx#L9)*
+*Defined in [src/atoms/forms/input-character-count.tsx:9](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/85bf079/src/atoms/forms/input-character-count.tsx#L9)*
 
 ___
 
@@ -36,6 +36,6 @@ ___
 
 • **testId**? : *undefined | string*
 
-*Defined in [src/atoms/forms/input-character-count.tsx:14](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/29c8649/src/atoms/forms/input-character-count.tsx#L14)*
+*Defined in [src/atoms/forms/input-character-count.tsx:14](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/85bf079/src/atoms/forms/input-character-count.tsx#L14)*
 
 Unique identifier used select the underlying <input> for functional/e2e testing

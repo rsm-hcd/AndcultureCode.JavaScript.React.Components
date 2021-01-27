@@ -23,7 +23,7 @@
 
 • **accessibleText**? : *undefined | string*
 
-*Defined in [src/atoms/anchors/anchor-with-icon.tsx:9](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/29c8649/src/atoms/anchors/anchor-with-icon.tsx#L9)*
+*Defined in [src/atoms/anchors/anchor-with-icon.tsx:10](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/85bf079/src/atoms/anchors/anchor-with-icon.tsx#L10)*
 
 ___
 
@@ -31,7 +31,7 @@ ___
 
 • **children**: *any*
 
-*Defined in [src/atoms/anchors/anchor-with-icon.tsx:10](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/29c8649/src/atoms/anchors/anchor-with-icon.tsx#L10)*
+*Defined in [src/atoms/anchors/anchor-with-icon.tsx:11](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/85bf079/src/atoms/anchors/anchor-with-icon.tsx#L11)*
 
 ___
 
@@ -39,7 +39,7 @@ ___
 
 • **icon**: *keyof typeof Icons*
 
-*Defined in [src/atoms/anchors/anchor-with-icon.tsx:11](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/29c8649/src/atoms/anchors/anchor-with-icon.tsx#L11)*
+*Defined in [src/atoms/anchors/anchor-with-icon.tsx:12](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/85bf079/src/atoms/anchors/anchor-with-icon.tsx#L12)*
 
 ___
 
@@ -47,7 +47,7 @@ ___
 
 • **size**? : *[ButtonSizes](../enums/buttonsizes.md)*
 
-*Defined in [src/atoms/anchors/anchor-with-icon.tsx:12](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/29c8649/src/atoms/anchors/anchor-with-icon.tsx#L12)*
+*Defined in [src/atoms/anchors/anchor-with-icon.tsx:13](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/85bf079/src/atoms/anchors/anchor-with-icon.tsx#L13)*
 
 ___
 
@@ -55,7 +55,7 @@ ___
 
 • **style**? : *[ButtonStyles](../enums/buttonstyles.md)*
 
-*Defined in [src/atoms/anchors/anchor-with-icon.tsx:13](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/29c8649/src/atoms/anchors/anchor-with-icon.tsx#L13)*
+*Defined in [src/atoms/anchors/anchor-with-icon.tsx:14](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/85bf079/src/atoms/anchors/anchor-with-icon.tsx#L14)*
 
 ___
 
@@ -63,4 +63,4 @@ ___
 
 • **to**: *string*
 
-*Defined in [src/atoms/anchors/anchor-with-icon.tsx:14](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/29c8649/src/atoms/anchors/anchor-with-icon.tsx#L14)*
+*Defined in [src/atoms/anchors/anchor-with-icon.tsx:15](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/85bf079/src/atoms/anchors/anchor-with-icon.tsx#L15)*

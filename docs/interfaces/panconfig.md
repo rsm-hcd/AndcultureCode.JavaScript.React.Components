@@ -20,7 +20,7 @@
 
 • **canvas**: *HTMLCanvasElement*
 
-*Defined in [src/atoms/forms/canvas-sketch/tools/pan-canvas-tool.ts:11](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/29c8649/src/atoms/forms/canvas-sketch/tools/pan-canvas-tool.ts#L11)*
+*Defined in [src/atoms/forms/canvas-sketch/tools/pan-canvas-tool.ts:11](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/85bf079/src/atoms/forms/canvas-sketch/tools/pan-canvas-tool.ts#L11)*
 
 ___
 
@@ -28,7 +28,7 @@ ___
 
 • **context**: *CanvasRenderingContext2D*
 
-*Defined in [src/atoms/forms/canvas-sketch/tools/pan-canvas-tool.ts:12](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/29c8649/src/atoms/forms/canvas-sketch/tools/pan-canvas-tool.ts#L12)*
+*Defined in [src/atoms/forms/canvas-sketch/tools/pan-canvas-tool.ts:12](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/85bf079/src/atoms/forms/canvas-sketch/tools/pan-canvas-tool.ts#L12)*
 
 ___
 
@@ -36,7 +36,7 @@ ___
 
 • **panTo**: *function*
 
-*Defined in [src/atoms/forms/canvas-sketch/tools/pan-canvas-tool.ts:13](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/29c8649/src/atoms/forms/canvas-sketch/tools/pan-canvas-tool.ts#L13)*
+*Defined in [src/atoms/forms/canvas-sketch/tools/pan-canvas-tool.ts:13](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/85bf079/src/atoms/forms/canvas-sketch/tools/pan-canvas-tool.ts#L13)*
 
 #### Type declaration:
 

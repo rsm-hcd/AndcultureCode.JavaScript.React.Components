@@ -20,7 +20,7 @@
 
 • **cssClassName**? : *undefined | string*
 
-*Defined in [src/atoms/typography/heading.tsx:9](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/29c8649/src/atoms/typography/heading.tsx#L9)*
+*Defined in [src/atoms/typography/heading.tsx:9](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/85bf079/src/atoms/typography/heading.tsx#L9)*
 
 ___
 
@@ -28,7 +28,7 @@ ___
 
 • **id**? : *undefined | string*
 
-*Defined in [src/atoms/typography/heading.tsx:10](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/29c8649/src/atoms/typography/heading.tsx#L10)*
+*Defined in [src/atoms/typography/heading.tsx:10](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/85bf079/src/atoms/typography/heading.tsx#L10)*
 
 ___
 
@@ -36,4 +36,4 @@ ___
 
 • **priority**? : *[HeadingPriority](../enums/headingpriority.md)*
 
-*Defined in [src/atoms/typography/heading.tsx:11](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/29c8649/src/atoms/typography/heading.tsx#L11)*
+*Defined in [src/atoms/typography/heading.tsx:11](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/85bf079/src/atoms/typography/heading.tsx#L11)*

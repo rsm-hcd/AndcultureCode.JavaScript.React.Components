@@ -15,7 +15,7 @@
 
 • **Button**: = "button"
 
-*Defined in [src/atoms/constants/button-types.ts:2](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/29c8649/src/atoms/constants/button-types.ts#L2)*
+*Defined in [src/atoms/constants/button-types.ts:2](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/85bf079/src/atoms/constants/button-types.ts#L2)*
 
 ___
 
@@ -23,4 +23,4 @@ ___
 
 • **Submit**: = "submit"
 
-*Defined in [src/atoms/constants/button-types.ts:3](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/29c8649/src/atoms/constants/button-types.ts#L3)*
+*Defined in [src/atoms/constants/button-types.ts:3](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/85bf079/src/atoms/constants/button-types.ts#L3)*
