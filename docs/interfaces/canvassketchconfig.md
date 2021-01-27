@@ -25,7 +25,7 @@
 
 • **backgroundImage**? : *[ImageSettings](imagesettings.md)*
 
-*Defined in [src/atoms/forms/canvas-sketch/canvas-sketch.ts:25](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/29c8649/src/atoms/forms/canvas-sketch/canvas-sketch.ts#L25)*
+*Defined in [src/atoms/forms/canvas-sketch/canvas-sketch.ts:25](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/85bf079/src/atoms/forms/canvas-sketch/canvas-sketch.ts#L25)*
 
 ___
 
@@ -33,7 +33,7 @@ ___
 
 • **backgroundImageCanvas**? : *HTMLCanvasElement*
 
-*Defined in [src/atoms/forms/canvas-sketch/canvas-sketch.ts:26](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/29c8649/src/atoms/forms/canvas-sketch/canvas-sketch.ts#L26)*
+*Defined in [src/atoms/forms/canvas-sketch/canvas-sketch.ts:26](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/85bf079/src/atoms/forms/canvas-sketch/canvas-sketch.ts#L26)*
 
 ___
 
@@ -41,7 +41,7 @@ ___
 
 • **currentObjectIndex**: *number*
 
-*Defined in [src/atoms/forms/canvas-sketch/canvas-sketch.ts:27](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/29c8649/src/atoms/forms/canvas-sketch/canvas-sketch.ts#L27)*
+*Defined in [src/atoms/forms/canvas-sketch/canvas-sketch.ts:27](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/85bf079/src/atoms/forms/canvas-sketch/canvas-sketch.ts#L27)*
 
 ___
 
@@ -49,7 +49,7 @@ ___
 
 • **objectStack**: *[CanvasToolSettings](canvastoolsettings.md)[]*
 
-*Defined in [src/atoms/forms/canvas-sketch/canvas-sketch.ts:32](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/29c8649/src/atoms/forms/canvas-sketch/canvas-sketch.ts#L32)*
+*Defined in [src/atoms/forms/canvas-sketch/canvas-sketch.ts:32](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/85bf079/src/atoms/forms/canvas-sketch/canvas-sketch.ts#L32)*
 
 ___
 
@@ -57,7 +57,7 @@ ___
 
 • **panX**: *number*
 
-*Defined in [src/atoms/forms/canvas-sketch/canvas-sketch.ts:28](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/29c8649/src/atoms/forms/canvas-sketch/canvas-sketch.ts#L28)*
+*Defined in [src/atoms/forms/canvas-sketch/canvas-sketch.ts:28](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/85bf079/src/atoms/forms/canvas-sketch/canvas-sketch.ts#L28)*
 
 ___
 
@@ -65,7 +65,7 @@ ___
 
 • **panY**: *number*
 
-*Defined in [src/atoms/forms/canvas-sketch/canvas-sketch.ts:29](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/29c8649/src/atoms/forms/canvas-sketch/canvas-sketch.ts#L29)*
+*Defined in [src/atoms/forms/canvas-sketch/canvas-sketch.ts:29](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/85bf079/src/atoms/forms/canvas-sketch/canvas-sketch.ts#L29)*
 
 ___
 
@@ -73,7 +73,7 @@ ___
 
 • **scaleFactor**: *number*
 
-*Defined in [src/atoms/forms/canvas-sketch/canvas-sketch.ts:30](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/29c8649/src/atoms/forms/canvas-sketch/canvas-sketch.ts#L30)*
+*Defined in [src/atoms/forms/canvas-sketch/canvas-sketch.ts:30](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/85bf079/src/atoms/forms/canvas-sketch/canvas-sketch.ts#L30)*
 
 ___
 
@@ -81,4 +81,4 @@ ___
 
 • **sketchCanvas**: *HTMLCanvasElement*
 
-*Defined in [src/atoms/forms/canvas-sketch/canvas-sketch.ts:31](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/29c8649/src/atoms/forms/canvas-sketch/canvas-sketch.ts#L31)*
+*Defined in [src/atoms/forms/canvas-sketch/canvas-sketch.ts:31](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/85bf079/src/atoms/forms/canvas-sketch/canvas-sketch.ts#L31)*

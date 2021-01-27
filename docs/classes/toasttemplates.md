@@ -21,7 +21,7 @@
 
 ▸ **error**(`content`: string | ToastContent): *ToastContent*
 
-*Defined in [src/atoms/toasts/toast-templates.tsx:28](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/29c8649/src/atoms/toasts/toast-templates.tsx#L28)*
+*Defined in [src/atoms/toasts/toast-templates.tsx:29](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/85bf079/src/atoms/toasts/toast-templates.tsx#L29)*
 
 **Parameters:**
 
@@ -37,7 +37,7 @@ ___
 
 ▸ **info**(`content`: string | ToastContent): *ToastContent*
 
-*Defined in [src/atoms/toasts/toast-templates.tsx:32](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/29c8649/src/atoms/toasts/toast-templates.tsx#L32)*
+*Defined in [src/atoms/toasts/toast-templates.tsx:33](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/85bf079/src/atoms/toasts/toast-templates.tsx#L33)*
 
 **Parameters:**
 
@@ -53,7 +53,7 @@ ___
 
 ▸ **success**(`content`: string | ToastContent): *ToastContent*
 
-*Defined in [src/atoms/toasts/toast-templates.tsx:36](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/29c8649/src/atoms/toasts/toast-templates.tsx#L36)*
+*Defined in [src/atoms/toasts/toast-templates.tsx:37](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/85bf079/src/atoms/toasts/toast-templates.tsx#L37)*
 
 **Parameters:**
 
@@ -69,7 +69,7 @@ ___
 
 ▸ **warning**(`content`: string | ToastContent): *ToastContent*
 
-*Defined in [src/atoms/toasts/toast-templates.tsx:40](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/29c8649/src/atoms/toasts/toast-templates.tsx#L40)*
+*Defined in [src/atoms/toasts/toast-templates.tsx:41](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/85bf079/src/atoms/toasts/toast-templates.tsx#L41)*
 
 **Parameters:**
 

@@ -24,7 +24,7 @@
 
 • **data**? : *T*
 
-*Defined in [src/atoms/forms/select.tsx:20](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/29c8649/src/atoms/forms/select.tsx#L20)*
+*Defined in [src/atoms/forms/select.tsx:21](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/85bf079/src/atoms/forms/select.tsx#L21)*
 
 ___
 
@@ -32,7 +32,7 @@ ___
 
 • **label**: *string*
 
-*Defined in [src/atoms/forms/select.tsx:21](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/29c8649/src/atoms/forms/select.tsx#L21)*
+*Defined in [src/atoms/forms/select.tsx:22](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/85bf079/src/atoms/forms/select.tsx#L22)*
 
 ___
 
@@ -40,4 +40,4 @@ ___
 
 • **value**: *string*
 
-*Defined in [src/atoms/forms/select.tsx:22](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/29c8649/src/atoms/forms/select.tsx#L22)*
+*Defined in [src/atoms/forms/select.tsx:23](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/85bf079/src/atoms/forms/select.tsx#L23)*

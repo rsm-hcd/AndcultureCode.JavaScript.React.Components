@@ -24,7 +24,7 @@
 
 ▸ **dismiss**(`toastId`: ToastId): *void*
 
-*Defined in [src/utilities/toast-manager.ts:28](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/29c8649/src/utilities/toast-manager.ts#L28)*
+*Defined in [src/utilities/toast-manager.ts:28](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/85bf079/src/utilities/toast-manager.ts#L28)*
 
 Dismiss an existing toast programatically.
 
@@ -42,7 +42,7 @@ ___
 
 ▸ **dismissAll**(): *void*
 
-*Defined in [src/utilities/toast-manager.ts:35](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/29c8649/src/utilities/toast-manager.ts#L35)*
+*Defined in [src/utilities/toast-manager.ts:35](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/85bf079/src/utilities/toast-manager.ts#L35)*
 
 Dismiss all toasts programatically.
 
@@ -54,7 +54,7 @@ ___
 
 ▸ **error**(`content`: string | ToastContent, `options`: ToastOptions): *ToastId*
 
-*Defined in [src/utilities/toast-manager.ts:44](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/29c8649/src/utilities/toast-manager.ts#L44)*
+*Defined in [src/utilities/toast-manager.ts:44](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/85bf079/src/utilities/toast-manager.ts#L44)*
 
 Show an error style toast
 
@@ -73,7 +73,7 @@ ___
 
 ▸ **info**(`content`: string | ToastContent, `options`: ToastOptions): *ToastId*
 
-*Defined in [src/utilities/toast-manager.ts:59](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/29c8649/src/utilities/toast-manager.ts#L59)*
+*Defined in [src/utilities/toast-manager.ts:59](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/85bf079/src/utilities/toast-manager.ts#L59)*
 
 Show an info style toast
 
@@ -92,7 +92,7 @@ ___
 
 ▸ **success**(`content`: string | ToastContent, `options`: ToastOptions): *ToastId*
 
-*Defined in [src/utilities/toast-manager.ts:71](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/29c8649/src/utilities/toast-manager.ts#L71)*
+*Defined in [src/utilities/toast-manager.ts:71](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/85bf079/src/utilities/toast-manager.ts#L71)*
 
 Show a success style toast
 
@@ -111,7 +111,7 @@ ___
 
 ▸ **update**(`toastId`: ToastId, `newContent`: string | ToastContent): *void*
 
-*Defined in [src/utilities/toast-manager.ts:87](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/29c8649/src/utilities/toast-manager.ts#L87)*
+*Defined in [src/utilities/toast-manager.ts:87](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/85bf079/src/utilities/toast-manager.ts#L87)*
 
 Update an existing toast with new content; this could be useful for
 progress indicators, network state indicators, etc.
@@ -131,7 +131,7 @@ ___
 
 ▸ **warn**(`content`: string | ToastContent, `options`: ToastOptions): *ToastId*
 
-*Defined in [src/utilities/toast-manager.ts:96](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/29c8649/src/utilities/toast-manager.ts#L96)*
+*Defined in [src/utilities/toast-manager.ts:96](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/85bf079/src/utilities/toast-manager.ts#L96)*
 
 Show a warning style toast
 
