@@ -3,6 +3,7 @@ import { TextInput } from "./text-input";
 import faker from "faker";
 import { render, fireEvent } from "@testing-library/react";
 import uuid from "uuid";
+import { Icons } from "../constants/icons";
 
 describe("TextInput", () => {
     test("when default props, renders input", () => {
@@ -60,5 +61,20 @@ describe("TextInput", () => {
         expect(getByTestId(dataTestId).getAttribute("maxLength")).toBe(
             maximumLength.toString()
         );
+    });
+
+    test("when icon prop has value, renders input with icon tag", () => {
+        // Arrange
+        const icon = Icons.Checkmark;
+
+        // Act
+        const { container } = render(
+            <TextInput icon={icon} onChange={() => {}} id={uuid()} />
+        );
+
+        const result = container.getElementsByClassName("c-text-input")[0].firstChild.nodeName;
+
+        // Assert
+        expect(result).toBe("I");
     });
 });
