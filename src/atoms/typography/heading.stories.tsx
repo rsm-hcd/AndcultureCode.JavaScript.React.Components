@@ -18,20 +18,8 @@ export const headingKnobs = () => {
 
     return (
         <Heading
-            icon={
-                select(
-                    "icon",
-                    Icons,
-                    Icons.Plus
-                ) as Icons
-            }
-            priority={
-                select(
-                    "priority",
-                    options,
-                    HeadingPriority.One
-                ) as HeadingPriority
-            }>
+            icon={select("icon", Icons, Icons.Plus)}
+            priority={select("priority", options, HeadingPriority.One)}>
             Voluptas Expedita Magnam
         </Heading>
     );

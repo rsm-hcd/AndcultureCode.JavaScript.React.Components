@@ -65,16 +65,20 @@ describe("TextInput", () => {
 
     test("when icon prop has value, renders input with icon tag", () => {
         // Arrange
+        const dataTestId = "dataTestId";
         const icon = Icons.Checkmark;
 
         // Act
-        const { container } = render(
-            <TextInput icon={icon} onChange={() => {}} id={uuid()} />
+        const { getByTestId } = render(
+            <TextInput
+                icon={icon}
+                id={uuid()}
+                onChange={() => {}}
+                testId={dataTestId}
+            />
         );
 
-        const result = container.getElementsByClassName("c-text-input")[0].firstChild.nodeName;
-
         // Assert
-        expect(result).toBe("I");
+        expect(getByTestId(dataTestId).firstChild.nodeName).toBe("I");
     });
 });

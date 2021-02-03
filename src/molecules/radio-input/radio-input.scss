@@ -1,5 +1,5 @@
 @import "../../assets/scss/6-components/_component-base";
-@import "../../Atoms/buttons/button.scss"; // Todo: Remove this dependency
+@import "../../atoms/buttons/button.scss";
 
 .c-radio {
     @include padding(16px);

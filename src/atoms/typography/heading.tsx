@@ -39,14 +39,10 @@ const Heading: React.FC<HeadingProps> = (
     const content = (
         <React.Fragment>
             {// if
-                props.icon && (
-                    <Icon type={props.icon} />
-            )}
-            <span>
-                {props.children}
-            </span>
+            props.icon != null && <Icon type={props.icon} />}
+            <span>{props.children}</span>
         </React.Fragment>
-    )
+    );
 
     return React.createElement(
         `h${props.priority ?? HeadingPriority.Two}`,

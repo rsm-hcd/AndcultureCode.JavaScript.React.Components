@@ -15,7 +15,7 @@ export interface AnchorProps {
     children?: any;
     cssClassName?: string;
     external?: boolean;
-    icon?: keyof typeof Icons;
+    icon?: Icons;
     id?: string;
     onClick?: (e: React.MouseEvent<HTMLElement>, value?: any) => void;
     onKeyDown?: (e: React.KeyboardEvent<HTMLAnchorElement>) => void;
@@ -67,12 +67,10 @@ const Anchor: React.RefForwardingComponent<Link, AnchorProps> = forwardRef(
         const content = (
             <React.Fragment>
                 {// if
-                    props.icon && (
-                        <Icon type={props.icon} />
-                )}
+                props.icon != null && <Icon type={props.icon} />}
                 {props.children}
             </React.Fragment>
-        )
+        );
 
         if (props.external === true) {
             return (

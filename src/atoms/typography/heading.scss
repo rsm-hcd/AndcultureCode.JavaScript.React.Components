@@ -1,15 +1,11 @@
 @import "../../assets/scss/6-components/_component-base";
 
-/*------------------------------------*\
-  ANCHORS
-\*------------------------------------*/
-
 .c-heading {
     display: flex;
     align-items: center;
 
     .c-icon {
-        margin-right: .25em;
+        margin-right: 0.25em;
         width: 1em;
         height: 1em;
     }

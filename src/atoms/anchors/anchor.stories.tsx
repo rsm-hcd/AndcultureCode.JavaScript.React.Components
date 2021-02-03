@@ -12,21 +12,16 @@ export default {
     component: Anchor,
 };
 
-export const plain = () => (
-    <Anchor to="/test">{Faker.lorem.words(5)}</Anchor>
+export const Default = () => <Anchor to="/test">{Faker.lorem.words(5)}</Anchor>;
+
+export const Icon = () => (
+    <Anchor icon={Icons.Share} to="/test">
+        {Faker.lorem.words(5)}
+    </Anchor>
 );
 
-export const icon = () => (
-    <Anchor
-        icon    = {Icons.Share}
-        to      = "/test"
-    >{Faker.lorem.words(5)}</Anchor>
-)
-
-export const external = () => (
-    <Anchor
-        external    = { true }
-        target      = "_blank"
-        to          = "https://www.humanetech.com/"
-    >Center For Humane Technology</Anchor>
-)
+export const External = () => (
+    <Anchor external={true} target="_blank" to="https://www.humanetech.com/">
+        Center For Humane Technology
+    </Anchor>
+);

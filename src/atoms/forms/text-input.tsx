@@ -47,16 +47,16 @@ const TextInput: React.FC<TextInputProps> = (props: TextInputProps) => {
 
     const maxLength = props.maxLength != null ? props.maxLength : 20;
 
-    if (icon) {
+    if (icon != null) {
         classNames.push("-icon");
     }
 
     return (
         <div className={classNames.join(" ")}>
             {// if
-                icon &&
+            icon != null && (
                 <Icon type={icon} size={iconSize ?? IconSizes.Large} />
-            }
+            )}
             <input
                 aria-labelledby={ariaLabelledBy}
                 data-testid={testId}
