@@ -1,4 +1,4 @@
-import React, { forwardRef } from "react";
+import React, { forwardRef, PropsWithChildren, Ref } from "react";
 import { ParagraphSizes } from "../constants/paragraph-sizes";
 import { StringUtils } from "andculturecode-javascript-core";
 
@@ -21,11 +21,8 @@ export interface ParagraphProps {
 // #region Component
 // -------------------------------------------------------------------------------------------------
 
-const Paragraph: React.RefForwardingComponent<
-    HTMLParagraphElement,
-    ParagraphProps
-> = forwardRef(
-    (props: ParagraphProps, ref: React.Ref<HTMLParagraphElement>) => {
+const Paragraph = forwardRef<HTMLParagraphElement, ParagraphProps>(
+    (props: PropsWithChildren<ParagraphProps>, ref: Ref<HTMLParagraphElement>) => {
         let cssClassNames: Array<any> = [];
 
         if (StringUtils.hasValue(props.cssClassName)) {
