@@ -20,7 +20,7 @@
 
 • **dispose**: *function*
 
-*Defined in [src/atoms/forms/canvas-sketch/tools/base-canvas-tool.ts:10](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/85bf079/src/atoms/forms/canvas-sketch/tools/base-canvas-tool.ts#L10)*
+*Defined in [src/atoms/forms/canvas-sketch/tools/base-canvas-tool.ts:10](https://github.com/phess101/AndcultureCode.JavaScript.React.Components/blob/5fd6ba2/src/atoms/forms/canvas-sketch/tools/base-canvas-tool.ts#L10)*
 
 #### Type declaration:
 
@@ -32,7 +32,7 @@ ___
 
 • **initialize**: *function*
 
-*Defined in [src/atoms/forms/canvas-sketch/tools/base-canvas-tool.ts:11](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/85bf079/src/atoms/forms/canvas-sketch/tools/base-canvas-tool.ts#L11)*
+*Defined in [src/atoms/forms/canvas-sketch/tools/base-canvas-tool.ts:11](https://github.com/phess101/AndcultureCode.JavaScript.React.Components/blob/5fd6ba2/src/atoms/forms/canvas-sketch/tools/base-canvas-tool.ts#L11)*
 
 #### Type declaration:
 
@@ -44,4 +44,4 @@ ___
 
 • **toolType**: *[CanvasToolType](../enums/canvastooltype.md)*
 
-*Defined in [src/atoms/forms/canvas-sketch/tools/base-canvas-tool.ts:12](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/85bf079/src/atoms/forms/canvas-sketch/tools/base-canvas-tool.ts#L12)*
+*Defined in [src/atoms/forms/canvas-sketch/tools/base-canvas-tool.ts:12](https://github.com/phess101/AndcultureCode.JavaScript.React.Components/blob/5fd6ba2/src/atoms/forms/canvas-sketch/tools/base-canvas-tool.ts#L12)*
