@@ -79,6 +79,6 @@ describe("TextInput", () => {
         );
 
         // Assert
-        expect(getByTestId(dataTestId).firstChild.nodeName).toBe("I");
+        expect(getByTestId(dataTestId).parentNode.firstChild.nodeName).toBe("I");
     });
 });
