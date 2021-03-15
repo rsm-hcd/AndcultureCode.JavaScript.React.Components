@@ -1,28 +1,30 @@
-[andculturecode-javascript-react-components](../README.md) › [PasswordFormFields](passwordformfields.md)
+[andculturecode-javascript-react-components](../README.md) › [TextInputIconProps](textinputiconprops.md)
 
-# Interface: PasswordFormFields
+# Interface: TextInputIconProps
 
 ## Hierarchy
 
-* [InputProperties](inputproperties.md)
+  ↳ [TextInputProps](textinputprops.md)
 
-  ↳ **PasswordFormFields**
+  ↳ **TextInputIconProps**
 
 ## Index
 
 ### Properties
 
-* [ariaLabelledBy](passwordformfields.md#optional-arialabelledby)
-* [disabled](passwordformfields.md#optional-disabled)
-* [errorMessage](passwordformfields.md#optional-errormessage)
-* [inputTestId](passwordformfields.md#optional-inputtestid)
-* [isValid](passwordformfields.md#optional-isvalid)
-* [label](passwordformfields.md#label)
-* [onChange](passwordformfields.md#onchange)
-* [placeholder](passwordformfields.md#optional-placeholder)
-* [required](passwordformfields.md#optional-required)
-* [type](passwordformfields.md#optional-type)
-* [value](passwordformfields.md#optional-value)
+* [ariaLabelledBy](textinputiconprops.md#optional-arialabelledby)
+* [disabled](textinputiconprops.md#optional-disabled)
+* [icon](textinputiconprops.md#icon)
+* [iconSize](textinputiconprops.md#optional-iconsize)
+* [id](textinputiconprops.md#id)
+* [isValid](textinputiconprops.md#optional-isvalid)
+* [maxLength](textinputiconprops.md#optional-maxlength)
+* [name](textinputiconprops.md#optional-name)
+* [onChange](textinputiconprops.md#onchange)
+* [placeholder](textinputiconprops.md#optional-placeholder)
+* [testId](textinputiconprops.md#optional-testid)
+* [type](textinputiconprops.md#optional-type)
+* [value](textinputiconprops.md#optional-value)
 
 ## Properties
 
@@ -46,21 +48,29 @@ ___
 
 ___
 
-### `Optional` errorMessage
+###  icon
 
-• **errorMessage**? : *undefined | string*
+• **icon**: *[Icons](../enums/icons.md)*
 
-*Defined in [src/molecules/form-fields/password-form-field.tsx:22](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/85bf079/src/molecules/form-fields/password-form-field.tsx#L22)*
+*Defined in [src/atoms/forms/text-input-icon.tsx:13](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/85bf079/src/atoms/forms/text-input-icon.tsx#L13)*
 
 ___
 
-### `Optional` inputTestId
+### `Optional` iconSize
 
-• **inputTestId**? : *undefined | string*
+• **iconSize**? : *[IconSizes](../enums/iconsizes.md)*
 
-*Defined in [src/molecules/form-fields/password-form-field.tsx:27](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/85bf079/src/molecules/form-fields/password-form-field.tsx#L27)*
+*Defined in [src/atoms/forms/text-input-icon.tsx:14](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/85bf079/src/atoms/forms/text-input-icon.tsx#L14)*
 
-Unique identifier used select the underlying <input> for functional/e2e testing
+___
+
+###  id
+
+• **id**: *string*
+
+*Inherited from [TextInputProps](textinputprops.md).[id](textinputprops.md#id)*
+
+*Defined in [src/atoms/forms/text-input.tsx:10](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/85bf079/src/atoms/forms/text-input.tsx#L10)*
 
 ___
 
@@ -74,11 +84,23 @@ ___
 
 ___
 
-###  label
+### `Optional` maxLength
 
-• **label**: *string*
+• **maxLength**? : *undefined | number*
 
-*Defined in [src/molecules/form-fields/password-form-field.tsx:29](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/85bf079/src/molecules/form-fields/password-form-field.tsx#L29)*
+*Inherited from [TextInputProps](textinputprops.md).[maxLength](textinputprops.md#optional-maxlength)*
+
+*Defined in [src/atoms/forms/text-input.tsx:11](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/85bf079/src/atoms/forms/text-input.tsx#L11)*
+
+___
+
+### `Optional` name
+
+• **name**? : *undefined | string*
+
+*Inherited from [TextInputProps](textinputprops.md).[name](textinputprops.md#optional-name)*
+
+*Defined in [src/atoms/forms/text-input.tsx:12](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/85bf079/src/atoms/forms/text-input.tsx#L12)*
 
 ___
 
@@ -112,11 +134,15 @@ ___
 
 ___
 
-### `Optional` required
+### `Optional` testId
 
-• **required**? : *undefined | false | true*
+• **testId**? : *undefined | string*
 
-*Defined in [src/molecules/form-fields/password-form-field.tsx:30](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/85bf079/src/molecules/form-fields/password-form-field.tsx#L30)*
+*Inherited from [TextInputProps](textinputprops.md).[testId](textinputprops.md#optional-testid)*
+
+*Defined in [src/atoms/forms/text-input.tsx:17](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/85bf079/src/atoms/forms/text-input.tsx#L17)*
+
+Unique identifier used select the underlying <input> for functional/e2e testing
 
 ___
 

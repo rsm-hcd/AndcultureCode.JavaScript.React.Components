@@ -14,7 +14,6 @@
 * [children](anchorprops.md#optional-children)
 * [cssClassName](anchorprops.md#optional-cssclassname)
 * [external](anchorprops.md#optional-external)
-* [icon](anchorprops.md#optional-icon)
 * [id](anchorprops.md#optional-id)
 * [onClick](anchorprops.md#optional-onclick)
 * [onKeyDown](anchorprops.md#optional-onkeydown)
@@ -29,7 +28,7 @@
 
 • **ariaLabel**? : *undefined | string*
 
-*Defined in [src/atoms/anchors/anchor.tsx:14](https://github.com/phess101/AndcultureCode.JavaScript.React.Components/blob/5fd6ba2/src/atoms/anchors/anchor.tsx#L14)*
+*Defined in [src/atoms/anchors/anchor.tsx:12](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/85bf079/src/atoms/anchors/anchor.tsx#L12)*
 
 ___
 
@@ -37,7 +36,7 @@ ___
 
 • **children**? : *any*
 
-*Defined in [src/atoms/anchors/anchor.tsx:15](https://github.com/phess101/AndcultureCode.JavaScript.React.Components/blob/5fd6ba2/src/atoms/anchors/anchor.tsx#L15)*
+*Defined in [src/atoms/anchors/anchor.tsx:13](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/85bf079/src/atoms/anchors/anchor.tsx#L13)*
 
 ___
 
@@ -45,7 +44,7 @@ ___
 
 • **cssClassName**? : *undefined | string*
 
-*Defined in [src/atoms/anchors/anchor.tsx:16](https://github.com/phess101/AndcultureCode.JavaScript.React.Components/blob/5fd6ba2/src/atoms/anchors/anchor.tsx#L16)*
+*Defined in [src/atoms/anchors/anchor.tsx:14](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/85bf079/src/atoms/anchors/anchor.tsx#L14)*
 
 ___
 
@@ -53,15 +52,7 @@ ___
 
 • **external**? : *undefined | false | true*
 
-*Defined in [src/atoms/anchors/anchor.tsx:17](https://github.com/phess101/AndcultureCode.JavaScript.React.Components/blob/5fd6ba2/src/atoms/anchors/anchor.tsx#L17)*
-
-___
-
-### `Optional` icon
-
-• **icon**? : *[Icons](../enums/icons.md)*
-
-*Defined in [src/atoms/anchors/anchor.tsx:18](https://github.com/phess101/AndcultureCode.JavaScript.React.Components/blob/5fd6ba2/src/atoms/anchors/anchor.tsx#L18)*
+*Defined in [src/atoms/anchors/anchor.tsx:15](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/85bf079/src/atoms/anchors/anchor.tsx#L15)*
 
 ___
 
@@ -69,7 +60,7 @@ ___
 
 • **id**? : *undefined | string*
 
-*Defined in [src/atoms/anchors/anchor.tsx:19](https://github.com/phess101/AndcultureCode.JavaScript.React.Components/blob/5fd6ba2/src/atoms/anchors/anchor.tsx#L19)*
+*Defined in [src/atoms/anchors/anchor.tsx:16](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/85bf079/src/atoms/anchors/anchor.tsx#L16)*
 
 ___
 
@@ -77,7 +68,7 @@ ___
 
 • **onClick**? : *undefined | function*
 
-*Defined in [src/atoms/anchors/anchor.tsx:20](https://github.com/phess101/AndcultureCode.JavaScript.React.Components/blob/5fd6ba2/src/atoms/anchors/anchor.tsx#L20)*
+*Defined in [src/atoms/anchors/anchor.tsx:17](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/85bf079/src/atoms/anchors/anchor.tsx#L17)*
 
 ___
 
@@ -85,7 +76,7 @@ ___
 
 • **onKeyDown**? : *undefined | function*
 
-*Defined in [src/atoms/anchors/anchor.tsx:21](https://github.com/phess101/AndcultureCode.JavaScript.React.Components/blob/5fd6ba2/src/atoms/anchors/anchor.tsx#L21)*
+*Defined in [src/atoms/anchors/anchor.tsx:18](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/85bf079/src/atoms/anchors/anchor.tsx#L18)*
 
 ___
 
@@ -93,7 +84,7 @@ ___
 
 • **ref**? : *React.Ref‹HTMLAnchorElement›*
 
-*Defined in [src/atoms/anchors/anchor.tsx:22](https://github.com/phess101/AndcultureCode.JavaScript.React.Components/blob/5fd6ba2/src/atoms/anchors/anchor.tsx#L22)*
+*Defined in [src/atoms/anchors/anchor.tsx:19](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/85bf079/src/atoms/anchors/anchor.tsx#L19)*
 
 ___
 
@@ -101,7 +92,7 @@ ___
 
 • **target**? : *undefined | string*
 
-*Defined in [src/atoms/anchors/anchor.tsx:23](https://github.com/phess101/AndcultureCode.JavaScript.React.Components/blob/5fd6ba2/src/atoms/anchors/anchor.tsx#L23)*
+*Defined in [src/atoms/anchors/anchor.tsx:20](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/85bf079/src/atoms/anchors/anchor.tsx#L20)*
 
 ___
 
@@ -109,7 +100,7 @@ ___
 
 • **title**? : *undefined | string*
 
-*Defined in [src/atoms/anchors/anchor.tsx:24](https://github.com/phess101/AndcultureCode.JavaScript.React.Components/blob/5fd6ba2/src/atoms/anchors/anchor.tsx#L24)*
+*Defined in [src/atoms/anchors/anchor.tsx:21](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/85bf079/src/atoms/anchors/anchor.tsx#L21)*
 
 ___
 
@@ -117,4 +108,4 @@ ___
 
 • **to**: *string*
 
-*Defined in [src/atoms/anchors/anchor.tsx:25](https://github.com/phess101/AndcultureCode.JavaScript.React.Components/blob/5fd6ba2/src/atoms/anchors/anchor.tsx#L25)*
+*Defined in [src/atoms/anchors/anchor.tsx:22](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/85bf079/src/atoms/anchors/anchor.tsx#L22)*

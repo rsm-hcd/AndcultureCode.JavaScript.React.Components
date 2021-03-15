@@ -23,7 +23,7 @@
 
 • **checked**: *boolean*
 
-*Defined in [src/molecules/checkbox-input/checkbox-input.tsx:19](https://github.com/phess101/AndcultureCode.JavaScript.React.Components/blob/5fd6ba2/src/molecules/checkbox-input/checkbox-input.tsx#L19)*
+*Defined in [src/atoms/forms/checkbox-input.tsx:19](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/85bf079/src/atoms/forms/checkbox-input.tsx#L19)*
 
 ___
 
@@ -31,7 +31,7 @@ ___
 
 • **disabled**? : *undefined | false | true*
 
-*Defined in [src/molecules/checkbox-input/checkbox-input.tsx:20](https://github.com/phess101/AndcultureCode.JavaScript.React.Components/blob/5fd6ba2/src/molecules/checkbox-input/checkbox-input.tsx#L20)*
+*Defined in [src/atoms/forms/checkbox-input.tsx:20](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/85bf079/src/atoms/forms/checkbox-input.tsx#L20)*
 
 ___
 
@@ -39,7 +39,7 @@ ___
 
 • **label**: *string*
 
-*Defined in [src/molecules/checkbox-input/checkbox-input.tsx:21](https://github.com/phess101/AndcultureCode.JavaScript.React.Components/blob/5fd6ba2/src/molecules/checkbox-input/checkbox-input.tsx#L21)*
+*Defined in [src/atoms/forms/checkbox-input.tsx:21](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/85bf079/src/atoms/forms/checkbox-input.tsx#L21)*
 
 ___
 
@@ -47,7 +47,7 @@ ___
 
 • **onChange**: *function*
 
-*Defined in [src/molecules/checkbox-input/checkbox-input.tsx:22](https://github.com/phess101/AndcultureCode.JavaScript.React.Components/blob/5fd6ba2/src/molecules/checkbox-input/checkbox-input.tsx#L22)*
+*Defined in [src/atoms/forms/checkbox-input.tsx:22](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/85bf079/src/atoms/forms/checkbox-input.tsx#L22)*
 
 #### Type declaration:
 

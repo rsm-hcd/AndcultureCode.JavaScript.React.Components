@@ -11,8 +11,6 @@
 ### Properties
 
 * [cssClassName](headingprops.md#optional-cssclassname)
-* [icon](headingprops.md#optional-icon)
-* [iconSize](headingprops.md#optional-iconsize)
 * [id](headingprops.md#optional-id)
 * [priority](headingprops.md#optional-priority)
 
@@ -22,23 +20,7 @@
 
 • **cssClassName**? : *undefined | string*
 
-*Defined in [src/atoms/typography/heading.tsx:13](https://github.com/phess101/AndcultureCode.JavaScript.React.Components/blob/5fd6ba2/src/atoms/typography/heading.tsx#L13)*
-
-___
-
-### `Optional` icon
-
-• **icon**? : *[Icons](../enums/icons.md)*
-
-*Defined in [src/atoms/typography/heading.tsx:14](https://github.com/phess101/AndcultureCode.JavaScript.React.Components/blob/5fd6ba2/src/atoms/typography/heading.tsx#L14)*
-
-___
-
-### `Optional` iconSize
-
-• **iconSize**? : *[IconSizes](../enums/iconsizes.md)*
-
-*Defined in [src/atoms/typography/heading.tsx:15](https://github.com/phess101/AndcultureCode.JavaScript.React.Components/blob/5fd6ba2/src/atoms/typography/heading.tsx#L15)*
+*Defined in [src/atoms/typography/heading.tsx:9](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/85bf079/src/atoms/typography/heading.tsx#L9)*
 
 ___
 
@@ -46,7 +28,7 @@ ___
 
 • **id**? : *undefined | string*
 
-*Defined in [src/atoms/typography/heading.tsx:16](https://github.com/phess101/AndcultureCode.JavaScript.React.Components/blob/5fd6ba2/src/atoms/typography/heading.tsx#L16)*
+*Defined in [src/atoms/typography/heading.tsx:10](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/85bf079/src/atoms/typography/heading.tsx#L10)*
 
 ___
 
@@ -54,4 +36,4 @@ ___
 
 • **priority**? : *[HeadingPriority](../enums/headingpriority.md)*
 
-*Defined in [src/atoms/typography/heading.tsx:17](https://github.com/phess101/AndcultureCode.JavaScript.React.Components/blob/5fd6ba2/src/atoms/typography/heading.tsx#L17)*
+*Defined in [src/atoms/typography/heading.tsx:11](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/85bf079/src/atoms/typography/heading.tsx#L11)*

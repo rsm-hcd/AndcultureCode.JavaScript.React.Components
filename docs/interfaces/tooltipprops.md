@@ -24,7 +24,7 @@
 
 • **children**: *ReactElement*
 
-*Defined in [src/molecules/tooltips/tooltip.tsx:16](https://github.com/phess101/AndcultureCode.JavaScript.React.Components/blob/5fd6ba2/src/molecules/tooltips/tooltip.tsx#L16)*
+*Defined in [src/molecules/tooltips/tooltip.tsx:16](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/85bf079/src/molecules/tooltips/tooltip.tsx#L16)*
 
 Required. The element that triggers the tooltip on hovering.
 Surround the trigger with the `<Tooltip>` component.
@@ -35,7 +35,7 @@ ___
 
 • **content**: *React.ReactChild | React.ReactChild[]*
 
-*Defined in [src/molecules/tooltips/tooltip.tsx:20](https://github.com/phess101/AndcultureCode.JavaScript.React.Components/blob/5fd6ba2/src/molecules/tooltips/tooltip.tsx#L20)*
+*Defined in [src/molecules/tooltips/tooltip.tsx:20](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/85bf079/src/molecules/tooltips/tooltip.tsx#L20)*
 
 The content of the tooltip itself.
 
@@ -45,7 +45,7 @@ ___
 
 • **cssClassName**? : *undefined | string*
 
-*Defined in [src/molecules/tooltips/tooltip.tsx:21](https://github.com/phess101/AndcultureCode.JavaScript.React.Components/blob/5fd6ba2/src/molecules/tooltips/tooltip.tsx#L21)*
+*Defined in [src/molecules/tooltips/tooltip.tsx:21](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/85bf079/src/molecules/tooltips/tooltip.tsx#L21)*
 
 ___
 
@@ -53,7 +53,7 @@ ___
 
 • **delay**? : *undefined | number*
 
-*Defined in [src/molecules/tooltips/tooltip.tsx:25](https://github.com/phess101/AndcultureCode.JavaScript.React.Components/blob/5fd6ba2/src/molecules/tooltips/tooltip.tsx#L25)*
+*Defined in [src/molecules/tooltips/tooltip.tsx:25](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/85bf079/src/molecules/tooltips/tooltip.tsx#L25)*
 
 Delay to wait before showing tooltip, in ms. Defaults to 500.
 
@@ -63,7 +63,7 @@ ___
 
 • **disabled**? : *undefined | false | true*
 
-*Defined in [src/molecules/tooltips/tooltip.tsx:33](https://github.com/phess101/AndcultureCode.JavaScript.React.Components/blob/5fd6ba2/src/molecules/tooltips/tooltip.tsx#L33)*
+*Defined in [src/molecules/tooltips/tooltip.tsx:33](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/85bf079/src/molecules/tooltips/tooltip.tsx#L33)*
 
 Disable the tooltip. For example, if you have overflowing text,
 and you only want to show if the text is actually truncated with ...
@@ -78,7 +78,7 @@ ___
 
 • **showOnCursor**? : *undefined | false | true*
 
-*Defined in [src/molecules/tooltips/tooltip.tsx:37](https://github.com/phess101/AndcultureCode.JavaScript.React.Components/blob/5fd6ba2/src/molecules/tooltips/tooltip.tsx#L37)*
+*Defined in [src/molecules/tooltips/tooltip.tsx:37](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/85bf079/src/molecules/tooltips/tooltip.tsx#L37)*
 
 True by default. If true, the tooltip will appear at the cursor's location.
 
@@ -88,7 +88,7 @@ ___
 
 • **visible**? : *undefined | false | true*
 
-*Defined in [src/molecules/tooltips/tooltip.tsx:42](https://github.com/phess101/AndcultureCode.JavaScript.React.Components/blob/5fd6ba2/src/molecules/tooltips/tooltip.tsx#L42)*
+*Defined in [src/molecules/tooltips/tooltip.tsx:42](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/85bf079/src/molecules/tooltips/tooltip.tsx#L42)*
 
 Manually control tooltip visibility.
 Useful for debugging styles.

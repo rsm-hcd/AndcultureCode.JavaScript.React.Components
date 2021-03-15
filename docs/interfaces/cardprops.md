@@ -18,4 +18,4 @@
 
 • **label**: *string*
 
-*Defined in [src/molecules/cards/card.tsx:18](https://github.com/phess101/AndcultureCode.JavaScript.React.Components/blob/5fd6ba2/src/molecules/cards/card.tsx#L18)*
+*Defined in [src/molecules/cards/card.tsx:18](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/85bf079/src/molecules/cards/card.tsx#L18)*
