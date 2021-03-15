@@ -15,7 +15,7 @@
 
 • **Thick**: = "-thick"
 
-*Defined in [src/atoms/progress-bar/progress-bar.tsx:18](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/85bf079/src/atoms/progress-bar/progress-bar.tsx#L18)*
+*Defined in [src/molecules/progress-bar/progress-bar.tsx:18](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/c9cfa12/src/molecules/progress-bar/progress-bar.tsx#L18)*
 
 ___
 
@@ -23,4 +23,4 @@ ___
 
 • **Thin**: = "-thin"
 
-*Defined in [src/atoms/progress-bar/progress-bar.tsx:19](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/85bf079/src/atoms/progress-bar/progress-bar.tsx#L19)*
+*Defined in [src/molecules/progress-bar/progress-bar.tsx:19](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/c9cfa12/src/molecules/progress-bar/progress-bar.tsx#L19)*

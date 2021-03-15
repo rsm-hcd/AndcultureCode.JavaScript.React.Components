@@ -32,7 +32,7 @@
 
 • **ariaLabelledBy**? : *undefined | string*
 
-*Defined in [src/atoms/interfaces/input-properties.ts:4](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/85bf079/src/atoms/interfaces/input-properties.ts#L4)*
+*Defined in [src/atoms/interfaces/input-properties.ts:4](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/c9cfa12/src/atoms/interfaces/input-properties.ts#L4)*
 
 ___
 
@@ -40,7 +40,7 @@ ___
 
 • **disabled**? : *undefined | false | true*
 
-*Defined in [src/atoms/interfaces/input-properties.ts:5](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/85bf079/src/atoms/interfaces/input-properties.ts#L5)*
+*Defined in [src/atoms/interfaces/input-properties.ts:5](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/c9cfa12/src/atoms/interfaces/input-properties.ts#L5)*
 
 ___
 
@@ -48,7 +48,7 @@ ___
 
 • **isValid**? : *undefined | false | true*
 
-*Defined in [src/atoms/interfaces/input-properties.ts:6](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/85bf079/src/atoms/interfaces/input-properties.ts#L6)*
+*Defined in [src/atoms/interfaces/input-properties.ts:6](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/c9cfa12/src/atoms/interfaces/input-properties.ts#L6)*
 
 ___
 
@@ -56,7 +56,7 @@ ___
 
 • **onChange**: *function*
 
-*Defined in [src/atoms/interfaces/input-properties.ts:7](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/85bf079/src/atoms/interfaces/input-properties.ts#L7)*
+*Defined in [src/atoms/interfaces/input-properties.ts:7](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/c9cfa12/src/atoms/interfaces/input-properties.ts#L7)*
 
 #### Type declaration:
 
@@ -74,7 +74,7 @@ ___
 
 • **placeholder**? : *undefined | string*
 
-*Defined in [src/atoms/interfaces/input-properties.ts:8](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/85bf079/src/atoms/interfaces/input-properties.ts#L8)*
+*Defined in [src/atoms/interfaces/input-properties.ts:8](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/c9cfa12/src/atoms/interfaces/input-properties.ts#L8)*
 
 ___
 
@@ -82,7 +82,7 @@ ___
 
 • **type**? : *[InputTypes](../enums/inputtypes.md)*
 
-*Defined in [src/atoms/interfaces/input-properties.ts:9](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/85bf079/src/atoms/interfaces/input-properties.ts#L9)*
+*Defined in [src/atoms/interfaces/input-properties.ts:9](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/c9cfa12/src/atoms/interfaces/input-properties.ts#L9)*
 
 ___
 
@@ -90,4 +90,4 @@ ___
 
 • **value**? : *undefined | string*
 
-*Defined in [src/atoms/interfaces/input-properties.ts:10](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/85bf079/src/atoms/interfaces/input-properties.ts#L10)*
+*Defined in [src/atoms/interfaces/input-properties.ts:10](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/c9cfa12/src/atoms/interfaces/input-properties.ts#L10)*

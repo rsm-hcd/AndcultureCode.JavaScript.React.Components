@@ -27,7 +27,7 @@
 
 • **autofocus**? : *undefined | false | true*
 
-*Defined in [src/molecules/radio-input/radio-input.tsx:9](https://github.com/phess101/AndcultureCode.JavaScript.React.Components/blob/5fd6ba2/src/molecules/radio-input/radio-input.tsx#L9)*
+*Defined in [src/molecules/radio-input/radio-input.tsx:9](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/c9cfa12/src/molecules/radio-input/radio-input.tsx#L9)*
 
 ___
 
@@ -35,7 +35,7 @@ ___
 
 • **checked**: *boolean*
 
-*Defined in [src/molecules/radio-input/radio-input.tsx:10](https://github.com/phess101/AndcultureCode.JavaScript.React.Components/blob/5fd6ba2/src/molecules/radio-input/radio-input.tsx#L10)*
+*Defined in [src/molecules/radio-input/radio-input.tsx:10](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/c9cfa12/src/molecules/radio-input/radio-input.tsx#L10)*
 
 ___
 
@@ -43,7 +43,7 @@ ___
 
 • **cssClassName**? : *undefined | string*
 
-*Defined in [src/molecules/radio-input/radio-input.tsx:11](https://github.com/phess101/AndcultureCode.JavaScript.React.Components/blob/5fd6ba2/src/molecules/radio-input/radio-input.tsx#L11)*
+*Defined in [src/molecules/radio-input/radio-input.tsx:11](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/c9cfa12/src/molecules/radio-input/radio-input.tsx#L11)*
 
 ___
 
@@ -51,7 +51,7 @@ ___
 
 • **id**: *string*
 
-*Defined in [src/molecules/radio-input/radio-input.tsx:12](https://github.com/phess101/AndcultureCode.JavaScript.React.Components/blob/5fd6ba2/src/molecules/radio-input/radio-input.tsx#L12)*
+*Defined in [src/molecules/radio-input/radio-input.tsx:12](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/c9cfa12/src/molecules/radio-input/radio-input.tsx#L12)*
 
 ___
 
@@ -59,7 +59,7 @@ ___
 
 • **label**: *string*
 
-*Defined in [src/molecules/radio-input/radio-input.tsx:13](https://github.com/phess101/AndcultureCode.JavaScript.React.Components/blob/5fd6ba2/src/molecules/radio-input/radio-input.tsx#L13)*
+*Defined in [src/molecules/radio-input/radio-input.tsx:13](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/c9cfa12/src/molecules/radio-input/radio-input.tsx#L13)*
 
 ___
 
@@ -67,7 +67,7 @@ ___
 
 • **name**: *string*
 
-*Defined in [src/molecules/radio-input/radio-input.tsx:14](https://github.com/phess101/AndcultureCode.JavaScript.React.Components/blob/5fd6ba2/src/molecules/radio-input/radio-input.tsx#L14)*
+*Defined in [src/molecules/radio-input/radio-input.tsx:14](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/c9cfa12/src/molecules/radio-input/radio-input.tsx#L14)*
 
 ___
 
@@ -75,7 +75,7 @@ ___
 
 • **onCheck**? : *undefined | function*
 
-*Defined in [src/molecules/radio-input/radio-input.tsx:15](https://github.com/phess101/AndcultureCode.JavaScript.React.Components/blob/5fd6ba2/src/molecules/radio-input/radio-input.tsx#L15)*
+*Defined in [src/molecules/radio-input/radio-input.tsx:15](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/c9cfa12/src/molecules/radio-input/radio-input.tsx#L15)*
 
 ___
 
@@ -83,7 +83,7 @@ ___
 
 • **onClick**? : *undefined | function*
 
-*Defined in [src/molecules/radio-input/radio-input.tsx:16](https://github.com/phess101/AndcultureCode.JavaScript.React.Components/blob/5fd6ba2/src/molecules/radio-input/radio-input.tsx#L16)*
+*Defined in [src/molecules/radio-input/radio-input.tsx:16](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/c9cfa12/src/molecules/radio-input/radio-input.tsx#L16)*
 
 ___
 
@@ -91,7 +91,7 @@ ___
 
 • **ref**? : *RefObject‹HTMLInputElement› | null*
 
-*Defined in [src/molecules/radio-input/radio-input.tsx:17](https://github.com/phess101/AndcultureCode.JavaScript.React.Components/blob/5fd6ba2/src/molecules/radio-input/radio-input.tsx#L17)*
+*Defined in [src/molecules/radio-input/radio-input.tsx:17](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/c9cfa12/src/molecules/radio-input/radio-input.tsx#L17)*
 
 ___
 
@@ -99,4 +99,4 @@ ___
 
 • **value**? : *string | string[] | number*
 
-*Defined in [src/molecules/radio-input/radio-input.tsx:18](https://github.com/phess101/AndcultureCode.JavaScript.React.Components/blob/5fd6ba2/src/molecules/radio-input/radio-input.tsx#L18)*
+*Defined in [src/molecules/radio-input/radio-input.tsx:18](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/c9cfa12/src/molecules/radio-input/radio-input.tsx#L18)*

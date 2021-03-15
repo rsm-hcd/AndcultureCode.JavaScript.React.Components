@@ -22,7 +22,7 @@
 
 • **cssClassName**? : *undefined | string*
 
-*Defined in [src/atoms/progress-bar/progress-bar.tsx:29](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/85bf079/src/atoms/progress-bar/progress-bar.tsx#L29)*
+*Defined in [src/molecules/progress-bar/progress-bar.tsx:29](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/c9cfa12/src/molecules/progress-bar/progress-bar.tsx#L29)*
 
 ___
 
@@ -30,7 +30,7 @@ ___
 
 • **isErrored**? : *undefined | false | true*
 
-*Defined in [src/atoms/progress-bar/progress-bar.tsx:30](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/85bf079/src/atoms/progress-bar/progress-bar.tsx#L30)*
+*Defined in [src/molecules/progress-bar/progress-bar.tsx:30](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/c9cfa12/src/molecules/progress-bar/progress-bar.tsx#L30)*
 
 ___
 
@@ -38,7 +38,7 @@ ___
 
 • **style**? : *[ProgressBarStyles](../enums/progressbarstyles.md)*
 
-*Defined in [src/atoms/progress-bar/progress-bar.tsx:31](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/85bf079/src/atoms/progress-bar/progress-bar.tsx#L31)*
+*Defined in [src/molecules/progress-bar/progress-bar.tsx:31](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/c9cfa12/src/molecules/progress-bar/progress-bar.tsx#L31)*
 
 ___
 
@@ -46,7 +46,7 @@ ___
 
 • **testId**? : *undefined | string*
 
-*Defined in [src/atoms/progress-bar/progress-bar.tsx:36](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/85bf079/src/atoms/progress-bar/progress-bar.tsx#L36)*
+*Defined in [src/molecules/progress-bar/progress-bar.tsx:36](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/c9cfa12/src/molecules/progress-bar/progress-bar.tsx#L36)*
 
 Unique identifier used to select the underlying <div> for functional/e2e testing
 
@@ -56,4 +56,4 @@ ___
 
 • **value**: *number*
 
-*Defined in [src/atoms/progress-bar/progress-bar.tsx:38](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/85bf079/src/atoms/progress-bar/progress-bar.tsx#L38)*
+*Defined in [src/molecules/progress-bar/progress-bar.tsx:38](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/c9cfa12/src/molecules/progress-bar/progress-bar.tsx#L38)*

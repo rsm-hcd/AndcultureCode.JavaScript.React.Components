@@ -19,7 +19,7 @@
 
 • **Button**: = "button"
 
-*Defined in [src/atoms/constants/input-types.ts:2](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/85bf079/src/atoms/constants/input-types.ts#L2)*
+*Defined in [src/atoms/constants/input-types.ts:2](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/c9cfa12/src/atoms/constants/input-types.ts#L2)*
 
 ___
 
@@ -27,7 +27,7 @@ ___
 
 • **Checkbox**: = "checkbox"
 
-*Defined in [src/atoms/constants/input-types.ts:3](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/85bf079/src/atoms/constants/input-types.ts#L3)*
+*Defined in [src/atoms/constants/input-types.ts:3](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/c9cfa12/src/atoms/constants/input-types.ts#L3)*
 
 ___
 
@@ -35,7 +35,7 @@ ___
 
 • **Email**: = "email"
 
-*Defined in [src/atoms/constants/input-types.ts:4](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/85bf079/src/atoms/constants/input-types.ts#L4)*
+*Defined in [src/atoms/constants/input-types.ts:4](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/c9cfa12/src/atoms/constants/input-types.ts#L4)*
 
 ___
 
@@ -43,7 +43,7 @@ ___
 
 • **Password**: = "password"
 
-*Defined in [src/atoms/constants/input-types.ts:5](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/85bf079/src/atoms/constants/input-types.ts#L5)*
+*Defined in [src/atoms/constants/input-types.ts:5](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/c9cfa12/src/atoms/constants/input-types.ts#L5)*
 
 ___
 
@@ -51,7 +51,7 @@ ___
 
 • **Phone**: = "tel"
 
-*Defined in [src/atoms/constants/input-types.ts:6](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/85bf079/src/atoms/constants/input-types.ts#L6)*
+*Defined in [src/atoms/constants/input-types.ts:6](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/c9cfa12/src/atoms/constants/input-types.ts#L6)*
 
 ___
 
@@ -59,4 +59,4 @@ ___
 
 • **Text**: = "text"
 
-*Defined in [src/atoms/constants/input-types.ts:7](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/85bf079/src/atoms/constants/input-types.ts#L7)*
+*Defined in [src/atoms/constants/input-types.ts:7](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/c9cfa12/src/atoms/constants/input-types.ts#L7)*

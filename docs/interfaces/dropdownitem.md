@@ -19,7 +19,7 @@
 
 • **component**: *string | React.ReactNode | ReactNodeArray*
 
-*Defined in [src/molecules/dropdown-button/dropdown-button.tsx:24](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/85bf079/src/molecules/dropdown-button/dropdown-button.tsx#L24)*
+*Defined in [src/molecules/dropdown-button/dropdown-button.tsx:24](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/c9cfa12/src/molecules/dropdown-button/dropdown-button.tsx#L24)*
 
 ___
 
@@ -27,7 +27,7 @@ ___
 
 • **onSelect**: *function*
 
-*Defined in [src/molecules/dropdown-button/dropdown-button.tsx:25](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/85bf079/src/molecules/dropdown-button/dropdown-button.tsx#L25)*
+*Defined in [src/molecules/dropdown-button/dropdown-button.tsx:25](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/c9cfa12/src/molecules/dropdown-button/dropdown-button.tsx#L25)*
 
 #### Type declaration:
 

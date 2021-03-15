@@ -19,7 +19,7 @@
 
 • **color**: *string*
 
-*Defined in [src/atoms/forms/canvas-sketch/tools/base-canvas-draw-tool.ts:23](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/85bf079/src/atoms/forms/canvas-sketch/tools/base-canvas-draw-tool.ts#L23)*
+*Defined in [src/atoms/forms/canvas-sketch/tools/base-canvas-draw-tool.ts:23](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/c9cfa12/src/atoms/forms/canvas-sketch/tools/base-canvas-draw-tool.ts#L23)*
 
 ___
 
@@ -27,4 +27,4 @@ ___
 
 • **width**: *number*
 
-*Defined in [src/atoms/forms/canvas-sketch/tools/base-canvas-draw-tool.ts:24](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/85bf079/src/atoms/forms/canvas-sketch/tools/base-canvas-draw-tool.ts#L24)*
+*Defined in [src/atoms/forms/canvas-sketch/tools/base-canvas-draw-tool.ts:24](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/c9cfa12/src/atoms/forms/canvas-sketch/tools/base-canvas-draw-tool.ts#L24)*
