@@ -1,11 +1,11 @@
 import * as React from "react";
 import { forwardRef } from "react";
-import "./radio-button-input.scss";
+import "./radio-input.scss";
 
 const COMPONENT_CLASS = "c-radio";
-export const RadioButtonSelectedClassName = "-selected";
+export const RadioInputSelectedClassName = "-selected";
 
-export interface RadioButtonProps {
+export interface RadioInputProps {
     autofocus?: boolean;
     checked: boolean;
     cssClassName?: string;
@@ -18,12 +18,12 @@ export interface RadioButtonProps {
     value?: string | string[] | number;
 }
 
-const RadioButton: React.RefForwardingComponent<
+const RadioInput: React.RefForwardingComponent<
     HTMLInputElement,
-    RadioButtonProps
+    RadioInputProps
 > = forwardRef(
     (
-        props: React.PropsWithChildren<RadioButtonProps>,
+        props: React.PropsWithChildren<RadioInputProps>,
         ref: React.Ref<HTMLInputElement>
     ) => {
         const {
@@ -43,7 +43,7 @@ const RadioButton: React.RefForwardingComponent<
             onCheck?.(e);
         const handleClick = (): void => onClick?.();
 
-        const cssChecked = checked ? RadioButtonSelectedClassName : "";
+        const cssChecked = checked ? RadioInputSelectedClassName : "";
 
         return (
             <div className={`${COMPONENT_CLASS} ${cssChecked} ${cssClassName}`}>
@@ -67,4 +67,4 @@ const RadioButton: React.RefForwardingComponent<
     }
 );
 
-export { RadioButton };
+export { RadioInput };

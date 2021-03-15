@@ -1,6 +1,6 @@
-import { InputTypes } from "../constants/input-types";
+import { InputTypes } from "../../atoms/constants/input-types";
 import React from "react";
-import "./checkbox.scss";
+import "./checkbox-input.scss";
 
 // -----------------------------------------------------------------------------------------
 // #region Constants

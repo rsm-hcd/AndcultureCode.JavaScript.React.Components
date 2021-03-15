@@ -1,5 +1,7 @@
 import { Link } from "react-router-dom";
 import React, { forwardRef } from "react";
+import { Icons } from "../constants/icons";
+import { Icon } from "../icons/icon";
 import "./anchor.scss";
 
 /*
@@ -13,6 +15,7 @@ export interface AnchorProps {
     children?: any;
     cssClassName?: string;
     external?: boolean;
+    icon?: Icons;
     id?: string;
     onClick?: (e: React.MouseEvent<HTMLElement>, value?: any) => void;
     onKeyDown?: (e: React.KeyboardEvent<HTMLAnchorElement>) => void;
@@ -49,7 +52,7 @@ const Anchor: React.RefForwardingComponent<Link, AnchorProps> = forwardRef(
             relAttribute = "noopener noreferrer";
         }
 
-        const commonProps = {
+        const attributes = {
             "aria-label": props.ariaLabel,
             className: cssClassNames.join(" "),
             id: props.id,
@@ -61,17 +64,25 @@ const Anchor: React.RefForwardingComponent<Link, AnchorProps> = forwardRef(
             onKeyDown: props.onKeyDown,
         };
 
+        const content = (
+            <React.Fragment>
+                {// if
+                props.icon != null && <Icon type={props.icon} />}
+                {props.children}
+            </React.Fragment>
+        );
+
         if (props.external === true) {
             return (
-                <a href={props.to} {...commonProps}>
-                    {props.children}
+                <a href={props.to} {...attributes}>
+                    {content}
                 </a>
             );
         }
 
         return (
-            <Link to={props.to} {...commonProps}>
-                {props.children}
+            <Link to={props.to} {...attributes}>
+                {content}
             </Link>
         );
     }

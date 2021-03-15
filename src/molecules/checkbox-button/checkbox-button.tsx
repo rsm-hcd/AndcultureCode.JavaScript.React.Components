@@ -1,8 +1,8 @@
-import { InputTypes } from "../constants/input-types";
+import { InputTypes } from "../../atoms/constants/input-types";
 import React from "react";
-import { Icon } from "../icons/icon";
-import { Icons } from "../constants/icons";
-import "./checkbox.scss";
+import { Icon } from "../../atoms/icons/icon";
+import { Icons } from "../../atoms/constants/icons";
+import "../checkbox-input/checkbox-input.scss";
 import "./checkbox-button.scss";
 
 // -----------------------------------------------------------------------------------------

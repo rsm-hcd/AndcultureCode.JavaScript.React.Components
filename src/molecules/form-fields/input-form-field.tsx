@@ -1,4 +1,4 @@
-import React, { forwardRef, Ref, RefObject } from "react";
+import React, { forwardRef, PropsWithChildren, Ref, RefObject } from "react";
 import uuid from "uuid";
 import { AccessibilityLabels } from "../../enums/accessibility-labels";
 import { CollectionUtils, StringUtils } from "andculturecode-javascript-core";
@@ -45,10 +45,8 @@ export interface InputFormFieldProps extends InputProperties {
 // #region Component
 // -----------------------------------------------------------------------------------------
 
-const InputFormField: React.RefForwardingComponent<
-    HTMLInputElement,
-    InputFormFieldProps
-> = forwardRef((props: InputFormFieldProps, ref: Ref<HTMLInputElement>) => {
+const InputFormField = forwardRef<HTMLInputElement, InputFormFieldProps>(
+    (props: PropsWithChildren<InputFormFieldProps>, ref: Ref<HTMLInputElement>) => {
     const {
         disabled,
         errorMessage,

@@ -1,7 +1,7 @@
 import React from "react";
 import { RadioList } from "./radio-list";
 import Faker from "faker";
-import { RadioButton } from "../../atoms/forms/radio-button-input";
+import { RadioInput } from "../radio-input/radio-input";
 import uuid from "uuid";
 import { boolean } from "@storybook/addon-knobs";
 
@@ -13,20 +13,20 @@ export default {
 export const radioListDefault = () => (
     <RadioList
         items={[
-            <RadioButton
+            <RadioInput
                 checked={boolean("checked", false)}
                 id={uuid()}
                 label={Faker.random.word()}
                 name={Faker.random.word()}>
                 {Faker.lorem.text()}
-            </RadioButton>,
-            <RadioButton
+            </RadioInput>,
+            <RadioInput
                 checked={boolean("checked", true)}
                 id={uuid()}
                 label={Faker.random.word()}
                 name={Faker.random.word()}>
                 {Faker.lorem.text()}
-            </RadioButton>,
+            </RadioInput>,
         ]}
     />
 );

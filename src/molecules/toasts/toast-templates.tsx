@@ -1,6 +1,6 @@
-import { IconSizes } from "../constants/icon-sizes";
-import { Icon } from "../icons/icon";
-import { Icons } from "../constants/icons";
+import { IconSizes } from "../../atoms/constants/icon-sizes";
+import { Icon } from "../../atoms/icons/icon";
+import { Icons } from "../../atoms/constants/icons";
 import React from "react";
 import { ToastContent } from "react-toastify";
 import "./toast.scss";

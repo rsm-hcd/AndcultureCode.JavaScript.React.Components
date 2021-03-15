@@ -5,7 +5,7 @@ import Faker from "faker";
 
 export default {
     component: Select,
-    title: "Atoms | Forms / Select",
+    title: "Molecules | Select",
 };
 
 export const selectKnobs = () => (

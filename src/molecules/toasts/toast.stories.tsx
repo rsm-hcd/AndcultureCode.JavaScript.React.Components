@@ -1,5 +1,5 @@
-import { Button } from "../buttons/button";
-import { ButtonSizes } from "../constants/button-sizes";
+import { Button } from "../../atoms/buttons/button";
+import { ButtonSizes } from "../../atoms/constants/button-sizes";
 import React from "react";
 import { ToastContainer, ToastPosition, Zoom } from "react-toastify";
 import "react-toastify/dist/ReactToastify.min.css";
@@ -7,7 +7,7 @@ import { ToastManager } from "../../utilities/toast-manager";
 
 export default {
     component: ToastContainer,
-    title: "Atoms | Toasts",
+    title: "Molecules | Toasts",
 };
 
 export const toastDefault = () => (

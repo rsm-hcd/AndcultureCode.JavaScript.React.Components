@@ -4,6 +4,7 @@ import { select } from "@storybook/addon-knobs";
 import { HeadingPriority } from "../constants/heading-priority";
 import { Heading } from "./heading";
 import { CoreUtils } from "andculturecode-javascript-core";
+import { Icons } from "../constants/icons";
 
 export default {
     component: Heading,
@@ -17,13 +18,8 @@ export const headingKnobs = () => {
 
     return (
         <Heading
-            priority={
-                select(
-                    "priority",
-                    options,
-                    HeadingPriority.One
-                ) as HeadingPriority
-            }>
+            icon={select("icon", Icons, Icons.Plus)}
+            priority={select("priority", options, HeadingPriority.One)}>
             Voluptas Expedita Magnam
         </Heading>
     );

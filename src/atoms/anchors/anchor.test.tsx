@@ -3,6 +3,7 @@ import { act, render, wait, fireEvent } from "@testing-library/react";
 import { Anchor } from "./anchor";
 import faker from "faker";
 import { MemoryRouter } from "react-router-dom";
+import { Icons } from "../constants/icons";
 
 describe("Anchor", () => {
     it("when default props, renders link with correct url", async () => {
@@ -103,6 +104,26 @@ describe("Anchor", () => {
             expect(
                 container.querySelector(`[rel="noopener noreferrer"]`)
             ).not.toBeNull();
+        });
+    });
+
+    it("when icon prop is set, renders link with icon tag", async () => {
+        // Arrange
+        const expected = `/some/random/path/${faker.random.word()}`;
+        const icon = Icons.Close;
+
+        // Act
+        const { container } = render(
+            <MemoryRouter>
+                <Anchor icon={icon} to={expected}>Link</Anchor>
+            </MemoryRouter>
+        );
+
+        const result = container.getElementsByTagName("a")[0].firstChild.nodeName;
+
+        // Assert
+        await wait(() => {
+            expect(result).toBe("I");
         });
     });
 });

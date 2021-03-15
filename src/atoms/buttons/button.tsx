@@ -2,7 +2,7 @@ import { ButtonSizes } from "../constants/button-sizes";
 import { ButtonStyles } from "../constants/button-styles";
 import { ButtonTypes } from "../constants/button-types";
 import { AccessibilityLabels } from "../../enums/accessibility-labels";
-import React, { forwardRef } from "react";
+import React, { forwardRef, PropsWithChildren, Ref } from "react";
 import { StringUtils } from "andculturecode-javascript-core";
 import "./button.scss";
 
@@ -38,10 +38,8 @@ export interface ButtonProps {
 // #region Component
 // -----------------------------------------------------------------------------------------
 
-const Button: React.RefForwardingComponent<
-    HTMLButtonElement,
-    ButtonProps
-> = forwardRef((props: ButtonProps, ref: React.Ref<HTMLButtonElement>) => {
+const Button = forwardRef<HTMLButtonElement, ButtonProps>(
+    (props: PropsWithChildren<ButtonProps>, ref: Ref<HTMLButtonElement>) => {
     const {
         accessibleText,
         ariaControls,
