@@ -30,31 +30,31 @@ describe("SelectFormField", () => {
 
     test("when has errorsMessages prop, renders with error messages", () => {
         // Arrange
-        const expected = faker.random.words();
-        const firstErrorMessage = faker.random.words();
-        const secondErrorMessage = faker.random.words();
+        const label = faker.random.words();
+        const errorMessages = [faker.random.uuid(), faker.random.uuid()];
         const selectLabel = faker.random.word();
         const selectValue = faker.random.word();
 
         // Act
         const { getByText } = render(
             <SelectFormField
-                label={expected}
+                label={label}
                 onChange={() => {}}
                 id={uuid()}
-                errorMessages={[firstErrorMessage, secondErrorMessage]}
+                errorMessages={errorMessages}
                 values={[{ value: selectValue, label: selectLabel }]}
             />
         );
 
         // Assert
-        expect(getByText(firstErrorMessage)).not.toBeNil();
-        expect(getByText(secondErrorMessage)).not.toBeNil();
+        errorMessages.forEach((errorMessage) =>
+            expect(getByText(errorMessage)).not.toBeNil()
+        );
     });
 
     test("when has errorsMessage prop, renders with error message", () => {
         // Arrange
-        const expected = faker.random.words();
+        const label = faker.random.words();
         const testErrorMessage = faker.random.words();
         const selectLabel = faker.random.word();
         const selectValue = faker.random.word();
@@ -62,7 +62,7 @@ describe("SelectFormField", () => {
         // Act
         const { getByText } = render(
             <SelectFormField
-                label={expected}
+                label={label}
                 onChange={() => {}}
                 id={uuid()}
                 errorMessage={testErrorMessage}
