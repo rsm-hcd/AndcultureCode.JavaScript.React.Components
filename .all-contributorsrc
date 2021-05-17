@@ -81,6 +81,15 @@
       "contributions": [
         "code"
       ]
+    },
+    {
+      "login": "phess101",
+      "name": "Phil Hess",
+      "avatar_url": "https://avatars.githubusercontent.com/u/4418062?v=4",
+      "profile": "https://github.com/phess101",
+      "contributions": [
+        "code"
+      ]
     }
   ],
   "contributorsPerLine": 7,

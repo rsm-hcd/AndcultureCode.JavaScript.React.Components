@@ -1,6 +1,6 @@
 # AndcultureCode.JavaScript.React.Components
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-8-orange.svg?style=flat-square)](#contributors-)
+[![All Contributors](https://img.shields.io/badge/all_contributors-9-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 [![Build Status](https://travis-ci.org/AndcultureCode/AndcultureCode.JavaScript.React.Components.svg?branch=master)](https://travis-ci.org/AndcultureCode/AndcultureCode.JavaScript.React.Components)
@@ -70,6 +70,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
   </tr>
   <tr>
     <td align="center"><a href="http://www.ralphjmcintyre.com"><img src="https://avatars.githubusercontent.com/u/8047934?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Ralph J McIntyre</b></sub></a><br /><a href="https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/commits?author=ralphjmcintyre" title="Code">💻</a></td>
+    <td align="center"><a href="https://github.com/phess101"><img src="https://avatars.githubusercontent.com/u/4418062?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Phil Hess</b></sub></a><br /><a href="https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/commits?author=phess101" title="Code">💻</a></td>
   </tr>
 </table>
 
