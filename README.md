@@ -1,6 +1,6 @@
 # AndcultureCode.JavaScript.React.Components
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-11-orange.svg?style=flat-square)](#contributors-)
+[![All Contributors](https://img.shields.io/badge/all_contributors-12-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 [![Build Status](https://travis-ci.org/AndcultureCode/AndcultureCode.JavaScript.React.Components.svg?branch=master)](https://travis-ci.org/AndcultureCode/AndcultureCode.JavaScript.React.Components)
@@ -73,6 +73,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
     <td align="center"><a href="https://github.com/phess101"><img src="https://avatars.githubusercontent.com/u/4418062?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Phil Hess</b></sub></a><br /><a href="https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/commits?author=phess101" title="Code">💻</a></td>
     <td align="center"><a href="http://www.alexgetty.co"><img src="https://avatars.githubusercontent.com/u/1761801?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Alex Getty</b></sub></a><br /><a href="https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/commits?author=alexgetty" title="Code">💻</a></td>
     <td align="center"><a href="https://github.com/Stefanie899"><img src="https://avatars.githubusercontent.com/u/37462028?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Stefanie Leitch</b></sub></a><br /><a href="https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/pulls?q=is%3Apr+reviewed-by%3AStefanie899" title="Reviewed Pull Requests">👀</a></td>
+    <td align="center"><a href="https://github.com/HeyKos"><img src="https://avatars.githubusercontent.com/u/5178698?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Mike Koser</b></sub></a><br /><a href="https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/pulls?q=is%3Apr+reviewed-by%3AHeyKos" title="Reviewed Pull Requests">👀</a></td>
   </tr>
 </table>
 
