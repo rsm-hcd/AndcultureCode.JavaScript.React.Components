@@ -72,6 +72,15 @@
         "code",
         "doc"
       ]
+    },
+    {
+      "login": "ralphjmcintyre",
+      "name": "Ralph J McIntyre",
+      "avatar_url": "https://avatars.githubusercontent.com/u/8047934?v=4",
+      "profile": "http://www.ralphjmcintyre.com",
+      "contributions": [
+        "code"
+      ]
     }
   ],
   "contributorsPerLine": 7,
