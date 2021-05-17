@@ -108,6 +108,15 @@
       "contributions": [
         "review"
       ]
+    },
+    {
+      "login": "HeyKos",
+      "name": "Mike Koser",
+      "avatar_url": "https://avatars.githubusercontent.com/u/5178698?v=4",
+      "profile": "https://github.com/HeyKos",
+      "contributions": [
+        "review"
+      ]
     }
   ],
   "contributorsPerLine": 7,
