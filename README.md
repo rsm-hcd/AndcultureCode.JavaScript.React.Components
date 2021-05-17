@@ -1,6 +1,6 @@
 # AndcultureCode.JavaScript.React.Components
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-7-orange.svg?style=flat-square)](#contributors-)
+[![All Contributors](https://img.shields.io/badge/all_contributors-8-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 [![Build Status](https://travis-ci.org/AndcultureCode/AndcultureCode.JavaScript.React.Components.svg?branch=master)](https://travis-ci.org/AndcultureCode/AndcultureCode.JavaScript.React.Components)
@@ -67,6 +67,9 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
     <td align="center"><a href="https://github.com/nasnyder91"><img src="https://avatars.githubusercontent.com/u/30235123?v=4?s=100" width="100px;" alt=""/><br /><sub><b>nasnyder91</b></sub></a><br /><a href="https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/pulls?q=is%3Apr+reviewed-by%3Anasnyder91" title="Reviewed Pull Requests">👀</a></td>
     <td align="center"><a href="https://mjones.network"><img src="https://avatars.githubusercontent.com/u/8648891?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Mat Jones</b></sub></a><br /><a href="https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/pulls?q=is%3Apr+reviewed-by%3Amrjones2014" title="Reviewed Pull Requests">👀</a> <a href="https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/commits?author=mrjones2014" title="Code">💻</a></td>
     <td align="center"><a href="https://github.com/KevinBusch"><img src="https://avatars.githubusercontent.com/u/775414?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Kevin Busch</b></sub></a><br /><a href="https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/commits?author=KevinBusch" title="Code">💻</a> <a href="https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/commits?author=KevinBusch" title="Documentation">📖</a></td>
+  </tr>
+  <tr>
+    <td align="center"><a href="http://www.ralphjmcintyre.com"><img src="https://avatars.githubusercontent.com/u/8047934?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Ralph J McIntyre</b></sub></a><br /><a href="https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/commits?author=ralphjmcintyre" title="Code">💻</a></td>
   </tr>
 </table>
 
