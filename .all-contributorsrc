@@ -145,6 +145,17 @@
       "contributions": [
         "review"
       ]
+    },
+    {
+      "login": "SaidShah",
+      "name": "Said B Shah",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19719299?v=4",
+      "profile": "https://www.saidshah.com",
+      "contributions": [
+        "code",
+        "test",
+        "maintenance"
+      ]
     }
   ],
   "contributorsPerLine": 7,

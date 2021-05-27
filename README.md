@@ -1,6 +1,6 @@
 # AndcultureCode.JavaScript.React.Components
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-15-orange.svg?style=flat-square)](#contributors-)
+[![All Contributors](https://img.shields.io/badge/all_contributors-16-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 [![Build Status](https://travis-ci.org/AndcultureCode/AndcultureCode.JavaScript.React.Components.svg?branch=master)](https://travis-ci.org/AndcultureCode/AndcultureCode.JavaScript.React.Components)
@@ -79,6 +79,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
   </tr>
   <tr>
     <td align="center"><a href="https://github.com/joshuapeters"><img src="https://avatars.githubusercontent.com/u/9259962?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Joshua Peters</b></sub></a><br /><a href="https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/pulls?q=is%3Apr+reviewed-by%3Ajoshuapeters" title="Reviewed Pull Requests">👀</a></td>
+    <td align="center"><a href="https://www.saidshah.com"><img src="https://avatars.githubusercontent.com/u/19719299?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Said B Shah</b></sub></a><br /><a href="https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/commits?author=SaidShah" title="Code">💻</a> <a href="https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/commits?author=SaidShah" title="Tests">⚠️</a> <a href="#maintenance-SaidShah" title="Maintenance">🚧</a></td>
   </tr>
 </table>
 
