@@ -24,7 +24,7 @@
 
 • **data**? : *T*
 
-*Defined in [src/molecules/select/select.tsx:21](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/c9cfa12/src/molecules/select/select.tsx#L21)*
+*Defined in [src/molecules/select/select.tsx:21](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/3b573d9/src/molecules/select/select.tsx#L21)*
 
 ___
 
@@ -32,7 +32,7 @@ ___
 
 • **label**: *string*
 
-*Defined in [src/molecules/select/select.tsx:22](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/c9cfa12/src/molecules/select/select.tsx#L22)*
+*Defined in [src/molecules/select/select.tsx:22](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/3b573d9/src/molecules/select/select.tsx#L22)*
 
 ___
 
@@ -40,4 +40,4 @@ ___
 
 • **value**: *string*
 
-*Defined in [src/molecules/select/select.tsx:23](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/c9cfa12/src/molecules/select/select.tsx#L23)*
+*Defined in [src/molecules/select/select.tsx:23](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/3b573d9/src/molecules/select/select.tsx#L23)*

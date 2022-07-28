@@ -22,7 +22,7 @@
 
 • **cssClassName**? : *undefined | string*
 
-*Defined in [src/atoms/typography/heading.tsx:13](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/c9cfa12/src/atoms/typography/heading.tsx#L13)*
+*Defined in [src/atoms/typography/heading.tsx:13](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/3b573d9/src/atoms/typography/heading.tsx#L13)*
 
 ___
 
@@ -30,7 +30,7 @@ ___
 
 • **icon**? : *[Icons](../enums/icons.md)*
 
-*Defined in [src/atoms/typography/heading.tsx:14](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/c9cfa12/src/atoms/typography/heading.tsx#L14)*
+*Defined in [src/atoms/typography/heading.tsx:14](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/3b573d9/src/atoms/typography/heading.tsx#L14)*
 
 ___
 
@@ -38,7 +38,7 @@ ___
 
 • **iconSize**? : *[IconSizes](../enums/iconsizes.md)*
 
-*Defined in [src/atoms/typography/heading.tsx:15](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/c9cfa12/src/atoms/typography/heading.tsx#L15)*
+*Defined in [src/atoms/typography/heading.tsx:15](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/3b573d9/src/atoms/typography/heading.tsx#L15)*
 
 ___
 
@@ -46,7 +46,7 @@ ___
 
 • **id**? : *undefined | string*
 
-*Defined in [src/atoms/typography/heading.tsx:16](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/c9cfa12/src/atoms/typography/heading.tsx#L16)*
+*Defined in [src/atoms/typography/heading.tsx:16](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/3b573d9/src/atoms/typography/heading.tsx#L16)*
 
 ___
 
@@ -54,4 +54,4 @@ ___
 
 • **priority**? : *[HeadingPriority](../enums/headingpriority.md)*
 
-*Defined in [src/atoms/typography/heading.tsx:17](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/c9cfa12/src/atoms/typography/heading.tsx#L17)*
+*Defined in [src/atoms/typography/heading.tsx:17](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/3b573d9/src/atoms/typography/heading.tsx#L17)*

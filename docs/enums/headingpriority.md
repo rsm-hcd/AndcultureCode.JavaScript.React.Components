@@ -19,7 +19,7 @@
 
 • **Five**: = 5
 
-*Defined in [src/atoms/constants/heading-priority.ts:6](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/c9cfa12/src/atoms/constants/heading-priority.ts#L6)*
+*Defined in [src/atoms/constants/heading-priority.ts:6](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/3b573d9/src/atoms/constants/heading-priority.ts#L6)*
 
 ___
 
@@ -27,7 +27,7 @@ ___
 
 • **Four**: = 4
 
-*Defined in [src/atoms/constants/heading-priority.ts:5](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/c9cfa12/src/atoms/constants/heading-priority.ts#L5)*
+*Defined in [src/atoms/constants/heading-priority.ts:5](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/3b573d9/src/atoms/constants/heading-priority.ts#L5)*
 
 ___
 
@@ -35,7 +35,7 @@ ___
 
 • **One**: = 1
 
-*Defined in [src/atoms/constants/heading-priority.ts:2](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/c9cfa12/src/atoms/constants/heading-priority.ts#L2)*
+*Defined in [src/atoms/constants/heading-priority.ts:2](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/3b573d9/src/atoms/constants/heading-priority.ts#L2)*
 
 ___
 
@@ -43,7 +43,7 @@ ___
 
 • **Six**: = 6
 
-*Defined in [src/atoms/constants/heading-priority.ts:7](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/c9cfa12/src/atoms/constants/heading-priority.ts#L7)*
+*Defined in [src/atoms/constants/heading-priority.ts:7](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/3b573d9/src/atoms/constants/heading-priority.ts#L7)*
 
 ___
 
@@ -51,7 +51,7 @@ ___
 
 • **Three**: = 3
 
-*Defined in [src/atoms/constants/heading-priority.ts:4](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/c9cfa12/src/atoms/constants/heading-priority.ts#L4)*
+*Defined in [src/atoms/constants/heading-priority.ts:4](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/3b573d9/src/atoms/constants/heading-priority.ts#L4)*
 
 ___
 
@@ -59,4 +59,4 @@ ___
 
 • **Two**: = 2
 
-*Defined in [src/atoms/constants/heading-priority.ts:3](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/c9cfa12/src/atoms/constants/heading-priority.ts#L3)*
+*Defined in [src/atoms/constants/heading-priority.ts:3](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/3b573d9/src/atoms/constants/heading-priority.ts#L3)*
