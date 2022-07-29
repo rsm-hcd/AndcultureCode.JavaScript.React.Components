@@ -81,6 +81,9 @@ const Anchor: React.RefForwardingComponent<Link, AnchorProps> = forwardRef(
         }
 
         return (
+            // Address TypeScript Error Preventing Props Passing
+            // https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/issues/137
+            // @ts-ignore
             <Link to={props.to} {...attributes}>
                 {content}
             </Link>

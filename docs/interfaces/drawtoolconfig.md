@@ -26,7 +26,7 @@
 
 *Inherited from [ToolConfig](toolconfig.md).[canvas](toolconfig.md#canvas)*
 
-*Defined in [src/atoms/forms/canvas-sketch/tools/base-canvas-tool.ts:20](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/c9cfa12/src/atoms/forms/canvas-sketch/tools/base-canvas-tool.ts#L20)*
+*Defined in [src/atoms/forms/canvas-sketch/tools/base-canvas-tool.ts:20](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/3b573d9/src/atoms/forms/canvas-sketch/tools/base-canvas-tool.ts#L20)*
 
 ___
 
@@ -36,7 +36,7 @@ ___
 
 *Inherited from [ToolConfig](toolconfig.md).[context](toolconfig.md#context)*
 
-*Defined in [src/atoms/forms/canvas-sketch/tools/base-canvas-tool.ts:21](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/c9cfa12/src/atoms/forms/canvas-sketch/tools/base-canvas-tool.ts#L21)*
+*Defined in [src/atoms/forms/canvas-sketch/tools/base-canvas-tool.ts:21](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/3b573d9/src/atoms/forms/canvas-sketch/tools/base-canvas-tool.ts#L21)*
 
 ___
 
@@ -44,7 +44,7 @@ ___
 
 • **onFinishStroke**: *function*
 
-*Defined in [src/atoms/forms/canvas-sketch/tools/base-canvas-draw-tool.ts:28](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/c9cfa12/src/atoms/forms/canvas-sketch/tools/base-canvas-draw-tool.ts#L28)*
+*Defined in [src/atoms/forms/canvas-sketch/tools/base-canvas-draw-tool.ts:28](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/3b573d9/src/atoms/forms/canvas-sketch/tools/base-canvas-draw-tool.ts#L28)*
 
 #### Type declaration:
 
@@ -64,7 +64,7 @@ ___
 
 *Inherited from [ToolConfig](toolconfig.md).[redraw](toolconfig.md#redraw)*
 
-*Defined in [src/atoms/forms/canvas-sketch/tools/base-canvas-tool.ts:22](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/c9cfa12/src/atoms/forms/canvas-sketch/tools/base-canvas-tool.ts#L22)*
+*Defined in [src/atoms/forms/canvas-sketch/tools/base-canvas-tool.ts:22](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/3b573d9/src/atoms/forms/canvas-sketch/tools/base-canvas-tool.ts#L22)*
 
 #### Type declaration:
 
@@ -76,4 +76,4 @@ ___
 
 • **uiSettings**: *[DrawToolUiSettings](drawtooluisettings.md)*
 
-*Defined in [src/atoms/forms/canvas-sketch/tools/base-canvas-draw-tool.ts:29](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/c9cfa12/src/atoms/forms/canvas-sketch/tools/base-canvas-draw-tool.ts#L29)*
+*Defined in [src/atoms/forms/canvas-sketch/tools/base-canvas-draw-tool.ts:29](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/3b573d9/src/atoms/forms/canvas-sketch/tools/base-canvas-draw-tool.ts#L29)*

@@ -15,7 +15,7 @@
 
 • **Button**: = "button"
 
-*Defined in [src/molecules/constants/link-card-types.ts:2](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/c9cfa12/src/molecules/constants/link-card-types.ts#L2)*
+*Defined in [src/molecules/constants/link-card-types.ts:2](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/3b573d9/src/molecules/constants/link-card-types.ts#L2)*
 
 ___
 
@@ -23,4 +23,4 @@ ___
 
 • **Link**: = "link"
 
-*Defined in [src/molecules/constants/link-card-types.ts:3](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/c9cfa12/src/molecules/constants/link-card-types.ts#L3)*
+*Defined in [src/molecules/constants/link-card-types.ts:3](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/3b573d9/src/molecules/constants/link-card-types.ts#L3)*

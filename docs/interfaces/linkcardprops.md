@@ -24,7 +24,7 @@
 
 • **children**: *any*
 
-*Defined in [src/molecules/link-card/link-card.tsx:25](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/c9cfa12/src/molecules/link-card/link-card.tsx#L25)*
+*Defined in [src/molecules/link-card/link-card.tsx:25](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/3b573d9/src/molecules/link-card/link-card.tsx#L25)*
 
 ___
 
@@ -32,7 +32,7 @@ ___
 
 • **iconType**? : *[Icons](../enums/icons.md)*
 
-*Defined in [src/molecules/link-card/link-card.tsx:26](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/c9cfa12/src/molecules/link-card/link-card.tsx#L26)*
+*Defined in [src/molecules/link-card/link-card.tsx:26](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/3b573d9/src/molecules/link-card/link-card.tsx#L26)*
 
 ___
 
@@ -40,7 +40,7 @@ ___
 
 • **includeIcon**? : *undefined | false | true*
 
-*Defined in [src/molecules/link-card/link-card.tsx:27](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/c9cfa12/src/molecules/link-card/link-card.tsx#L27)*
+*Defined in [src/molecules/link-card/link-card.tsx:27](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/3b573d9/src/molecules/link-card/link-card.tsx#L27)*
 
 ___
 
@@ -48,7 +48,7 @@ ___
 
 • **label**: *string*
 
-*Defined in [src/molecules/link-card/link-card.tsx:28](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/c9cfa12/src/molecules/link-card/link-card.tsx#L28)*
+*Defined in [src/molecules/link-card/link-card.tsx:28](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/3b573d9/src/molecules/link-card/link-card.tsx#L28)*
 
 ___
 
@@ -56,7 +56,7 @@ ___
 
 • **onClick**? : *undefined | function*
 
-*Defined in [src/molecules/link-card/link-card.tsx:29](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/c9cfa12/src/molecules/link-card/link-card.tsx#L29)*
+*Defined in [src/molecules/link-card/link-card.tsx:29](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/3b573d9/src/molecules/link-card/link-card.tsx#L29)*
 
 ___
 
@@ -64,7 +64,7 @@ ___
 
 • **to**? : *any*
 
-*Defined in [src/molecules/link-card/link-card.tsx:30](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/c9cfa12/src/molecules/link-card/link-card.tsx#L30)*
+*Defined in [src/molecules/link-card/link-card.tsx:30](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/3b573d9/src/molecules/link-card/link-card.tsx#L30)*
 
 ___
 
@@ -72,4 +72,4 @@ ___
 
 • **type**? : *[LinkCardTypes](../enums/linkcardtypes.md)*
 
-*Defined in [src/molecules/link-card/link-card.tsx:31](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/c9cfa12/src/molecules/link-card/link-card.tsx#L31)*
+*Defined in [src/molecules/link-card/link-card.tsx:31](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/3b573d9/src/molecules/link-card/link-card.tsx#L31)*

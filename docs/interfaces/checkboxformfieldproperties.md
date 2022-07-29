@@ -26,7 +26,7 @@
 
 *Inherited from [CheckboxInputProperties](checkboxinputproperties.md).[checked](checkboxinputproperties.md#checked)*
 
-*Defined in [src/molecules/checkbox-input/checkbox-input.tsx:19](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/c9cfa12/src/molecules/checkbox-input/checkbox-input.tsx#L19)*
+*Defined in [src/molecules/checkbox-input/checkbox-input.tsx:19](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/3b573d9/src/molecules/checkbox-input/checkbox-input.tsx#L19)*
 
 ___
 
@@ -36,7 +36,7 @@ ___
 
 *Inherited from [CheckboxInputProperties](checkboxinputproperties.md).[disabled](checkboxinputproperties.md#optional-disabled)*
 
-*Defined in [src/molecules/checkbox-input/checkbox-input.tsx:20](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/c9cfa12/src/molecules/checkbox-input/checkbox-input.tsx#L20)*
+*Defined in [src/molecules/checkbox-input/checkbox-input.tsx:20](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/3b573d9/src/molecules/checkbox-input/checkbox-input.tsx#L20)*
 
 ___
 
@@ -44,7 +44,7 @@ ___
 
 • **errorMessage**? : *undefined | string*
 
-*Defined in [src/molecules/form-fields/checkbox-form-field.tsx:28](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/c9cfa12/src/molecules/form-fields/checkbox-form-field.tsx#L28)*
+*Defined in [src/molecules/form-fields/checkbox-form-field.tsx:28](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/3b573d9/src/molecules/form-fields/checkbox-form-field.tsx#L28)*
 
 An error message to display under the current checkbox with more information.
 
@@ -58,7 +58,7 @@ ___
 
 *Inherited from [CheckboxInputProperties](checkboxinputproperties.md).[label](checkboxinputproperties.md#label)*
 
-*Defined in [src/molecules/checkbox-input/checkbox-input.tsx:21](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/c9cfa12/src/molecules/checkbox-input/checkbox-input.tsx#L21)*
+*Defined in [src/molecules/checkbox-input/checkbox-input.tsx:21](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/3b573d9/src/molecules/checkbox-input/checkbox-input.tsx#L21)*
 
 ___
 
@@ -68,7 +68,7 @@ ___
 
 *Inherited from [CheckboxInputProperties](checkboxinputproperties.md).[onChange](checkboxinputproperties.md#onchange)*
 
-*Defined in [src/molecules/checkbox-input/checkbox-input.tsx:22](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/c9cfa12/src/molecules/checkbox-input/checkbox-input.tsx#L22)*
+*Defined in [src/molecules/checkbox-input/checkbox-input.tsx:22](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/3b573d9/src/molecules/checkbox-input/checkbox-input.tsx#L22)*
 
 #### Type declaration:
 

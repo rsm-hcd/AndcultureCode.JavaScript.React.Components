@@ -20,7 +20,7 @@
 
 • **base**: *FunctionComponent‹SVGProps‹SVGSVGElement››*
 
-*Defined in [src/atoms/interfaces/svg-icon.ts:5](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/c9cfa12/src/atoms/interfaces/svg-icon.ts#L5)*
+*Defined in [src/atoms/interfaces/svg-icon.ts:5](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/3b573d9/src/atoms/interfaces/svg-icon.ts#L5)*
 
 ___
 
@@ -28,7 +28,7 @@ ___
 
 • **large**: *FunctionComponent‹SVGProps‹SVGSVGElement››*
 
-*Defined in [src/atoms/interfaces/svg-icon.ts:6](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/c9cfa12/src/atoms/interfaces/svg-icon.ts#L6)*
+*Defined in [src/atoms/interfaces/svg-icon.ts:6](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/3b573d9/src/atoms/interfaces/svg-icon.ts#L6)*
 
 ___
 
@@ -36,4 +36,4 @@ ___
 
 • **type**: *[Icons](../enums/icons.md)*
 
-*Defined in [src/atoms/interfaces/svg-icon.ts:7](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/c9cfa12/src/atoms/interfaces/svg-icon.ts#L7)*
+*Defined in [src/atoms/interfaces/svg-icon.ts:7](https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/blob/3b573d9/src/atoms/interfaces/svg-icon.ts#L7)*
