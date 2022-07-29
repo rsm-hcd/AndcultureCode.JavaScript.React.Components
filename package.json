@@ -1,141 +1,141 @@
 {
-    "author": {
-        "email": "developer@andculture.com",
-        "name": "andculture",
-        "url": "https://www.andculture.com"
-    },
-    "browserslist": {
-        "development": [
-            "last 1 chrome version",
-            "last 1 firefox version",
-            "last 1 ie version",
-            "last 1 safari version"
-        ],
-        "production": [
-            ">0.2%",
-            "not dead",
-            "not op_mini all"
-        ]
-    },
-    "bugs": {
-        "url": "https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/issues"
-    },
-    "dependencies": {
-        "@reach/menu-button": "0.11.2",
-        "@tippyjs/react": "4.0.2",
-        "@types/react": "16.9.11",
-        "@types/react-dom": "16.9.3",
-        "@types/react-router-dom": "5.1.5",
-        "andculturecode-javascript-core": "0.1.5",
-        "andculturecode-javascript-react": "0.1.0",
-        "andculturecode-scss-grid": "3.0.0",
-        "axios": "0.19.2",
-        "bourbon": "6.0.0",
-        "i18next": "19.4.5",
-        "immutable": "4.0.0-rc.12",
-        "react": "^16.13.1",
-        "react-dom": "^16.13.1",
-        "react-i18next": "11.6.0",
-        "react-router-dom": "5.1.2",
-        "react-scripts": "3.4.1",
-        "react-toastify": "5.5.0"
-    },
-    "description": "Commonly used components for react applications",
-    "devDependencies": {
-        "@babel/core": "7.6.0",
-        "@storybook/addon-actions": "5.3.19",
-        "@storybook/addon-info": "5.3.19",
-        "@storybook/addon-knobs": "5.3.19",
-        "@storybook/addon-links": "5.3.19",
-        "@storybook/addon-options": "5.3.19",
-        "@storybook/addons": "5.3.19",
-        "@storybook/react": "5.3.19",
-        "@storybook/storybook-deployer": "2.8.6",
-        "@testing-library/jest-dom": "4.2.3",
-        "@testing-library/react": "9.3.2",
-        "@types/faker": "4.1.7",
-        "@types/jest": "24.0.18",
-        "@types/node": "12.7.5",
-        "@types/react": "16.9.11",
-        "@types/react-dom": "16.9.3",
-        "@types/react-router-dom": "5.1.2",
-        "@types/rosie": "0.0.37",
-        "@types/storybook__addon-info": "4.1.2",
-        "@types/storybook__react": "4.0.2",
-        "@types/storybook-react-router": "1.0.0",
-        "andculturecode-javascript-testing": "0.0.2",
-        "awesome-typescript-loader": "5.2.1",
-        "babel-loader": "8.1.0",
-        "babel-plugin-react-docgen": "3.1.0",
-        "copyfiles": "2.3.0",
-        "cross-env": "6.0.3",
-        "faker": "4.1.0",
-        "jest-extended": "0.11.2",
-        "jest-fetch-mock": "2.1.2",
-        "prettier": "1.19.1",
-        "react-docgen-typescript-loader": "3.2.1",
-        "rimraf": "2.6.2",
-        "rosie": "2.0.1",
-        "storybook-addon-smart-knobs": "5.0.0",
-        "storybook-react-router": "1.0.8",
-        "typedoc": "0.17.6",
-        "typedoc-plugin-markdown": "2.2.17",
-        "typescript": "3.8.3"
-    },
-    "eslintConfig": {
-        "extends": "react-app"
-    },
-    "files": [
-        "dist",
-        "src"
+  "author": {
+    "email": "developer@andculture.com",
+    "name": "andculture",
+    "url": "https://www.andculture.com"
+  },
+  "browserslist": {
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 ie version",
+      "last 1 safari version"
     ],
-    "jest": {
-        "collectCoverageFrom": [
-            "src/**/*.ts*",
-            "!src/**/*.stories.ts*",
-            "!src/tests/**/*",
-            "!src/**/*.scss"
-        ],
-        "moduleNameMapper": {
-            "react-spring": "<rootDir>/node_modules/react-spring/web.cjs",
-            "react-spring/renderprops": "<rootDir>/node_modules/react-spring/renderprops.cjs"
-        }
-    },
-    "keywords": [
-        "JavaScript",
-        "Node",
-        "React"
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ]
+  },
+  "bugs": {
+    "url": "https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components/issues"
+  },
+  "dependencies": {
+    "@reach/menu-button": "0.11.2",
+    "@tippyjs/react": "4.0.2",
+    "@types/react": "16.9.11",
+    "@types/react-dom": "16.9.3",
+    "@types/react-router-dom": "5.1.5",
+    "andculturecode-javascript-core": "0.1.5",
+    "andculturecode-javascript-react": "0.1.0",
+    "andculturecode-scss-grid": "3.0.0",
+    "axios": "0.19.2",
+    "bourbon": "6.0.0",
+    "i18next": "19.4.5",
+    "immutable": "4.0.0-rc.12",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-i18next": "11.6.0",
+    "react-router-dom": "5.1.2",
+    "react-scripts": "3.4.1",
+    "react-toastify": "5.5.0"
+  },
+  "description": "Commonly used components for react applications",
+  "devDependencies": {
+    "@babel/core": "7.6.0",
+    "@storybook/addon-actions": "5.3.19",
+    "@storybook/addon-info": "5.3.19",
+    "@storybook/addon-knobs": "5.3.19",
+    "@storybook/addon-links": "5.3.19",
+    "@storybook/addon-options": "5.3.19",
+    "@storybook/addons": "5.3.19",
+    "@storybook/react": "5.3.19",
+    "@storybook/storybook-deployer": "2.8.6",
+    "@testing-library/jest-dom": "4.2.3",
+    "@testing-library/react": "9.3.2",
+    "@types/faker": "4.1.7",
+    "@types/jest": "24.0.18",
+    "@types/node": "12.7.5",
+    "@types/react": "16.9.11",
+    "@types/react-dom": "16.9.3",
+    "@types/react-router-dom": "5.1.2",
+    "@types/rosie": "0.0.37",
+    "@types/storybook__addon-info": "4.1.2",
+    "@types/storybook__react": "4.0.2",
+    "@types/storybook-react-router": "1.0.0",
+    "andculturecode-javascript-testing": "0.0.2",
+    "awesome-typescript-loader": "5.2.1",
+    "babel-loader": "8.1.0",
+    "babel-plugin-react-docgen": "3.1.0",
+    "copyfiles": "2.3.0",
+    "cross-env": "6.0.3",
+    "faker": "4.1.0",
+    "jest-extended": "0.11.2",
+    "jest-fetch-mock": "2.1.2",
+    "prettier": "1.19.1",
+    "react-docgen-typescript-loader": "3.2.1",
+    "rimraf": "2.6.2",
+    "rosie": "2.0.1",
+    "storybook-addon-smart-knobs": "5.0.0",
+    "storybook-react-router": "1.0.8",
+    "typedoc": "0.17.6",
+    "typedoc-plugin-markdown": "2.2.17",
+    "typescript": "3.8.3"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "files": [
+    "dist",
+    "src"
+  ],
+  "jest": {
+    "collectCoverageFrom": [
+      "src/**/*.ts*",
+      "!src/**/*.stories.ts*",
+      "!src/tests/**/*",
+      "!src/**/*.scss"
     ],
-    "license": "ISC",
-    "main": "dist/index",
-    "name": "andculturecode-javascript-react-components",
-    "peerDependencies": {
-        "react": "^16",
-        "react-dom": "^16"
-    },
-    "repository": {
-        "type": "git",
-        "url": "git+https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components.git"
-    },
-    "scripts": {
-        "build": "npm run build-typescript",
-        "build-storybook": "build-storybook -o storybook",
-        "build-typescript": "tsc --pretty --project tsconfig.dist.json",
-        "clean": "rimraf coverage dist out*",
-        "coverage": "react-scripts test --coverage --watchAll=false",
-        "deploy-storybook": "storybook-to-ghpages --source-branch main",
-        "docs": "typedoc --mode file --excludeExternals --plugin typedoc-plugin-markdown --readme none",
-        "format": "prettier --write \"src/**/*.ts\" --trailing-comma es5",
-        "eject": "react-scripts eject",
-        "postbuild": "copyfiles src/assets/**/* dist && mv dist/src/assets dist && rimraf dist/src && npm run docs",
-        "postpublish": "cross-env-shell \"git add -A && git commit -m \"$npm_package_version\" && git push origin main && npm run deploy-storybook\"",
-        "prebuild": "npm run clean && npm run format && echo Using TypeScript && tsc --version",
-        "prepublishOnly": "npm run build",
-        "start": "react-scripts start",
-        "storybook": "start-storybook -p 6006",
-        "test": "react-scripts test",
-        "test:debug": "react-scripts --inspect-brk test --runInBand --no-cache"
-    },
-    "types": "dist/index",
-    "version": "0.6.0"
+    "moduleNameMapper": {
+      "react-spring": "<rootDir>/node_modules/react-spring/web.cjs",
+      "react-spring/renderprops": "<rootDir>/node_modules/react-spring/renderprops.cjs"
+    }
+  },
+  "keywords": [
+    "JavaScript",
+    "Node",
+    "React"
+  ],
+  "license": "ISC",
+  "main": "dist/index",
+  "name": "andculturecode-javascript-react-components",
+  "peerDependencies": {
+    "react": "^16",
+    "react-dom": "^16"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AndcultureCode/AndcultureCode.JavaScript.React.Components.git"
+  },
+  "scripts": {
+    "build": "npm run build-typescript",
+    "build-storybook": "build-storybook -o storybook",
+    "build-typescript": "tsc --pretty --project tsconfig.dist.json",
+    "clean": "rimraf coverage dist out*",
+    "coverage": "react-scripts test --coverage --watchAll=false",
+    "deploy-storybook": "storybook-to-ghpages --source-branch main",
+    "docs": "typedoc --mode file --excludeExternals --plugin typedoc-plugin-markdown --readme none",
+    "format": "prettier --write \"src/**/*.ts\" --trailing-comma es5",
+    "eject": "react-scripts eject",
+    "postbuild": "copyfiles src/assets/**/* dist && mv dist/src/assets dist && rimraf dist/src && npm run docs",
+    "postpublish": "cross-env-shell \"git add -A && git commit -m \"$npm_package_version\" && git push origin main && npm run deploy-storybook\"",
+    "prebuild": "npm run clean && npm run format && echo Using TypeScript && tsc --version",
+    "prepublishOnly": "npm run build",
+    "start": "react-scripts start",
+    "storybook": "start-storybook -p 6006",
+    "test": "react-scripts test",
+    "test:debug": "react-scripts --inspect-brk test --runInBand --no-cache"
+  },
+  "types": "dist/index",
+  "version": "0.6.2"
 }

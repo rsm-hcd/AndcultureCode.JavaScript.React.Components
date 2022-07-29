@@ -15,10 +15,15 @@ jobs:
                   node-version: "16.x"
                   registry-url: "https://registry.npmjs.org"
 
-            - name: install npm packages
+            - name: Install npm packages
               run: npm install --legacy-peer-deps
 
-            - name: publish npm package
+            - name: Add Automated git user
+              run: |-
+                git config user.name "Automated"
+                git config user.email "actions@users.noreply.github.com"
+
+            - name: Publish npm package
               run: npm publish
               env:
                   NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
